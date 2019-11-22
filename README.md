@@ -1,0 +1,1 @@
+# openlamis-struts
