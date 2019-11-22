@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Clinic" table="CLINIC">
+    <id name="clinicId" type="long">
+      <column name="CLINIC_ID"/>
+      <generator class="identity"/> 
+    </id>
+    <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+      <column name="PATIENT_ID" not-null="true"/>
+    </many-to-one>
+    <property name="facilityId" type="long">
+      <column name="FACILITY_ID" not-null="true"/>
+    </property>
+    <property name="dateVisit" type="date">
+      <column length="8" name="DATE_VISIT" not-null="true"/>
+    </property>
+    <property name="clinicStage" type="string">
+      <column length="15" name="CLINIC_STAGE"/>
+    </property>  
+    <property name="funcStatus" type="string">
+      <column length="15" name="FUNC_STATUS"/>
+    </property>
+    <property name="maternalStatusArt" type="string">
+      <column length="90" name="MATERNAL_STATUS_ART"/>
+    </property>
+    <property name="tbStatus" type="string">
+      <column length="75" name="TB_STATUS"/>
+    </property>
+    <property name="gestationalAge" type="string">
+      <column length="90" name="GESTATIONAL_AGE"/>
+    </property>
+    <property name="viralLoad" type="java.lang.Double">
+      <column name="VIRAL_LOAD" precision="17" scale="0"/>
+    </property>
+    <property name="cd4" type="java.lang.Double">
+      <column name="CD4" precision="17" scale="0"/>
+    </property>
+    <property name="cd4p" type="java.lang.Double">
+      <column name="CD4P" precision="17" scale="0"/>
+    </property>
+    <property name="regimentype" type="string">
+      <column length="100" name="REGIMENTYPE"/>
+    </property>
+    <property name="regimen" type="string">
+      <column length="100" name="REGIMEN"/>
+    </property>
+    <property name="bodyWeight" type="java.lang.Double">
+      <column name="BODY_WEIGHT" precision="17" scale="0"/>
+    </property>
+    <property name="height" type="java.lang.Double">
+      <column name="HEIGHT" precision="17" scale="0"/>
+    </property>
+    <property name="waist" type="java.lang.Double">
+      <column name="WAIST" precision="17" scale="0"/>
+    </property>
+    <property name="bp" type="string">
+      <column length="7" name="BP"/>
+    </property>
+    <property name="pregnant" type="java.lang.Integer">
+      <column name="PREGNANT"/>
+    </property>
+    <property name="lmp" type="date">
+      <column length="8" name="LMP"/>
+    </property>
+    <property name="breastfeeding" type="java.lang.Integer">
+      <column name="BREASTFEEDING"/>
+    </property>
+    <property name="oiScreened" type="string">
+      <column length="5" name="OI_SCREENED"/>
+    </property>
+    <property name="oiIds" type="string">
+      <column length="50" name="OI_IDS"/>
+    </property>
+    <property name="stiTreated" type="string">
+      <column length="5" name="STI_TREATED"/>
+    </property>
+    <property name="stiIds" type="string">
+      <column length="50" name="STI_IDS"/>
+    </property>
+    <property name="adrScreened" type="string">
+      <column length="5" name="ADR_SCREENED"/>
+    </property>
+    <property name="adrIds" type="string">
+      <column length="100" name="ADR_IDS"/>
+    </property>
+    <property name="adherenceLevel" type="string">
+      <column length="15" name="ADHERENCE_LEVEL"/>
+    </property>
+    <property name="adhereIds" type="string">
+      <column length="50" name="ADHERE_IDS"/>
+    </property>
+    <property name="commence" type="java.lang.Integer">
+      <column name="COMMENCE"/>
+    </property>
+    <property name="nextAppointment" type="date">
+      <column length="8" name="NEXT_APPOINTMENT"/>
+    </property>
+    <property name="notes" type="string">
+      <column length="500" name="NOTES"/>
+    </property>    
+    <property name="timeStamp" type="timestamp">
+      <column length="23" name="TIME_STAMP"/>
+    </property>
+    <property name="userId" type="java.lang.Long">
+      <column name="USER_ID"/>
+    </property>
+    <property name="uploaded" type="java.lang.Integer">
+      <column name="UPLOADED"/>
+    </property>    
+    <property name="timeUploaded" type="timestamp">
+      <column length="23" name="TIME_UPLOADED"/>
+    </property>
+   <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        <property name="deviceconfigId" type="java.lang.Long">
+            <column name="DEVICECONFIG_ID"/>
+        </property>   
+        
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="LAMIS"  name="org.fhi360.lamis.model.Applicationinfo" table="applicationinfo"/>
+  <id name="applicationinfoId" type="long">
+    <column name="APPLICATIONINFO_ID"/>
+    <generator class="identity"/>
+  </id>
+  <property name="databaseVersion" type="string">
+    <column length="20" name="DATABASE_VERSION"/>
+  </property>
+  <property name="applicationVersion" type="string">
+    <column length="20" name="APPLICATION_VERSION"/>
+  </property>
+  <property name="dateApplicationUpdate" type="date">
+    <column length="8" name="DATE_APPLICATION_UPDATE" not-null="true"/>
+  </property>
+  <property name="dateDatabaseUpdateUpdate" type="date">
+    <column length="8" name="DATE_DATABASE_UPDATE" not-null="true"/>
+  </property>
+</hibernate-mapping>

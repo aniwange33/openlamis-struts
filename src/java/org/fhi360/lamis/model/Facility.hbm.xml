@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" dynamic-update="true" name="org.fhi360.lamis.model.Facility" table="FACILITY">
+    <id name="facilityId" type="long">
+      <column name="FACILITY_ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="org.fhi360.lamis.model.Lga" fetch="select" name="lga">
+      <column name="LGA_ID" not-null="true"/>
+    </many-to-one>
+    <property name="stateId" type="long">
+      <column name="STATE_ID" not-null="true"/>
+    </property>
+    <property name="name" type="string">
+      <column length="100" name="NAME" not-null="true"/>
+    </property>
+    <property name="address1" type="string">
+      <column length="45" name="ADDRESS1"/>
+    </property>
+    <property name="address2" type="string">
+      <column length="45" name="ADDRESS2"/>
+    </property>
+    <property name="phone1" type="string">
+      <column length="25" name="PHONE1"/>
+    </property>
+    <property name="phone2" type="string">
+      <column length="25" name="PHONE2"/>
+    </property>
+    <property name="email" type="string">
+      <column length="45" name="EMAIL"/>
+    </property>
+    <property name="facilityType" type="string">
+      <column length="45" name="FACILITY_TYPE"/>
+    </property>
+    <property name="padHospitalNum" type="java.lang.Integer">
+      <column name="PAD_HOSPITAL_NUM"/>
+    </property>
+    <property name="dayDqa" type="java.lang.Integer">
+      <column name="DAY_DQA"/>
+    </property>
+    <set inverse="true" name="patients">
+      <key>
+        <column name="FACILITY_ID" not-null="true"/>
+      </key>
+      <one-to-many class="org.fhi360.lamis.model.Patient"/>
+    </set>
+    <set inverse="true" name="schedules">
+      <key>
+        <column name="FACILITY_ID" not-null="true"/>
+      </key>
+      <one-to-many class="org.fhi360.lamis.model.Schedule"/>
+    </set>
+  </class>
+</hibernate-mapping>

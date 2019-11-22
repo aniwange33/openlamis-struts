@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pmtct_summary" pageWidth="595" pageHeight="2298" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b9f3340-3d0e-42f8-baa0-288e4d89f068">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingMonth" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingYear" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5c" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6c" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7c" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8c" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9c" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct10a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct10b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct10t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct11a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct11b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct11t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct12t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct13t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct14at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct14bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct14ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct14dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct14et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct17t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct18t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct19t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct20t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct21t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct22t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct23t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct24t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct25t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct26t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct27t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct28a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct28b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct28t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct29a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct29b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct29t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct30t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct31t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct32t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct33a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct33b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct33t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct34a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct34b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct34t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct35a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct35b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct35t" class="java.lang.String" isForPrompting="false"/>
+	<field name="stub" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="113" y="1" width="335" height="20" uuid="4c32e13e-ae4b-46b2-b1cd-bade788892c9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NATIONAL PMTCT MONTHLY SUMMARY FORM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="5" y="55" width="108" height="20" uuid="aeb19b91-f1ca-4469-847e-92849fd3dc66"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Reporting Period:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="315" y="55" width="37" height="20" uuid="60f22a70-db18-45be-b52f-1792678bb5aa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="5" y="28" width="31" height="20" uuid="9f1433a7-7ec8-4f54-9c3c-303f902cc001"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="140" y="28" width="39" height="20" uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="314" y="28" width="38" height="20" uuid="9f46d6d4-401e-47d7-87df-53b8d0f9e2c3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="37" y="28" width="96" height="20" uuid="c76c33d5-5e53-43ea-9f43-1464db1d3edf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="179" y="28" width="132" height="20" uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="353" y="28" width="201" height="20" uuid="d1081f4f-4ecf-436e-bba2-90f34ef1afc8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="179" y="55" width="93" height="20" uuid="769c23c8-a0c9-477e-bb2e-cf149dcc3e9e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="353" y="55" width="77" height="20" uuid="e1abc6b2-1826-4006-98ba-f18af80b1223"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="140" y="55" width="39" height="20" uuid="359e67ae-d781-4ac1-b563-08e4642bea1b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Month:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="7" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="1" width="50" height="3" uuid="3e291ec4-5c8f-4358-9b8a-84f70d4a79fd"/>
+				<textFieldExpression><![CDATA[$F{stub}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="1979" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="595" width="554" height="17" backcolor="#CCCCCC" uuid="aa2c35fb-e27d-44c3-8145-be24429092c1"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="470" width="554" height="18" backcolor="#CCCCCC" uuid="6e94caa6-80fc-4359-a1f8-988cf8b0e8c2"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="330" width="554" height="17" backcolor="#CCCCCC" uuid="aad803d6-4ea0-4bda-85af-63cfcd34c9c7"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="258" width="83" height="18" uuid="f3e77673-3d0c-4891-a435-3d2d7618bed4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct10t}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="5" width="554" height="17" backcolor="#FFFFFF" uuid="5353d82a-2136-47dd-be73-ec5e6170226e"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</rectangle>
+			<elementGroup/>
+			<rectangle>
+				<reportElement x="0" y="238" width="554" height="20" backcolor="#FFFFFF" uuid="de54b7d6-cd8c-4809-9e9e-fa4a7232f2ed"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="23" width="554" height="17" backcolor="#CCCCCC" uuid="a9361b91-f3bf-4fa4-9bf3-bc96b4b074af"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="0" y="4" width="554" height="18" uuid="b4c4bbfc-2f42-4cef-8999-7d0ac39c3893"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Data Elements]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="1" y="23" width="553" height="17" uuid="d56915ae-f539-4db3-81bf-6154b154027f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Ante-natal Care Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="23" width="23" height="18" uuid="2d6d16ef-0866-43d5-8337-a57414a87179"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="112" width="554" height="17" backcolor="#CCCCCC" uuid="979bc267-4d2c-4dfb-b363-22d137c7880b"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="23" y="23" width="1" height="106" uuid="3b2db9d7-a56c-4220-a4c1-8751871b54d7"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Heading" x="0" y="40" width="24" height="18" uuid="ec0e7e06-11b4-4531-a0e6-30b56a3724c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="58" width="24" height="18" uuid="84123936-e492-4c09-ba8c-60961de4f908"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="76" width="24" height="18" uuid="e95313a5-9272-45ad-85f4-323f3e134407"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="94" width="24" height="18" uuid="fc8981b7-49c8-4172-9e5f-f6d76e677201"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="1" y="112" width="553" height="17" uuid="327edf01-1316-40b7-8062-816fbae0b579"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[HIV Testing Services Summary]]></text>
+			</staticText>
+			<line>
+				<reportElement x="412" y="40" width="1" height="72" uuid="b165b578-0899-4a42-ae88-a01f70e719c6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="509" y="40" width="1" height="72" uuid="827c4f5c-be08-4940-9a35-0b48d2b2853f"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="426" y="40" width="61" height="18" uuid="63a36d58-4147-423e-889f-3b47b2a881bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="426" y="58" width="61" height="18" uuid="87513221-f4d3-43e3-9b86-7da1bb557a81"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="426" y="76" width="60" height="18" uuid="3786827d-9e97-4e09-b1b8-ee0cd4fbf5c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="426" y="94" width="60" height="18" uuid="6278cdf4-3336-4540-ad05-cbd926c0d2d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4a}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="24" y="40" width="388" height="18" uuid="7410f91c-ccf9-48d5-8e5f-5f8959a71ded"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of New ANC Clients]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="58" width="388" height="18" uuid="c2eccce1-6284-4c7d-a159-02dc1b9ae74d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients tested for syphilis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="76" width="388" height="18" uuid="9f9f5b1a-3483-4483-b99a-dee192bf8845"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients tested positive for syphilis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="94" width="388" height="18" uuid="ba543617-d7c0-47d9-9473-169c0b889dd5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of New ANC Clients treated for syphilis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="1" y="111" width="23" height="18" uuid="bed43555-24cd-40ae-b4ba-0cef3fd452ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<line>
+				<reportElement x="23" y="152" width="1" height="86" uuid="cb88e908-53c1-4d01-bb22-5813f0c096e6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="129" width="554" height="23" backcolor="#FFFFFF" uuid="1ae7a065-1480-4332-8b5b-3f559438d251"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="509" y="129" width="1" height="109" uuid="e6442677-c4f6-4df2-b5ac-664fb553a553"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Heading" x="412" y="129" width="30" height="23" uuid="159b9f31-505b-47bb-b919-d6c7ec845a9c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[ANC]]></text>
+			</staticText>
+			<line>
+				<reportElement x="441" y="129" width="1" height="287" uuid="45950d55-5e39-44f8-a98e-4057268e5ffb"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Heading" x="441" y="129" width="32" height="23" uuid="dbdba8fb-9237-464d-b670-130ec88978c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[L & D]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="472" y="129" width="38" height="23" uuid="3d71d355-883d-43f3-8b2f-7d64bc5de51c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[<72hrs PP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="510" y="129" width="44" height="23" uuid="e9fca2d8-b5c9-4b2d-a09f-253f7feae58c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="186" width="24" height="18" uuid="d01fecd3-01f4-4f4d-8d40-95b3263aec37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="203" width="24" height="18" uuid="899e2963-5ea3-428c-86b1-4b3c295f2978"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="169" width="24" height="18" uuid="e11e2160-4838-4004-ba82-ad91492dc69e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="152" width="24" height="18" uuid="5de28ce0-45aa-4783-b0ae-41c93e1b857b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="220" width="24" height="18" uuid="79bf3dde-dac7-4190-ab20-eb0c6319aeb9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="152" width="388" height="18" uuid="40551b16-19e0-4fc4-ad65-762fea35a357"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of pregnant women with previously known HIV+ve infection]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="472" y="238" width="83" height="20" uuid="d08d35fb-55e3-4e9f-b9d1-11b30c0e689a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="412" y="238" width="30" height="20" uuid="78aea755-14c0-480e-9cf8-c66227ae8b85"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="441" y="238" width="32" height="20" uuid="2988156a-5535-49be-a9db-ec728c998912"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Neg]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="152" width="30" height="18" uuid="0ef46c37-47c7-4635-8fa8-55f440db348c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="441" y="152" width="32" height="18" uuid="b64ff663-4a64-4f43-8872-2b94e678889c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="152" width="38" height="18" uuid="d4526a23-bc7a-434e-bd5b-85c9fcf13c88"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="509" y="152" width="46" height="18" uuid="25b861b0-4db9-4dfc-8403-4d0cd890dea8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5t}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="258" width="24" height="18" uuid="086a4b06-be0c-40a8-b157-519ad9143b8c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="276" width="24" height="18" uuid="f4da5960-0a8b-4fc0-a878-99d4ae17f809"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[11]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="294" width="24" height="18" uuid="26a50630-026c-4bae-99bb-abc2e47bf28a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="312" width="24" height="18" uuid="9732e99f-7dd7-4d0d-bf4b-669245ffd163"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[13]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="330" width="24" height="18" uuid="50c50c8c-684c-4be0-8f01-2befe5ad21cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[C]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="413" y="294" width="59" height="36" backcolor="#404040" uuid="c21f7a6b-3641-4bf4-9530-cf39b43339f8"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="1" y="330" width="553" height="17" uuid="bac8d46b-5f6c-42a4-8526-8385cc3927cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[PMTCT ART Cohort Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="347" width="24" height="18" uuid="f00665bf-82cc-4511-88a5-a0edb86f08e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[14a]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="365" width="24" height="27" uuid="ac35421f-d365-443b-bec2-3aac0ccebefe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[14b]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="392" width="24" height="30" uuid="75b6f838-afa1-4f39-9838-f92a75dea2e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[14c]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="422" width="24" height="20" uuid="0372ed65-f476-46ae-98ed-3eed7e8fc27c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[14d]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="169" width="388" height="18" uuid="1479035e-b098-47a7-9193-aaf0d46a9987"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total no. of pregnant women HIV tested and received results]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="186" width="388" height="18" uuid="d3c943de-46c7-4d99-8623-c4e454670152"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. tested HIV positive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="203" width="388" height="18" uuid="5ea5a328-6844-405c-8ee6-86da62ae23e2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of preg women retested after initial HIV test]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="220" width="388" height="18" uuid="2223aae8-9ee5-4c42-a883-ef63f9a8ee7d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of preg women retedted who seroconverted to HIV positive after initial HIV test]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="258" width="388" height="18" uuid="cc1536bf-503a-4c70-a100-7ab5373bfd76"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients tested for HBV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="276" width="388" height="18" uuid="fdda827f-8fe6-45ad-8ed5-e3b5e38905f1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients tested for HCV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="294" width="388" height="18" uuid="7e7900ae-8ef9-46b3-afd1-d776fe0b4a74"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients Coinfected with HIV and HBV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="312" width="388" height="18" uuid="b60cb7e5-68b9-4fed-905e-24bacb576dfa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients Coinfected with HIV and HCV]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="276" width="83" height="18" uuid="04014836-2c38-4d5f-9de2-ea6754b4a803"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct11t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="258" width="30" height="18" uuid="4415b5a3-aa9b-422a-9f7b-480fd1ed279f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct10a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="441" y="258" width="32" height="18" uuid="8cbbf5f2-29f5-467c-9eec-07bddf67cec2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct10b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="276" width="30" height="18" uuid="a052e0b0-84d0-4fa7-b530-3e641e9a1d99"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct11a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="442" y="276" width="30" height="18" uuid="829a0742-9d3a-4155-88e1-21fe55ae385d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct11b}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="412" y="129" width="1" height="633" uuid="a7fd456d-5e8e-4f63-bfbb-ee96e1156800"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="472" y="129" width="1" height="633" uuid="e83d1ecd-67bc-4444-9044-ee6c26bcc86d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="23" y="259" width="1" height="515" uuid="2c6c4b39-274d-4aa7-8dbe-415b6e6e9b69"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="413" y="347" width="59" height="122" backcolor="#404040" uuid="373686a9-578e-4f37-96fa-48eccb1ededf"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="0" y="442" width="24" height="27" uuid="ec4090cb-66ec-40ec-ab6b-ac4dc2e554bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[14e]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="347" width="388" height="18" uuid="a43fb31e-8cfa-4ccc-b07a-311647f47aa9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women already on ART prior to this pregnancy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="442" width="388" height="27" uuid="8f15ce9b-8de4-4bd7-839f-f51ca90f7366"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women newly started on ART during Post Partum]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="294" width="83" height="18" uuid="becec796-7a29-48f8-acb6-620e1ea07646"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct12t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="312" width="83" height="18" uuid="d2e30bc1-4eff-4df9-8891-b13e67e7e483"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct13t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="169" width="30" height="18" uuid="861c099b-9d32-4687-bf4e-947ec2b0ce06"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="186" width="30" height="18" uuid="49f8d177-94c7-426f-9eea-aa9cd14015cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="203" width="30" height="18" uuid="688263d2-b137-4cbc-b283-e3b99912ad39"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="220" width="30" height="18" uuid="d8d115c2-366b-4410-bae6-54be8a273b95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="347" width="83" height="18" uuid="e79b2925-4206-443a-a9a4-09a5b6e9b346"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct14at}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="365" width="83" height="27" uuid="9ca30968-0ada-4465-a201-b355440613d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct14bt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="392" width="83" height="30" uuid="413e9ccb-825e-415a-80b1-7b4981fedcf3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct14ct}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="422" width="83" height="20" uuid="c40c7b1b-fe38-45f5-bc59-aea4cc6dd296"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct14dt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="24" y="365" width="388" height="27" uuid="605ba669-90b4-419e-87cf-dc21e85e2cbc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women newly started on ART during ANC <=36wks of pregnancy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="392" width="388" height="30" uuid="f895554b-7762-4da5-b5e2-3bbd9df6f4a8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women newly started on ART during ANC >36wks of pregnancy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="422" width="388" height="20" uuid="91297c64-9b13-4286-8c63-d23d902e553b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women newly started on ART during Labour]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="442" width="83" height="27" uuid="533a469d-afb2-45a3-b70f-e9650b631f99"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct14et}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="470" width="24" height="18" uuid="9ddcfc9e-f06b-449c-84db-7c24c03e67d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[D]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="25" y="470" width="553" height="19" uuid="2e1eef8d-589f-42b1-a33a-5659378d3ba2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Partner HIV Testing and Counselling Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="1" y="594" width="22" height="18" uuid="084ed55d-06e6-424b-9bd1-4d8fea332e79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[E]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="489" width="24" height="24" uuid="4cfdf80a-80d1-49ba-98af-cfc1ec6951ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="512" width="24" height="25" uuid="71d9b79d-2ee5-4567-86d7-268440125b61"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[16]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="536" width="24" height="23" uuid="03a3765e-89e2-48d9-a931-35587209eab6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[17]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="558" width="24" height="37" uuid="0c662fcc-c5ff-4aaf-9276-0e95edf5fb0a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[18]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="489" width="388" height="24" uuid="5b12ae9c-27fe-4202-9828-62b850cb26a9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of partners of HIV neg. pregnant women tested HIV negative]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="512" width="388" height="25" uuid="dbc43479-f666-4424-9415-72b022cd324a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of partners of HIV neg. pregnant women tested HIV positive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="536" width="388" height="23" uuid="ef73d48b-25c8-49a2-a9fe-94276dbc9cc9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of partners of HIV pos. pregnant women tested HIV negative]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="558" width="388" height="37" uuid="2ec7e06c-b4e3-4198-ac80-1122b1477eb0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of partners of HIV pos. pregnant women tested HIV positive]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="413" y="488" width="59" height="107" backcolor="#404040" uuid="89804fd8-16bb-402e-bd5a-fed6d881f4b2"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="0" y="676" width="24" height="22" uuid="db89600c-a1f2-4500-a808-b7d92c9d2e36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[22]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="634" width="24" height="18" uuid="06e99d11-aeb0-44d9-84b8-77cb136c4f93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[20]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="676" width="388" height="22" uuid="02e1d81c-f6ca-4a5e-9585-9d34f73e5f3b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of live births by HIV+ women who delivered at the facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="612" width="24" height="23" uuid="4b75e1fa-c845-4867-a39d-f0ad73c80ae2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[19]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="634" width="388" height="18" uuid="e37c4acd-2fa5-405b-879d-ff31e5f67fec"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of booked HIV+ pregnant women who delivered at facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="652" width="24" height="24" uuid="6cd1c0a4-6a5b-4c67-8feb-b77d3a59329f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[21]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="413" y="612" width="59" height="162" backcolor="#404040" uuid="e6d17ef4-c2dd-4843-950d-156dda69801d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="24" y="612" width="388" height="23" uuid="cd948643-d33e-4aee-bf0e-08f9afa5f669"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total deliveries at facility (booked and unbooked pregnant women)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="652" width="388" height="24" uuid="0eb78ff4-926a-4142-959a-98e448f4835f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of unbooked HIV+ pregnant women who delivered at the facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="472" y="470" width="83" height="18" uuid="57e1e049-72e4-483f-bd5b-534af21000dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="473" y="595" width="81" height="17" uuid="fde84724-d409-4c69-817f-ad462f6022c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="1" y="595" width="554" height="16" uuid="b402e300-a974-4f33-b5f7-6e4013e20a07"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Labour and Delivery Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="745" width="388" height="29" uuid="a4bbb382-843f-4ef7-878a-7ecff89def77"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No of HIV exposed infants who received HBV monovalent vaccine within 24hrs of delivery at the facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="698" width="24" height="20" uuid="0d699d97-92d7-42ab-9f54-8d89d69dccdd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[23]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="698" width="388" height="20" uuid="0f5183bd-d69a-4ca7-95c4-e5ef6893a6ab"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of infants delivered to Hepatitis B +ve pregnant women at the facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="745" width="24" height="29" uuid="9390176f-e418-45fc-889f-44f13b6970a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[25]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="717" width="388" height="28" uuid="f552d1e3-f23b-4f40-83fc-6070acb6ef44"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No of Hep B exposed infants who received Immunoglobulin within 24hrs of delivery at the facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="717" width="24" height="28" uuid="4de2aff1-3a96-466f-bc76-abf4d0ce6758"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[24]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="489" width="83" height="23" uuid="84f984e9-0c75-4e56-ae34-becb2b9002e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct17t}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="774" width="554" height="324" backcolor="#FFFFFF" uuid="526440c2-f1d8-4240-a2a8-8a2629458fec"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="774" width="554" height="17" backcolor="#C0C0C0" uuid="8742ddfa-96cd-49ed-b226-08f10d76a685"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="23" y="774" width="511" height="16" uuid="2d19ddc9-e7f9-456d-9144-a8faf954c8c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Child Follow Up Summary]]></text>
+			</staticText>
+			<line>
+				<reportElement x="23" y="774" width="1" height="17" uuid="ba4d2e68-1a4b-490f-9339-914eb94c6b9c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="23" y="791" width="1" height="307" uuid="f8d9dfbc-4dde-4dc8-925b-36c3226e15ea"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="412" y="791" width="1" height="307" uuid="693f6b8d-4f01-42e5-8e61-60ee7afabe58"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Heading" x="412" y="791" width="74" height="16" uuid="cf0fdc2a-859d-4c1b-80e1-7b0a1e5853b0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="7" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Delivery Site]]></text>
+			</staticText>
+			<line>
+				<reportElement x="471" y="791" width="1" height="307" uuid="0af939d6-56d3-472c-bd6d-85db96661db8"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="441" y="806" width="1" height="83" uuid="54350e3a-3898-49f4-a617-c3a981fcba1c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Heading" x="412" y="806" width="30" height="24" uuid="b4176063-567e-4549-b174-cb3b1e952c7b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="7" isBold="false" isItalic="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="441" y="806" width="32" height="24" uuid="ff1f5f24-2599-4b96-8019-69d922c56a5a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="7" isBold="false" isItalic="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Outside facility]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="830" width="388" height="29" uuid="369f17f2-dfb7-40da-8001-13f6f6f09a36"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV-exposed infants born to HIV+ women who received ARV prophylaxis within 72 hrs of delivery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="858" width="388" height="32" uuid="f4b1f9dd-b468-4a2d-989d-d459a01d820c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV-exposed infants born to HIV+ve women who received ARV prophylaxis after 72 hrs of delivery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="889" width="388" height="34" uuid="29477bb4-435a-41b1-be1f-3c0595a4c790"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of infants born to HIV infected women started on CTX prophylaxis within two months of birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="923" width="388" height="29" uuid="7db5026c-fb16-4290-b6ba-746be4832102"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of infants born to HIV+ women whose blood samples were taken for DNA PCR test within 2 months of birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="951" width="388" height="35" uuid="6592e778-95c6-41f6-9a5c-87a274eafe66"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of infants born to HIV+ women whose blood samples were taken for DNA PCR test between 2-12 months of birth]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="413" y="890" width="59" height="96" backcolor="#404040" uuid="5ef3523c-6052-4084-9e68-fb85fb0e7089"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="412" y="986" width="31" height="17" uuid="ff462d78-eaa1-486d-8d87-ffd3fe31a9c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pos]]></text>
+			</staticText>
+			<line>
+				<reportElement x="442" y="986" width="1" height="112" uuid="79c7ee47-6206-42a8-adf3-56257c037e20"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Heading" x="442" y="986" width="30" height="17" uuid="6aa24fd8-7cf2-440d-b5c4-59f596ce0bca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Neg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="830" width="25" height="29" uuid="6a08d6a4-a231-4aeb-bb67-85e172d8ff9c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[26]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="858" width="25" height="32" uuid="45587fa4-67a3-4123-b616-d9365c346775"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[27]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="889" width="25" height="34" uuid="7a38d4b0-1449-4d3f-aba8-99417c841358"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[28]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="923" width="25" height="29" uuid="776b9eb5-7139-4bef-85ad-74d85af2f01a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[29]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="951" width="25" height="35" uuid="560206f2-c5dc-4936-bf98-201acadfe4ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[30]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="1003" width="388" height="33" uuid="76a78291-8a9c-406c-a9ef-b665a367166d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV PCR results received for babies whose samples were taken within 2 months of birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="1003" width="25" height="33" uuid="3a075eb7-3faa-4096-af6d-78ffe42e7706"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[31]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="1036" width="25" height="33" uuid="d4e173d0-c4ac-4fd4-bd6b-0be3674a7423"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[32]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="1036" width="388" height="33" uuid="795bec2b-7546-4001-8919-a98c930ab3df"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV PCR results received for babies whose samples were taken between 2-12 months of birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="24" y="1069" width="388" height="29" uuid="5544846a-ff48-4fc8-955e-3a2662ea6fc4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[No. of HIV Exposed babies who tested for HIV within 18 months of birth by Rapid Test]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="1069" width="25" height="29" uuid="70755575-45f7-4f6b-9bb9-03961a300655"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[33]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="441" y="169" width="32" height="18" uuid="c195fd1f-7178-486a-b5a1-fac916d524a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="441" y="186" width="32" height="18" uuid="cd5a59b4-fca7-4f06-b5da-9cca696476a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="441" y="203" width="32" height="18" uuid="679650ee-9baf-4216-8521-4561edd90b68"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="441" y="220" width="32" height="18" uuid="545002a5-df4f-4c52-b020-503bd84efb35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="169" width="38" height="18" uuid="9f24a44c-7f07-423a-97d1-e49f79425d41"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="186" width="38" height="18" uuid="4cf25e46-568b-4ace-88de-272796565599"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="203" width="38" height="18" uuid="e5757e8a-9732-425d-aba9-6bba12e4e55c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="220" width="38" height="18" uuid="5be033a4-bfa3-4c5f-a486-2acca0c3cf29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9c}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="509" y="169" width="46" height="18" uuid="40442f87-a5dc-4c0f-b243-3e375f0dffe0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="509" y="186" width="46" height="18" uuid="4a34007b-7b20-4b69-9b35-a88b224210dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="509" y="203" width="46" height="18" uuid="2b88333c-2168-4374-9553-930ba6d7644b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="509" y="220" width="46" height="18" uuid="90b3e7b3-4d63-43c2-ab2c-f99962dee40d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="511" width="83" height="24" uuid="dd839c83-1294-468a-baf1-86404fcce7e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct18t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="534" width="83" height="22" uuid="7f77a630-d71a-46e5-9bc0-f775fd1d274f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct19t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="555" width="83" height="40" uuid="faba27b2-1b51-467d-a5cf-a8f8b45aad50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct20t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="612" width="83" height="22" uuid="67541d83-ca20-4a0e-9c97-20dcbef4e364"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct21t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="633" width="83" height="17" uuid="856c40c0-a2cf-4f5f-86ff-92bfa03a7ee8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct22t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="650" width="83" height="23" uuid="5411945e-e0ba-488b-9c71-25d7094a9756"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct23t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="673" width="83" height="21" uuid="566cb451-0df1-4246-818f-ae123af3fa94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct24t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="694" width="83" height="19" uuid="ceef8c41-95ae-4876-8880-39230d82873e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct25t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="712" width="83" height="32" uuid="c60c336b-6aca-48bc-be61-d4800dacf4c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct26t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="744" width="83" height="30" uuid="0f1c00c5-efa9-4c03-8600-fd18c2b52c51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct27t}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="472" y="986" width="82" height="17" uuid="098f6e3a-a040-4482-a99e-bc7489511560"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="472" y="791" width="82" height="39" uuid="b1cb24c4-da02-476f-a337-b4c7c6673bbc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="471" y="830" width="83" height="29" uuid="8e08b576-b647-4198-8e0c-143914d01fed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct28t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="830" width="30" height="29" uuid="1071ed13-f9e0-4cbb-85cb-b1e7a32a3736"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct28a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="442" y="830" width="30" height="29" uuid="628a4e35-0479-45cf-aba6-8b130dbddd14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct28b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="858" width="30" height="32" uuid="c657bbb7-35d3-4053-a577-2d94ef73d488"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct29a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="442" y="858" width="30" height="32" uuid="4aa3fb62-1bdc-4ff7-bb14-4b42b1b16d46"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct29b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="858" width="83" height="32" uuid="dcfbb476-72d2-4969-9afb-ad1366b4c908"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct29t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="889" width="83" height="34" uuid="5f9696f6-460b-40b3-94eb-cc0ede25e720"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct30t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="923" width="83" height="29" uuid="267d3eb7-592e-4728-bdb6-05caae418c9d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct31t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="951" width="83" height="35" uuid="04cbf524-2646-425c-81a1-d362d194d121"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct32t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="1003" width="30" height="33" uuid="97404a0f-1b09-4ef4-b13d-6340226e9337"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct33a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="1036" width="30" height="33" uuid="a5445aec-4290-476c-9787-6a4bf11ad122"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct34a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="412" y="1069" width="30" height="29" uuid="d7b833da-61dc-4206-8e8d-5424e85a17ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct35a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="442" y="1003" width="30" height="33" uuid="aff6eea5-3d93-4e29-b124-8dce94931e47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct33b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="442" y="1036" width="30" height="33" uuid="6b9c4b95-4ab3-470d-abe2-c3a38135d03c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct34b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="442" y="1069" width="30" height="29" uuid="33b0978e-9620-4928-83a8-b1273419fb6b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct35b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="1003" width="83" height="33" uuid="149a51d1-fb00-4d1f-938d-564330198639"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct33t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="472" y="1036" width="83" height="33" uuid="e5503c74-51df-4333-980d-84e63d01eb7e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct34t}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Detail" x="471" y="1069" width="83" height="29" uuid="03bdb9ba-57e4-47ca-a006-339830506b62"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct35t}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="1" y="986" width="553" height="17" uuid="0928f1f4-d01e-4358-8b92-049593074319"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="471" y="330" width="83" height="17" uuid="ddee07ff-2b58-4f07-b84c-6f58f1a8fc02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

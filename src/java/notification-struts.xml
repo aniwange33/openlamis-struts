@@ -1,0 +1,50 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: DURUANYANWU IFEANYI -->
+ 
+<struts>
+     <package name="notifications" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        
+        <action name="Notifications_page">
+            <result>/WEB-INF/views/administration/notifications_page.jsp</result>
+        </action>
+        
+        <action name="Enrolled_nonTX" class="org.fhi360.lamis.controller.NotificationAction" method="enrolledNonTx">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Enrolled_nonTXDetail" class="org.fhi360.lamis.controller.NotificationAction" method="enrolledNonTxReport">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+		<action name="Drugs_prescribed" class="org.fhi360.lamis.controller.NotificationAction" method="drugsPrescribedNotification">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Labtests_prescribed" class="org.fhi360.lamis.controller.NotificationAction" method="labtestPrescribedNotification">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Patient_Notification_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="listOfPatientsNotification">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_patients.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+     </package>   
+</struts>

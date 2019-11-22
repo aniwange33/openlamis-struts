@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 16, 2014 12:09:06 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Specimen" table="SPECIMEN">
+        <id name="specimenId" type="long">
+            <column name="SPECIMEN_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="stateId" type="long">
+            <column name="STATE_ID" not-null="true"/>
+        </property>
+        <property name="lgaId" type="long">
+            <column name="LGA_ID" not-null="true"/>
+        </property>
+        <property name="treatmentUnitId" type="long">
+            <column name="TREATMENT_UNIT_ID" not-null="true"/>
+        </property>
+        <property name="specimenType" type="string">
+            <column length="25" name="SPECIMEN_TYPE" not-null="true"/>
+        </property>
+        <property name="labno" type="string">
+            <column length="15" name="LABNO" not-null="true"/>
+        </property>
+        <property name="barcode" type="string">
+            <column length="15" name="BARCODE"/>
+        </property>
+        <property name="dateReceived" type="date">
+            <column length="8" name="DATE_RECEIVED" not-null="true"/>
+        </property>
+        <property name="dateCollected" type="date">
+            <column length="8" name="DATE_COLLECTED"/>
+        </property>
+        <property name="dateAssay" type="date">
+            <column length="8" name="DATE_ASSAY"/>
+        </property>
+        <property name="dateReported" type="date">
+            <column length="8" name="DATE_REPORTED"/>
+        </property>
+        <property name="dateDispatched" type="date">
+            <column length="8" name="DATE_DISPATCHED"/>
+        </property>
+        <property name="qualityCntrl" type="java.lang.Integer">
+            <column name="QUALITY_CNTRL"/>
+        </property>
+        <property name="result" type="string">
+            <column length="45" name="RESULT"/>
+        </property>
+        <property name="reasonNoTest" type="string">
+            <column length="100" name="REASON_NO_TEST"/>
+        </property>
+        <property name="hospitalNum" type="string">
+            <column length="25" name="HOSPITAL_NUM"/>
+        </property>
+        <property name="surname" type="string">
+            <column length="45" name="SURNAME"/>
+        </property>
+        <property name="otherNames" type="string">
+            <column length="75" name="OTHER_NAMES"/>
+        </property>
+        <property name="gender" type="string">
+            <column length="7" name="GENDER"/>
+        </property>
+        <property name="dateBirth" type="date">
+            <column length="8" name="DATE_BIRTH"/>
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE"/>
+        </property>
+        <property name="ageUnit" type="string">
+            <column length="15" name="AGE_UNIT"/>
+        </property>
+        <property name="address" type="string">
+            <column length="100" name="ADDRESS"/>
+        </property>
+        <property name="phone" type="string">
+            <column length="25" name="PHONE"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

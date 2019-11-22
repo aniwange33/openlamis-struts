@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: AALOZIE -->
+<struts>
+    <package name="exception" namespace="/" extends="struts-default, json-default, jasperreports-default"> 
+        <global-results>
+            <result name="securityerror">/securityerror.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="org.apache.struts.register.exceptions.SecurityBreachException" result="securityerror" />
+            <exception-mapping exception="java.lang.Exception" result="error" />
+        </global-exception-mappings>
+    </package>
+</struts>

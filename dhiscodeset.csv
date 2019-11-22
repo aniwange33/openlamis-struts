@@ -1,0 +1,2736 @@
+dhiscodeset_id,code_set_nm,lamis_id,dhis_id,description
+1,DATA ELEMENT DR,400,S50nYJpyBrV,DR HTS INDEX_Contacts elicited
+2,DATA ELEMENT DR,401,UrFz9cpnACL,DR HTS INDEX_Contacts identified as known positive
+3,DATA ELEMENT DR,402,wmokvqWk7GD,DR HTS INDEX_Contacts tested: New negative
+4,DATA ELEMENT DR,403,NsKvH5KvtQO,DR HTS INDEX_Contacts tested: New positive
+5,DATA ELEMENT DR,404,oFZDcfESu3r,DR HTS INDEX_Index cases accepted PNS
+6,DATA ELEMENT DR,405,P2Af0Jaxq3Z,DR HTS INDEX_Index cases offered PNS
+7,DATA ELEMENT DR,406,GVzVBElsRdq,"DR No. of people tested HIV+ & received results (Gen Pop; ANC, L&D, PNC,TB; Index - No. of children tested HIV+, Partners tested HIV+)"
+8,DATA ELEMENT DR,407,QkGUpmxz7CB,DR Number of Adult Patients currently on ART transitioned to TLD
+9,DATA ELEMENT DR,408,Tnju1mwkoI4,DR Number of Adult Patients newly initiated on ART with TLD
+10,DATA ELEMENT DR,409,hPxF6oFR8fX,DR Number of adults and children currently receiving antiretroviral therapy (ART)
+11,DATA ELEMENT DR,410,oBDgDuQrLjl,DR Number of adults and children newly enrolled on antiretroviral therapy (ART) 
+12,DATA ELEMENT DR,411,qE88DEF5RvG,DR Number of ART clients expected to attend the clinic for ART refills
+13,DATA ELEMENT DR,412,wJBaG4OlGqZ,DR Number of ART clients who defaulted ARV refill appointments and were tracked
+14,DATA ELEMENT DR,413,pkKQgUt8efl,DR Number of ART clients who defaulted ARV refill appointments and were tracked and returned on the next scheduled appointment
+15,DATA ELEMENT DR,414,HyHjkgOJQez,DR Number of ART clients who defaulted ARV refill appointments and were tracked_Known dead
+16,DATA ELEMENT DR,415,p0ZudAomUJc,DR Number of ART clients who defaulted ARV refill appointments and were tracked_Not reached (Client could not be contacted)
+17,DATA ELEMENT DR,416,W65VQmLbz5c,DR Number of ART clients who defaulted ARV refill appointments and were tracked_Reached and agreed to return to care
+18,DATA ELEMENT DR,417,UoNhntWXg2A,DR Number of ART clients who defaulted ARV refill appointments and were tracked_Undocumented patient transfer
+19,DATA ELEMENT DR,418,vZwS20CY0wd,DR Number of ART clients who kept to their ART refill appointment
+20,DATA ELEMENT DR,419,AvRt7p9tAhq,DR Number of ART patients eligible for IPT
+21,DATA ELEMENT DR,420,xHcIwT5kTbw,DR Number of ART patients who started a course of TB preventive therapy (INH)
+22,DATA ELEMENT DR,421,QnFrj9dqFYm,DR Number of ART patients who were screened for TB 
+23,DATA ELEMENT DR,422,ibJhszE0FAG,DR Number of ART patients with no clinical contact since their last expected contact clinical contact
+24,DATA ELEMENT DR,423,F6JXUeFnbhH,DR Number of ART patients with no clinical contact since their last expected contact clinical contact_Did not attempt to trace patient
+25,DATA ELEMENT DR,424,Px8Py5qhCDr,DR Number of ART patients with no clinical contact since their last expected contact clinical contact_Died (Confirmed)
+26,DATA ELEMENT DR,425,qB4ckOyuCTt,DR Number of ART patients with no clinical contact since their last expected contact clinical contact_Previously undocumented patient transfer (confirmed)
+27,DATA ELEMENT DR,426,fEU4N4FRmsK,DR Number of ART patients with no clinical contact since their last expected contact clinical contact_Traced patient (unable to locate)
+28,DATA ELEMENT DR,427,cxK8V5luYSh,DR Number of clients Eligible for HIV test ( from HIV screening tool)
+29,DATA ELEMENT DR,428,KD6zyYvg5Vz,DR Number of clients screened for HIV using HIV risk assessment form
+30,DATA ELEMENT DR,429,y4rsNpnBLcV,DR Number of Clients screened Positive (ART Clinic)
+31,DATA ELEMENT DR,430,ZlIIQ1hbNGJ,DR Number of Clients screened Positive (HTS SDPs)
+32,DATA ELEMENT DR,431,WeSW5qxsZKv,DR Number of clients who defaulted the scheduled ARV refill appointment
+33,DATA ELEMENT DR,432,mbMbPbvw7yd,DR Number of Clients who were screened for TB (ART Clinic)
+34,DATA ELEMENT DR,433,jPcntjxiFof,DR Number of Clients who were screened for TB (HTS SDPs)
+35,DATA ELEMENT DR,434,VHvA2y6wH1R,DR Number of diagnosed TB patients started on TB treatment (HIV Negative)
+36,DATA ELEMENT DR,435,OxI3kMQEIJs,DR Number of diagnosed TB patients started on TB treatment (PLHIV)
+37,DATA ELEMENT DR,436,o4H9qxgfpyD,DR Number of household contacts of registered TB patients screened for TB
+38,DATA ELEMENT DR,437,s4kZNyTpjA1,DR Number of household contacts screened positive
+39,DATA ELEMENT DR,438,bCAUhfMWPLh,DR Number of individuals who received HIV Testing Services (HTS) and received their test results
+40,DATA ELEMENT DR,439,o6fdL3RZIbI,DR Number of patients initiated on CARC {Community ARV Refill Club} - DMOC
+41,DATA ELEMENT DR,440,UkiJvimzwzV,DR Number of patients initiated on CPARP {Community Pharmacy ARV Refill Program} - DMOC
+42,DATA ELEMENT DR,441,qIpnUsp3e5g,DR Number of patients initiated on MMD (Multi Month Dispensing) - DMOC
+43,DATA ELEMENT DR,442,eLaocgQkQSp,DR Number of patients initiated on MMS {Multi Month Scripting} - DMOC
+44,DATA ELEMENT DR,443,X32G0ceC97C,DR Number of presumptive contacts of Index TB cases whose samples were sent for diagnosis
+45,DATA ELEMENT DR,444,oLTVhrcnSOZ,DR Number of Presumptives (HIV Negative Clients) whose samples were sent for diagnosis 
+46,DATA ELEMENT DR,445,QfwBEN5QymZ,DR Number of Presumptives (PLHIV) whose samples were sent for diagnosis
+47,DATA ELEMENT DR,446,mK87BEGzemk,DR Number of TB patients on ART
+48,DATA ELEMENT DR,447,ZK4dXbDSK8r,DR Number of viral Load results <1000 c/ml
+49,DATA ELEMENT DR,448,ZMxfr4U4FiM,DR Number of viral Load results received
+50,DATA ELEMENT DR,449,xyNu0wsvdBb,DR Number of viral Load samples sent
+51,DATA ELEMENT DR,450,KVr22tFqA4O,DR Total Number of presumptives diagnosed with TB with Gene Expert(HIV Negative)
+52,DATA ELEMENT DR,451,JyL2dRXHd9h,DR Total Number of presumptives diagnosed with TB with Gene Expert(PLHIV)
+53,DATA ELEMENT DR,452,pOk2P2Me75L,DR Total Number of presumptives diagnosed with TB with Other tests(HIV Negative)
+54,DATA ELEMENT DR,453,UkvbnZxb6xV,DR Total Number of presumptives diagnosed with TB with Other tests(PLHIV)
+55,DATA ELEMENT DR,454,Zo6UCVqiwan,DR Number of clients who were suspected to have ADRs documented in the NAFDAC ADR reporting form this reporting month
+56,DATA ELEMENT WR,456,pbXmrfcSIXW,WR HTS INDEX_Contacts elicited
+57,DATA ELEMENT WR,457,twtK3QO8oHY,WR HTS INDEX_Contacts identified as known positive
+58,DATA ELEMENT WR,458,rWE4YRDFBwZ,WR HTS INDEX_Contacts tested: New negative
+59,DATA ELEMENT WR,459,pFf7uQGdpKm,WR HTS INDEX_Contacts tested: New positive
+60,DATA ELEMENT WR,460,abIDvYsA1xa,WR HTS INDEX_Index cases accepted PNS
+61,DATA ELEMENT WR,461,gudMBy9JwhG,WR HTS INDEX_Index cases offered PNS
+62,DATA ELEMENT WR,462,cKODxouRWy0,"WR No. of people tested HIV+ & received results (Gen Pop; ANC, L&D, PNC,TB; Index - No. of children tested HIV+, Partners tested HIV+)"
+63,DATA ELEMENT WR,463,NvuvhHDcqB7,WR Number of Adult Patients currently on ART transitioned to TLD
+64,DATA ELEMENT WR,464,Ey63ixTPXkC,WR Number of Adult Patients newly initiated on ART with TLD
+65,DATA ELEMENT WR,465,L0KQGXEo0uM,WR Number of adults and children currently receiving antiretroviral therapy (ART)
+66,DATA ELEMENT WR,466,haZqTJ9WjkU,WR Number of adults and children newly enrolled on antiretroviral therapy (ART) 
+67,DATA ELEMENT WR,467,ueRkF3Rgf5b,WR Number of ART clients expected to attend the clinic for ART refills
+68,DATA ELEMENT WR,468,V2ezimE0zot,WR Number of ART clients who defaulted ARV refill appointments and were tracked
+69,DATA ELEMENT WR,469,hVg6EbErOMp,WR Number of ART clients who defaulted ARV refill appointments and were tracked and returned on the next scheduled appointment
+70,DATA ELEMENT WR,470,zf9xfQOnrCE,WR Number of ART clients who defaulted ARV refill appointments and were tracked_Known dead
+71,DATA ELEMENT WR,471,XUJIsmzpuWV,WR Number of ART clients who defaulted ARV refill appointments and were tracked_Not reached (Client could not be contacted)
+72,DATA ELEMENT WR,472,LL9ttuaH683,WR Number of ART clients who defaulted ARV refill appointments and were tracked_Reached and agreed to return to care
+73,DATA ELEMENT WR,473,nDununtM1qk,WR Number of ART clients who defaulted ARV refill appointments and were tracked_Undocumented patient transfer
+74,DATA ELEMENT WR,474,qK6DvfeghhB,WR Number of ART clients who kept to their ART refill appointment
+75,DATA ELEMENT WR,475,vvlclfeV3vY,WR Number of ART patients eligible for IPT
+76,DATA ELEMENT WR,476,UXIA4lALMK2,WR Number of ART patients who started a course of TB preventive therapy (INH)
+77,DATA ELEMENT WR,477,DPGjiOc0ZWE,WR Number of ART patients who were screened for TB 
+78,DATA ELEMENT WR,478,HdDNbhmt6Vi,WR Number of ART patients with no clinical contact since their last expected contact clinical contact
+79,DATA ELEMENT WR,479,FBiN8totbRc,WR Number of ART patients with no clinical contact since their last expected contact clinical contact_Did not attempt to trace patient
+80,DATA ELEMENT WR,480,XDJw2S7vLus,WR Number of ART patients with no clinical contact since their last expected contact clinical contact_Died (Confirmed)
+81,DATA ELEMENT WR,481,nq0byDIG0aS,WR Number of ART patients with no clinical contact since their last expected contact clinical contact_Previously undocumented patient transfer (confirmed)
+82,DATA ELEMENT WR,482,C2ZPlqIuUKv,WR Number of ART patients with no clinical contact since their last expected contact clinical contact_Traced patient (unable to locate)
+83,DATA ELEMENT WR,483,rGn8HmissFY,WR Number of clients Eligible for HIV test ( from HIV screening tool)
+84,DATA ELEMENT WR,484,UPmy66vapEu,WR Number of clients screened for HIV using HIV risk assessment form
+85,DATA ELEMENT WR,485,koP02ovTouI,WR Number of Clients screened Positive (ART Clinic)
+86,DATA ELEMENT WR,486,OOSs0Fu9EmG,WR Number of Clients screened Positive (HTS SDPs)
+87,DATA ELEMENT WR,487,XgkPJoLkxFV,WR Number of clients who defaulted the scheduled ARV refill appointment
+88,DATA ELEMENT WR,488,jfgPhzU1O1b,WR Number of Clients who were screened for TB (ART Clinic)
+89,DATA ELEMENT WR,489,UnTx1Gb9xGT,WR Number of Clients who were screened for TB (HTS SDPs)
+90,DATA ELEMENT WR,490,xKYdvH1HjvA,WR Number of diagnosed TB patients started on TB treatment (HIV Negative)
+91,DATA ELEMENT WR,491,hkLJzA56CpB,WR Number of diagnosed TB patients started on TB treatment (PLHIV)
+92,DATA ELEMENT WR,492,AE6jXVkbNqA,WR Number of household contacts of registered TB patients screened for TB
+93,DATA ELEMENT WR,493,Aig9JGrZtTd,WR Number of household contacts screened positive
+94,DATA ELEMENT WR,494,LNzcUG6KSRz,WR Number of individuals who received HIV Testing Services (HTS) and received their test results
+95,DATA ELEMENT WR,495,jY4B3nbVQcx,WR Number of patients initiated on CARC {Community ARV Refill Club} - DMOC
+96,DATA ELEMENT WR,496,zLXBzhjKMs8,WR Number of patients initiated on CPARP {Community Pharmacy ARV Refill Program} - DMOC
+97,DATA ELEMENT WR,497,UKSHViXwewt,WR Number of patients initiated on MMD (Multi Month Dispensing) - DMOC
+98,DATA ELEMENT WR,498,PWb1x6zufK3,WR Number of patients initiated on MMS {Multi Month Scripting} - DMOC
+99,DATA ELEMENT WR,499,b06o42OXoxi,WR Number of presumptive contacts of Index TB cases whose samples were sent for diagnosis
+100,DATA ELEMENT WR,500,v8uFE2IKynt,WR Number of Presumptives (HIV Negative Clients) whose samples were sent for diagnosis 
+101,DATA ELEMENT WR,501,PyzExe83Qzr,WR Number of Presumptives (PLHIV) whose samples were sent for diagnosis
+102,DATA ELEMENT WR,502,doCATYQLwvR,WR Number of TB patients on ART
+103,DATA ELEMENT WR,503,oVyyc7Anufp,WR Number of viral Load results <1000 c/ml
+104,DATA ELEMENT WR,504,o9BlaLcbn6F,WR Number of viral Load results received
+105,DATA ELEMENT WR,505,UpJcgwHZKGi,WR Number of viral Load samples sent
+106,DATA ELEMENT WR,506,Y1jllvpWk32,WR Total Number of presumptives diagnosed with TB with Gene Expert(HIV Negative)
+107,DATA ELEMENT WR,507,ipSKe2SoRQv,WR Total Number of presumptives diagnosed with TB with Gene Expert(PLHIV)
+108,DATA ELEMENT WR,508,bX4XgwcsAnL,WR Total Number of presumptives diagnosed with TB with Other tests(HIV Negative)
+109,DATA ELEMENT WR,509,zWrCeWaDfsv,WR Total Number of presumptives diagnosed with TB with Other tests(PLHIV)
+110,CATEGORY COMBO,40,YDI6IonLTQe,"Facility, Male, <15 years"
+111,CATEGORY COMBO,41,C5xnUGyGUPy,"Facility, Male, 15yrs and above"
+112,CATEGORY COMBO,42,waqPqCXzXA5,"Facility, Female, <15 years"
+113,CATEGORY COMBO,43,HrKknYJYlSL,"Facility, Female, 15yrs and above"
+114,CATEGORY COMBO,44,bWGlrNsM4j3,"Community, Male, <15 years"
+115,CATEGORY COMBO,45,lzVZkwzsKkU,"Community, Male, 15yrs and above"
+116,CATEGORY COMBO,46,pWtKBvxkYyd,"Community, Female, <15 years"
+117,CATEGORY COMBO,21,rwZA5EBU1pi,"Community, Female, 15yrs and above"
+118,FACILITY,1,lyBDSrfjVnG,ab Aba Berma Hospital
+119,FACILITY,3,ekO2yuuAPKC,ab Angels of Mercy Hospital
+120,FACILITY,4,NaiPYEG7zbL,ab Asaokpulor Primary Health Centre
+121,FACILITY,5,kEWB5IOrUar,ab Austin Grace Specialist Hospital
+122,FACILITY,6,d9HU6pl6d15,ab Blessed Haven Hospital
+123,FACILITY,7,OXvdGzqLcAH,ab Emmanuel Medical Centre
+124,FACILITY,8,zoH7GQmP2dT,ab Euna Hospital and Maternity
+125,FACILITY,9,WqeoSngqMCt,ab Evergreen Clinic and Maternity
+126,FACILITY,10,GXvlEdWd1P1,ab Eziama Primary Health Centre
+127,FACILITY,12,nuCwZodfyP5,ab Good Samarithan Hospital
+128,FACILITY,13,UKavZqZrFfH,ab Goodness and Mercy Hospital
+129,FACILITY,14,xDSLuyYMXsB,ab Group Medical Practice
+130,FACILITY,15,pWCYUTprfM6,ab Ikechukwu Maternity and Hospital
+131,FACILITY,16,yyzAfJMqaGb,ab Impact Hospital and Maternity
+132,FACILITY,17,V8n5SuinrJX,ab Isaac Okwuonu Memorial Hospital
+133,FACILITY,18,YJVtVXzwt8f,ab Kahabiri Specialist Hospital
+134,FACILITY,19,q0w8riLqsZ9,ab Landmark Hospital
+135,FACILITY,20,rnUlJXxbotE,ab Nazereth Hospital
+136,FACILITY,21,UZZuv9UdD5W,ab New Life Clinic and Maternity
+137,FACILITY,22,NPN1ysXa3JD,ab Nissi Hospital
+138,FACILITY,23,KdP8Xg6wpkQ,ab Noscar Conerstone Clinic
+139,FACILITY,24,JKO7H8BCPxR,ab Osoke Primary Health Centre
+140,FACILITY,25,dEjMUAS6sfB,ab Seventh Day Adventist Hospital Aba
+141,FACILITY,26,p5dYq7QSpJz,ab The Chees Clinic and Maternity
+142,FACILITY,27,HeDXtRJx0BK,ab Tina Maternity and Immunization Centre
+143,FACILITY,28,u3rDFtG7CAQ,ab Touch Health Centre
+144,FACILITY,29,kDPEZAUiwvA,ab Umola-Egbelu Primary Health Centre
+145,FACILITY,30,Z2XsL2PtJES,ab Umuogor Primary Health Centre
+146,FACILITY,31,yNgeDY0fSBK,ab Uratta Primary Health Centre
+147,FACILITY,32,T9At7djJme4,ab Zikora Medical Centre
+148,FACILITY,34,whPXIC79Oab,ab Aba St Joseph Hospital
+149,FACILITY,35,Ihz5rhDY649,ab Abia State Teaching Hospital
+150,FACILITY,36,tAIGqsgRwih,ab Agu Memorial Hospital
+151,FACILITY,37,SKN0EO4QTjk,ab Anastesia Hospital Ltd
+152,FACILITY,38,sn7vugQJRUb,ab Annabelles Bogi Development Initiative (ABDI)
+153,FACILITY,39,rBCcxrjeNk5,ab Bethel Hospital and Maternity
+154,FACILITY,40,NwRV0XRFYzI,ab Blessing Hospital
+155,FACILITY,41,s0lHTiZtC3I,ab Chidimma Green Hospital Life
+156,FACILITY,42,pjBsN1GDyJf,ab Chinwe Maternity Home
+157,FACILITY,43,fKndsEP9ZIM,ab Chiwendu Clinics and Maternity
+158,FACILITY,44,Q6YN4eKxfcK,ab Christian Aid Maternity
+159,FACILITY,45,DGBPznrGJF9,ab Clehenson Hospital
+160,FACILITY,46,I8XbgQOiXoz,ab Divine Favour Hospital and Maternity
+161,FACILITY,47,I9UXbC6FbuF,ab Ekeoma Memorial Specialist Hospital
+162,FACILITY,48,S5Q1yhu5Tm7,ab El-Asamen Specialist Hospital
+163,FACILITY,49,I59pr8uq09y,ab Faith Foundation Hospital
+164,FACILITY,50,bFblZLSNszH,ab Harmony Hospital
+165,FACILITY,51,zLopRzNZhTW,ab John Okorie Memorial Hospital
+166,FACILITY,52,dywlK98qwAT,ab Mendel Hospital and Diagnostic Centre Ltd
+167,FACILITY,53,mMtjBxVAOyA,ab Miracle Hospital
+168,FACILITY,54,O9W0HiBjG7j,ab Mother Mercy Clinic
+169,FACILITY,55,KM76qxNoXoO,ab Ndu Christ Maternity
+170,FACILITY,56,FWmxwIwnfSX,ab New Generation Hospital and Maternity
+171,FACILITY,57,r4D1sLL7E0g,ab Ngwa Road Clinic
+172,FACILITY,58,NXwq4m2DJuG,ab Nnadozie Hospital
+173,FACILITY,59,NzITgxUDbVP,ab Onyemaechi Maternity
+174,FACILITY,60,jugisGd545q,ab Our Saviour Maternity Home
+175,FACILITY,61,c4fIUnm3zZc,ab Petra Hospital (Ngwa II)
+176,FACILITY,62,jOLcy9El1cp,ab Presbyterian Primary Health Center
+177,FACILITY,63,cWUl3Z6DRE7,ab Shammah Christian Hospital
+178,FACILITY,64,HAwI6pnLpFT,ab St James Primary Health Centre
+179,FACILITY,65,bWkAOiwNNz5,ab St. Anthony Hospital Ltd
+180,FACILITY,66,Yuv8ph3JAVQ,ab Victory Christian Hospital
+181,FACILITY,67,AGg20b2NRYo,ab Word of Faith Mission Hospital
+182,FACILITY,68,nFcLsaEQWi4,ab Achara Health Centre
+183,FACILITY,69,ilEFxaOOvrL,ab Amaeka Abem Health Centre
+184,FACILITY,70,L0LpH0F4bvE,ab Amakofia Health Centre
+185,FACILITY,71,S8O3BjRcbRl,ab Amamiri Health Centre
+186,FACILITY,72,vtDDtulyFeT,ab Amuru Health Centre
+187,FACILITY,73,l8Bg8mivEPs,ab Asaga Health Centre
+188,FACILITY,74,mYLSYuqoN0X,ab Atani Health Centre
+189,FACILITY,75,Da08DxGdYOx,ab Eleoha Otutu Health Centre
+190,FACILITY,76,xz2zBLJWxZx,ab Idima Health Centre
+191,FACILITY,77,MTEkw9gkMUF,ab Mercy Catholic Hospital
+192,FACILITY,78,abhfGVjVEQR,ab Ndi Okorie Abam
+193,FACILITY,79,pvwZMYKImAJ,ab Nkpakpi Otutu Health Centre
+194,FACILITY,80,cjVqcPAIxw0,ab Obieze Isu Health Centre
+195,FACILITY,81,KPFlRtWkEVN,ab Obinkita Health Centre
+196,FACILITY,82,oR35oyURfVW,ab Ozu Abam Primary Health Centre
+197,FACILITY,84,iX4AYIZTAi4,ab Ugwuavo Health Centre
+198,FACILITY,85,LaIhEVxdKGA,ab Ukwuakwu Health Centre
+199,FACILITY,86,xWPx3zofqbf,ab Umuzomgbo Health Centre
+200,FACILITY,87,Q8m524YL31e,ab Agbamuzu Primary Health Centre
+201,FACILITY,88,MESgZTjuJ7i,ab Akoli Health Centre
+202,FACILITY,89,rsYacx4tm9Q,ab Alayi Maternity Primary Health Centre
+203,FACILITY,90,CzVACCOTmLQ,ab Amaba Ugwueke Health 
+204,FACILITY,91,yxhLGMjDjHp,ab Amaegbuato Primary Health Centre
+205,FACILITY,92,LSGaBIDTAAO,ab Amankalu Primary Health Centre
+206,FACILITY,93,RrJUUrIgBxK,ab Amaokwe Item Maternity Primary Health Centre
+207,FACILITY,94,uTRnponTt6p,ab Amaukwu Primary Health Centre
+208,FACILITY,95,LO3yv2WB63w,ab Bende Maternity Home Primary Health Centre
+209,FACILITY,96,jWnUN3gSYlo,ab Chijioke Osogbo Methodist Memory Hospital
+210,FACILITY,97,oXWMbTBRCbK,ab Ezeukwe Health Centre
+211,FACILITY,98,FmUsBrOdd4l,ab Ezinne Model Maternity Home
+212,FACILITY,99,HK2Ld0M67Mn,ab Igbere Primary Health Centre
+213,FACILITY,100,GQlazRnNPTd,ab Ijeoma Maternity Home
+214,FACILITY,101,sjGgFP4RZVr,ab Isiegbu Ozuitem Primary Health Centre
+215,FACILITY,102,hJVpjiSj7On,ab Ndiwo Itumbuzo Primary Health Centre
+216,FACILITY,103,IMy1diHKyII,ab Ngwu Health Centre
+217,FACILITY,105,YuH9Ck49hKt,ab Okporoenyi Primary Health Centre
+218,FACILITY,106,JgVG9HEo3Jj,ab Okpuhu Nkpa Primary Health Centre
+219,FACILITY,107,DInZpX3fTpG,ab Standard Health Clinic
+220,FACILITY,109,gaMovGFbxy0,ab Umunneato Comprehensive Primary Health Centre
+221,FACILITY,110,hEOiNyWRRbL,ab Umuokwe Primary Health Centre
+222,FACILITY,111,piBnEXILRBi,ab Umusi Primary Health Centre
+223,FACILITY,112,MIvGb0y6V8d,ab Uzuakoli Primary Health Centre
+224,FACILITY,113,jZcGUcJuJar,ab Aduanu Health Centre
+225,FACILITY,114,sW7ClNxBDkp,ab Ahia Orie Health Centre
+226,FACILITY,115,cFiO7hDN9LE,ab Amaba Health Centre
+227,FACILITY,116,hhPpe3rcXtg,ab Amawum Outreach Unit
+228,FACILITY,117,kNpa4iL0MHb,ab Ariam Health Centre
+229,FACILITY,118,nR85EfD8DIc,ab Awomukwu Primary Health Centre
+230,FACILITY,119,USyWXY3iSwP,ab FMC Comprehensive Health Centre
+231,FACILITY,120,Y6UDJ2s0IlS,ab Iberenta Primary Health Centre
+232,FACILITY,121,riiXYf2Jym0,ab Ikemba Health Centre
+233,FACILITY,122,lHXGYXZZCPi,ab Iyiala Health Centre
+234,FACILITY,123,xAysRVV59Cy,ab Michael Okpara University of Agriculture Health Centre
+235,FACILITY,124,yhxtmYiGIf5,ab Nkasi Maternity
+236,FACILITY,125,G9kcZV5Hddf,ab Oboro Health Centre
+237,FACILITY,126,D7brFV1w8qL,ab Obugwu Primary Health Centre
+238,FACILITY,127,rl0RH8F3G3P,ab Obuohia Ibere Health Centre
+239,FACILITY,128,FglSs32RWGG,ab Obuohia Okike Primary Health Centre
+240,FACILITY,129,LrIbraltkeQ,ab Okwe-Ukwe Primary Health Centre
+241,FACILITY,130,TkiBjubd7AH,ab Umudike Ukwu Health Centre
+242,FACILITY,131,Lqp6Q1uahJ2,ab Usaka Ukwu Health Centre
+243,FACILITY,132,KWXPQ7X5gmp,ab Abayi Health Centre
+244,FACILITY,133,Cxc6LY9YbpZ,ab Agburuezukwu Health Centre
+245,FACILITY,134,rIls3yxGqKa,ab Ahiabaubi Primary Health Centre
+246,FACILITY,135,ugXyefK1lw1,ab Amachi Health Post
+247,FACILITY,136,Ns1RDPXQzTR,ab Anglican Maternity
+248,FACILITY,137,PyWEjqV5OyK,ab Chinenyenwa Maternity
+249,FACILITY,138,SHFAE3s3FO4,ab Chinonyerem Maternity
+250,FACILITY,139,xp5plIx7anG,ab Eziala Primary Health Centre
+251,FACILITY,140,jlCD7FKk1oO,ab Gods Own Heritage Maternity
+252,FACILITY,141,xflxjZ5tCqr,ab Ichi Ukwu Health Centre
+253,FACILITY,142,w7KcbK3uwve,ab Ihie Health Centre
+254,FACILITY,143,jZ8l971lBQd,ab Ikputu Health Centre
+255,FACILITY,144,M0C0AIP1AcY,ab Ntigha Primary Health Centre
+256,FACILITY,145,RDDKJm3rlE1,ab Ohuhu Nsulu Health Centre
+257,FACILITY,147,yzk0dbKOXTk,ab Oriaa Na Ugaa Hospital Ntigha
+258,FACILITY,148,Pi9sjfrbhAG,ab Osusu Primary Health Centre
+259,FACILITY,149,l4AJNjVKVRm,ab St. Eugene Clinic
+260,FACILITY,150,CoaLJiTPg2t,ab Umuakwu Primary Health Centre
+261,FACILITY,151,CpzqR8TY8LQ,ab Umuchima Primary Health Centre
+262,FACILITY,152,ZPf8RlWRlsp,ab Umuezenta Basic Healthcare
+263,FACILITY,153,bSTCYCrDcTH,ab Umuezeukwu Health Post
+264,FACILITY,154,HmN0t0jStxT,ab Umuode Health Centre
+265,FACILITY,155,IE182bzrn8V,ab Umuosu Primary Health Centre
+266,FACILITY,156,BC0dkDsI2ib,ab Uratta Health Centre
+267,FACILITY,157,zKj5fSz125c,ab Usaka Umuofor Health Centre
+268,FACILITY,158,cXBmZvNyBI9,ab Africare Health Centre
+269,FACILITY,159,K2KxJj5B0CO,ab Agbaragwu Primary Health Centre
+270,FACILITY,160,wN1Xuaa0ItV,ab Amaku Primary Health Centre
+271,FACILITY,161,CM37zBrAkfH,ab Christianways Mission Hospital
+272,FACILITY,162,hbf9zDoAytO,ab Ebeyi Primary Health Centre
+273,FACILITY,163,e28ViCLHHDI,ab Eketa Health Centre
+274,FACILITY,164,nyQHUWaoAKl,ab Ikem Nvosi Health Centre
+275,FACILITY,166,XiPIIWjkDwT,ab Mbutu Ukwu Primary Health Centre
+276,FACILITY,167,PYNN7Y8lEb0,ab Mbutu Umuoko Primary Health Centre
+277,FACILITY,168,JWt3nqNVTtk,ab Mercy Hospital
+278,FACILITY,169,ZQTvtvTQ7Tb,ab Mercy Maternity Home and Rehabilitation Centre
+279,FACILITY,170,vhtSIPtkWIJ,ab Mgbokonta Primary Health Centre
+280,FACILITY,171,TcSZElBnYy5,ab Ngwaobi Primary Health Centre
+281,FACILITY,172,ofUQSlGLaWc,ab Omoba Health Centre
+282,FACILITY,173,kG1gzmv5DlP,ab Osokwa Model Health Centre
+283,FACILITY,175,veQznj688HG,ab Ugba Primary Health Centre
+284,FACILITY,176,zxBieH2KiTn,ab Umuajuju Health Centre
+285,FACILITY,177,DJQ2z7tmdZy,ab Umuene Primary Health Centre
+286,FACILITY,178,uLJGU5HkMxW,ab Umunko Health Centre
+287,FACILITY,179,WZjBSlTNcy6,ab Umunkpeyi Nvosi Primary Healthcare
+288,FACILITY,180,tPg6ZQ9cIwC,ab Umuotiri Health Centre
+289,FACILITY,181,y262RVaB8oj,ab Acha Primary Health Centre
+290,FACILITY,182,EdP22934UUR,ab Achara Health Centre (Isikwuato)
+291,FACILITY,183,tpmq7oEwDIU,ab Amaba Health Centre (Isikwuato)
+292,FACILITY,184,KdlCsRtU6nf,ab Amaiyi Obilohia Primary Health Centre
+293,FACILITY,185,SgBRkEWuw0v,ab Amangelukwu Health Centre
+294,FACILITY,186,jwRPnqwiN7H,ab Amiyiuhu Health Centre Oguduasa
+295,FACILITY,187,iOCkxBDDeTQ,ab Echiele Primary Health Centre
+296,FACILITY,188,usSX9n7spDE,ab Imenyi Ahaba Primary Health Centre
+297,FACILITY,189,OLhiyIBUaRk,ab Marist Cottage Hospital Uturu
+298,FACILITY,190,hnNd6OoTRLn,ab Mbaugwu Primary Health Centre
+299,FACILITY,191,nFf5YrjIWak,ab Mgbelu Umunnekwu Health Centre
+300,FACILITY,192,e3sp20O84yq,ab Ndundu Health Centre Uturu
+301,FACILITY,193,AwcodlRS8KH,ab Nunya Primary Health Centre
+302,FACILITY,194,ovGO32RkDgL,ab Nvurunvu Primary Health Centre
+303,FACILITY,195,T5bt9VpHOql,ab Ohiyinta Primary Health Centre
+304,FACILITY,196,gVhc9HnBdxI,ab Onuaku Primary Health Centre 
+305,FACILITY,197,yqt3tlptNbv,ab Otamkpa Primary Health Centre
+306,FACILITY,198,QQWWhbvYSuh,ab Ovim Primary Health Centre
+307,FACILITY,199,stFUM5k3MZV,ab Ozara Health Centre
+308,FACILITY,200,vkNZTyMdlJU,ab Swiss Foundation Hospital
+309,FACILITY,201,CoVAfY9awAa,ab Ugwuele Primary Health Centre
+310,FACILITY,202,iUw6Ew87M2M,ab Ukwunwangwu Uturu Primary Health Centre
+311,FACILITY,203,J3hCQq1SDRS,ab Umebereaja Health Centre
+312,FACILITY,204,x0uNanrTiUg,ab Umuobiala Primary Health Centre
+313,FACILITY,205,TbuD9AqMmw5,ab Abala Primary Health Centre
+314,FACILITY,206,tvTr3k7EgB3,ab Akanu Okpulo Primary Health Centre
+315,FACILITY,207,wExvJSsVlzi,ab Bishop Afonya Memorial Hospital
+316,FACILITY,208,pyx3BwIniIk,ab Divine Favour Maternity
+317,FACILITY,209,Tr18HtmpKtB,ab Ehere Primary Health Centre
+318,FACILITY,210,u5jCiPxDq0g,ab Isiala Itu Primary Health Centre
+319,FACILITY,211,GYe4E4VBHyu,ab Isiala Ndu Primary Health Centre
+320,FACILITY,212,p3HDG0DIbst,ab Isiala Ovom Health Post
+321,FACILITY,213,bGBUsn1azRQ,ab Mbano Ntighauzor Primary Health Centre
+322,FACILITY,214,RN2YyYnXhrw,ab MDG Primary Health Centre Ibeme
+323,FACILITY,215,UNqh3Kq7C8C,ab Mgboko Amiri Primary Health Centre
+324,FACILITY,216,MC9Qgwbyn8N,ab Mgbokoanya Primary Health Centre
+325,FACILITY,217,CSNUmtO2pds,ab Nenu Primary Health Centre
+326,FACILITY,218,PF1Uk1xKyyG,ab Nigerian Christian Hospital Nlagu
+327,FACILITY,219,vmOuPGwJEhd,ab Ohanze Primary Health Centre
+328,FACILITY,220,Vc10aJvN6wD,ab Orienz Specialist Hospital
+329,FACILITY,221,C7qxheLQKy3,ab Osaa Okea Primary Health Care
+330,FACILITY,222,PPIkdf1Tlld,ab Osaa Ukwu Primary Health Centre
+331,FACILITY,223,tkD5z8NpEo0,ab Presbyterian Community Services And Development
+332,FACILITY,224,H98sP6axtWW,ab Regent Cross Clinic
+333,FACILITY,225,Ays4dNC000Q,ab Semcon Friends Mission Hospital and Motherless Babies Home
+334,FACILITY,226,Rdlp28DUWii,ab St. Grace Foundation Hospital And Maternity
+335,FACILITY,227,aKTiAQXr28o,ab Umuezigbe Primary Health Centre
+336,FACILITY,228,gTiWeMEckqv,ab Uwoahiafor Primary Health Centre
+337,FACILITY,229,TrFjIXY1GYc,ab Abariba General Hospital
+338,FACILITY,230,WGI51Dkmmiz,ab Abia Health Centre
+339,FACILITY,231,OmGBGXdnIOH,ab Akanu Ukwu Primary Health Centre
+340,FACILITY,232,shgyz5VKaY7,ab Amaekpu Primary Health Centre
+341,FACILITY,233,iBvc6oRQQKQ,ab Amuma Health Centre
+342,FACILITY,234,S0RGGg2LKXl,ab Amurie Primary Health Centre
+343,FACILITY,235,Nn7hedRcXes,ab Basic Health Centre
+344,FACILITY,236,zUdgABagzm4,ab Daughter of Mary Mother of Mercy
+345,FACILITY,237,mUkG5R1hr9i,ab Ekeluogo Health Centre
+346,FACILITY,238,Iw8OW0M8unK,ab Ekpankuma Health Centre
+347,FACILITY,239,nENznJCp9Ax,ab Ihenta Health Centre
+348,FACILITY,240,C1CQ3u6ahQ7,ab Isi Ugwu Health Centre
+349,FACILITY,241,BM8PygjAW2x,ab Mben Health Services
+350,FACILITY,242,bD3YC5NYOsO,ab Mgbaga Health Centre
+351,FACILITY,243,bg9B70crwRt,ab Ndi Orieke Health Centre
+352,FACILITY,244,lko3JP8ehWw,ab Ndi Uduma Awoke Health Centre
+353,FACILITY,245,njRR8oYhfT1,ab Ndibe Health Centre
+354,FACILITY,246,ghzdGoiJ5i0,ab Nkporo Central Primary Health Centre
+355,FACILITY,247,g6zjc7CWdB1,ab Nkwebi Health Centre
+356,FACILITY,248,TXMLtHjUor2,ab Ohafia General Hospital
+357,FACILITY,249,mNWjTw1vIBy,ab Ohafor Model Health Clinic
+358,FACILITY,250,Lsfa6Ju1rQG,ab Okon Health Centre
+359,FACILITY,251,A9YGTrI1fFC,ab Ucheoma Medical Clinic
+360,FACILITY,252,u0IGNPwCSC7,ab Ugwufie Health Centre
+361,FACILITY,253,jDnZq1y33p9,ab Ukwa Nkporo Health Centre
+362,FACILITY,254,M7ApyNY1dK9,ab Uzondu Poly Clinic
+363,FACILITY,255,YRyjWmnY9u5,ab Abayi Cottage Hospital
+364,FACILITY,256,StxafDFLWWn,ab Amapuife Primary Health Centre
+365,FACILITY,257,OTnGGMuhcOU,ab Amatoukwu Health Post
+366,FACILITY,258,MQxEdudcksX,ab Amavo Etiti Health Centre
+367,FACILITY,259,sSanlZSK4Tn,ab Amazing Grace Hospital
+368,FACILITY,260,SwobfSie1qG,ab Bethseda Hospital
+369,FACILITY,261,oJMU67tME85,ab Chiazokam Hospital
+370,FACILITY,262,CLf1l8yLHpK,ab Chrispat Hospital
+371,FACILITY,263,M1HSCVOGdYp,ab Delight Hospital
+372,FACILITY,264,yWjvloFShBy,ab Egbede Health Centre
+373,FACILITY,265,AfaL6JfqQzX,ab Ekearo Primary Health Centre
+374,FACILITY,266,mAs4beMoRj3,ab Embassy Hospital
+375,FACILITY,268,Fahecl5zLgu,ab Good Care Hospital
+376,FACILITY,269,UbMT3ZpjUDJ,ab Ihunanya Specialist Hospital
+377,FACILITY,270,HmdR5BjsuuB,ab Janet Memorial Hospital
+378,FACILITY,271,D0L0VLZC2XQ,ab Living Word Mission Hospital
+379,FACILITY,272,tfyjh2Cd5p8,ab Mbutuoma Health Center
+380,FACILITY,273,RJdpfWexfzs,ab Mount Zion Hospital
+381,FACILITY,274,hPCBR4qVZ3u,ab New Life Centre Hospital
+382,FACILITY,275,rHNAXzOYles,ab Obioma Maternity Home
+383,FACILITY,276,QqTrRw5oqSZ,ab Okpu Umuobo Health Center
+384,FACILITY,277,BpK4OF8reE2,ab Okpuala Ukwu Health Centre
+385,FACILITY,278,tRVhyzpxSuh,ab Oleka Hospital
+386,FACILITY,279,gKjbvO8IH6X,ab Oribis Hospital
+387,FACILITY,280,Oz6TdbJ2yPU,ab Otubi Primary Health Centre
+388,FACILITY,281,mIiDFOpTKRR,ab Owuala Primary Health Centre
+389,FACILITY,282,GZQLkfDQshs,ab Peace Maternity Hospital
+390,FACILITY,283,eWZzhVbJrRC,ab Romalex Hospitals
+391,FACILITY,284,AutiJMAIcb4,ab Rosevine Hospital
+392,FACILITY,285,IqHZz1kuPad,ab St Elizabeth Maternity
+393,FACILITY,287,Qp0DRB3LSmN,ab The CALIF Hospital and Maternity
+394,FACILITY,288,p0nTju8eKj7,ab U.C Golden Maternity Hospital
+395,FACILITY,289,hfHJpbL4SAG,ab Umuagbai Health Post
+396,FACILITY,290,xVnTpMs3R7U,ab Umuagbara Primary Health Centre
+397,FACILITY,291,P6yd2HBQD5Q,ab Umuimo Health Centre
+398,FACILITY,292,cttZPvjgH0r,ab Umuocham Primary Health Centre
+399,FACILITY,293,BeVKrSbkgiw,ab Umuode Odekwu Health Care
+400,FACILITY,294,eSwsoOx2eiW,ab Umuoyoro Primary Health Centre
+401,FACILITY,295,n5RWGxWWXGd,ab Abayi Nchokoro Primary Health Centre
+402,FACILITY,296,gZS43HpLurS,ab Akanu Model Primary Health Centre
+403,FACILITY,297,vpMaTk9S3IR,ab Amavo Primary Health Centre
+404,FACILITY,298,W9FpHVNMAls,ab Asa Umuakwa Primary Health Centre
+405,FACILITY,299,YN11zSr9zzJ,ab Asa Umunka
+406,FACILITY,300,Efx6GEBCtLv,ab Aza Community Center
+407,FACILITY,301,AkV05yr0SOH,ab Cecilias Maternity
+408,FACILITY,302,PXOvA0ttyiQ,ab Ngwa Iyiekwe Primary Health Centre
+409,FACILITY,303,uWPoCPtyih2,ab Nkem Maternity Home Akanu
+410,FACILITY,304,q0oKu2zJCxp,ab Nwodaku Memorial Hospital
+411,FACILITY,305,bWuwGPHLbUA,ab Obegu Primary Health Centre
+412,FACILITY,306,J87GwUNCx2e,ab Oza Umuebukwu Primary Health Centre
+413,FACILITY,307,W89IXEv8ubP,ab St Marks Clinic
+414,FACILITY,308,yyKfLSnLqQk,ab St. John Jesus Hospital
+415,FACILITY,309,DIYVu3khBMF,ab Tochukwu Hospital
+416,FACILITY,310,bIZrcaW9gLW,ab Ugwunagbo Health Clinic
+417,FACILITY,311,WaS5m3Ax1ve,ab Umuchukwu Primary Health Centre
+418,FACILITY,312,Pfa7VMzbmbj,ab Umugo Health Clinic
+419,FACILITY,313,alpUGaXYdJD,ab Umunkama Primary Health Centre
+420,FACILITY,314,S3iCthhwTok,ab Umuodo Primary Health Centre
+421,FACILITY,315,GxBPXT5pKSb,ab Abaki Health Centre
+422,FACILITY,316,VWBPOQgFhQ4,ab Akanu Health Centre
+423,FACILITY,317,liEmDnIWb9g,ab Akirika Uku Health 
+424,FACILITY,318,UjRI2VOlneI,ab Akwete Primary Health Centre
+425,FACILITY,319,zKfUvOUaGRS,ab Azumini Cottage Hospital
+426,FACILITY,320,neGiTYI2xHY,ab Azumini Health Centre
+427,FACILITY,321,WRX10l5Jsj7,ab Obeaku Health Centre
+428,FACILITY,322,K1qqspRP5PG,ab Obohia Health Centre
+429,FACILITY,323,kIoxk4LKlTk,ab Obunku Health Centre
+430,FACILITY,324,vmC0HZHLhP3,ab Obuozu Health Centre
+431,FACILITY,325,P490NJDfNDW,ab Ohambele Primary Health Centre
+432,FACILITY,326,MyIriHLfZ6n,ab Ohuru-Ndoki Primary Health Centre and Maternity
+433,FACILITY,327,nUa3ATguDWF,ab Ujuru Health Centre
+434,FACILITY,328,O6zzmi0WCJO,ab Umule Mkporobe
+435,FACILITY,329,BnGbOAyPtVt,ab Obehie Health Centre
+436,FACILITY,330,qZLHpj3yf6d,ab Obibor Health Centre
+437,FACILITY,331,jPsEnXaBF2S,ab Obokwe Health Centre
+438,FACILITY,332,TRVXRM80P2q,ab Ogwe Health Centre
+439,FACILITY,333,Xfwa7pXY4LC,ab Omumauzor Primary Health Centre
+440,FACILITY,334,jaJ9KixRUeZ,ab Owa Asa Health Centre
+441,FACILITY,335,DwOHkiJmSNR,ab Owaza Cottage Hospital
+442,FACILITY,336,UXsw4Z2FLBP,ab Umuaka Health Centre
+443,FACILITY,337,rUHOdaIDhNF,ab Umuiku Health Centre
+444,FACILITY,338,evtETmcCOzj,ab Umuitor Health Centre
+445,FACILITY,339,wTKKHfgA8HK,ab Umukalu Health Centre
+446,FACILITY,340,YIDuj3penSw,ab Ahiaeke Ndume Primary Health Centre
+447,FACILITY,341,q6Ja3pJCI05,ab All Saint Maternity and Clinic
+448,FACILITY,342,Oer1Tm8BeHE,ab Amarajane Hospitals & Maternity
+449,FACILITY,343,N9bw0Bhuxrg,ab Anelechi Hospital
+450,FACILITY,344,TijKrusV5x6,ab Apugo Medical Clinic
+451,FACILITY,345,hEiQH9TsmBi,ab Chidinma Specialist Hospitals
+452,FACILITY,346,nTnU8hSFvRP,ab Daughters of Mary Mother of Mercy Hospital 
+453,FACILITY,347,dhrSyQdqlqy,ab Dennis Blessing Hospitals
+454,FACILITY,348,YD4qsIjXZCz,ab Elshadia Hospital
+455,FACILITY,349,PM4kwJrJJuJ,ab Fountain Hospital
+456,FACILITY,350,vluLvfupTMH,ab Grace Land Specialist Hospital
+457,FACILITY,351,M78WAXgJSaA,ab Hebrew Women Maternity Home 
+458,FACILITY,352,Kqw0imCdD3c,ab Ihite Ude Ofeme Health Centre
+459,FACILITY,353,mcQ5TL6QFhx,ab Life Essential Hospital
+460,FACILITY,354,gfGNY6KDY8T,ab Life Gate Hospital
+461,FACILITY,355,JftNTThy5pA,ab Madonna Catholic Hospital
+462,FACILITY,356,tvfEJfW10ff,ab Maranatha Hospital
+463,FACILITY,357,y3mCOQWQ7rH,ab Okwulaga Afara Health Clinic
+464,FACILITY,358,CKI6Q7e6mSV,ab Okwuta Health Centre
+465,FACILITY,359,TuUNcCqGNmP,ab Ossah Health Centre
+466,FACILITY,360,ZLHRmsxrwOz,ab Our Lady of Apostle Maternity Clinic
+467,FACILITY,361,I0mhwhvh1j5,ab Prime Care Specialist Clinic
+468,FACILITY,362,SMoyq7r1Bpa,ab Priscilia Memorial Hospital
+469,FACILITY,363,uNG7N3D6kw1,ab Total Development Action Initiative (TDAI)
+470,FACILITY,364,aoKXH0HNa4g,ab Umuahia Federal Medical Centre
+471,FACILITY,365,OiIwXCDwVU0,ab Umuegwu Okpuala Primary Health Centre
+472,FACILITY,366,N3iw0QTQk7m,ab World Bank Health Clinic
+473,FACILITY,367,hmWdZSs5Dwz,ab Zenith Hospital
+474,FACILITY,368,iIY3Ildiohf,ab Amakama Health Centre
+475,FACILITY,369,hXg0wtDZ7OY,ab Amangwu Health Centre
+476,FACILITY,370,GxsjL0hHItD,ab Amizi Health Centre
+477,FACILITY,371,YsIIEeHKI86,ab Amuzu Primary Health Centre
+478,FACILITY,372,mRugkwg3jbH,ab Anglican Hospital and Maternity
+479,FACILITY,373,orXvHu1hQv1,ab Dike Ukwu Health Centre
+480,FACILITY,374,pWbvTTNrACr,ab Ehume Health Centre
+481,FACILITY,375,f4z5PujYZTU,ab Ekenobizi Health Centre
+482,FACILITY,376,ufP2KBzglN7,ab Ezeleke Health Centre
+483,FACILITY,377,lBB9zovjS8A,ab Eziama Health Centre
+484,FACILITY,378,TUGdcuYkQHh,ab HU PACE Community Pharmacists
+485,FACILITY,379,Hy8Ly4bDaRo,ab Ijeoma Hospital
+486,FACILITY,380,Ht3UTGEbzxY,ab Nsirimo Primary Health Centre
+487,FACILITY,381,Zwy5mU7iIKQ,ab Ogbodinibe Health Centre
+488,FACILITY,382,DEJ5LTJBCsS,ab Ogbodiukwu Health Centre
+489,FACILITY,383,I4km0Uf0cln,ab Ohiya Health Centre
+490,FACILITY,384,Cp9nXzPAFZQ,ab Old Umuahia Primary Health Centre
+491,FACILITY,385,H0CnNVdXE5A,ab Overcomers Clinic
+492,FACILITY,386,CXR4xPwIxZC,ab St. Charles Hospital Ubakala
+493,FACILITY,387,ssaaaeU4fSd,ab Ubakala Health Centre
+494,FACILITY,388,WdlLt1cbXSo,ab Umuanya Health Centre
+495,FACILITY,389,hOlSp4v2mzx,ab Umuitowe Primary Health Centre
+496,FACILITY,390,XDAEtPhhh2d,ab Umunwanwa Health Centre
+497,FACILITY,391,fmmY0uuZn8t,ab Umuokpara Ozoro
+498,FACILITY,392,prgKV4zkMyj,ab VINIFIC Hospital
+499,FACILITY,393,Y2zY4ZzdKIo,ab Akporo Achara Health Centre
+500,FACILITY,394,PrT4PhujoSN,ab Amakpoke Health Centre
+501,FACILITY,395,aEk3dcQSyfR,ab Eziama (Nneato) Primary Health Centre
+502,FACILITY,396,WS1ohlrjJzZ,ab Eziama Lokpaukwu Health Centre
+503,FACILITY,397,fJUkPIYPrEv,ab Ezioba (Nneato) Primary Health Centre
+504,FACILITY,398,AfAsOQDvKCl,ab Ihe Primary Health Centre
+505,FACILITY,399,rxDiruRvlwq,ab Iheabata Health Centre
+506,FACILITY,400,vJ46YgZzdiZ,ab Isuochi St Anthony Hospital
+507,FACILITY,401,aKYxz5pE2l4,ab Lekwesi Health Centre
+508,FACILITY,402,qMNzJuL4gbv,ab Lokpanta Primary Health Centre
+509,FACILITY,403,QgQhJxtzyM4,ab Lomara Health Centre
+510,FACILITY,404,PvLM8w06B2e,ab Mbala Health Centre
+511,FACILITY,405,ee8GWygtMYV,ab Ndiawa Health Centre
+512,FACILITY,406,IUdAnpDFnun,ab Ngada Primary Health Centre
+513,FACILITY,407,aKoBMBl8yyE,ab Obinolu Health Centre
+514,FACILITY,408,Jjayk8RV0di,ab Obulo (Nneato) Primary Health Centre
+515,FACILITY,409,IkuAtrjfeNB,ab Umuaku Health Centre
+516,FACILITY,410,RYxE5qr4tWf,ab Umualem Health Centre
+517,FACILITY,411,kmjyVLwiaOJ,ab Umuchieze Health Centre
+518,FACILITY,412,h5uKTxO4Bos,ab Umuobasi Health Centre
+519,FACILITY,413,VxjQPA0ldve,ab Umuobi Health Centre
+520,FACILITY,414,vk4G3rpNnJb,ab Umuogele Primary Health Centre
+521,FACILITY,415,wyBGXHOrv6A,ab Umuokpara Health Centre
+522,FACILITY,416,xDcTsnGGEm0,ab Urulorokpaukwu
+523,FACILITY,417,SYMF9rHzlwH,ad Demsa Primary Health Care Centre
+524,FACILITY,418,Rc0vzR0uuPh,ad Fufore Cottage Hospital
+525,FACILITY,419,updW8wn0cvF,ad Ribado Primary Health Centre
+526,FACILITY,420,fbK3uFtHt1D,ad Gurin Primary Health Centre
+527,FACILITY,422,E9DqhNSWDHf,ad Girei A Primary Health Centre
+528,FACILITY,423,f2LSw1mdyZo,ad Garkida General Hospital
+529,FACILITY,424,eBZ5k4qWf9N,ad Nyako Maternity
+530,FACILITY,425,F3gA4a9bmU3,ad Guyuk General Hospital
+531,FACILITY,426,bKaG89UuKJJ,ad Hong Cottage Hospital
+532,FACILITY,427,q9Utscl1qJh,ad Kwarhi Primary Health Centre
+533,FACILITY,430,RT6eAIymRPp,ad Shuwa Maternity
+534,FACILITY,431,LfqBd540MDd,ad Mayo Belwa Cottage Hospital
+535,FACILITY,433,rhgIgFvezRA,ad Michika General Hospital
+536,FACILITY,434,vtqy5GISVGg,ad Mubi General Hospital
+537,FACILITY,435,J2oCNV6JeRN,ad Shelleng NYSC Clinic
+538,FACILITY,436,nz0C7YSR7Qv,ad Song Cottage Hospital
+539,FACILITY,437,Bp7vxK8j2Q7,ad Toungo Cottage Hospital
+540,FACILITY,438,B62LRzWmVkf,ad Center for Health & Development in Africa(CHEDA)
+541,FACILITY,439,f3BTTRZVhn5,ad Major Aminu Urban Health Centre
+542,FACILITY,440,Y7dNV1uD0zz,ad St. Francis Hospital
+543,FACILITY,441,QVyrU3vcWAx,ad Yola Specialist Hospital
+544,FACILITY,443,yidAAEnYf53,ad Wauro-Jabbe Health Centre
+545,FACILITY,444,j1qJobtES7z,ad Yola Federal Medical Centre
+546,FACILITY,445,pxBMYZ8Qp4L,ak Abak Itenghe Health Post 
+547,FACILITY,446,Sr1WwHYAo63,ak Afaha Obong Primary Health Centre
+548,FACILITY,447,p4NHFsAwsqk,ak Cedar and Olive Clinic
+549,FACILITY,448,P9omMMInUvx,ak Ebom Primary Health Center
+550,FACILITY,449,fEQi4BQ4y1W,ak Ibanang Ediene Abak Primary Health Centre
+551,FACILITY,450,saKFfs0ys1V,ak Ibong Otoro Primary Health Centre
+552,FACILITY,451,uY1OKBkXaxu,ak Ikot Akpan Ikpong Health Centre
+553,FACILITY,452,VFOuXLdrfoo,ak Ikot Etok Udo Primary Health Centre
+554,FACILITY,453,Q6OZ1Jg9B77,ak Ikot Ossom Health Post
+555,FACILITY,454,sMv92SQjm1o,ak Itung Health Centre
+556,FACILITY,455,y7KKEcfA183,ak Mercy Hospital
+557,FACILITY,457,l6A8ZccjemG,ak Otoro 1 Health Center
+558,FACILITY,458,uPduoLstKo3,ak Uduak Abasi Clinic
+559,FACILITY,459,QMPOA4msFXe,ak Ukpom Abak General Hospital
+560,FACILITY,460,Fl1uBY9Xbqp,ak Ukpom-Abak Primary Health Centre 
+561,FACILITY,461,DX3MTlPSohs,ak Utu Abak Health Post
+562,FACILITY,462,Qx041JIw5rx,ak Amadaka Health Centre
+563,FACILITY,463,iOnzcCmUVo3,ak Base Okorote Primary Health Centre 
+564,FACILITY,464,qum7M2rRZYA,ak Eastern Obolo General Hospital
+565,FACILITY,465,xwNmAHkb7hD,ak Emeroke Health Centre 
+566,FACILITY,466,q0A2BqHBQkm,ak Iko Town Primary Health Centre
+567,FACILITY,467,kYrpYSQNYrF,ak Ikonta Health Centre
+568,FACILITY,468,bQpA3gGPtBz,ak Okoro Inyong Health Centre
+569,FACILITY,469,AosA7rl6yA4,ak Abasi Ekeme Specialist Clinic
+570,FACILITY,470,wVJ2CaUEbQK,ak Afaha Atai Health Post
+571,FACILITY,471,Q7A7NIXCXTk,ak Afaha Eket Holifield Hospital
+572,FACILITY,472,oRsEF508SGD,ak Assurance Medical Centre
+573,FACILITY,473,MMIld9aZlG4,ak Effoi Primary Health Centre
+574,FACILITY,474,vv9ONyeiUqY,ak Esit Urua Health Post 
+575,FACILITY,475,Z2dazQohzXp,ak GoodCare Medical Centre
+576,FACILITY,476,by7LjJ35kg0,ak HillCrest Medical Centre
+577,FACILITY,477,wzdGw3nmtnD,ak Idua Health Clinic
+578,FACILITY,478,QgAip8MBkYU,ak Idung Iniang Primary Health Centre
+579,FACILITY,479,HCGLWI9Mkbk,ak Iko Eket Health Centre
+580,FACILITY,480,jnzYfU2J7TT,ak Ikot Ebak Poly Clinic
+581,FACILITY,481,XRxosNljQnH,ak Ikot Eso Ekong Health Post 
+582,FACILITY,482,fjm6mF1aOyG,ak Mkpok Model Health Centre
+583,FACILITY,483,M0ZB6s1w92k,ak Odio Health Centre
+584,FACILITY,484,twnMX6KCBcs,ak Oron Eket Comprehensive Health Centre
+585,FACILITY,485,RjjnY6P3keZ,ak Redemption Medical Centre
+586,FACILITY,486,clJtISQA00Z,ak Solution Clinic and Maternity
+587,FACILITY,487,AUzw0wedz6U,ak Udeme-jehovah Clinic
+588,FACILITY,488,xyzOQLzXG5z,ak Utibe-Abasi Clinic
+589,FACILITY,489,esMcpAsN67P,ak Ebi Ekpi Health Centre 
+590,FACILITY,490,k5DTNStdvPw,ak Ekpene Obom QIC Rehabilitation Hosp
+591,FACILITY,491,pi2K0dUV5hJ,ak Idung Assan Health Centre
+592,FACILITY,493,gyOilQWoJwM,ak Adiasim Health Centre
+593,FACILITY,494,kLnot5dCGyx,ak Afaha Ikot Ebak Primary Health Centre
+594,FACILITY,495,shs55BTovha,ak Atan Ikot Okoro Health Post 
+595,FACILITY,497,o6HCAZsfwWt,ak Ekpenyong II Health Post
+596,FACILITY,498,Bn4qHar6HGo,ak Iko Otu Health Centre
+597,FACILITY,499,RQVjOkGlFrI,ak Ikot Akpan Effia Health Centre
+598,FACILITY,500,cjIFQwQzUEQ,ak Ikot Ide Health Centre
+599,FACILITY,501,cZOldzNZomY,ak Ikpe Annang Health Centre
+600,FACILITY,502,gXjibIeGWDG,ak Odoro Ikot 1 Health Centre
+601,FACILITY,503,n7AbLUAQ1WW,ak Odoro Ikot 11 Health Centre
+602,FACILITY,504,TN0w74ceDuN,ak Okon Health Centre
+603,FACILITY,505,xrcQI0AG9S7,ak Ukana Cottage Hospital
+604,FACILITY,506,Rok6Ln8C0Dk,ak Ukana East Primary Health Centre
+605,FACILITY,508,H39AIXWLqV3,ak Akai Uro Primary Health Centre 
+606,FACILITY,509,OADjcXfcTW1,ak Atan Eka Uruk Eshiet Health Centre
+607,FACILITY,510,dkIk8lTqSMc,ak Etim Ekpo General Hospital
+608,FACILITY,511,ozmzyXXMcjl,ak Etim Ekpo Primary Health Centre
+609,FACILITY,512,YzeCp8nCVgK,ak Ikot Ebo Health Centre
+610,FACILITY,513,NltPw3Y4fxF,ak Ikot Mboho Health Centre 
+611,FACILITY,514,DmHhG518CuT,ak Ikpe Annang Health Post
+612,FACILITY,515,PSTyFmcrmiz,ak Iwukem Primary Health Centre
+613,FACILITY,516,uFJALuQg09K,ak Obong Ntak Health Centre
+614,FACILITY,517,MPlJ5LB7ydC,ak Support Health Redemption Organization (SHERO)
+615,FACILITY,518,joFlxx4u6Wn,ak Utu Etim Ekpo Divine Love Hospital
+616,FACILITY,519,Cu6U1qSTdzt,ak Utu Etum Ekpo Health Centre
+617,FACILITY,520,km0IGxWGfck,ak Edem Ekpat Primary Health Centre
+618,FACILITY,521,ZJmSUwnZS5Y,ak Efa Primary Health Centre 
+619,FACILITY,522,kL48R1Ezgmp,ak Ekpene Ukpa Primary Health Centre
+620,FACILITY,523,tYUVLJgnj5u,ak Etinan General Hospital
+621,FACILITY,524,H5RSarzIJWg,ak Etinan Primary Health Centre
+622,FACILITY,525,QemdmN82VZM,ak Ikot Akpan Ntembom Primary Health Centre
+623,FACILITY,526,FJya135pT09,ak Ikot Ekan Primary Health Centre
+624,FACILITY,527,xIJkMYhgPyL,ak Ikot Esen Oku Primary Health Centre
+625,FACILITY,528,oCTBArHpCVu,ak Ikot Inyang Primary Health Centre
+626,FACILITY,529,PHmEBQMoHjY,ak Ikot Obio Inyang Primary Health Centre
+627,FACILITY,530,Kh3Fb7bhj2u,ak Ikot Udo Abia Primary Health Centre
+628,FACILITY,531,U3uytREWGHN,ak Ikot Udo Otto Primary Health Centre
+629,FACILITY,532,Cg4F9L13LhB,ak Iwo Eto Primary Health Centre
+630,FACILITY,533,E244seyd6rb,ak Mbioto 1Comprehensive Health Centre
+631,FACILITY,534,y7YwXNJWS7z,ak Mbioto 2 General Hospital
+632,FACILITY,535,pUOnB7wSK08,ak Ndon Eyo Primary Health Centre
+633,FACILITY,536,ctiLRRmkJCE,ak Ndon Utim Primary Health Centre
+634,FACILITY,537,SqjnGsMgnlU,ak Nkana Primary Health Centre
+635,FACILITY,538,EdgrTxHbcll,ak Oniong Primary Health Centre
+636,FACILITY,539,B54tGchPRwb,ak Women Community Livelihood Foundation (WOCLIF)
+637,FACILITY,540,VXseTQIDkJP,ak Atai Health Post 
+638,FACILITY,541,QY6nyOEASUU,ak Base Upenekan Primary Health Centre
+639,FACILITY,543,Vr9d35SmwRH,ak Inua Eyet Ikot Health Post
+640,FACILITY,544,JhBWIhDiijU,ak Itak Abasi Health Centre 
+641,FACILITY,545,hQES95LliuY,ak Iwokpom Opolum Primary Health Centre
+642,FACILITY,546,zwPiQWlDifU,ak Iwuo Achang Health Post
+643,FACILITY,547,KtKIYbWFuPm,ak Mfon-Abasi Clinic
+644,FACILITY,548,nDFreNir13d,ak Mkpanak Primary Health Center
+645,FACILITY,549,XH3aRUKBK1y,ak Ndito Eka Iba Health Centre 
+646,FACILITY,550,sQp0asU1FWK,ak Ntafre Health Centre
+647,FACILITY,551,HAscGO0kom6,ak Okoroutip Health Centre
+648,FACILITY,552,FwSgXWwbaAD,ak Opolum Health Centre
+649,FACILITY,553,Dpx2zLfIDEt,ak Ukuda Health Post
+650,FACILITY,554,IzTpuWPIZUK,ak Akpautong Mt. Camel Hospital
+651,FACILITY,555,I6St1kpmzUU,ak Ibesikpo Primary Health Centre
+652,FACILITY,556,X3t2nDtF4XD,ak Ikot Iyan Health Centre 
+653,FACILITY,557,mgaBmViLFq5,ak Ikot Udo Ekop Primary Health Centre
+654,FACILITY,560,VlLdssufV2T,ak Aka Ididep Primary Health Centre
+655,FACILITY,561,dTaGJJyLC6I,ak Ekimbuk Primary Health Centre
+656,FACILITY,562,cKBUnoPVqTw,ak Ibiono Handmaids Hospital
+657,FACILITY,563,ZCoMiIz5jbM,ak Ibiono Palmer Memorial Hospital
+658,FACILITY,565,CG0jJaULmJQ,ak Ikot Adaidem Primary Health Centre
+659,FACILITY,566,z0nS8B7W3xl,ak Ikot Esen Model Health Centre 
+660,FACILITY,567,YrXIC9ejYQa,ak Ikot Etim Health Centre 
+661,FACILITY,568,foruJBsO156,ak Ikot Idaha Primary Health Centre
+662,FACILITY,569,yfNSYlyPcSW,ak Ikpa Ikot Uneke Primary Health Centre
+663,FACILITY,570,EtQcj9J69z5,ak Nsan Health Centre
+664,FACILITY,571,QL5FWPSSNfl,ak Ntan Ibiono Eduwem Clinic
+665,FACILITY,574,c4PmWwX1xoS,ak Ikot Akpan Anwa Primary Health Centre
+666,FACILITY,575,gxlSyDhfWI9,ak Ikot Inyang Ese Health Post
+667,FACILITY,576,rqHKpDmeSTk,ak Ikot Okorota Health Post 
+668,FACILITY,577,aKhm6ln0dZM,ak Ikot Udom Maternal and Child Health Centre
+669,FACILITY,578,FOncCQWgVRG,ak Ikot Udom Mother of Christ Maternity Home
+670,FACILITY,580,WVwOm6wfPAf,ak Ntoh Usoh Health Centre
+671,FACILITY,581,f7S6lyVK1yi,ak Urua Inyang General Hospital
+672,FACILITY,582,Kf3G3aDuvJD,ak Urua Inyang Primary Health Centre
+673,FACILITY,583,f6IDw7tVHcS,ak Ediene Atai Health Centre 
+674,FACILITY,584,CpZJBtw8oyW,ak Ediene I Health Centre
+675,FACILITY,585,dY22eJtY0U1,ak Etip Ediene Primary Health Centre
+676,FACILITY,586,ajKRvlMcTVq,ak Ibiaku Primary Health Centre (BASE)
+677,FACILITY,587,MXLUCkHK5bv,ak Ikono General Hospital
+678,FACILITY,588,sEpg1UsIdBl,ak Mbiafun Ikot abasi Health Centre 
+679,FACILITY,589,mouBVXu8CXE,ak Ndiya Health Centre
+680,FACILITY,590,oqypyT5jDoE,ak Nkara Obio Health Clinic
+681,FACILITY,591,M6XOilFyaCV,ak Nkwot Edem Edet Health Post
+682,FACILITY,592,Glh1NgGZkb2,ak Nung Imo Primary Health Centre
+683,FACILITY,594,CEQKSWtPQQn,ak Obio Itak Primary Health Centre
+684,FACILITY,595,LRObtRBEVGB,ak Ukpom-Ikono Primary Health Centre
+685,FACILITY,596,R6vsACmHUzm,ak Alson Clinic
+686,FACILITY,597,CTLvzBi51EO,ak Base Ikot Abasi Primary Health Centre
+687,FACILITY,598,Mek0WyNrWfk,ak Diamond Clinic
+688,FACILITY,599,DKxU1Jfz9HG,ak Essene Primary Health Centre
+689,FACILITY,600,Gghfa4oXoLB,ak Fletcher Memorial Hospital
+690,FACILITY,601,w76h3ZucFhF,ak Ikot Etetuk Primary Health Centre
+691,FACILITY,602,Fovd6j5jpsf,ak Ikot Okpok Health Centre
+692,FACILITY,603,rkpTuFkdLca,ak Ikot Umiang Okon Health Centre
+693,FACILITY,604,Qoi0dp4YyUF,ak Ikot-Okwo Primary Health Centre
+694,FACILITY,605,ud0d5Hdwq16,ak Nduk Health Centre
+695,FACILITY,606,V4ZmiV8uP11,ak Abiakpo Ikot Essien Health Centre
+696,FACILITY,609,mOcms1kAtiy,ak Demak Clinic
+697,FACILITY,610,VfmMBeByax7,ak Ememobong Maternity
+698,FACILITY,612,u4p5NdcE9Gv,ak Ikot Ekpene General Hospital
+699,FACILITY,614,CaPQRwLXjG8,ak Ikot Ekpene Primary Health Centre
+700,FACILITY,615,OiBAcinlOzX,ak Ikot Inyang Health Post
+701,FACILITY,616,lnpBG9e5Ep4,ak Ikot Out Health Centre
+702,FACILITY,617,HCPNSTtIc1F,ak Ikot Udoe Health Centre
+703,FACILITY,618,P3DkPJDl4D3,ak Urua Obo Health post
+704,FACILITY,619,RpNaHWXdKtJ,ak Utu Edem Usung Health Post
+705,FACILITY,620,LuHTuherl8O,ak Ekoi Ini Health Post
+706,FACILITY,621,CBZVUa7rHJh,ak Ikpe Ikot Nko Health Centre
+707,FACILITY,622,jegVTW82eo9,ak Ikpe Ikot Nkon General Hospital
+708,FACILITY,623,IIzBzZbaudc,ak Mbiabet Ikpe Health Centre
+709,FACILITY,624,nZeW1h6lY8Z,ak Nchana Ebua Health Post 
+710,FACILITY,625,RmdxMrVJX9k,ak Nkani Health Centre
+711,FACILITY,626,tu98W4eqfHh,ak Odoro-Ukwok Health Centre
+712,FACILITY,627,lbULHYAB4bT,ak Usuk Ukwok Health Post
+713,FACILITY,628,AvYJXRrZoQX,ak Dan Abia Specialist Clinic
+714,FACILITY,629,iTOWVnmAKhh,ak Ekritam Health Centre
+715,FACILITY,631,AEyMUY5q5zH,ak Ikot Utu Model Primary Health Centre
+716,FACILITY,632,e2xRwfFc0GE,ak Imaobong Clinic
+717,FACILITY,633,u0bt5ZWmwX9,ak Mbak Itam 3 Health Centre 
+718,FACILITY,634,YZBtiWqfeNq,ak Mbiabong Itam Health Center
+719,FACILITY,635,ygWaMo8a2Qy,ak Nkim Itam Health Center
+720,FACILITY,636,qvqdZGsDVak,ak Dominion Clinic
+721,FACILITY,637,AXrDO3Zo4sf,ak Ebughu Primary Health Center
+722,FACILITY,638,TTYkVLHxkRD,ak Enwang Primary Health Centre
+723,FACILITY,639,hGSeQvRNagL,ak Ibaka Primary Health Centre
+724,FACILITY,640,T8RzVjH5CzU,ak Oduo Primary Health Centre
+725,FACILITY,641,jsDAzq01gx3,ak Uda Health Centre
+726,FACILITY,642,wQbVW5JtZH3,ak Udesi Primary Health Centre
+727,FACILITY,643,DGb3yvV0eP2,ak Uyenghe Primary Health Centre
+728,FACILITY,644,doEqpAi4x3b,ak Ikot Edebe Health Centre
+729,FACILITY,645,HgZYshtbLZk,ak Ikot Itie Udung Health Centre 
+730,FACILITY,646,U60ZMOdEoZV,ak Ikot Mkpor Health Centre
+731,FACILITY,647,GmjReBsZ1vc,ak Ikot Uyo Primary Health Centre
+732,FACILITY,648,joDVWThYHNe,ak Iwok Nsit Health Post
+733,FACILITY,649,KlGQzkM5stL,ak Ibedu Health Centre
+734,FACILITY,650,l5qriFvrfmZ,ak Ikot Eda Primary Health Centre
+735,FACILITY,651,yot6MssBytS,ak Ikot Ekpaw Cottage Hospital
+736,FACILITY,652,RLyFsMRtYoT,ak Ikot Idiong Primary Health Centre 
+737,FACILITY,653,cY03jKiq3dq,ak Ikot Inyang Okop Primary Health Centre
+738,FACILITY,654,GoBZigWPDYV,ak Mkpat Enin Primary Health Centre
+739,FACILITY,655,jLhiaR22k8f,ak Nkot Ekpene Comprehensive Health Centre
+740,FACILITY,656,ugGH4RXvt6q,ak Nsit Atai Primary Health Centre
+741,FACILITY,658,HJU7lQqRju2,ak Afaha Effiong OP Base Model Primary Health Centre
+742,FACILITY,659,c23GVfOHjsf,ak Afia Nsit Primary Health Centre
+743,FACILITY,660,XT1QezwCtIO,ak Asang Nsit Primary Health Centre
+744,FACILITY,661,IUaY6wQ91AF,ak Ikot Obio Etan Primary Health Centre
+745,FACILITY,663,BufnbCF5IxW,ak Mbiokporo I Model Primary Health Centre
+746,FACILITY,664,moPhk5amDK1,ak Oboetim Ikot Ekang Primary Health Centre
+747,FACILITY,665,m3FtRCB3exh,ak Oboetok Health Post
+748,FACILITY,666,YOkoBXpLWmT,ak Ikot Akpamba Comprehensive Health Centre
+749,FACILITY,667,srBEi3Esin4,ak Ikot Akpan Abia Health Clinic
+750,FACILITY,668,P5f0darGlQx,ak Ikot Ekwere Model Primary Health Centre
+751,FACILITY,669,cK6OvpCUPab,ak Ikot Udo Ideh Health Centre
+752,FACILITY,670,ZO5utXO5bU4,ak Nsit Ubium Primary Health Centre
+753,FACILITY,671,mnOYu5NFQUK,ak Nung Obong Primary Health Centre 
+754,FACILITY,672,BeD6AHqVTvQ,ak Abak Ukpom Health Post
+755,FACILITY,673,k5FAEaD52er,ak Abiakpo Idiaha Health Post
+756,FACILITY,674,xGKPMUmnhzN,ak Abiakpo Nkap Health Post 
+757,FACILITY,675,Or458ya0AXu,ak Ikot Abia Anwan Health Centre
+758,FACILITY,676,id4shLUfQ0z,ak Ikwen Health Post
+759,FACILITY,677,z1H3blCBAQz,ak Nsit Ikpe Health Post
+760,FACILITY,678,yT9ygvHe93k,ak Nto Edino Comprehensive Health Centre
+761,FACILITY,679,w16ZdfGO2pt,ak Nto Edino Primary Health Centre
+762,FACILITY,680,GBWjF5mopm4,ak Nto Ide Health Post 
+763,FACILITY,681,Xt7gPJ2IrJl,ak Obot Akara Primary Health Centre
+764,FACILITY,682,KYmlvXaMAsA,ak Okpo Eto Health Centre
+765,FACILITY,683,u0oof9ItUtx,ak Base Okobo Primary Health Centre
+766,FACILITY,684,BqxQ7865WWS,ak Eweme Model Primary Health Centre
+767,FACILITY,686,rnvRIbyS3Du,ak Mbokpu Oduobo Primary Health Centre
+768,FACILITY,687,Vt5Hzm2OOmp,ak Odobo Health Centre
+769,FACILITY,688,fix4RsUIXXI,ak Okobo General Hospital
+770,FACILITY,689,uLqV05EVa1i,ak Okopedi Primary Health Centre
+771,FACILITY,690,gHPsb6xeyPi,ak Oti Oro Primary Health Centre
+772,FACILITY,691,lzsIVMNDEt0,ak Utine Nduong Health Centre
+773,FACILITY,692,a6mDtzFNevy,ak Atiamkpat Primary Health Centre 
+774,FACILITY,694,d5abq6Cu6Y4,ak Edem Idim Ibakasi Health Centre
+775,FACILITY,695,HgRmLZmAkzv,ak Ikot Annang Primary Health Centre
+776,FACILITY,696,u3GpQwltMgg,ak Ikot Ebidang Health Centre 
+777,FACILITY,697,YNuM5uWtrUO,ak Ikot Edem Idim Ishiet Primary Health Centre
+778,FACILITY,698,LCrmIqySZmI,ak Ikot Eko Ibon General Hospital
+779,FACILITY,700,fZgHZBLLTvs,ak Ikwe Primary Health Centre
+780,FACILITY,701,yKzhugPLTss,ak Jafaar Clinic Ndon Eyon
+781,FACILITY,702,F2xoImhg7Ai,ak Mkpok Health Centre
+782,FACILITY,703,Cl5Wttt0vcQ,ak Nung Ndem I Health Centre 
+783,FACILITY,704,m8IpClGeiD5,ak Nung Oku Ekanem Primary Health Centre
+784,FACILITY,705,AXTt6f5dL8o,ak Onna Comprehensive Health Centre
+785,FACILITY,706,aRpekSWeOE8,ak Esin Ufot Primary Health Centre
+786,FACILITY,708,czWPZtqv5jF,ak Idua Assang Health Post
+787,FACILITY,710,Vu3S4xhkNxE,ak Oron Christ Victory Medical Centre
+788,FACILITY,711,ephtGmHTSwu,ak Oron General Hospital (Iquita)
+789,FACILITY,712,pNxbywYPhMb,ak Uwem Foundation Specialist Hospital
+790,FACILITY,713,qqVBgGR68X7,ak Uya Oro Health Post
+791,FACILITY,714,kbDrgCqGqdR,ak Ekparakwa Health Centre
+792,FACILITY,715,ahvzqAGmkzv,ak Family Foundation Clinic
+793,FACILITY,716,fTOZ7ARClMN,ak Ikot Akpan Essien Health Centre
+794,FACILITY,717,kthne3JpUoN,ak Ikot Eka Ideh Health Post
+795,FACILITY,718,SLtEEcT5JUJ,ak Ikot Esenam Health Centre
+796,FACILITY,719,uRmvMHMCk2Z,ak Ikot Okoro General Hospital
+797,FACILITY,720,ot2fnWmncRe,ak Ikot Osute Health Centre 
+798,FACILITY,721,LAoZNp1YZ9s,ak Ikot Otok Polyclinic
+799,FACILITY,722,Cm2KIIDdK0E,ak Ikot Ukpong Obiose Health Centre
+800,FACILITY,723,cwS2CUjacjC,ak Ntak Ibesit Health Post
+801,FACILITY,724,Z3sj3CkVDdg,ak Nung Okubo 2 Health Centre
+802,FACILITY,725,VGoF9IqqtOw,ak Oruk Anam Primary Health Centre
+803,FACILITY,726,fYNyROusVvb,ak Ukpom Edem Inyang Primary Health Centre
+804,FACILITY,727,tocDQiUAUAj,ak Ekim Primary Health Centre
+805,FACILITY,728,limyIcHBc9t,ak Eyibia Health Post
+806,FACILITY,729,BRhk6epzAN9,ak Eyo Okponung Primary Health Centre
+807,FACILITY,730,ucuneKNiKvH,ak Eyofin Primary Health Centre
+808,FACILITY,731,h3DgYYB0iIf,ak Eyokpu Primary Health Centre
+809,FACILITY,732,LQtrPiaChZw,ak Eyonsek Health Post
+810,FACILITY,733,Zz9NXSEi2Lb,ak Uboro Isong Inyang Health Post 
+811,FACILITY,734,TuAgCusix1B,ak Ukukudung Health Post 
+812,FACILITY,735,N5jLhZ5Q0Ed,ak Unwana Oro Christian Med. Centre
+813,FACILITY,736,pteQIuKax5d,ak Adat Ifang Health Centre
+814,FACILITY,737,NY4FpP7y7qL,ak Afaha Ikot Inyang Health Centre 
+815,FACILITY,738,EAQnm7b7yzW,ak Andikan Clinic
+816,FACILITY,740,Vn5lJS2NMUJ,ak Ikot Ebok Health Post
+817,FACILITY,741,rSworTBL2iC,ak Ikot Odiong Health Post 
+818,FACILITY,742,X3Nyza0bTLf,ak Ikot Oku Usung Primary Health Centre
+819,FACILITY,743,pskizrxosyg,ak Ikot Udo Ossiom Health Centre
+820,FACILITY,744,JRwFDQyjL1a,ak Ikot Unah Health Centre
+821,FACILITY,745,hfpGTJwC6xk,ak Nkek Health Post
+822,FACILITY,746,YEubT6DOoJ3,ak Northern Afaha Health Centre
+823,FACILITY,747,QDgJVXqHODR,ak Nsekhe Health Centre
+824,FACILITY,748,vuKQ14fWZun,ak Ohoabu Health Centre
+825,FACILITY,749,lK00G1Rwcal,ak Adadia Health Post
+826,FACILITY,750,w4SVGexEncZ,ak Ayadehe Health Post
+827,FACILITY,751,ByiTkVHgeR1,ak Ekpene Ibia Primary Health Center
+828,FACILITY,752,O3ACbx6xbxj,ak Ibiaku Isshiet Primary Health Centre
+829,FACILITY,753,Lvjt9jPilIx,ak Ibiaku-Uruan Primary Health Centre
+830,FACILITY,754,jkmT24wjg2K,ak Idu-Uruan Primary Health Centre
+831,FACILITY,755,kSjFzkcIlyE,ak Ikot Otoenyie Health Post
+832,FACILITY,756,VJZVA1zRskn,ak Ituk Mbang Methodist General Hospital
+833,FACILITY,757,DmEPbIvdOXq,ak Mbiaya Comprehensive Health Centre
+834,FACILITY,758,Qdnb3D2ghGa,ak Ndon Ebom Primary Health Center
+835,FACILITY,759,sOVbkR2bRsa,ak Nwaniba Primary Health Centre
+836,FACILITY,760,i4jP4yRYjkd,ak Use Primary Health Centre
+837,FACILITY,761,gdjkM6e0RKn,ak Base Urue Offong Primary Health Centre
+838,FACILITY,762,H3gt926ml52,ak Ibotong Health Post
+839,FACILITY,763,LGvVT9yGllj,ak Ikpe Oro Health Post
+840,FACILITY,764,eSaIgcp8sCQ,ak Mbokpu Eyoima Health Centre 
+841,FACILITY,765,Jw5BsfLmLUd,ak Mbokpu Uko Akai Health Post
+842,FACILITY,766,lipjMHRFfJQ,ak Mbokpu-Eyoakan Health Centre
+843,FACILITY,767,uvxyflAiI2w,ak Oduonim Health Post
+844,FACILITY,768,QMUEm2sH98G,ak Okossi Model Primary Health Centre
+845,FACILITY,769,Y79OPZOq86r,ak Oruko General Hospital
+846,FACILITY,770,WhJruOT1JqS,ak Oruko Primary Health Centre
+847,FACILITY,771,rYQLSF5ezkL,ak Oyobia Health Post
+848,FACILITY,772,jWSCPf1pMjz,ak Oyoku Ibighi Health Centre
+849,FACILITY,773,ouayUUG6tfC,ak Udung Ukpor Health Post
+850,FACILITY,774,uz43HIInK1h,ak AIDS Care Managers
+851,FACILITY,775,dtrJQIYH0eE,ak Aka Offot Health Centre
+852,FACILITY,776,iWYlT2RCY9J,ak Alma Clinic
+853,FACILITY,777,Krtmf8WFU5a,ak Dammy Memorial Hospital
+854,FACILITY,778,ZFAcE54tp66,ak Domingo Specialist Hospital
+855,FACILITY,779,AWsMmUYgc6s,ak Dyme hospital and Maternity
+856,FACILITY,780,dlVjcN7psNv,ak Faith Medical Centre
+857,FACILITY,781,Ar9piuvpLNr,ak Gateway Hospital
+858,FACILITY,782,JlLx689MLDG,ak Good Health Clinic
+859,FACILITY,783,QA3Xqr08wTC,ak Health Confidence Centre
+860,FACILITY,784,nTP4CUFIeqs,ak HU PACE Akwa Ibom State Community Pharmacist
+861,FACILITY,785,cZy3TAqoUGn,ak Idoro Obio Health Centre
+862,FACILITY,786,uiyGf84wmAt,ak Ifa Atai Health Post
+863,FACILITY,787,B5hI56isF3L,ak Ifa Ikot Health Centre
+864,FACILITY,788,NUISuhVhZ3o,ak Ikot Ayan Ikono Primary Health Centre
+865,FACILITY,789,k2Gr4PsBeYR,ak Ikot Ebo Ikono Primary Health Centre
+866,FACILITY,790,uKdVMoL6vhp,ak Ikot Okubo Primary Health Centre
+867,FACILITY,793,xImSjXfSuy6,ak Marickson Hospital
+868,FACILITY,794,FKLJ7XBiBDG,ak Mbak Etoi Primary Health Centre
+869,FACILITY,795,e5c4ChF9OGR,ak Mbiabong Primary Health Centre
+870,FACILITY,796,IFSqXU5yfUG,ak Mount Olive Clinic and Maternity
+871,FACILITY,797,WQrXVmIVvcz,ak NCI Medical Centre
+872,FACILITY,798,le5oxjZY1Wx,ak Nissi Specialist Hospital
+873,FACILITY,799,r9YQcFq9Mnc,ak Oku Model Health Centre Uyo
+874,FACILITY,800,wp76NtB1WAG,ak Our Lady of Lourdes Infirmary
+875,FACILITY,801,D3HBQtpGEcS,ak Precious Seed Clinic
+876,FACILITY,803,xXd2YzePAWV,ak Ubong Abasi Specialist Clinic
+877,FACILITY,804,kPhNfdYAeC9,ak University of Uyo Medical Centre
+878,FACILITY,805,qVOA8kWshtv,ak University of Uyo Youth Friendly Centre
+879,FACILITY,806,udarnTHxqta,ak University Teaching Hospital
+880,FACILITY,807,sCoK7f2lem9,ak Unwana Family Hospital
+881,FACILITY,808,NCNCRTTcoMz,ak Uwakmfon Specialist Hospital
+882,FACILITY,809,cekrs2dwwpb,ak Uyo Base Primary Health Centre
+883,FACILITY,811,Wiw2tOpsmD7,ak Uyo Saman Clinic
+884,FACILITY,812,RDtLfQ27HtA,ak Uyo St Athanasius Medical Centre
+885,FACILITY,813,UgXRZqqKHB9,an Achina Comprehensive Health Centre
+886,FACILITY,814,FFyKxkHQNON,an Achinna Primary Health Centre Oye
+887,FACILITY,815,cU7zJSawPKR,an Aguata Primary Health Centre
+888,FACILITY,816,FCWkpbx7BZe,an Aku Ezenifite Primary Health Centre
+889,FACILITY,817,d4dvPSVJBeX,an Amesi Primary Health Centre
+890,FACILITY,818,jv3ZOECBQ4U,an Apex Medical Centre
+891,FACILITY,819,VDikrQTcde6,an Ave Maria Medical Centre
+892,FACILITY,820,cApFn8hKWoE,an Chibuzo Maternity Hospital Ekwulobia
+893,FACILITY,821,hmZtT1pCOYv,an Chidera Model Hospital and Maternity Home
+894,FACILITY,823,FQAJVjoHIrQ,an Ekwulobia General Hospital
+895,FACILITY,824,H0suu6atr46,an Ifite Igboukwu Primary Health Centre
+896,FACILITY,825,uNiMoDzXTPw,an Igboukwu Diocesan Hospital
+897,FACILITY,826,U5rlKHy0A1s,an Isi Ebele Achina Primary Health Centre
+898,FACILITY,827,E1b7B7AS4At,an Jesse Hospital and Maternity Umuoru Uga
+899,FACILITY,828,CeQ3Yln1gMd,an Kandudi Specialist Hospital
+900,FACILITY,829,IDHEI342Y3y,an Mkpologwu National Hospital
+901,FACILITY,830,FjNeRn9vCun,an Nkpologwu Community Hospital
+902,FACILITY,831,YB4Lr6KqsSg,an Nwajiaku Inland Hospital
+903,FACILITY,832,VtFI7AzTpiF,an Ogechukwu Hospital and Maternity Ekwulobia
+904,FACILITY,833,tCtfRkMavqv,an Oraeri Primary Health Centre
+905,FACILITY,835,PkEOb7aabyy,an St. Patrick Hospital and Maternity Uga
+906,FACILITY,836,ywI7qL0b73y,an Umuchu General Hospital
+907,FACILITY,837,iKcZQv8Nc6z,an Umuchu Visitation Hospital
+908,FACILITY,839,SzhWUZwWiEf,an Umuona Primary Health Centre
+909,FACILITY,840,VITCBtWSouP,an Zenith Hospital and Maternity Ekwulobia
+910,FACILITY,841,iJEGHQ2oXv7,an Abube Agu Nando Primary Health Centre
+911,FACILITY,842,mK67XzFMHHh,an Eziagulu Out Primary Health Centre
+912,FACILITY,843,jc2bOqlGO6p,an Aguleri Immaculate Heart Hospital
+913,FACILITY,844,YbM9nv2NCaA,an Nsugbe Model Primary Health Care Centre
+914,FACILITY,846,q98Ru2XjMfd,an Inoma Primary Health Centre
+915,FACILITY,847,FZsp7gK8eJj,an Odeh Primary Health Centre
+916,FACILITY,848,V19ohlQlEcp,an Oroma Etiti Referral Health Centre
+917,FACILITY,849,HBuW11c4zFc,an Umudeze Mmiata Primary Health Centre
+918,FACILITY,850,sO5WwF3mkIO,an Umueze Anam Primary Health Centre
+919,FACILITY,851,GBzmYazbibV,an Adazi Enu Primary Health Centre
+920,FACILITY,853,Ppi8sYMZKEP,an Agulu General Hospital
+921,FACILITY,854,vo2UbmeQ4Az,an Agulu Ifeanyichukwu Hospital
+922,FACILITY,855,v3EBMplssLy,an Agulu Nkitaku Primary Health Centre
+923,FACILITY,856,pmjGqJwimrv,an Agulu-Uzoigbo Health Centre
+924,FACILITY,857,D7FtfYQnq8H,an Awkuzu Primary Health Centre
+925,FACILITY,858,KnicFrWBaLf,an Community Reproductive Referral Health Centre Neni
+926,FACILITY,859,nB2uT8vdBib,an Epheta Maternity Centre
+927,FACILITY,860,KTA7HAerslp,an neni 1 Primary Health Centre
+928,FACILITY,861,bbRMTTS9htl,an Neni Comprehensive Health Centre NAUTH
+929,FACILITY,862,ekpxqiCo0G1,an Nne Ogidi Agulu Primary Health Centre
+930,FACILITY,863,fLhVC6HZxja,an Nne Ogidi Agulu Primary Health Centre
+931,FACILITY,864,W2EgzR8Wgg1,an Nri Primary Health Centre
+932,FACILITY,865,wH5bp9mtna5,an Obeledu Primary Health Centre
+933,FACILITY,866,YWtjZQdq1gF,an Umunri Neni Primary Health Centre
+934,FACILITY,867,KG2UIvsBGu5,an Umuowelle Agulu Primary Health Centre
+935,FACILITY,868,ph2p5aVxSHN,an Achalla Primary Health Centre
+936,FACILITY,869,B1yglpQHYry,an Amanuke Primary Health Centre
+937,FACILITY,870,DqhZbCHUtru,an Awba Offemmili Primary Health Centre
+938,FACILITY,872,hdLRJYox3xZ,an Mgbakwu Primary Health Centre
+939,FACILITY,873,VmVlWFsPxZa,an Ugbenu Primary Health Centre
+940,FACILITY,874,w773MgaGL6k,an Urum Primary Health Centre
+941,FACILITY,875,mjbytZpb6NC,an Amawbia Maternal and Child Health Clinic
+942,FACILITY,877,tiL5LSZWUYe,an Awka Faith Hospital
+943,FACILITY,878,eydoBnk1gjC,an Awka Harmony Hospital
+944,FACILITY,879,Hev6s5xKsXe,an Be GLAD Foundation
+945,FACILITY,880,rT1vBKfWWj9,an Beacon Hospital
+946,FACILITY,881,WNHVcmsJ0J0,an Christ the King Hospital
+947,FACILITY,882,Nl6DQvrIdit,an Climax Specialist Hospital
+948,FACILITY,883,qD8WPswX9j0,an Divine Hospital and Maternity Amikwo Awka
+949,FACILITY,884,tDnap1HKBR1,an Everest Hospital and Maternity
+950,FACILITY,885,bMRGQl3sQM1,an God is able Maternity Home
+951,FACILITY,886,oWgZT5nrqyG,an His Glory Hospital and Maternity
+952,FACILITY,887,D9DuCcqQaoj,an Ifebi Medical Centre
+953,FACILITY,888,Rpp139ZgC6d,an Ikechukwu Maternity Home
+954,FACILITY,889,OXvhqHwE2c2,an Izunna Hospital and Maternity
+955,FACILITY,890,LvsR7lAKdHF,an Miracle Maternity Home
+956,FACILITY,891,r8exZtLkGJv,an Nibo Basic Health Center
+957,FACILITY,892,r7uJWcpZ50k,an Nkwelle Primary Health Centre
+958,FACILITY,894,EpODepy6AP3,an Obioma Hospital
+959,FACILITY,895,iMt9RtL2P7M,an Police Comprehensive Hospital Awka
+960,FACILITY,896,UN3dnwZW5dE,an Regina Caeli Hospital
+961,FACILITY,897,WKf3agL6Xxl,an Rock Foundation Hospital
+962,FACILITY,898,FXZP6mVp5be,an Sefton Specialist Hospital
+963,FACILITY,899,IO4XBb9bEml,an Trinity Hospital and Maternity
+964,FACILITY,900,ES5tQ3gOg7O,an Umuawulu Primary Health Centre
+965,FACILITY,901,cZPGkhlijDX,an Amikwe Omor Health Post
+966,FACILITY,902,spcT6RYE5x5,an Anaku Primary Health Centre
+967,FACILITY,903,T34PxFuJIrI,an Ifite Ogwari Primary Health Centre
+968,FACILITY,904,AfSFh8UeZiw,an Ifite-Ogwari Amasi-Udala Primary Health Centre
+969,FACILITY,905,TCGs5AHTM4P,an Igbaku Health Post
+970,FACILITY,906,gYs9pEmM0BP,an Omasi-Agu Primary Health Centre
+971,FACILITY,907,gYhJHQ2NZrR,an Omor Primary Health Centre
+972,FACILITY,908,HLmK1UYGJbE,an Akwa Ifitedunu Primary Health Centre
+973,FACILITY,909,KEFkYcL1iGk,an Ebelechukwu Maternal Home
+974,FACILITY,910,bMLLwwJqCV8,an Nkwelle Umunachi Primary Health Centre
+975,FACILITY,911,MB5aFkfwlio,an Rural Women Foundation
+976,FACILITY,912,yPbSeGko35Z,an Ukpo Comprehensive Health Centre
+977,FACILITY,913,jn6lumRvQwo,an Ukpo Primary Health Centre
+978,FACILITY,914,y3wzQpHtJ06,an Ukwulu Primary Health Centre
+979,FACILITY,915,JvhNuM4WVlH,an Umuanugwo Ifitedunu Primary Health Centre
+980,FACILITY,916,xDUjiHTJTvA,an Afor Ilo Primary Health Centre Ozubulu
+981,FACILITY,917,Z0zakZrgRLr,an Nza Primary Health Centre
+982,FACILITY,918,ILAqXWXbxS5,an Orafite General Hospital
+983,FACILITY,920,QESOesrgxXL,an Adinma Specialist Hospital and Maternity
+984,FACILITY,921,MWLbIwfezMd,an Ark of Covenant Hospital
+985,FACILITY,922,hoMMHTyUNHZ,an Awada Peace Hospital and Maternity
+986,FACILITY,923,QIpJRsKTeEa,an Chiagozie Maternity Home Oraukwu
+987,FACILITY,924,IsWbk4HZYLT,an Chinedum Hospital and Maternity Ozubulu
+988,FACILITY,925,lKrbZPGVIhC,an Chukwudi Hospital
+989,FACILITY,926,sjsghPeY0ot,an Divine Mercy Hospital and Maternity
+990,FACILITY,927,oi6wEdOkHPZ,an Eberechukwu Maternity Nkpor Uno
+991,FACILITY,928,SCvBzxi54t4,an El-shaddai Hospital and Maternity
+992,FACILITY,929,yG1wNtCjJjc,an Emmanuel Obiakor Memorial Hospital Ogidi
+993,FACILITY,930,iIYeXUxTrMo,an Ezim Memorial Hospital Obosi
+994,FACILITY,931,JjS6zoum9r8,an Eziora Primary Health Centre
+995,FACILITY,932,SkBxaZLqfKY,an Graceland Foundation Hospital and Maternity
+996,FACILITY,933,wCrjJKFGi89,an Holy Family Hospital and Maternity
+997,FACILITY,934,NOupDPuvB1e,an Ibollo Primary Health Centre
+998,FACILITY,935,jlahjhB7MIC,an Ifite Primary Health Centre Oraifite
+999,FACILITY,936,fUm3mG70Uij,an Immaculate Heart Hospital (Nkpor)
+1000,FACILITY,937,P6iysRJRB76,an Iyi-Enu Hospital
+1001,FACILITY,938,QeO5c6SsA7W,an Madueke Memorial Hospital and Maternity
+1002,FACILITY,939,FKpbhEzjEIM,an Ndubisi Clinic
+1003,FACILITY,940,DN6p4GKlkdf,an New Mayor Hospital and Fertility Centre
+1004,FACILITY,941,Q7oNNgPXUf1,an Nkpor Chukwunonso Hospital and Maternity
+1005,FACILITY,943,jmZ1AMifFt3,an Nkpor First Line Specialist Hospital and Maternity
+1006,FACILITY,944,NUIdE3TvAB8,an Nkpor Hossan Hospital 
+1007,FACILITY,945,IyCP9FDAaVl,an Nkpor Ndu Primary Health Centre
+1008,FACILITY,946,AjDs8VPPRyd,an Nkpor St. Dominic Hospital and Maternity
+1009,FACILITY,947,BAls20JmoBY,an Nobel Hospital and Maternity
+1010,FACILITY,948,JfaC0X8Nsqa,an Nwabume Memorial Maternity Umuotu Obosi 
+1011,FACILITY,949,f7RIzPtQ5bt,an Obinwane Hospital and Maternity
+1012,FACILITY,951,w2NQ1NFUCmq,an Ogbu Abatete Primary Health Centre
+1013,FACILITY,952,lDksAwtuHAx,an Ogidi General Hospital
+1014,FACILITY,953,ZrZxxtMBolT,an Ogidi Maternal and Child Health Clinic
+1015,FACILITY,954,u1hgGK9HCAH,an Ositadinma Hospital and Maternity
+1016,FACILITY,955,cf7FL1UGwqa,an Queen of Babies Maternity Home Nkpor
+1017,FACILITY,956,DNOdChcLHxm,an Referral Health Centre Oraifite
+1018,FACILITY,957,uVblgkUWTAY,an St Josephs Maternity Home Umuoji
+1019,FACILITY,959,bpJvEA15sGZ,an Three Sister Maternity Home
+1020,FACILITY,960,VJriPixDCKy,an Umuoji St. Rita Maternity Home
+1021,FACILITY,961,QU3wG6JfJV5,an Alor Primary Health Centre
+1022,FACILITY,962,LChpfQpXd2w,an Awka-Etiti Primary Health Centre
+1023,FACILITY,963,R6GQoVq2OhA,an Awuda Nnobi Primary Health Centre
+1024,FACILITY,964,cqrxukD0hZX,an Chiamaka Hospital and Maternity Nnobi
+1025,FACILITY,965,BvjXSzsFJU9,an Ebenesi Nnobi Primary Health Centre
+1026,FACILITY,966,V5gZ91Ewzev,an Moon Hospital
+1027,FACILITY,967,VKTFDXki3gH,an Nnobi Chukwunonso Hospital & Maternity
+1028,FACILITY,968,AOxjrNMfWsA,an Nnobi General Hospital
+1029,FACILITY,969,GEs2U8sSYMn,an Nnokwa Primary Health Centre
+1030,FACILITY,970,tXbYoanSYhw,an Oba Comprehensive Health Centre (Trauma Centre)
+1031,FACILITY,971,KUrCHFmZbjf,an Ojoto-Obofia Primary Health Centre
+1032,FACILITY,972,Dz8HrQcEfu0,an Ojotu Uno Primary Health Centre
+1033,FACILITY,973,ByeZxr6jHS6,an Our Lady of Fatima Catholic Hospital
+1034,FACILITY,974,KM0f9lKXJ3e,an Umuanocha Primary Health Centre
+1035,FACILITY,975,nfTIiRRpcsf,an Amamputu Primary Health Centre
+1036,FACILITY,976,k7XOgfyk56G,an Azia Primary Health Centre
+1037,FACILITY,977,kDAIFqJRYP6,an Eziama Uli Primary Health Centre
+1038,FACILITY,978,wbIdwxdUgxm,an Eziani Health Centre
+1039,FACILITY,979,PDkD4lFaaAX,an Iseke Primary Health Centre
+1040,FACILITY,980,hSIiBAiY8TX,an Mbosi Primary Health Centre
+1041,FACILITY,981,LfS1ETl2otC,an Okija General Hospital
+1042,FACILITY,982,KgdWVUk6y7l,an Okija Primary Health Centre
+1043,FACILITY,983,vHhwvVdxjlp,an Orsumoghu Primary Health Centre
+1044,FACILITY,984,bWvZBZ5IUkA,an Our Lady of Lourdes Hospital
+1045,FACILITY,985,hvM3FCNDMEf,an Ozubulu St. Jude Hospital and Maternity
+1046,FACILITY,987,fsL6w5IzPHd,an Umuatuegwu Okija Primary Health Centre
+1047,FACILITY,988,W604c68ofQy,an Umudara Primary Health Centre
+1048,FACILITY,989,EFlctUdlWjt,an Umuhu Ubahu Okija Primary Health Centre
+1049,FACILITY,990,pkKLuAGBGSx,an Umuohi Primary Health Centre
+1050,FACILITY,991,qyMKtb3CtmD,an Vera Clinic Ihiala
+1051,FACILITY,992,EQ4J2yIIea0,an Abagana Health Centre
+1052,FACILITY,993,fmFisXf6Udg,an Abba Primary Health Centre
+1053,FACILITY,994,yJkUyLfQo7M,an Adegbe Avonimi Primary Health Centre
+1054,FACILITY,995,Lw6hd6QVjLc,an Beke Memorial Hospital Nimo
+1055,FACILITY,996,CqaFR06lq8I,an BeluChukwu Hospital and Maternity
+1056,FACILITY,997,qM56ciSE1oI,an Egbengwu Nimo Primary Health Centre
+1057,FACILITY,998,yWGVZbVHuBD,an Enugu Agidi Primary Health Centre
+1058,FACILITY,999,ffEPlnl1GFd,an Eziomaigbo Primary Health Centre
+1059,FACILITY,1000,XKYzfWpX8e4,an Nawfia Primary Health Centre
+1060,FACILITY,1001,CYXMuVcbt1r,an Nimo General Hospital
+1061,FACILITY,1002,CyFjYqp26zy,an Okpala Hospital and Maternity Enugu Ukwu
+1062,FACILITY,1003,otkuU5B1pm6,an St. Ann Hospital and Maternity
+1063,FACILITY,1004,QEp7plJ9XwJ,an Umudiaba Nimo Primary Health Centre
+1064,FACILITY,1005,Zklu6yHTdqD,an Urban Hospital and Maternity Abagana
+1065,FACILITY,1006,Ic3f0GxkgqJ,an Urunnebo Enugwu Ukwu Primary Health Centre
+1066,FACILITY,1007,LgN9zBumM3T,an Uruogbo Enugwu Ukwu Primary Health Centre
+1067,FACILITY,1008,Oe6AGHc3wWo,an Abubor Nnewichi Chimex Hospital and Maternity
+1068,FACILITY,1009,JOnjYTtv9gD,an Abubor Nnewichi Obioma Specialist Hospital
+1069,FACILITY,1010,umTAfO916k4,an ADONHACDC
+1070,FACILITY,1011,v9Kxl5owwGe,an De Dominion Hospital and Maternity Uruagu
+1071,FACILITY,1012,BHQF4Uxp7V4,an Edoji Primary Health Centre
+1072,FACILITY,1013,XgII7HeXugL,an Emecourt Health Centre Nnewi
+1073,FACILITY,1014,Y0mlC4q8TQy,an First Maf Hospital and Maternity Nnewi
+1074,FACILITY,1015,jhSIYPPv9Us,an Glory Hospital and Maternity
+1075,FACILITY,1016,TJAKnxkzfn6,an Holy Trinity Hospital and Maternity
+1076,FACILITY,1017,o1OUJtODujX,an Inyaba Health Centre  Nnewi
+1077,FACILITY,1018,iWA8BXO3r4k,an Ndiakwu Health Centre Otolo Nnewi 
+1078,FACILITY,1019,gsWRyi5ZnuP,an Ngozi Chukwuka Hospital and Maternity
+1079,FACILITY,1020,wEnM5gxm8Vu,an Nnamdi Azikiwe University Teaching Hospital
+1080,FACILITY,1021,zlBQPsmgNMd,an Nnewi Diocesan Hospital
+1081,FACILITY,1022,jT3x334gCXo,an Nnewi Okpuno-Otolo Health Centre
+1082,FACILITY,1024,dy9KwdQwLqe,an Okpuno Egbu Primary Health Centre
+1083,FACILITY,1025,wr6Q91IrQuA,an Okpunor Nnewichi Rose of Sharon Specialist Hospital
+1084,FACILITY,1026,thXLlh55mEJ,an Okwuani Immaculate Heart Hospital and Maternity
+1085,FACILITY,1027,GPs7x1KcMnm,an Otolo Ikedife Specialist Hospital
+1086,FACILITY,1028,fHEClvDZVpY,an Otolo Nnewi Chidiera Hospital
+1087,FACILITY,1029,QO7GZ92yhpK,an Otolo Umuenem Primary Health Centre
+1088,FACILITY,1030,hBYbEk79FBV,an Umudim Chicason Hospital
+1089,FACILITY,1031,rq8ruhCXK4c,an Umudim Life Specialist Hospital and Maternity
+1090,FACILITY,1032,nx3dHSZ8EvD,an Zenith Hospital and Maternity
+1091,FACILITY,1034,mI7tgydqg4A,an Amichi Diocesan Hospital
+1092,FACILITY,1035,jgtnfk6Yp6A,an Amichi Primary Health Centre
+1093,FACILITY,1036,CKTsG7iC7Dt,an Ekwulumili Maternity Home
+1094,FACILITY,1037,J8u49MDrJLu,an Ekwulumili Primary Health Centre
+1095,FACILITY,1038,D7GxdJHvopz,an Osumenyi Comprehensive Health Centre
+1096,FACILITY,1039,y5iq2BB90mY,an Osumenyi Visitation Hospital
+1097,FACILITY,1040,MYWYsIkCFgm,an Utu Maternity Home (PHC Utu)
+1098,FACILITY,1041,Yk1Z1Z5F2MY,an Akili Ogidi Primary Health Centre
+1099,FACILITY,1042,eTqkzmw7PVN,an Atani Comprehensive Health Centre
+1100,FACILITY,1043,nOJfZ1YAXVz,an Ave Maria Hospital and Maternity Home
+1101,FACILITY,1044,vW53LuKNCjl,an Beautiful Gate Hospital Atani Road Odekpe
+1102,FACILITY,1045,HR4xiMnyq4n,an Chidi Maternity
+1103,FACILITY,1046,eOphI1mnxed,an Chukwubuike Maternity Home Okpoko
+1104,FACILITY,1048,N2m6fCgPosZ,an Goodnews Hospital and Maternity
+1105,FACILITY,1049,xradlE44VnN,an Holy Child Maternity and Clinic
+1106,FACILITY,1050,CCTXUEBLo32,an Ijeoma Maternity Home
+1107,FACILITY,1051,XBJgsIN0iZg,an Iyiowa Odekpe Model Hospital and Maternity
+1108,FACILITY,1052,uKXzDoFqkdV,an Iyiowa Odekpe New Life Hospital and Maternity
+1109,FACILITY,1053,mQJwi1dALak,an Kelechi Hospital and Maternity
+1110,FACILITY,1054,socHhCKiop4,an Lumen Christ Hospital
+1111,FACILITY,1055,Equf7OM2Gkx,an Mother of Mercy Maternity Home
+1112,FACILITY,1056,n5xJFJnbl53,an Multicare Hospital and Women Welfare Centre
+1113,FACILITY,1057,otKuOqTflai,an New Life Hospital and Maternity Atani Road
+1114,FACILITY,1058,C6lNQKUZG82,an Njideka Hospital and Maternity Home Okpoko
+1115,FACILITY,1059,CyolTtcgyLw,an Nkpikpa Obosi Divine Care Clinic and Maternity
+1116,FACILITY,1060,p1Ae3fTBGvp,an Nnedimma Hospital and Maternity
+1117,FACILITY,1061,pcuTwQw799D,an Nwobi Memorial Hospital
+1118,FACILITY,1062,fy8vqeFGmRQ,an Nzubechukwu Maternity and Clinic
+1119,FACILITY,1063,WQrvXtispPj,an Ochuche Model Primary Health Centre
+1120,FACILITY,1064,quZ3kLz14zQ,an Ogbakuba Primary Health Centre
+1121,FACILITY,1065,KoR5WbBMFaR,an Ogwuanaocha Basic Health Centre
+1122,FACILITY,1066,vvhOglGL6vB,an Okpoko All Saints Maternity
+1123,FACILITY,1067,PBDFPOaHBZP,an Okpoko Bethel Hospital and Maternity
+1124,FACILITY,1068,Ob5bsOQs6VX,an Okpoko Ebenezar Hospital and Maternity
+1125,FACILITY,1070,BsAaWDi708D,an Okpoko Kings Kidd Hospital and Maternity
+1126,FACILITY,1071,pGGAoLLTMjZ,an Okpoko Living Spring Hospital and Maternity and Children Welfare Centre
+1127,FACILITY,1073,aDAHXswtJo5,an Onyinyechukwu Maternity
+1128,FACILITY,1074,PjYM6poR79t,an Orient Hospital and Maternity
+1129,FACILITY,1075,HdRQ205h2sv,an Ossomala Primary Health Centre
+1130,FACILITY,1076,EZBDLPHm9qX,an Our Mother of Perpetual Help Maternity
+1131,FACILITY,1077,p0u2yyxJbOm,an Patricia Memorial Hospital and Maternity Aka baby
+1132,FACILITY,1078,G3f5sxkVy26,an Remedy-Bay Maternity and Hospital
+1133,FACILITY,1079,C505nyGPipc,an Somtoochukwu Maternity Clinic
+1134,FACILITY,1080,SMC77TuhrDA,an Uchechukwu Maternity Odekpe
+1135,FACILITY,1081,S3DgaqkPDdi,an Umunankwo Primary Health Centre Ogbaru
+1136,FACILITY,1082,pgtVMJ5O9p4,an Akpaka Primary Health Centre
+1137,FACILITY,1083,jRYT9gBd0yC,an All Hallows Hospital and Maternity
+1138,FACILITY,1084,QWYMK3L8OT4,an Arinzechukwu Hospital and Childrens Clinic
+1139,FACILITY,1085,ynQEu0k26ws,an Azokwu Memorial Specialist Hospital and Maternity
+1140,FACILITY,1086,O6wrcrocdef,an Blessed Specialist Hospital and Maternity
+1141,FACILITY,1087,R8PUHcREZXp,an Christ Church Health Post
+1142,FACILITY,1088,PyyFBCFsX2a,an Glory Hospital Mat Complex
+1143,FACILITY,1089,aupsgKrvIkQ,an Holy Rosary Hospital
+1144,FACILITY,1090,lFInkfFkq4A,an HU PACE Anambra State Community Pharmacist
+1145,FACILITY,1091,KBoQn8SKTxn,an Immanuel Church Primary Health Centre
+1146,FACILITY,1092,mBgIHKCEe6S,an Inland town Primary Health Centre
+1147,FACILITY,1093,g3PavqiX0Do,an Isiafor Ascension Church Health Centre
+1148,FACILITY,1094,bzBkgwcBMrw,an Ivy Foundation Hospital and Maternity
+1149,FACILITY,1095,SVgz6aawIUh,an Kanayo Specialist Hospital and Maternity
+1150,FACILITY,1096,zuRzVAPna8D,an Mainland Hospital and Maternity
+1151,FACILITY,1097,aoaqnyV30J4,an Marine Prison Health Post
+1152,FACILITY,1098,reqOni9rPWJ,an Multicare Hospital and Maternity
+1153,FACILITY,1099,jmNGA7ggu4j,an Ndubuisi Hospital and Maternity
+1154,FACILITY,1100,vQGeOaRJ2FJ,an Onitsha Basic Primary Health Centre
+1155,FACILITY,1101,bC3kkWTb5NG,an Onitsha Mezie Hospital & Maternity
+1156,FACILITY,1102,dSnd8eYCDsn,an Onitsha St. Leo Hospital and Maternity
+1157,FACILITY,1104,xWMJKF71etE,an Pioneer International and Maternity
+1158,FACILITY,1106,tdJksmCrPZo,an Rapha Hospital and Maternity
+1159,FACILITY,1107,GNcz84pdcVU,an Shalom Foundation Specialist Hospital and Maternity
+1160,FACILITY,1108,rMXuxD4xrLM,an St Charles Borromeo Hospital
+1161,FACILITY,1109,Jy4qqv5v5fC,an St. Barths Model Hospital & Maternity
+1162,FACILITY,1110,wDPLQUgUfuE,an St. Luke Hospital 
+1163,FACILITY,1111,B3DYkiBnoss,an St. Patricks Hospital and Maternity
+1164,FACILITY,1113,kZKXOLuNvaL,an Venik Specialist Hospital and Maternity
+1165,FACILITY,1114,XBdnRxQNxut,an Winners Hospital and Maternity
+1166,FACILITY,1115,C9ToIylWIpj,an Benedicts Memorial Hospital and Maternity
+1167,FACILITY,1116,iXrCjDAyW06,an Bethsaida Specialist Hospital and Maternal
+1168,FACILITY,1117,So4Pn5xNZ9B,an Delta Hospital and Maternity
+1169,FACILITY,1118,EBTbPWeiRVz,an Dibiaezue Hospital and Maternity
+1170,FACILITY,1119,EnLM06FNR1p,an Glory Hospital
+1171,FACILITY,1120,sBA1J5UhtXn,an Gods Estate Specialist Hospital and Maternity
+1172,FACILITY,1121,ijX3L72mpaG,an Menax Hospital and Maternity
+1173,FACILITY,1122,RIbuDBBTGDj,an Mezie Hospital Alor
+1174,FACILITY,1123,FPoSKllr6NF,an Odoakpu Model Primary Health Centre
+1175,FACILITY,1124,XBvoeqH3iQD,an Onitsha CEO Clinic and Maternity
+1176,FACILITY,1125,qMWr6bKIihl,an St Cyprians Hospital and Maternity
+1177,FACILITY,1126,BFigGMPDWgF,an Toronto Hospital Onitsha
+1178,FACILITY,1127,jd5hDJvQsv6,an Afoudo Nanka Primary Health Centre
+1179,FACILITY,1128,gN4vEwZx9gS,an Best Hospital and Maternity Oko
+1180,FACILITY,1129,j6wyXK3CzG7,an Chioma Maternity Hospital Nanka
+1181,FACILITY,1130,pE6c3wVd2x3,an Nanka Chukwunonso Hospital and Maternity
+1182,FACILITY,1131,qFe0hBzjef1,an Ndiowu Model Primary Health Centre
+1183,FACILITY,1132,ZSMJu05D654,an Ndiowu Primary Health Centre
+1184,FACILITY,1133,raJpzpLQnrW,an Ofu-Obi Comprehensive Health Centre Agbiligba
+1185,FACILITY,1134,Wzl2Imz0h8N,an Oko Chukwunonso Hospital and Maternity
+1186,FACILITY,1135,Ecz1BqYiDbo,an Oko Community Hospital
+1187,FACILITY,1136,WMOQPFc5BLT,an Omogho Primary Health Centre
+1188,FACILITY,1137,w6VXl1dn8Ry,an Orumba General Hospital
+1189,FACILITY,1139,TFbGCCXxNwv,an Referral Health Centre Awa
+1190,FACILITY,1140,HHoTcfLKIN8,an Ezira Primary Health Centre
+1191,FACILITY,1141,eUYj9qw1qHI,an Mmiata Anam Primary Health Centre
+1192,FACILITY,1142,MwwtO01vzy5,an Ogbunka Primary Health Centre
+1193,FACILITY,1143,UjGyiZZKHqH,an Owerre Ezukala I Primary Health Centre
+1194,FACILITY,1144,nXrK4hEJ3mA,an Umunze Comprehensive Health Centre
+1195,FACILITY,1146,sAz2LbMplCH,an Umunze St. Catherine Hospital
+1196,FACILITY,1147,kkxblW73oG2,an Umuommaku Primary Health Centre
+1197,FACILITY,1148,TPO5mjkoIPm,an Beatrice Hospital and Eye Centre Umunya
+1198,FACILITY,1149,hzAVdewtQeo,an Faith Clinic Omor
+1199,FACILITY,1150,hgz8vu2yIjt,an Isaac Chira Memorial Hospital
+1200,FACILITY,1151,seXF8z6Ih2w,an Ndibinaju Primary Health Centre
+1201,FACILITY,1152,zvXSTib8Omj,an Nkwelle-Ezunaka Health Centre
+1202,FACILITY,1153,YmC9Tu0eMUO,an Nteje Primary Health Centre
+1203,FACILITY,1154,akvypk378Ht,an Ogbunike Primary Health Centre
+1204,FACILITY,1155,zsK0i8GVCii,an Oze Nkwelle Ezunaka Primary Health Centre
+1205,FACILITY,1156,Zz5Pt99Dnkh,an Umunya Comprehensive Health Centre
+1206,FACILITY,1157,hHhHtep4TCp,an Umunya Primary Health Centre
+1207,FACILITY,1158,J02oTVkO0gk,an Zodiac Medical Centre
+1208,FACILITY,1159,AmxtQ8rvrT3,ba Abubakar Tafawa Balewa University Teaching Hospital
+1209,FACILITY,1161,dGhQKNmr2gM,ba Apple Clinic
+1210,FACILITY,1162,vX6iUh9Hgnf,ba Bayara Infectious Diseases Hospital
+1211,FACILITY,1163,n7xfUGpJbCg,ba City Clinic
+1212,FACILITY,1164,jlDqbZEUezl,ba Federal Low Cost Primary Health Centre
+1213,FACILITY,1165,T01rDhoEfhw,"ba Forward in Action for Education, Poverty and Malnutrition"
+1214,FACILITY,1166,bNbNrFYrPI5,ba Kofar Wase Primary Health Centre
+1215,FACILITY,1167,RyBlPF5d0XH,ba Mararraba Primary Health Centre
+1216,FACILITY,1168,dMIrgkkHE8m,ba MRS 33 Shadawanka
+1217,FACILITY,1169,zzChQslnRRG,ba MRS School of Armor
+1218,FACILITY,1170,NyJQiV3Zrmz,ba Nassarawa Jahun Primary Health Centre
+1219,FACILITY,1171,QbjXCbBkXOX,ba Niima Consultant
+1220,FACILITY,1172,Q8Zys5QyHhE,ba Pohlycon Clinic
+1221,FACILITY,1173,tbXvPY3A6f5,ba Reemee Clinic
+1222,FACILITY,1174,mKRi6uJAwfY,ba State Low Cost Primary Health Centre
+1223,FACILITY,1175,huPwX957TXf,ba Tirwun Maternal and Child Health Clinic
+1224,FACILITY,1176,M3GNk2rt5ng,ba Under 5 Primary Health Centre
+1225,FACILITY,1177,Kd1tUVshULa,ba Urban Maternity
+1226,FACILITY,1178,EZJRqR7S7dP,ba Women Empowerment Initiative
+1227,FACILITY,1179,rFOiEvPceos,ba Wuntin Dada Maternal and Child Health Clinic
+1228,FACILITY,1181,Rh1xNmsmBAv,ba Bogoro General Hospital
+1229,FACILITY,1182,h0nB5GWqOXx,ba Bogoro Maternal & Child Health Clinic
+1230,FACILITY,1183,EAEb9SWmdGr,ba Dass General Hospital
+1231,FACILITY,1184,uasI1kZETeo,ba Dabe Primary Health Centre
+1232,FACILITY,1185,RKnNt8h3wET,ba Kafin Madaki General Hospital
+1233,FACILITY,1186,IiFRd1SAqvT,ba Giade General Hospital
+1234,FACILITY,1189,diiU0iuPwyv,ba Azare Federal Medical Centre
+1235,FACILITY,1190,FcUnmwvTxpD,ba Azare General Hospital
+1236,FACILITY,1191,jTaZDFdLVVT,ba Kirfi General Hospital 
+1237,FACILITY,1192,nSNtobYmZGC,ba Misau General Hospital
+1238,FACILITY,1193,F9ps8wcA3Mh,ba Burra General Hospital
+1239,FACILITY,1194,IE5SNvrz8sj,ba Shira Yana General Hospital
+1240,FACILITY,1195,mFvcW5v1VJN,ba Boto General Hospital
+1241,FACILITY,1196,rZnyxHzcDWn,ba Tafawa Balewa Our Lady of Apostle (OLA) Clinic 
+1242,FACILITY,1197,ukiCWu8RyP9,ba Tafawa Balewa Town Maternity
+1243,FACILITY,1198,fDDlZgd46Sw,ba Tafawa-Balewa General Hospital
+1244,FACILITY,1199,AgTeNaYl23u,ba Toro General Hospital
+1245,FACILITY,1200,jGUH15SWVHO,ba Warji General Hospital
+1246,FACILITY,1201,rpLskR46YHS,ba Katagum Zaki General Hospital
+1247,FACILITY,1202,t0XUtRXb6cO,bo Askira General Hospital
+1248,FACILITY,1203,tGzhO2k3rV7,bo Azare General Hospital
+1249,FACILITY,1204,KZFKCcwf1t1,bo Bama General Hospital
+1250,FACILITY,1205,RlALpZB6pXf,bo Banki Comprehensive Health Centre
+1251,FACILITY,1206,Jaqb5VBHDWH,bo Benisheik General Hospital
+1252,FACILITY,1207,pkswvZTO1Ac,bo Biu General Hospital
+1253,FACILITY,1208,V35VPbLYNCG,bo Briyel General Hospital
+1254,FACILITY,1209,OxBYjza0xzh,bo Chibok General Hospital
+1255,FACILITY,1210,lLQZjoEWFk6,bo Damasak General Hospital
+1256,FACILITY,1211,VURzbQTcnL1,bo Gudumbali General Hospital
+1257,FACILITY,1212,ktklhuhpK0f,bo Gwoza General Hospital
+1258,FACILITY,1213,UdAQPIjUBig,bo Kirawa General Hospital
+1259,FACILITY,1214,FN5T8zb8HOK,bo Lassa General Hospital
+1260,FACILITY,1215,G8Ey6S9NG33,bo Mafa General Hospital
+1261,FACILITY,1216,j2mvdLhBLAw,bo Muhammed Shuwa Memorial Hospital
+1262,FACILITY,1217,q0w0ZBMf7QZ,bo Maiduguri State Specialist Hospital
+1263,FACILITY,1218,Sei9GrDiGJ2,bo Marama General Hospital
+1264,FACILITY,1219,Hpu6cigluhB,bo Ngala General Hospital
+1265,FACILITY,1220,p1f4JWdOWTi,bo Ngoshe General Hospital
+1266,FACILITY,1221,H48FvhQYVCi,bo Shani General Hospital
+1267,FACILITY,1222,PqYVGHLjGmD,bo University of Maiduguri Teaching Hospital
+1268,FACILITY,1223,fuJ1wHNeaXa,by Bekekiri Comprehensive Health Centre
+1269,FACILITY,1224,TDjQuBlxRKE,by Diema Primary Health Centre
+1270,FACILITY,1225,fYPCNIFslHV,by Egweama Primary Health Centre
+1271,FACILITY,1226,QGm1EZYtO0k,by Minibie Primary Health Centre
+1272,FACILITY,1227,X9vbK0mEDod,by Odioma Primary Health Centre
+1273,FACILITY,1228,XM0avk76M1h,by Okpoama Cottage Hospital
+1274,FACILITY,1229,fXAtpbeHgFO,by Okpoama Primary Health Centre
+1275,FACILITY,1230,lNDhuKtvQWk,by Sangana Cottage Hospital
+1276,FACILITY,1231,NYGAwnkIO72,by Twon-Brass Comprehensive Health Centre
+1277,FACILITY,1232,obtpRyQiFyD,by Twon-Brass General Hospital
+1278,FACILITY,1233,NZtbgo12Agg,by Egbemo-angalabiri Cottage Hospital
+1279,FACILITY,1234,ub2v6BBIoTD,by Egbemo-Angalabiri Model Primary Health Centre
+1280,FACILITY,1235,aHMuLzkYKUP,by Isampou Primary Health Centre
+1281,FACILITY,1236,iYuRf8Bz1Wf,by Lalagbene Primary Health Centre
+1282,FACILITY,1237,rkkjncgblPI,by Letugbene Health Centre
+1283,FACILITY,1238,SihhlZWIGay,by Ogbotobo Primary Health Centre
+1284,FACILITY,1240,Ax1Nrtipdf1,by Tamogbene Primary Health Centre
+1285,FACILITY,1241,zykvOrjk7Zx,by Toru-Ndoro Comprehensive Health Centre
+1286,FACILITY,1242,GxTmJhgr4ir,by Alaere Alaibe Health Centre
+1287,FACILITY,1243,ZFBDqCpLcyf,by Igbedi Health Centre
+1288,FACILITY,1244,EUtW3rG8p7W,by Kaiama Health Centre
+1289,FACILITY,1245,fzmKFOqj04w,by Odi Comprehensive Health Centre
+1290,FACILITY,1246,uTzJLhLLcbE,by Odi General Hospital
+1291,FACILITY,1247,fqOAIExySCs,by Okoloba Cottage Hospital
+1292,FACILITY,1248,jYI4wMi1xol,by Opokuma North Primary Health Centre
+1293,FACILITY,1249,KpwOq6I7FoU,by Opokuma South Comprehensive Health Centre
+1294,FACILITY,1250,FWAkDnGwLeP,by Sabagreia Health Centre
+1295,FACILITY,1251,OUIuN1eCCR9,by Sampou Comprehensive Health Centre
+1296,FACILITY,1252,f6lYrTPf30h,by Agrisaba Primary Health Centre
+1297,FACILITY,1253,ljNAAGp0OpH,by Atumo-Ama Primary Health Centre
+1298,FACILITY,1254,mqvoaPMOS3n,by Bassambiri Cottage Hospital
+1299,FACILITY,1255,CcEJL9TrbXX,by Ekperikiri Primary Health Centre
+1300,FACILITY,1256,uiB4qpYW9El,by Isiaihama(Kiri) Primary Health Centre
+1301,FACILITY,1257,SNeSUPZQ3ki,by Nembe Bassambiri Comprehensive Health Centre
+1302,FACILITY,1258,PlzCz1hNn3K,by Nembe Creek Primary Health Centre
+1303,FACILITY,1259,rq6zgMFdpLE,by Nembe General Hospital
+1304,FACILITY,1260,wUicK0xA0lP,by Ogbolomabiri Comprehensive Health Centrwe
+1305,FACILITY,1261,XeQ0osWYqIG,by Okoroba Cottage Hospital
+1306,FACILITY,1262,tl4wugA6Z1L,by Ologoama Primary Health Centre
+1307,FACILITY,1263,D1ytvR7BPPq,by Ayakoro Primary Health Centre
+1308,FACILITY,1264,LCNgSGZDpw9,by Christ the King Catholic Hospital Imiringi
+1309,FACILITY,1265,iKybKhvCv23,by Elebele Health Centre
+1310,FACILITY,1266,qYO2QxhQjPE,by Kolo Health Centre
+1311,FACILITY,1267,fpoLfIQij17,by Ogbia Town Health Centre
+1312,FACILITY,1268,CWgPRjsWr6P,by Okodi Community Health Centre
+1313,FACILITY,1269,iAKmpLbIk4s,by Oloibiri Health Centre
+1314,FACILITY,1270,fyWbdvi2Yyu,by Onuebem Primary Health Centre
+1315,FACILITY,1271,CXVjCSwDuI5,by Otakeme Primary Health Centre
+1316,FACILITY,1272,Iwg5ycLYraA,by Otuasega Cottage Hospital
+1317,FACILITY,1273,ALaZaNFdQjT,by Otuokpoti Basic Health Centre
+1318,FACILITY,1275,Fc1NjnNUpWq,by Agbere Cottage Hospital
+1319,FACILITY,1276,qTko3VuBa6G,by Bolou Orua Comprehensive Health Centre
+1320,FACILITY,1277,FWFG9fRXrdL,by Elemebiri Primary Health Centre
+1321,FACILITY,1278,p0bgNhrs1kR,by Odoni Primary Health Centre
+1322,FACILITY,1279,yHjmC8qvtHT,by Ofoni Comprehensive Health Centre
+1323,FACILITY,1280,jNwR07AmPek,by Ogobiri Comprehensive Health Centre
+1324,FACILITY,1281,iJbStCcYXQw,by Okunbiri Comprehensive Health Centre
+1325,FACILITY,1282,CDNyMLeOPTP,by Osifo Primary Health Centre
+1326,FACILITY,1283,xc4Xd5RP3Ye,by Sagbama Comprehensive Health Centre
+1327,FACILITY,1284,Hh0N4SWx8lW,by Sagbama Redeemers Hospital
+1328,FACILITY,1285,iIExtAXUPBW,by Toru Orua Primary Health Centre
+1329,FACILITY,1286,l8gR1nVscc0,by Aguobiri Primary Health Centre
+1330,FACILITY,1287,RG3w37LzmtC,by Amassoma Comprehensive Health Centre
+1331,FACILITY,1288,HxrmObhkcmW,by Ikebiri Comprehensive Health Centre
+1332,FACILITY,1290,ZK90k6BIKvd,by Ogboinbiri Primary Health Centre
+1333,FACILITY,1292,ZvpKpEToIGc,by Ondewari Primary Health Centre
+1334,FACILITY,1293,dCuQkiQk6hY,by Agudama Tobis Clinic and Consultants
+1335,FACILITY,1294,IfheyjpHHiZ,by Amarata New Uchenna Hospital 
+1336,FACILITY,1295,xyHGDGqWMN3,by Amarata St. Peters Hospital
+1337,FACILITY,1296,vOuvLbqKcZb,by Ekeki Palen Clinics and Maternity
+1338,FACILITY,1297,CEjTN4EhW44,by Famgbe Basic Health Centre
+1339,FACILITY,1298,s13M21e5i20,by Family Support Program Clinic
+1340,FACILITY,1299,fk9tB1HDAHS,by Gbarantoru Primary Health Centre
+1341,FACILITY,1300,u7ktXWKSVv6,by GILEAD Hospital and Maternity
+1342,FACILITY,1301,G6HsUGh8Mhu,by Girl Child Empowerment and Reproductive Health Initiative (GREP)
+1343,FACILITY,1302,z3mjLNT4oUz,by Glory Hospital IBB Express Way
+1344,FACILITY,1303,jKnx2HPS4oh,by HU PACE Bayelsa State Community Pharmacist
+1345,FACILITY,1304,svr22lEcsiu,by I Care Save a Soul
+1346,FACILITY,1305,axII9JX57XR,by Igbogene King Mallan Sasime Medical Centre
+1347,FACILITY,1306,V5NvcWYEF3u,by Igbogene Tuberculosis and Leprosy Referral Centre
+1348,FACILITY,1307,pTGTIoMb9vH,by Ikibiri Cottage Hospital
+1349,FACILITY,1308,mMkB8rSHF2Q,by Inri Etekwe Glory Land
+1350,FACILITY,1309,hqIBoc7CE19,by Koroama Primary Health Centre
+1351,FACILITY,1310,B7nZieBzoBX,by Kpansia Asueife New Life Hospital
+1352,FACILITY,1311,XSMHSU9a7FX,by Kpansia Bay Clinic
+1353,FACILITY,1312,v4EtT7JB40j,by Kpansia Crest Consultant
+1354,FACILITY,1313,V6KOAn0Vruu,by Kpansia Favour Maternity
+1355,FACILITY,1314,nsf9Kqjim3N,by Kpansia Health Centre
+1356,FACILITY,1315,GBkcawkv7bs,by Kuro Specialist Hospital Yenagoa
+1357,FACILITY,1316,KfWKsOT6ueQ,by MIEYE Clinic Opolo
+1358,FACILITY,1317,jaXzkgwV5bN,by Niger Delta University Teaching Hospital
+1359,FACILITY,1318,pyx5q9MoDRD,by Onopa Believers Faith Medical Clinic
+1360,FACILITY,1319,ZOi2vkZ9WXt,by Polaku Primary Health Centre
+1361,FACILITY,1320,YUrqVdI1rVj,by Ripus Hospital Ltd Otiotio
+1362,FACILITY,1321,vRJpNb76kwf,by Synergy Development Initiative
+1363,FACILITY,1322,IxiVSXgQpIB,by Tien-Biseni Cottage Hospital
+1364,FACILITY,1323,VCzkJMeA9e6,by Trinidex Hospital Ekeki
+1365,FACILITY,1324,DpZwKaJ4IJn,by Yenagoa Federal Medical Centre
+1366,FACILITY,1325,BPOaJLYcDt4,by Yenagoa Hospital and Maternity Kpansia
+1367,FACILITY,1326,TTw1fRaVa8O,by Yenagoa St. John Clinic
+1368,FACILITY,1327,dHwCexw4Hir,by Yenegwe Primary Health Centre
+1369,FACILITY,1328,eixxCsL9owE,by Yenezue Gene Everly Medical Centre
+1370,FACILITY,1329,qOUoUSqLEC4,cr Abeugo Health Centre
+1371,FACILITY,1330,kxexF4MwsUT,cr Adadama Primary Health Centre
+1372,FACILITY,1331,hDtyU04u2dv,cr Afafanyi Primary Health Centre
+1373,FACILITY,1332,ICfg0BDzvOl,cr Agbara Primary Health Centre
+1374,FACILITY,1333,cOsuAilPqDb,cr Anong Health Centre
+1375,FACILITY,1335,WuwsaBsYSvQ,cr Bazohure Health Post
+1376,FACILITY,1336,VuaE13KAI7j,cr Ebom Primary Health Centre
+1377,FACILITY,1337,BofmxluU3pd,cr Ediba Comprehensive Health Centre
+1378,FACILITY,1338,KUlElJOSQE8,cr Ediba Primary Health Centre
+1379,FACILITY,1339,QihkLMultAU,cr Egboronyi Health Centre
+1380,FACILITY,1340,pUkU9SW74LS,cr Eja Memorial Hospital
+1381,FACILITY,1341,HeIQlKXttAU,cr Ekureku Health Post
+1382,FACILITY,1342,iQGICxfJG7m,cr Igbo-Imabana Model Primary Health Centre
+1383,FACILITY,1343,L7DrIhsM0uG,cr Igonigoni Health Centre
+1384,FACILITY,1344,sjVH3Y1K7yd,cr Ikpalegwa Primary Health Centre
+1385,FACILITY,1346,xv3sCGdghjq,cr Lehangha Health Centre
+1386,FACILITY,1348,RVE6WaQpIWB,cr Usumutong Primary Health Centre
+1387,FACILITY,1349,QmKP4bFOpqR,cr Aningeje Primary Health Centre
+1388,FACILITY,1350,iext16XkXdx,cr Awi Health Centre
+1389,FACILITY,1351,BZorGIK9ns1,cr Ayaeba Health Centre
+1390,FACILITY,1352,a5auu4WKPy5,cr Ekong Anaku Health Centre
+1391,FACILITY,1353,Pu82qWxGlWT,cr Iko Esai Primary Health Centre
+1392,FACILITY,1354,Ps43wmcpfFt,cr Iwuru Central Health Centre
+1393,FACILITY,1355,u4odt4ECon7,cr Mbarakom Primary Health Centre
+1394,FACILITY,1357,F31oQDobNK3,cr Mma Efa Health Centre
+1395,FACILITY,1358,wlCemOvQJdc,cr Nyaje Primary Health Centre
+1396,FACILITY,1359,C7D3PxD77M5,cr Oban Health Centre
+1397,FACILITY,1360,oV5F8nOWITR,cr Ojor Health Centre
+1398,FACILITY,1361,i0XENTmjLDh,cr Old Netim Primary Health Centre
+1399,FACILITY,1362,ggJGFNjOxRr,cr Osomba Primary Health Centre
+1400,FACILITY,1363,fZd5HvV5GX2,cr Usy Medical Centre
+1401,FACILITY,1364,mjb0wKOG2l1,cr Uyanga Primary Health Centre
+1402,FACILITY,1365,RaYXaLR13ie,cr Akansoko Health Centre
+1403,FACILITY,1366,jT4E0ZFKsqz,cr Akpab Etim Health Centre
+1404,FACILITY,1367,WvTvYtPFBTv,cr Akpabuyo St Joseph Hospital
+1405,FACILITY,1368,Sn06cs0aNMD,cr Asabanka Health Centre
+1406,FACILITY,1369,reY4I68H9C3,cr Atim Asam Health Centre
+1407,FACILITY,1371,qihKLYzjDBA,cr Esuk Mbat Health Post
+1408,FACILITY,1372,cpGIRoFIhOD,cr Eto Mkpe Health Post
+1409,FACILITY,1373,TJSx1FB6KXp,cr Idundu Primary Health Centre
+1410,FACILITY,1374,TagMW66e20T,cr Ifondo Health Post
+1411,FACILITY,1375,SoP3ylLWj7U,cr Ikong Health Post
+1412,FACILITY,1376,SN3bHRhMSy8,cr Ikot Edem Odo Health Centre
+1413,FACILITY,1377,LWMQ2H57MAu,cr Ikot Efanga Primary Health Centre
+1414,FACILITY,1378,G99Vrv7k7k3,cr Ikot Ekpo Health Centre
+1415,FACILITY,1379,q9GFxWQy8IS,cr Ikot Ene Umo Health Post
+1416,FACILITY,1380,g69A09duzC1,cr Ikot Nakanda Primary Health Centre
+1417,FACILITY,1381,ZgRKPdnp5Ga,cr Ikot Offiong Ambai Health Centre
+1418,FACILITY,1382,EfFNpz3zBig,cr Ikot Okpo Ene Health Post
+1419,FACILITY,1383,L3UgdHQdsD8,cr Ikot Otu Abasi Health Centre
+1420,FACILITY,1384,GYPXEePpxtk,cr Ikot Uba Clinic
+1421,FACILITY,1385,RuJ8wb0EMff,cr Nkakat Eyamba Health Centre
+1422,FACILITY,1386,bNIlwalSJLZ,cr Usung Ibawa Ifiang Health Post
+1423,FACILITY,1387,H1MZmjVAlbT,cr Akpab Okon Eneita Health Post
+1424,FACILITY,1388,mENwT9p36Bk,cr Akwa-Ibutong Health Post
+1425,FACILITY,1389,HXqGxspMiyZ,cr Edik Idim Health Post
+1426,FACILITY,1390,he4T7W3pWKt,cr Edik Oron Idem Health Post
+1427,FACILITY,1391,tPv6WG9Scrd,cr Effut Esighi Health Centre
+1428,FACILITY,1392,Brd6xH8m3Yp,cr Ekpri Ikang Primary Health Centre
+1429,FACILITY,1393,IDqxRMfJWTR,cr Ekpri Obutong Health Centre
+1430,FACILITY,1394,c5VEtYzQ2ra,cr Esighi Primary Health Centre
+1431,FACILITY,1395,bVAC6H3RNz5,cr First Contact Clinic and Maternity
+1432,FACILITY,1396,qGytpwQvLyj,cr Health Centre Ekpri Obio Abakpa
+1433,FACILITY,1397,O79PYny4yRr,cr Health Post Nsidung
+1434,FACILITY,1398,tj76jN7h5Bn,cr Ifiang Ayong Health Centre
+1435,FACILITY,1399,t2lauRjAn8a,cr Ifiang Nsung Primary Health Centre
+1436,FACILITY,1400,s0jZ50nrVoW,cr Ikang Primary Health Centre
+1437,FACILITY,1402,wmZXPntJ6sb,cr Ikot Iwang Health Centre
+1438,FACILITY,1403,K1aAbcgrUKV,cr Ine Abasi Health Post
+1439,FACILITY,1404,gjokTgNuLaf,cr Abouchiche Model Primary Health Centre
+1440,FACILITY,1405,UIeWQ0To5Rd,cr Abuagbo Health Post
+1441,FACILITY,1406,IMLF1DGWpGB,cr Abuagor-Iye Health Post
+1442,FACILITY,1407,RUljQff10gZ,cr Abube Health Post
+1443,FACILITY,1408,CduZY2vvEkZ,cr Abukpem Health Centre
+1444,FACILITY,1409,aSoC9XRHwpO,cr Abuochiche In-land Health Post
+1445,FACILITY,1410,yNJMsRWTxQT,cr Achibang Health Post
+1446,FACILITY,1411,KGddSFaq3l5,cr Afrike Ochagbe Primary Health Centre
+1447,FACILITY,1412,Z50dVA3KDTw,cr Agim Health Post
+1448,FACILITY,1413,fyDHc4z4UXa,cr Akpakpa Health Post
+1449,FACILITY,1415,bNQ7TRZy3aY,cr Anyikang-Iye Health Post
+1450,FACILITY,1416,qx9SXH436le,cr Atiambi Health Centre
+1451,FACILITY,1417,gOxoji3jCox,cr Atibulom Health Post
+1452,FACILITY,1419,oHL7Gu2VQ4a,cr Bewo Health Post
+1453,FACILITY,1420,MCleDpUNtBp,cr Ebegang Health Post
+1454,FACILITY,1421,LcHwdxAU3Gi,cr Gakem Primary Health Centre
+1455,FACILITY,1423,cwZ8TGznUYS,cr Ichogopo Health Post
+1456,FACILITY,1424,vWk79Mjsvyh,cr Idegwe Primary Health Centre
+1457,FACILITY,1425,uo41XW7Q2ma,cr Ijibor Inland Health Post
+1458,FACILITY,1426,AzQxvEQS6E8,cr Ijibor Road side Health Centre
+1459,FACILITY,1427,fZFLhK21GAx,cr Ikparikobo Health Post
+1460,FACILITY,1428,Gv6y6zuxZG6,cr Ishane Aka Health Post
+1461,FACILITY,1429,nNz4uLa6Ofy,cr Kaduna Health Post
+1462,FACILITY,1430,mOAXCtrE6gx,cr Nyanya 1 Primary Health Centre
+1463,FACILITY,1431,cHVzKwHGiKJ,cr Nyanya New Junction Health Post
+1464,FACILITY,1434,Kn08UK5V4VO,cr Roman Catholic Mission Maternity Annex Abuochiche
+1465,FACILITY,1435,aJbkRaZcd1P,cr Ubepa Health Post
+1466,FACILITY,1439,amb8kOW6CQa,cr Ukpah Primary Health Centre
+1467,FACILITY,1440,lTEz5XcGgGT,cr Ukparibu Health Post
+1468,FACILITY,1443,i7IvyY0wbwL,cr Uwapu Health Post
+1469,FACILITY,1445,CdMCcapY0cJ,cr Abapia Health Post
+1470,FACILITY,1446,EjdYA2KPaE8,cr Abini Primary Health Center
+1471,FACILITY,1449,ZrtsmA2Mc4h,cr Adim Primary Health Centre (Biase)
+1472,FACILITY,1452,KmAcUUYnL4c,cr Akpet Central Cottage Hospital
+1473,FACILITY,1453,aIS2e0PXUUl,cr Akpet Central Health Post
+1474,FACILITY,1455,RWI0PMdAElG,cr Aya Medical Centre
+1475,FACILITY,1456,QA6GeDmPsSn,cr Betem Health Centre
+1476,FACILITY,1457,BBQs6uUsVpY,cr Biakpan Primary Health Centre
+1477,FACILITY,1458,yq9dt7UlMiH,cr Edu Health Post
+1478,FACILITY,1459,NmIWqe3Aj3y,cr Egbor Health Post
+1479,FACILITY,1460,HMd39bxdvcL,cr Ehom Health Centre
+1480,FACILITY,1461,b6qtACQygzY,cr Ehom Village Health Centre
+1481,FACILITY,1463,lXK2P3bLX4N,cr Estate Health Post
+1482,FACILITY,1464,RCQoBvz4joc,cr Etana Health Post
+1483,FACILITY,1467,fSO6OD9muuE,cr Ibogo Health Centre
+1484,FACILITY,1468,XUg8dYZ01nI,cr Idoma Health Post
+1485,FACILITY,1469,ODwwtVad4xs,cr Ijiman Health Post (Biase)
+1486,FACILITY,1471,FAamKDdYGu7,cr Ikot Okpora Primary Health Centre
+1487,FACILITY,1472,pjti5ZDbkBI,cr Ikun Primary Health Centre
+1488,FACILITY,1475,NXgM7wzH3c4,cr Itu-Agwagune Health Post
+1489,FACILITY,1477,wCaPFoeOZX3,cr Obum Health Post
+1490,FACILITY,1478,WqPqstczhbu,cr Okureke Health Centre
+1491,FACILITY,1479,rYlpqt3MmxW,cr Orida Health Post
+1492,FACILITY,1481,i8wAtDwuNHv,cr Ukwopeyere Health Post
+1493,FACILITY,1482,ATsX1xpTu2y,cr Umai Health Post
+1494,FACILITY,1483,tXhwEa1SsZN,cr Umon Island Primary Health Centre
+1495,FACILITY,1484,l4U2Nea3zD8,cr Umuolor Health Post
+1496,FACILITY,1485,POdlUyhQ0sb,cr Urugbam Primary Health Centre
+1497,FACILITY,1486,PoHaCMUQSwz,cr Abija Health Centre
+1498,FACILITY,1487,RsfKWrA7WQg,cr Abo-Ebam Primary Health Centre
+1499,FACILITY,1488,jvmVjEt08MF,cr Abo-Ogbagante Health Centre
+1500,FACILITY,1489,mDVgaV04tC7,cr Agba 1 Health Centre
+1501,FACILITY,1490,FPleACqShCw,cr Bansan Health Centre
+1502,FACILITY,1491,cFkJYcef7by,cr Bashua Health Centre
+1503,FACILITY,1492,r6KaJv9BvRP,cr Bateriko Comprehensive Health Centre
+1504,FACILITY,1493,EN04uJRWmxG,cr Biajua Health Centre
+1505,FACILITY,1494,dx1ieXVh7LJ,cr Bokalum Health Centre
+1506,FACILITY,1495,lX6jIpIZi8h,cr Butatong Health Centre
+1507,FACILITY,1496,tMKi5QoyBO1,cr Ebam Health Centre
+1508,FACILITY,1497,vM6qtXEA48o,cr Enyi Boje Maternal and Child Health
+1509,FACILITY,1498,gAaKpGDwYaW,cr Iso Bendeghe Banso Primary Health Centre
+1510,FACILITY,1499,XpTSzH1g9L1,cr Kachie Health Centre
+1511,FACILITY,1500,KnX5w2cts7u,cr Kakwagom Primary Health Centre
+1512,FACILITY,1501,WXf9oF88FDw,cr Kakwe-Beebo Health Centre
+1513,FACILITY,1502,JEAXiRAnEzB,cr Obubra Bansan Health Post
+1514,FACILITY,1503,wsbxpt6qq1R,cr Okubuanankong Health Post
+1515,FACILITY,1504,GxRModthBIQ,cr Okundi Comprehensive Health Centre
+1516,FACILITY,1505,rW8WwKWIChH,cr Olum Government Health Post
+1517,FACILITY,1506,v7kT8aXdBlv,cr Orimekpan Primary Health Center
+1518,FACILITY,1507,YIkdsAV3WBb,cr Orunghe Bawop Health Centre
+1519,FACILITY,1508,UKqmw3rFIb8,cr Owambe Health Post
+1520,FACILITY,1509,ooCswCnKIRc,cr Panyia Health Centre
+1521,FACILITY,1510,UgNcFYe5xmE,cr Wula Primary Health Centre
+1522,FACILITY,1512,fAf6HNgIMQk,cr Amodajacris Primary Health Centre
+1523,FACILITY,1516,KqqN5aTFexr,cr Biocee Zion Maternity
+1524,FACILITY,1517,pTfPkz9ahzV,cr Calabar General Hospital
+1525,FACILITY,1518,gslyLJB71Hb,cr Calabar Naval Hospital
+1526,FACILITY,1519,RmcmZMfyH8n,cr Diamond Hill Health Centre
+1527,FACILITY,1520,IWYdVSDbpIs,cr Eburutu Brigade Medical Centre
+1528,FACILITY,1521,uaoBrGfAmFg,cr Ediba Primary Health Centre (Calabar)
+1529,FACILITY,1522,YQp393eIPT8,cr Ekorinim Health Centre
+1530,FACILITY,1523,go38jKAwZ6U,cr Emmanuel Infirmiry
+1531,FACILITY,1524,WoBPTIPlcPV,cr Faith Foundation Clinic
+1532,FACILITY,1525,rUgk4E0TlvD,cr HU PACE Cross River State Community Pharmacist
+1533,FACILITY,1526,u3NYLvOQ0jk,cr Ikot Ansa Primary Health Centre
+1534,FACILITY,1527,v7Iq2oG37OD,cr Ikot Effanga Mkpa Health Centre
+1535,FACILITY,1529,RYKMHsLRGRp,cr Ikot Enebong Health Post
+1536,FACILITY,1531,R1uWtf0ckHC,cr Ishie Health Post
+1537,FACILITY,1532,z4LQJpyjQPo,cr Kasuk Health Centre
+1538,FACILITY,1533,RDOUV9TItXi,cr Mission Hill Clinic
+1539,FACILITY,1534,FhwOWDkjHgW,cr Nyahasang Health Centre
+1540,FACILITY,1536,Nvb25iOnz3K,cr University of Calabar Medical Centre
+1541,FACILITY,1537,WdLc4WuJoOA,cr University of Calabar Teaching Hospital
+1542,FACILITY,1538,ret3nZWA5j7,cr Victoria Itam Specialist Hospital
+1543,FACILITY,1539,RrLTL6Agwt7,cr Akani Esuk Health Centre
+1544,FACILITY,1540,A0CI9kcdh6R,cr Anantigha Primary Health Centre
+1545,FACILITY,1541,fvx0JLxQwoT,cr Anderson Primary Health Centre
+1546,FACILITY,1542,sSXYyVzHTlU,cr Blessed Seaatoe Maternity clinic
+1547,FACILITY,1543,sEgDD2Uk1qu,cr Calabar South Family Health Centre
+1548,FACILITY,1544,m072WuIlGm3,cr Cross River University of Science and Technology (CRUTECH) Medical Centre
+1549,FACILITY,1545,jqxL3SEEDvw,cr Dr Lawrence Henshaw Memorial Hospital
+1550,FACILITY,1546,n2iXwrOrt9h,cr Ekpo Abasi Primary Health Centre
+1551,FACILITY,1547,Z3L3aJick3G,cr Essierebom Primary Health Centre
+1552,FACILITY,1548,ZCUtll2ZWTB,cr Goldie Clinic
+1553,FACILITY,1549,TiRS3M8koPS,cr Henshaw Town Health Post
+1554,FACILITY,1550,mUCIfleVGtT,cr Ideal Medical Centre
+1555,FACILITY,1551,eAAcmyL3cPJ,cr Madonna Specialist Clinic
+1556,FACILITY,1552,W6cQml1qhRb,cr Mambo Clinic
+1557,FACILITY,1553,HugrE0e6kFm,cr Mount Zion Medical Centre
+1558,FACILITY,1554,J27aWKeQftp,cr NYSC Community Health Centre
+1559,FACILITY,1555,hvhH6AeWo2c,cr Peace medical centre
+1560,FACILITY,1556,GlxGhhiMGJZ,cr Positive Development Foundation
+1561,FACILITY,1557,vKy8xkvSRh9,cr Abia Primary Health Centre
+1562,FACILITY,1558,Sh9FXiVeV5Q,cr Abijang Primary Health Centre
+1563,FACILITY,1559,KEQ123XVyJq,cr Bendeghe Ekiem Primary Health Centre
+1564,FACILITY,1560,r6cIO5RHTw5,cr Effraya Primary Health Centre
+1565,FACILITY,1561,sS76hx46KKd,cr Ete-Eyang Primary Health Centre
+1566,FACILITY,1562,beC506B430f,cr Etomi Primary Health Center
+1567,FACILITY,1563,LBnCfpxyTXA,cr Itaka Primary Health Centre
+1568,FACILITY,1564,UxGdbDHiScl,cr Mkpot Primary Health Centre
+1569,FACILITY,1565,OR2r0NiJ7WR,cr Nsofang Primary Health Centre
+1570,FACILITY,1566,uWQse7QI9r4,cr Abankang Health Post
+1571,FACILITY,1568,WekpwVvpbtW,cr Agbaragba Primary Health Centre
+1572,FACILITY,1569,yP1ArDhFLKr,cr Akam Health Post
+1573,FACILITY,1570,Pka71jxQoFk,cr Akparabong Farm Health Post
+1574,FACILITY,1571,EfEgGOKGR4h,cr Akparabong Primary Health Centre
+1575,FACILITY,1572,phKwiHI0K1H,cr Alesi Health Post
+1576,FACILITY,1574,UVJ2J3z7Rgg,cr Assenasen Health Post
+1577,FACILITY,1576,q1HUFsCkjVn,cr Bakor Hospital
+1578,FACILITY,1578,DGsiJ0E2A6e,cr Benson Clinic
+1579,FACILITY,1579,NQ4GXw8xCFW,cr Bornima Health Post
+1580,FACILITY,1580,Yjy8Op23QCj,cr Christline Medical Infirmary
+1581,FACILITY,1583,NMeJ4S9VESt,cr Ekonde Health Post
+1582,FACILITY,1584,X3FNHnVzimd,cr Ekpokpa Primary Health Centre
+1583,FACILITY,1585,qGQaVF1Tl97,cr Ekukunela 2 Health Post
+1584,FACILITY,1586,WfDun0EXoq5,cr Ekukunela Health Post
+1585,FACILITY,1587,jHLAZPMfAHD,cr Emanghebe Primary Health Centre
+1586,FACILITY,1588,DyHlHHSbqy1,cr Etikpe Health Post
+1587,FACILITY,1589,GmDTkUxYgXq,cr Holy Family Catholic Hospital
+1588,FACILITY,1590,xCstTgXegJU,cr Ikom Urban Comprehensive Health Centre
+1589,FACILITY,1591,NgWp8O0p30z,cr Kasuki Clinic
+1590,FACILITY,1592,oHhHUidu6KU,cr Mbak Health Post
+1591,FACILITY,1593,ZcbREY9FaBf,cr Mbamba Health Post
+1592,FACILITY,1594,nNc1moohub9,cr Melrose Hospital
+1593,FACILITY,1596,SVo9FpUzPTU,cr Mkpura Primary Health Centre
+1594,FACILITY,1597,QO92JycpQwE,cr Nde Primary Health Centre
+1595,FACILITY,1598,P9fGJjLoxdR,cr Njemetop Health Post
+1596,FACILITY,1599,FoDjhyrA1EV,cr Nkarasi Primary Health Centre
+1597,FACILITY,1600,K1KfXR8kPWL,cr Nkum Health Post
+1598,FACILITY,1601,CvV4eoTft2p,cr Nnaborokpa Health Post
+1599,FACILITY,1602,AztJkIfWc6T,cr Odor NTA Health Post
+1600,FACILITY,1603,pkECBQZGzPW,cr Ofun-Nta Primary Health Centre
+1601,FACILITY,1604,iYbKMlyGS5d,cr Okondi Health Post
+1602,FACILITY,1605,pG8ON6s3vIC,cr Okuni Primary Health Centre
+1603,FACILITY,1606,Q1tzbmyxnH4,cr Ominidom Health Post
+1604,FACILITY,1607,vVqZSjG48O5,cr Opu Health Post
+1605,FACILITY,1609,DooYrUv24Tw,cr Otere Health Post
+1606,FACILITY,1610,WqzWb28TgC4,cr Owom Health Post
+1607,FACILITY,1611,ZCjbHpWTsSq,cr Yala Primary Health Centre
+1608,FACILITY,1612,yoesaOyIDce,cr Ablesang Health Post
+1609,FACILITY,1614,eiyDOEXpxi4,cr Bayaga Health Centre
+1610,FACILITY,1615,n1XE1gFxAym,cr Bayama Health Centre
+1611,FACILITY,1616,sY5sXpKgOj9,cr Bayanu Health Post
+1612,FACILITY,1617,phGhVzV0390,cr Bayatuo Health Centre
+1613,FACILITY,1618,OAlnnXPGuEr,cr Bayayam Health Centre
+1614,FACILITY,1619,tAEA0oumNo0,cr Bebuankayang Health Post
+1615,FACILITY,1620,QVkyeQQ0kwA,cr Beegbong Bebi Health Centre
+1616,FACILITY,1621,AXRmTG3h0ww,cr Begiatsu Health Centre
+1617,FACILITY,1622,aYZaSekzqn0,cr Begiatte Health Post
+1618,FACILITY,1624,MByuweDCjaX,cr Busi 1 Health Post
+1619,FACILITY,1625,XJ7kLE9UlPa,cr Busi 3 Primary Health Centre
+1620,FACILITY,1626,WfR8iXin7rG,cr Busi 6 Health Post
+1621,FACILITY,1627,oxaczbimVx1,cr Kabun Health Post
+1622,FACILITY,1628,sOmRiwmnyWO,cr Kakwalaka Health Centre
+1623,FACILITY,1629,kNHwrfI83wn,cr Kakwe Health Post
+1624,FACILITY,1630,bbFTcXqjxkB,cr Kukare Health Post
+1625,FACILITY,1631,t20psASewDV,cr Kundeve Health Post
+1626,FACILITY,1633,AbkTXA0YnGv,cr Omale Health Post
+1627,FACILITY,1634,nDemEvBd3I7,cr Ranch Medical Centre
+1628,FACILITY,1635,gUDwAnGm773,cr Ranch Primary Health Centre
+1629,FACILITY,1636,OzPslTEPLHv,cr Sankwala Primary Health Centre
+1630,FACILITY,1637,wEjQgXs0FrL,cr Shikpeche Health Centre
+1631,FACILITY,1638,CkT5l5GM7ed,cr Utanga Primary Health Centre
+1632,FACILITY,1639,q49LohGa1Ci,cr Utuhu Health Centre
+1633,FACILITY,1640,myNHKVdoWRm,cr Ababene Model Primary Health Centre
+1634,FACILITY,1641,FMtayNKRQW3,cr Akpantre Health Post
+1635,FACILITY,1642,cIMzF9B6V3q,cr Apiapum Health Centre
+1636,FACILITY,1643,E28bU8kQufa,cr Apiapumtet Health Centre
+1637,FACILITY,1644,O7hba6hSYut,cr Arobom Health Post
+1638,FACILITY,1645,NvNKglQwjFv,cr Centre Point Clinic
+1639,FACILITY,1646,sozc6wFy2oX,cr Dr. Eyamba Memorial Clinic
+1640,FACILITY,1647,RzomJY0wFRB,cr Edondon Health Post
+1641,FACILITY,1648,IDiXMX5zOJy,cr Ekana Medical Centre
+1642,FACILITY,1649,wxiqZbpNBmC,cr Ijoda Health Post
+1643,FACILITY,1650,WNYK4zcZOAP,cr Isaba Primary Health Centre
+1644,FACILITY,1651,ystc19FV41Z,cr Isobo Otaka Health Centre
+1645,FACILITY,1652,rtpRVLm9Uhl,cr Iyamitet Health Post
+1646,FACILITY,1653,lwJItDRAnGX,cr Iyamoyong Health Centre
+1647,FACILITY,1654,nYjy7TwUDk4,cr Junction Health Centre
+1648,FACILITY,1655,e4WhxejlUlM,cr Mbembe Presbyterian Tuberculosis and Leprosy Hospital
+1649,FACILITY,1656,sxu9YVtnnBX,cr Obubem Health Post
+1650,FACILITY,1657,uIFaFGCFNC1,cr Obubra Maternal and Child Health Clinic
+1651,FACILITY,1658,wxmqsbtwDrN,cr Ofat Primary Health Centre
+1652,FACILITY,1659,qyUHQVOYBPY,cr Ofatura Primary Health Centre
+1653,FACILITY,1660,tfWjpLVIzJp,cr Ofia-Oji Health Centre
+1654,FACILITY,1661,AhNOkRwQnak,cr Ofodua Health Centre
+1655,FACILITY,1662,C1321tPDix0,cr Ofumbongha Health Centre
+1656,FACILITY,1663,M5EAsZHiUkI,cr Ogada Bubra Urban Health Post
+1657,FACILITY,1664,mGMNFV1NK1O,cr Ogurude Health Centre
+1658,FACILITY,1665,LCxTMsLr18D,cr Ohana Yami Health Post
+1659,FACILITY,1666,WvSH6g1g5Xc,cr ohenna -edda Health Centre
+1660,FACILITY,1667,iJFjd9EO09U,cr Okokori Health Post
+1661,FACILITY,1668,y1dyYHfaC8x,cr Okumuruktet Ijam Health Post
+1662,FACILITY,1669,mD3IzMsUqsQ,cr Onyadama Health Post
+1663,FACILITY,1670,tGIWmB6Rvrm,cr Onyen Okpon Health Post
+1664,FACILITY,1671,ErvSi03dEOP,cr Ovukwa Health Post
+1665,FACILITY,1672,a3aDi2Koaqg,cr Owakande Health Centre
+1666,FACILITY,1674,sAxTOLDD31f,cr Araru Health Post
+1667,FACILITY,1676,vL3nlN0khot,cr Bedia Health Post
+1668,FACILITY,1677,Am0Wo1YHWps,cr Begiaka Health Centre
+1669,FACILITY,1678,QBtM9uMxqce,cr Betukwel Health Centre
+1670,FACILITY,1679,aU1pU0Lbnxp,cr Erimpang Health Post
+1671,FACILITY,1680,Tv2LftgmdUU,cr Fountain Clinic
+1672,FACILITY,1681,WkXWVARCxPK,cr Ibong Health Centre
+1673,FACILITY,1682,OfY9htRp8NH,cr Ikwomiku Health Centre
+1674,FACILITY,1683,o2g34Hv1GTc,cr Kagbong Health Post
+1675,FACILITY,1684,Y6Pzy7gwoWO,cr Kubong Bette Health Centre
+1676,FACILITY,1685,zXWz21GGG0P,cr Kukem-Kuyia Health Post
+1677,FACILITY,1686,h91A19gvm0j,cr Obudu Clinic
+1678,FACILITY,1687,havcb8LTbn1,cr Obudu Primary Health Centre
+1679,FACILITY,1688,mQMNu9wI4Sn,cr Ofambe Health Post
+1680,FACILITY,1689,fjU0VtFyI3s,cr Ohong Health Centre
+1681,FACILITY,1690,VuTFeaZFsis,cr Okiro Health Post
+1682,FACILITY,1691,vJDRetVXA6j,cr Okodem Health Post
+1683,FACILITY,1692,iPxKohRAHUQ,cr Okorshie Health Post
+1684,FACILITY,1693,wqAC0jPa5gJ,cr Okwel-obudu Health Post
+1685,FACILITY,1694,du3xeZnfI69,cr Okwerikang Health Post
+1686,FACILITY,1695,YVyD25Chww4,cr Okworotung Health Post
+1687,FACILITY,1696,CGNhpvsYi25,cr Sacred Heart Catholic Hospital
+1688,FACILITY,1697,LboHfzsvmI8,cr Ukpada Health Post
+1689,FACILITY,1699,bMF75rfIP51,cr Ukwortung Health Post
+1690,FACILITY,1700,UngJNTqAA6N,cr Ukwutia Model Primary Health Centre
+1691,FACILITY,1702,cN7oGaTNqik,cr Utugwang Model Primary Health Centre
+1692,FACILITY,1703,yqv4vODML4l,cr Uwhobikpan Health Post
+1693,FACILITY,1704,EPiQxzdP0C5,cr Adiabo Health Centre
+1694,FACILITY,1705,FdPIEdX7yba,cr Adiabo Okurikang Health Centre
+1695,FACILITY,1706,s063TxQH2zq,cr Akpap Okoyong Primary Health Centre
+1696,FACILITY,1707,mc54mAsbvJq,cr Asang Eniong Health Post
+1697,FACILITY,1708,Pg0pNjjHB8v,cr Atan Eki Primary Health Centre
+1698,FACILITY,1709,P0Mtw7IPXbH,cr Atan-Onoyom Primary Health Centre
+1699,FACILITY,1710,IiFplinJYkB,cr Creek Town Primary Health Centre
+1700,FACILITY,1711,oIgGly2NSy7,cr Ekpene Eki Health Post
+1701,FACILITY,1712,paTotr9e8Yv,cr Ibonda Health Post
+1702,FACILITY,1713,gkjyiJA2gRr,cr Ikoneto Health Centre
+1703,FACILITY,1714,dqaahTIxkUJ,cr Ikot Effiong Otop Comprehensive Health Centre (UCTH Annex)
+1704,FACILITY,1715,RXbBNAja94d,cr Ikot Efiok Ekpenyong Health Centre
+1705,FACILITY,1716,Qjd3z94mjUg,cr Ikot Obong Health Centre
+1706,FACILITY,1717,fMOVzAKyjRk,cr Ito Central Health Centre
+1707,FACILITY,1718,xO1tQFZJ1pY,cr Ndonwong Health Centre
+1708,FACILITY,1719,fi08qmxZDJ2,cr Obio Usiere Health Centre
+1709,FACILITY,1720,PuEYLelxhOp,cr Odukpani Primary Health Centre
+1710,FACILITY,1721,QD3CJciTeqt,cr Okoyongusang-Abasi Health Post
+1711,FACILITY,1722,OgksXFWKgIC,cr Okurikang Health Centre
+1712,FACILITY,1723,rkjHiDwaqxl,cr Ubamat Health Post
+1713,FACILITY,1725,VL48bLWMj0z,cr Ukwa-Ibom Primary Health Centre
+1714,FACILITY,1726,NpOy7MbjJNv,cr Urua Uyo Health Centre
+1715,FACILITY,1727,UEWEakhsP7i,cr Usung Esuk Primary Health Centre
+1716,FACILITY,1728,iOhQbB9DMXf,cr Adagom Health Post
+1717,FACILITY,1729,ufqnbTqctSt,cr Alladim Health Centre
+1718,FACILITY,1730,Ez2zBobU1zB,cr Aragbam Primary Health Centre
+1719,FACILITY,1731,J8iHSZjd0qt,cr Bansan Primary Health Centre
+1720,FACILITY,1732,riA6nUNdwKl,cr Bansara Primary Health Centre
+1721,FACILITY,1733,VL7RlWJIzxX,cr Edide Health Centre
+1722,FACILITY,1734,J1CrqLUSqry,cr Egbung Health Centre
+1723,FACILITY,1735,IAYPc30DP9o,cr Egoja Health Post
+1724,FACILITY,1736,TRM3tFEedhy,cr Ekuaro Health Post
+1725,FACILITY,1737,R15QgYaITPE,cr Ekumtak Primary Health Centre
+1726,FACILITY,1738,J3xcozW683h,cr Esham Health Centre
+1727,FACILITY,1739,P9Is1n4Pj8J,cr Idum Health Centre
+1728,FACILITY,1740,ZbyRtNJDVil,cr Igodor Primary Health Centre
+1729,FACILITY,1741,lHQj98LPecs,cr Ikandagha Health Centre
+1730,FACILITY,1742,qLWvUN75tkF,cr Irede-Ibil Primary Health Centre
+1731,FACILITY,1743,YMm7Av5YFY0,cr Ishibori Health Post
+1732,FACILITY,1744,dfZJCe33BsX,cr Mbagidi Health Post
+1733,FACILITY,1746,vnQX5Wr33NT,cr Mfom 2 Community Health Centre
+1734,FACILITY,1747,TAKAWy5fR9g,cr Ndok Health Post
+1735,FACILITY,1748,HKPUyNRKRRP,cr Nkim Health Post (Mbube East 1)
+1736,FACILITY,1749,rwqji72Zy3Z,cr Nwang Primary Health Centre
+1737,FACILITY,1751,U8zT6n3Xjhh,cr Ogberia-Ogang Health Centre
+1738,FACILITY,1752,s8gZBswkOyg,cr Ogoja Catholic Maternity Hospital
+1739,FACILITY,1753,hlXAwntIvRR,cr Ogoja General Hospital
+1740,FACILITY,1754,hGN1qVDGDZs,cr Ogoja Maternal and Child Health Clinic
+1741,FACILITY,1755,h0kiHWMnTVO,cr Ogoja Santa Maria Clinic
+1742,FACILITY,1756,MK9jNzlaLsy,cr Ogoja Tuberculosis and Leprosy Hospital
+1743,FACILITY,1758,tQmWwngghZx,cr Ukpagada Health Post
+1744,FACILITY,1759,XJPSnMa60PT,cr Ukpe Primary Health Centre
+1745,FACILITY,1760,dOodA8rxkMv,cr Afrekpe Health Post
+1746,FACILITY,1761,PNDQKp4TaWZ,cr Agoi Ekpo Primary Health Centre
+1747,FACILITY,1762,fkAuMMMBFSS,cr Agoi-Ibani Primary Health Centre
+1748,FACILITY,1763,xsuyBoKtbqY,cr Ajere Beach Health Post
+1749,FACILITY,1764,bEiKZxNBJn4,cr Ajere Primary Health Centre
+1750,FACILITY,1765,KgmmVFsCui6,cr Akugom Health Post
+1751,FACILITY,1766,eCg2rkQsFPc,cr Angel Clinic
+1752,FACILITY,1767,BuUTf4vZeZ0,cr Ansor Clinic
+1753,FACILITY,1768,HeENkc5Uja5,cr Assiga Health Post
+1754,FACILITY,1769,nz3HXv1Ewxx,cr Assiga Primary Health Centre
+1755,FACILITY,1770,NzmGg8yd4RU,cr Biko Biko Health Post
+1756,FACILITY,1771,CzDWCCZltjL,cr Danex Medical Centre
+1757,FACILITY,1772,fA4Uk6KFtRP,cr Egozi Clinic
+1758,FACILITY,1773,aGPx4RnFPXN,cr Ekom-Agoi Health Post
+1759,FACILITY,1774,vSp05G6abF1,cr Ekori Primary Health Centre
+1760,FACILITY,1775,NQrk9Lf3MCQ,cr Ekori-Beach Health Post
+1761,FACILITY,1776,h5eTmxxS0ZT,cr Epenti Primary Health Centre
+1762,FACILITY,1777,XqThjp2PjI9,cr Fame Clinic
+1763,FACILITY,1778,yRfFK3lwab0,cr Idomi Primary Health Centre
+1764,FACILITY,1779,U2pY2bzRm5U,cr Ijiman Health Post (Yakurr)
+1765,FACILITY,1780,VjUCMPCqnE5,cr Ijiman Primary Health Centre
+1766,FACILITY,1781,oLAk6MFZldr,cr Ikpakapit Health Post
+1767,FACILITY,1783,tY8dFdYbgKt,cr Inyima Primary Health Centre
+1768,FACILITY,1784,Kge54XhrEmD,cr Ketabebe Health Post
+1769,FACILITY,1785,kBRx0opmoSy,cr Mkpani Primary Health Centre
+1770,FACILITY,1786,KpwSVR7tZAN,cr Nko Primary Health Centre
+1771,FACILITY,1787,WJ61cjgFxs2,cr Ntan Primary Health Centre
+1772,FACILITY,1788,T06pxsJMsjf,cr Ntankpo Primary Health Centre
+1773,FACILITY,1789,qpVDv6eFEUB,cr Okom Health Post
+1774,FACILITY,1790,SbYsfry6urB,cr Okomasi Primary Health Centre
+1775,FACILITY,1791,iKU5XXkTetp,cr Ubi Medical Consult
+1776,FACILITY,1792,EWSOGOWdQUN,cr Ugep General Hospital
+1777,FACILITY,1793,zMpecyaLRcH,cr Ugep Primary Health Centre
+1778,FACILITY,1794,ZNsIbRCx56S,cr Usene Health Post
+1779,FACILITY,1796,xML03wS0zZy,cr Adeni Health Post
+1780,FACILITY,1797,OypUYvEO6gn,cr Akreha Health Post
+1781,FACILITY,1798,HMC0kZGV7qC,cr Allu Health Centre
+1782,FACILITY,1799,Ny4HS7CHBDm,cr Anyugbe Igede Primary Health Centre
+1783,FACILITY,1800,txls2hFYL7N,cr Daughters of Mary Sons of Joseph Foundation
+1784,FACILITY,1801,RG3HrrE5aKY,cr Echumofana Primary Health Centre
+1785,FACILITY,1802,TmD5SqcLKXw,cr Ekprinyi Health Post
+1786,FACILITY,1803,vVj79fX0Bfk,cr Gabu Primary Health Centre
+1787,FACILITY,1804,qFINwYIV4v1,cr Health Post Okpodo
+1788,FACILITY,1805,BfXk6TSClti,cr Igbekurikor Health Post
+1789,FACILITY,1806,aFwquL4TRKN,cr Ijama Health Post
+1790,FACILITY,1807,J4H7IfHgQH2,cr Ijiegu Health Centre
+1791,FACILITY,1808,r8pACaH5YSY,cr Ijiegu Yache Health Post
+1792,FACILITY,1810,QbCcT64UmAl,cr Ijiraga Health Post
+1793,FACILITY,1812,LV5LUlJSC2c,cr Ipuole Ebo Health Centre
+1794,FACILITY,1813,epBseViQUaR,cr Itate Health Post
+1795,FACILITY,1815,QQWEGK6ZFXy,cr Ntrigon Health Centre
+1796,FACILITY,1816,hB6ZhdZ5VWC,cr Obat Ogoromm Health Centre
+1797,FACILITY,1817,LLZFTFaXz4F,cr Okpoma General Hospital
+1798,FACILITY,1819,r0ZhaF4O5rA,cr Ooh Primary Health Centre
+1799,FACILITY,1820,sjy8KBlMqRV,cr Uchu Health Post
+1800,FACILITY,1821,DgZmU3fPFYN,cr Ugaga Health Centre
+1801,FACILITY,1822,AGTReeKVKK0,cr Wanekpe Health Centre
+1802,FACILITY,1824,Xk6zEhxR15c,cr Wanikade Primary Health Centre
+1803,FACILITY,1825,obtyfF7PQGB,cr Wanogana Health Centre
+1804,FACILITY,1826,I3daxm0lABP,cr Wanokom Health Centre
+1805,FACILITY,1827,eVSVzRu1E9H,cr Woda Health Post
+1806,FACILITY,1828,y1wKJ9GR9yj,cr Woleche Utukpo Health Post
+1807,FACILITY,1829,AOFhZJVW791,cr Women Development Health Centre
+1808,FACILITY,1830,bKj9JLVgWHR,cr Wonye Primary Health Centre
+1809,FACILITY,1831,xUcZxsptEtL,cr Yala Lutheran Hospital
+1810,FACILITY,1832,V0AxaSUvozm,ed Dangbala Primary Health Centre
+1811,FACILITY,1833,JZ1WHW9gdT4,ed Enwan Primary Health Centre
+1812,FACILITY,1834,bKK3eyonrzm,ed Ibillo General Hospital
+1813,FACILITY,1835,EETghW6VIuW,ed Ibillo Primary Health Centre
+1814,FACILITY,1836,H1DTVAUa8iA,ed Igarra General Hospital
+1815,FACILITY,1837,P1ksP1rVwgF,ed Igarra Primary Health Centre
+1816,FACILITY,1838,YeF7qxxuMHQ,ed Imoga Primary Health Centre
+1817,FACILITY,1839,LY5Vrld4x1O,ed Lampese Primary Health Centre
+1818,FACILITY,1840,y300tKu1kXz,ed Ososo (Yola) Primary Health Centre
+1819,FACILITY,1841,qR6431WmbwQ,ed Sasaro Primary Health Centre
+1820,FACILITY,1842,UNY3Y1gkOW6,ed Evubtubu Primary Health Centre
+1821,FACILITY,1843,MkSkgdD3bpQ,ed University of Benin Teaching Hospital (UBTH)
+1822,FACILITY,1844,vGqm0IoofCR,ed Atuagbo Primary Health Centre
+1823,FACILITY,1845,BpMhGxn0CZY,ed Eidenu Primary Health Centre
+1824,FACILITY,1846,HfGTvGSP88B,ed Ewu Primary Health Centre
+1825,FACILITY,1847,lhqDhORkLuu,ed Ibore Primary Health Centre
+1826,FACILITY,1848,vJxZhWqUGps,ed Irrua Primary Health Centre
+1827,FACILITY,1849,BYz8R4BNBQz,ed Irrua Specialist Hospital
+1828,FACILITY,1850,UQJNEkmEIbf,ed Ugbegun Primary Health Centre
+1829,FACILITY,1851,CAKl8udOnzs,ed Arue Primary Health Centre
+1830,FACILITY,1852,mLIMzoFKzXW,ed Efandion Primary Health Care
+1831,FACILITY,1853,s6ZubAmuh0e,ed Egbele Primary Health Centre
+1832,FACILITY,1854,idngQ15rprh,ed Ewoyi Primary Health Centre
+1833,FACILITY,1855,BtOAEkWrcey,ed Obeidu Primary Health Centre
+1834,FACILITY,1856,UC9URKksv5Y,ed Obiyon Primary Health Centre
+1835,FACILITY,1858,VbkMwEAVRGY,ed Uromi Central Hospital
+1836,FACILITY,1859,XI5Un8QBR3h,ed Ubiaja General Hospital
+1837,FACILITY,1860,sfOdqwv2AMf,ed Ewohimi Primary Health Centre
+1838,FACILITY,1861,pLgu3UWaBwR,ed Ubiaja Primary Health Centre
+1839,FACILITY,1862,hN35DARu7qT,ed Ekpoma General Hospital
+1840,FACILITY,1863,PpgvcVFQVbf,ed Iruekpen General Hospital
+1841,FACILITY,1864,JVhUdmZ4w0d,ed Anegbette Primary Health Centre
+1842,FACILITY,1865,J30g5VBbqOj,ed Azukhala Primary Health Centre
+1843,FACILITY,1866,ChU2x95vK8k,ed Fugar Primary Health Centre
+1844,FACILITY,1867,CFcuidsIwar,ed Ogbona Primary Health Centre
+1845,FACILITY,1868,QagLMEW4As5,ed Osomegbe Primary Health Centre
+1846,FACILITY,1869,nZMoVo5Jrl2,ed Udaba Primary Health Centre
+1847,FACILITY,1870,YsaRuMdps1Q,ed Ugbekpe Primary Health Centre
+1848,FACILITY,1871,IpXPIb9CdgC,ed Agenebode General Hospital
+1849,FACILITY,1872,vmvAUj4HP3f,ed Imiebga Primary Health Centre
+1850,FACILITY,1874,XZ3BDI12Z9o,ed Agbede General Hospital
+1851,FACILITY,1875,kVlATkFKdj1,ed Auchi Central Hospital
+1852,FACILITY,1877,eOZFJO1jOGd,ed Teens and Youths
+1853,FACILITY,1878,VNK6IpiECjZ,ed Ebelle Primary Health Centre
+1854,FACILITY,1879,FF3A8GCTj9Y,ed Igueben General Hospital
+1855,FACILITY,1880,UUST3HdwcGk,ed Igueben Primary Health Centre
+1856,FACILITY,1881,qqZ7mDaYTJT,ed Department of Health Service Providers
+1857,FACILITY,1882,KL4eZHlvpBY,ed Ekae Primary Health Centre
+1858,FACILITY,1883,MNBImd6sVjv,ed Emwinyomwan Primary Health Centre
+1859,FACILITY,1884,jYmBT7bL8Iq,ed Evbuodia Primary Health Centre
+1860,FACILITY,1885,s2C4OwhJsys,ed Faith Mediplex
+1861,FACILITY,1886,PRrgVfCmnrM,ed Ikpema Primary Health Centre
+1862,FACILITY,1887,RbiRMLwNO97,ed Lift Above Poverty Organisation (LAPO)
+1863,FACILITY,1888,MvddaNxDBxk,ed New Benin Primary Health Centre
+1864,FACILITY,1889,FpFi2IPZMI3,ed Oredo Primary Health Centre
+1865,FACILITY,1890,XBo3r6Kwt2B,ed St Philomena Catholic Hospital
+1866,FACILITY,1892,JGyvnB7MeCH,ed evboenogbon (Camp 34) Primary Health Centre
+1867,FACILITY,1893,IRjT35jbDkf,ed Evbokabua Primary Health Centre
+1868,FACILITY,1894,Ot7OYIsmb8P,ed Igbanke General Hospital
+1869,FACILITY,1895,upz2M3IFLSt,ed Igbanke Primary Health Centre
+1870,FACILITY,1896,wNzNTvJistj,ed Oben Cottage Hospital
+1871,FACILITY,1897,vLkC0ttaEZM,ed Ossiomio Specialist Hospital
+1872,FACILITY,1898,u2B0UHsQzVn,ed Ugo Primary Health Centre
+1873,FACILITY,1899,cwlOybof4JG,ed Urhorugbe Primary Health Centre
+1874,FACILITY,1900,AnTCExpz87t,ed Ute Oheze Primary Health Care Centre
+1875,FACILITY,1901,AGOwaBFFGt2,ed Iguobazua General Hospital
+1876,FACILITY,1902,y32r3fjrXKn,ed Okha Primary Health Centre
+1877,FACILITY,1903,aUWclEFOpeb,ed Udo Primary Health Centre
+1878,FACILITY,1904,tiukVXabwTa,ed Ugbogui Primary Health Centre
+1879,FACILITY,1905,i3uYwQb5cRs,ed Usen General Hospital
+1880,FACILITY,1906,KEY2lEWZnyJ,ed Afuze General Hospital
+1881,FACILITY,1907,NSrTdyVaceN,ed Afuze Referral Medical Centre
+1882,FACILITY,1908,tDJ0Fut0euo,ed Oluma Primary Health Centre
+1883,FACILITY,1909,RpfQA0oSn49,ed Uokha Primary Health Centre
+1884,FACILITY,1910,Y15cwN2ZTDu,ed Warrake-Iyakhara Primary Health Centre
+1885,FACILITY,1911,SR7gjiQziLX,ed Uzebba General Hospital
+1886,FACILITY,1912,njmTyrAdbsx,ed Uzebba Primary Health Centre
+1887,FACILITY,1913,SXiHRW2sSTV,ed Ehor Primary Health Centre
+1888,FACILITY,1914,g7QZ8NE5AKZ,ed Ikueniro Primary Health Centre
+1889,FACILITY,1915,LJLOy5eo5Q8,ed HU PACE Edo State Community Pharmacist
+1890,FACILITY,1916,qKN9eUal37t,jg Bamaina Primary Health Centre
+1891,FACILITY,1917,PqSSjkKcHeE,jg Birnin Kudu General Hospital
+1892,FACILITY,1918,HNlCL43SPew,jg Birnin-Kudu Federal Medical Centre
+1893,FACILITY,1919,AjEHGblqRS0,jg Kawo Basic Health Centre
+1894,FACILITY,1920,viLKUHqGYyA,jg Sudunmina Primary Health Centre
+1895,FACILITY,1921,BCMZiGM5TWO,jg Unguwar Ya Primary Health Centre
+1896,FACILITY,1922,CMNHYtEWcDq,jg Yalwan Damai Primary Health Centre
+1897,FACILITY,1923,HvNimzD3HYq,jg Sagu Primary Health Centre
+1898,FACILITY,1924,FTX3TzCmCBi,jg Dutse General Hospital
+1899,FACILITY,1925,YWbowoL8IWo,jg Rasheed Shekoni Specialist Hospital
+1900,FACILITY,1926,H1Qwp9hf1ld,jg Society for Women Development And Empowerment
+1901,FACILITY,1927,JJYr9krXDLG,jg Village Community Development Initiative
+1902,FACILITY,1930,kPBRK8Glndw,jg Agumau Primary Health Centre 
+1903,FACILITY,1931,lPu1qEhVcMG,jg Gabari Primary Health Centre 
+1904,FACILITY,1933,toCiqZMIbN2,jg Hadejia General Hospital
+1905,FACILITY,1934,hwAUtAK6HbY,jg Kofar Arewa Primary Health Centre
+1906,FACILITY,1935,mGdAopPxG2Z,jg Aujara Primary Health Centre
+1907,FACILITY,1936,jsvzo5Pmbjb,jg Harbo Basic Health Centre
+1908,FACILITY,1937,EVHTNL9UBLM,jg Jahun General Hospital
+1909,FACILITY,1938,YPmP9bi1TFv,jg Kanwa Primary Health Centre
+1910,FACILITY,1939,utr0IWv6m6W,jg Bulangu Cottage Hospital
+1911,FACILITY,1940,UZxGQ9cCIY4,jg Kwatalo Primary Health Centre 
+1912,FACILITY,1941,WyHTBQOXmV4,jg Sarawa Primary Health Centre
+1913,FACILITY,1942,IrnEAmMpjk4,jg Kazaure General Hospital
+1914,FACILITY,1943,nCkQLFvMIFA,jg Katanga Primary Health Centre
+1915,FACILITY,1944,GpMy0oedMfW,jg Kiyawa Primary Health Centre
+1916,FACILITY,1945,mqtTaSzgbli,jg ChaiChai Primary Health Centre 
+1917,FACILITY,1946,h1BuFLzZshB,jg Ringim General Hospital
+1918,FACILITY,1947,mIncpWoLCHq,jg Sankara Primary Health Centre 
+1919,FACILITY,1948,kDrKZFVRGPo,jg Roni Primary Health Centre 
+1920,FACILITY,1949,eI8aAnPG7cc,jg Taura Primary Health Centre
+1921,FACILITY,1950,IflHfqZb29I,jg Karkarna Primary Health Centre
+1922,FACILITY,1952,nJITYFzdHtR,kn Chula Health Post
+1923,FACILITY,1953,dIawAGtwNbs,kn Dun-Dun Health Post
+1924,FACILITY,1954,UCZO7LbYg1A,kn Guduba Dispensary
+1925,FACILITY,1955,soh1coAYvFn,kn Kara Dagaji Health Post
+1926,FACILITY,1956,DkDCmEGhc75,kn Kara Makama Primary Health Centre
+1927,FACILITY,1957,czAV5tgqrCA,kn Makarya Health Post
+1928,FACILITY,1958,xbLmt73Uk07,kn Toranke Primary Health Centre
+1929,FACILITY,1959,g7gwlnuGWym,kn Unguwar Bai Health Post 
+1930,FACILITY,1960,PvnpPGzfyLx,kn Daganda Primary Health Centre
+1931,FACILITY,1961,JRRzEjGJMnW,kn Gadanya Primary Health Centre
+1932,FACILITY,1962,jYr97G1cNWA,kn Gogori Primary Health Centre
+1933,FACILITY,1963,T8RDSN3MP4W,kn Kiyawa Primary Health Centre
+1934,FACILITY,1964,QYePbmDN2rC,kn Rimin Dako Health Clinic
+1935,FACILITY,1965,Hbd97gNEMvi,kn Romo Health Clinic
+1936,FACILITY,1967,MMPIaU6at1e,kn Ungwar Kwari Health Clinic
+1937,FACILITY,1968,VVtiDTGxC1C,kn Wuro-Bagga Primary Health Centre
+1938,FACILITY,1969,KOeZP9TH24j,kn Bono Health Post
+1939,FACILITY,1970,Ih2pTk8PcCK,kn Bunkure Primary Health Centre
+1940,FACILITY,1971,FvBPIax77Z3,kn Gafan Health Centre
+1941,FACILITY,1972,uLWIRqZCsvv,kn Gurjiya Model Primary Health Centre
+1942,FACILITY,1973,NVgW43xtG7p,kn Gwamma Health Centre
+1943,FACILITY,1974,r4UTRCYGlrt,kn Gwaneri Health Centre
+1944,FACILITY,1975,z0LUvtnjk01,kn Jaroji Health Post
+1945,FACILITY,1976,wdk2utH35BP,kn Kumurya Primary Health Centre
+1946,FACILITY,1977,QqIS4U9nJyb,kn Shiye Health Centre
+1947,FACILITY,1978,yOHpB83DNLi,kn Tsanbaki Health Centre
+1948,FACILITY,1979,TiLcE2gwajE,kn Ajumawa Health Post
+1949,FACILITY,1980,KzxeM1oTmgF,kn Danbatta General Hospital
+1950,FACILITY,1981,lO3DrfT0GIE,kn Fagwalawa Cottage Hospital
+1951,FACILITY,1982,MymAayyhqvj,kn Gwanda Primary Health Centre
+1952,FACILITY,1983,afNXzpiKmJX,kn Gwaron Maje Health Centre
+1953,FACILITY,1984,rfc87l2Oe9K,Kn Mahuta Dalal Clinic 
+1954,FACILITY,1985,p1bazBDe7R2,kn Massalanchi Health Centre
+1955,FACILITY,1986,kN4aAqzgG3A,kn San-San Primary Health Centre
+1956,FACILITY,1987,VpIY0HJYvLK,kn Shiddar Health Post
+1957,FACILITY,1988,JPV53o5KzP7,kn Dawakiji Basic Health Clinic
+1958,FACILITY,1989,huQHCDIJa6w,kn Dawakin Kudu General Hospital
+1959,FACILITY,1990,H3jojjLuxN7,kn Dosan Health Centre
+1960,FACILITY,1991,SB3I8XGFxqN,kn Fanchin Dispensary
+1961,FACILITY,1992,jdBbrTUvgyB,kn Gada Primary Health Centre
+1962,FACILITY,1993,H27LJQ1oLOa,kn Gano Primary Health Centre
+1963,FACILITY,1994,UCYunhadHGj,kn Gurjiya Health Post
+1964,FACILITY,1995,HuH1YJb374P,kn Jido Dispensary
+1965,FACILITY,1996,oZFxR14Zp3s,kn Matage Dispensary
+1966,FACILITY,1997,rPR7XyECasI,kn Tamburawa Health Post
+1967,FACILITY,1998,UKfe8cFPsJj,kn Tsakuwa Basic Health Post
+1968,FACILITY,1999,URXSb2onvqc,kn Yankatsari Primary Health Centre
+1969,FACILITY,2000,TIIqQ3KnVL0,kn Zogarawa Primary Health Centre
+1970,FACILITY,2001,MZZyiNfKbdp,kn Chedi Babbar Ruga Primary Health Centre
+1971,FACILITY,2002,XsVyeCza3vb,kn Danguguwa Primary Health Centre
+1972,FACILITY,2003,Gh9ui5uHLwy,kn Dawakin Tofa General Hospital
+1973,FACILITY,2004,xGnfNHpTV76,kn Dawanau Primary Health Centre
+1974,FACILITY,2005,YHx7Izo42e9,kn Fango Health Post
+1975,FACILITY,2007,il6SRgC6PxD,kn Kadawa Dispensary (DTF)
+1976,FACILITY,2008,kohBLIHaMU4,kn Kunawa Health Post
+1977,FACILITY,2009,UQJl1lvMR4c,kn Kwa Primary Health Centre
+1978,FACILITY,2010,zznxqF6cqSo,kn Madachi Dispensary
+1979,FACILITY,2011,sVmfhkykTWs,kn Marke Dispensary
+1980,FACILITY,2012,hRlAbe2qLZz,kn Tattarawa Primary Health Centre
+1981,FACILITY,2013,sn17foK5L8I,kn Tunfafi Health Facility
+1982,FACILITY,2014,c9FVQNiYE48,kn Yakasai Health Facility
+1983,FACILITY,2015,PRmPrWzlYzY,kn Yarrutu Health Post
+1984,FACILITY,2016,HkmxfviuShP,kn Zango Dawanau Health Clinic
+1985,FACILITY,2017,CfyIzyVe8FS,kn Asada Health Post
+1986,FACILITY,2018,k139j293dFt,kn Burji Comprehensive Health Centre
+1987,FACILITY,2019,EtVOy6dhSYf,kn Dadin-Kowa Primary Health Centre
+1988,FACILITY,2020,crneC95ug6D,kn Dariyar Shere Health Post 
+1989,FACILITY,2021,aXofbEydtUt,kn Doguwa General Hospital
+1990,FACILITY,2022,K8kYPGTEes3,kn Falgore Primary Health Centre
+1991,FACILITY,2023,fCt86it0NU9,kn Maraku Primary Health Centre 
+1992,FACILITY,2024,D1K7c5x3VZj,kn Riruwai Basic Health Centre 
+1993,FACILITY,2025,TVhBQWzG5vT,kn Rufai Health Post
+1994,FACILITY,2026,q4PhTJkq8MO,kn Unguwar Natsohuwa Health Post
+1995,FACILITY,2027,v5QOWJsfJSp,kn Zainabi Dispensary
+1996,FACILITY,2028,UH3imvwKILX,kn Alpha Clinic & Maternity
+1997,FACILITY,2029,H0XuQyrgUBR,kn Amina Specialist Hospital
+1998,FACILITY,2030,qwMEf4Pw4aQ,kn Barewa Clinic
+1999,FACILITY,2031,VhvtKLVqUtj,kn Continental Clinic (Sabon Gari East)
+2000,FACILITY,2032,XJWdbzeQQuR,kn Cordial Hospital & Maternity
+2001,FACILITY,2033,NAhr8ZOuHQU,kn Dan Rimi Health Centre
+2002,FACILITY,2034,wPuWBCJe8mi,kn Galadima Health Clinic
+2003,FACILITY,2035,ZIYg141MUSl,kn Hajaratu Tudun Bojuwa Health Centre
+2004,FACILITY,2036,dRQyjQfL7BB,kn International Clinic
+2005,FACILITY,2037,J0hbfsF7nMo,kn Jaba Primary Health Centre
+2006,FACILITY,2038,EP4fpmJFBIC,kn Kano Infectious Diseases Hospital
+2007,FACILITY,2039,cloY47PUi5t,kn Khadijat Memorial Hospital (FGE)
+2008,FACILITY,2040,r1C8f4cUqZL,kn Kunya Hospital
+2009,FACILITY,2041,Pvwaj1tVzV7,kn Kwachiri Primary Health Centre
+2010,FACILITY,2042,O5SJzSD9U76,kn Lafiya Surgery
+2011,FACILITY,2043,GgjMapB4ebt,kn Middle Road Maternity and Child Health
+2012,FACILITY,2044,Hz9VHp0nDP9,kn Modular Clinic
+2013,FACILITY,2045,Lrpd0RZTpQ7,kn Nakowa Clinic
+2014,FACILITY,2046,nkcEbxBQURU,kn Rijiyar Lemo Maternal Child Health
+2015,FACILITY,2047,Ex7ubvLtAT9,kn Rijiyar Lemo Primary Health Centre
+2016,FACILITY,2048,f3qdOG1HOGH,kn Sabo Garba Maternal and Child Health Centre
+2017,FACILITY,2049,HqHm0gddIY7,kn Sheikh Mohammed Jidda General Hospital
+2018,FACILITY,2050,g2B5jwHK9f3,kn Sumar Specialist Clinic 
+2019,FACILITY,2051,r5uDaxzg1sk,kn Universal Clinic and Maternity
+2020,FACILITY,2052,DVgTF8XZB5Y,kn Yanmata Gabbas Health Post
+2021,FACILITY,2053,VozldTVVaJT,kn Zoputa (Assumpta) Clinic
+2022,FACILITY,2054,jz98tBI7zOm,kn AHIP Primary Health Centre
+2023,FACILITY,2055,RglChovYfMX,kn Buda Primary Health Centre
+2024,FACILITY,2056,t3ULtsQNUVL,kn Dal Primary Health Centre
+2025,FACILITY,2057,N25R4j9io55,kn Garin Ali Primary Health Centre
+2026,FACILITY,2058,Jgrj6N3fZcz,kn Garko Model Primary Health Centre
+2027,FACILITY,2059,ioP4exCd4WP,kn Garko Primary Health Centre
+2028,FACILITY,2060,SuheuxEaIlS,kn Gurji Primary Health Centre
+2029,FACILITY,2061,d9rLSAtwG4Y,kn Kafin-Chiri Primary Health Centre
+2030,FACILITY,2062,fpY9wFbEGQv,kn Kafin-Malamai Primary Health Centre
+2031,FACILITY,2063,hEWxFezvMXS,kn Kwas Health Post
+2032,FACILITY,2064,ID7YYVPFreM,kn Lamire Health Post
+2033,FACILITY,2065,Ort9hpRrWd1,kn Maida Primary Health Centre
+2034,FACILITY,2066,UG7hDwIEAJ6,kn Sanni Health Post
+2035,FACILITY,2067,qky3A5KQTyR,kn Sarina Primary Health Centre
+2036,FACILITY,2068,BriI2gdIs7c,kn Tsakuwa Dal Health Post
+2037,FACILITY,2069,TkIS8dtWwaD,kn Zakarawa Dispensary
+2038,FACILITY,2070,QTwuXhhEWqA,kn Ciromawa Health Post
+2039,FACILITY,2071,Sy6jG4U5BKt,kn Dakasoye Health Post
+2040,FACILITY,2072,sCBco77ecjA,kn Garun Babba Basic Health Centre
+2041,FACILITY,2073,gjW27W0eYMu,kn Garun Malam Basic Health Clinic
+2042,FACILITY,2074,FM0zZqXxfWp,kn Kadawa Gate Basic Health Centre
+2043,FACILITY,2075,cUkrzlM72qN,kn Kadawa Primary Health Centre
+2044,FACILITY,2076,Dk8AcE4qtAH,kn Makoro Health Post
+2045,FACILITY,2077,WNfGlmCCXpj,kn Mudawa Health Post
+2046,FACILITY,2078,vPmRQfYfg1F,kn Yadakwari Basic Health Centre
+2047,FACILITY,2079,IRhN6sT7qOi,kn Getso Maternal and Child Health Clinic
+2048,FACILITY,2080,atka6KMXFpw,kn Gwarzo General Hospital
+2049,FACILITY,2082,u9h6nT73kyr,kn Kutama Primary Health Centre
+2050,FACILITY,2083,Ebj9XVFmMo8,kn Lakwaya Basic Health Centre
+2051,FACILITY,2084,HG6KfaKNmQp,kn Madadi Basic Health Centre
+2052,FACILITY,2085,qBgFy769K2j,kn Yarkasuwa Dispensary
+2053,FACILITY,2086,qxlgpJeBF1z,kn Balan Health Post (KAB)
+2054,FACILITY,2087,TsDPifSR3ME,kn Dugabau Health Post
+2055,FACILITY,2088,eGU1nSFsjAB,kn Durun Maternal and Child Health Centre
+2056,FACILITY,2089,oYRA0mBeO9o,kn Gamo Primary Health Centre
+2057,FACILITY,2090,v8RWKQyF9PT,kn Garo Primary Health Centre
+2058,FACILITY,2091,zlgJSQUAPJu,kn Godiya Health Post
+2059,FACILITY,2092,mtxNmaXQJ0j,kn Gude Primary Health Centre
+2060,FACILITY,2093,sH5I5M5dLZO,kn Hawan Bago Health Post
+2061,FACILITY,2094,sh42D9s5mQT,kn Kabo General Hospital
+2062,FACILITY,2095,GQxQyO9Kl0F,kn Kanwa Health Post (KBK)
+2063,FACILITY,2096,Xx4XqrC8muJ,kn Masanawa Health Post
+2064,FACILITY,2097,rAezIvVZS4t,kn Al-Iman Clinic
+2065,FACILITY,2098,hPZ3R5uzDnB,kn Community Health Research Initiative
+2066,FACILITY,2100,DGeUSsqCeSj,kn Fuskar Gabas Health Post
+2067,FACILITY,2101,ObWf8T2OfMI,kn Gandu Model Primary Health Centre
+2068,FACILITY,2102,LUOWu53yF61,kn Hasiya Bayero Paediatric Hospital
+2069,FACILITY,2103,PkwzCclr1Jk,kn Heal Tune Clinic
+2070,FACILITY,2104,ChrN9skqgmw,kn Mayanka Primary Health Centre
+2071,FACILITY,2105,uxM6qxEKm9r,kn Murtala Mohammed Specialist Hospital
+2072,FACILITY,2106,LN7K4WMqOXZ,kn Nuhu Bamalli Maternity Hospital
+2073,FACILITY,2107,ny2GVtswnqe,kn Sabo Bakin Zuwo Maternity Hospital
+2074,FACILITY,2108,z6BD8AFFhCo,kn Saymays Specialist Hospital
+2075,FACILITY,2109,Wbf47enk1gi,kn Sharada Primary Health Centre
+2076,FACILITY,2110,U16jW2PPAr1,kn Support for Women and Teenage Children (SWATCH)
+2077,FACILITY,2111,SUev2mdMDwj,kn Tukuntawa Primary Health Centre
+2078,FACILITY,2112,flb2DYLpOtL,kn Unguwar Gini Primary Health Centre
+2079,FACILITY,2113,OuxzdKdYTPc,kn Vintage Clinic
+2080,FACILITY,2114,ZkkTI6Iz8Bd,kn Yakasai Zumunta Health Post
+2081,FACILITY,2115,TB2xka8KdJr,kn Yan Awaki Primary Health Centre
+2082,FACILITY,2116,iJDU1xWUWDa,kn Gidan Nissau Primary Health Centre
+2083,FACILITY,2117,Hk4wCIhNcaZ,kn Gwadama Health Post
+2084,FACILITY,2118,GM9FTtdXukS,kn Gwarmai Primary Health Centre (KNC)
+2085,FACILITY,2119,K06nFj1GtYP,kn Karofawa Health Post
+2086,FACILITY,2120,aUADhmfV6d8,kn Kasuwar Model Primary Health Centre 
+2087,FACILITY,2121,ucZtUjNncyl,kn Kunchi Primary Health Centre
+2088,FACILITY,2122,ODAQ0K4tgcv,kn Matan Fada Dispensary
+2089,FACILITY,2123,sstwiIyBdpl,kn Shuwaki Model Primary Health Centre
+2090,FACILITY,2124,ZjwEICUk2MR,kn Unguwar Gyartai Primary Health Centre
+2091,FACILITY,2125,DYxrYizVQcx,kn Yandadi Model Primary Health Centre
+2092,FACILITY,2126,akEOdv2h8rS,kn Azore Health Centre
+2093,FACILITY,2127,dWOk3yWZG5i,kn Bugan Health Centre
+2094,FACILITY,2128,SXtgfW63Hme,kn Danhassan Health Centre
+2095,FACILITY,2129,REsJ7nXsRSM,kn Danhassan Primary Health Centre
+2096,FACILITY,2130,NM8Vxva9A44,kn Dukawa Health Centre
+2097,FACILITY,2131,XxRoI6IcAtC,kn Gadan Ali Health Centre
+2098,FACILITY,2132,wUvfyOa1fzD,kn Gainawa A Health Centre
+2099,FACILITY,2133,UBTZDO1c1ow,kn Gainawa B Health Centre
+2100,FACILITY,2134,ozmrLStY3bt,kn Gajingiri Health Centre
+2101,FACILITY,2135,moieH7OblAF,kn Gundutse Health Centre
+2102,FACILITY,2137,IJSy5bSjwy5,kn Imawa Health Post
+2103,FACILITY,2138,kQN3CKTD7mI,kn Kadani Health Centre
+2104,FACILITY,2139,BY8oIATcdEG,kn Kirya Health Centre
+2105,FACILITY,2140,ZJKZo0ECDRv,kn Kura General Hospital
+2106,FACILITY,2141,ZPdfciXhQrf,kn Kura surgery & Maternity Clinic
+2107,FACILITY,2142,kHrAzdGyO5d,kn Rimin kwarya Health Centre
+2108,FACILITY,2144,XisKcsFrBvb,kn Sani Marshal Maternity Centre 
+2109,FACILITY,2145,guUwU2J6Qz2,kn Yarkanya Health Centre
+2110,FACILITY,2146,WyxgQAtnGVJ,kn Bare Bari Health Centre
+2111,FACILITY,2147,lSKOdeCaDOh,kn Dr Wada Wazari Basic Health Centre
+2112,FACILITY,2148,m87qB1dzKmL,kn Dunawa Health Post
+2113,FACILITY,2149,zH867HMNcwI,kn Jibga Health Post (MKD)
+2114,FACILITY,2150,LrMnE76Aevl,kn Kantudu Health Post
+2115,FACILITY,2151,c55aHIyXR94,kn Koguna Health Centre
+2116,FACILITY,2152,adJUqY8Tu0x,kn Kurna Health Post
+2117,FACILITY,2153,IZYPHHKc9dG,kn Mai Tsidau Health Centre
+2118,FACILITY,2154,MWX5DN01Vhh,kn Makoda Primary Health Centre
+2119,FACILITY,2155,vMk5nYa2SFf,kn Sabon Ruwa Health Centre
+2120,FACILITY,2156,rxnv1mbMixv,kn Shantake Health Post
+2121,FACILITY,2157,Ns4DPkhU5sT,kn Wailare Health Centre
+2122,FACILITY,2158,F9i6meaQlx9,kn Walawa Health Centre
+2123,FACILITY,2159,I27xZsBO5Z1,kn Society for Women and Aids in Africa Nigeria CSO (Kano)
+2124,FACILITY,2160,LwJpbrVsVnj,kn Madachi Health Post
+2125,FACILITY,2161,pp3IRdU8aLO,kn Rano Dawaki Health Clinic
+2126,FACILITY,2162,VLRRx1qLnyF,kn Rano General Hospital
+2127,FACILITY,2163,O2PyZo3oPnC,kn Rurum Health Centre
+2128,FACILITY,2164,qLidJUDKSzh,kn Saji Health Centre
+2129,FACILITY,2165,U4Ww2mMJAk1,kn Tabobi Health Post
+2130,FACILITY,2166,vSSAuelW2ve,kn Taitai Health Centre
+2131,FACILITY,2167,C0jFQT0ubP9,kn Yalwa Health Post (RAN)
+2132,FACILITY,2168,m7mQFPArtgv,kn Yelwa Primary Health centre
+2133,FACILITY,2169,cYgQaSJ3Y4L,kn Rimin Gado Comprehensive Health Centre
+2134,FACILITY,2170,ZvqdAoSwHuA,kn Barbarji Health Post
+2135,FACILITY,2171,rfkmF8hqGQC,kn Bari Model Primary Health Centre
+2136,FACILITY,2172,qP9xd9PIvNI,kn Beli Basic Health Centre
+2137,FACILITY,2173,U1BuQFICBFX,kn Falgore Primary Health Centre (Rogo)
+2138,FACILITY,2174,iaI2ccWGufK,kn Fultan Basic Health Clinic
+2139,FACILITY,2175,QjfOI4jf62S,kn Gwangwan Health Post
+2140,FACILITY,2176,I0LWaU0pwJz,kn Kaleku Health Centre
+2141,FACILITY,2177,CJN6swKZ5tL,kn Rogo General Hospital
+2142,FACILITY,2178,JONtm6j24lq,kn Rogo Tsohuwar Health Post
+2143,FACILITY,2179,ockTe3r85S0,kn Sabon Layin Haro Health Post
+2144,FACILITY,2180,jVfAVMpCT8m,kn Sundu Health Centre
+2145,FACILITY,2181,Yae2obF5313,kn Unguwar Malan Health Centre
+2146,FACILITY,2182,Xqr71Gz63nN,kn Zarewa Basic Health Centre
+2147,FACILITY,2183,trVkWluNOSJ,kn Zoza Health Post
+2148,FACILITY,2184,LpYsscUjena,kn Shanono Primary Health Care centre
+2149,FACILITY,2185,vgAjG6SjlbY,kn Faruruwa Basic Health Centre
+2150,FACILITY,2186,hdQ008KrubL,kn Leni Basic Health Centre
+2151,FACILITY,2187,JIgMWBTBZQE,kn Tsaure Basic Health Centre
+2152,FACILITY,2188,woqjAxn5UfP,kn Gala Health Post
+2153,FACILITY,2189,wONpQCpDLYZ,kn Gani Health Centre
+2154,FACILITY,2190,albjFGpM6Z8,kn Garfa Health Post
+2155,FACILITY,2191,i6JdUg7RVTj,kn Gomo Basic Health Centre
+2156,FACILITY,2192,jjqIzvGFfca,kn Kanawa Health Post
+2157,FACILITY,2193,ntKABCrY7hv,kn Karofi Health Post 
+2158,FACILITY,2194,UquTTEQ7X6s,kn Magami Basic Health Centre
+2159,FACILITY,2195,MLQRB2bvdrE,kn Massu Basic Health Centre 
+2160,FACILITY,2196,pgapxDAlnkB,kn Patricia Maternal and Child Health Centre 
+2161,FACILITY,2197,dEjdDf8Eino,kn Rimi Basic Health Centre
+2162,FACILITY,2198,LvdvcC12lrs,kn Rumo Health Post
+2163,FACILITY,2199,efggNYhyDSf,kn Sitti Basic Health Centre
+2164,FACILITY,2200,l7Zs0wx7syu,kn Sumaila General Hospital
+2165,FACILITY,2201,SYbKtN7RGsD,kn Karfi Health Centre
+2166,FACILITY,2202,Onx00U5fkSM,kn Kadawa Ciki Health Post
+2167,FACILITY,2203,lKO56ACXrmO,kn Danfari Health Centre
+2168,FACILITY,2204,Ym5CvKRlvlv,kn Danlasan Basic Health Clinic
+2169,FACILITY,2205,saJlK82oecY,kn Gogel Basic Health Centre
+2170,FACILITY,2206,vYUA9qMqNBL,kn Imawa Health Centre
+2171,FACILITY,2207,HkYkhpUzkwf,kn Jemagu Health Post
+2172,FACILITY,2208,GgTrkLwvUj4,kn Jigawa Health Post
+2173,FACILITY,2209,tXV4Xx07xGG,kn Jumar Galadima Dispensary
+2174,FACILITY,2210,J4BRVEPIwRk,kn Katarkawa Health Centre
+2175,FACILITY,2211,AwiOSmPWeMu,kn Tnagar Dispensary
+2176,FACILITY,2212,NnglnFknjJm,kn Tungar Gabas Health Centre
+2177,FACILITY,2213,hzxW3xIq6Pp,kn Wambato Health Post
+2178,FACILITY,2214,ppTlX6lnmbN,kn Warawa Primary Health Clinic
+2179,FACILITY,2215,xbDVXe9p0qE,kn Yandalla Health Centre
+2180,FACILITY,2216,CWosYVgwo5P,kn Yar Tofa Health Post (WRA)
+2181,FACILITY,2217,tiRJ4kB5Wtt,la Adams Hospital
+2182,FACILITY,2218,ybC4zlriRCS,la Broad Hospital
+2183,FACILITY,2219,lNgQRF6j2AC,la Dopemu Primary Health Centre
+2184,FACILITY,2220,el6mVQIJLjc,la Iloro Primary Health Centre
+2185,FACILITY,2221,nVVWfmvfmG1,la Mobonike Hospital
+2186,FACILITY,2222,rbwsePvChqI,la Odunbaku Primary Health Centre
+2187,FACILITY,2223,woW1wyRapcc,la Olive Medicare Hospital
+2188,FACILITY,2224,ibAEBuKQbx2,la Orile Agege General Hospital
+2189,FACILITY,2226,wmPMNeZjrGQ,la Powerline Primary Health Centre
+2190,FACILITY,2227,OcSQ72PihDC,la Promise Medical Centre
+2191,FACILITY,2228,tOVvd8wLojK,la Sango Primary Health Centre
+2192,FACILITY,2230,WIklxI8pMaQ,la Ajeromi General Hospital
+2193,FACILITY,2231,u56kmRdXBrg,la Akere Primary Health Centre
+2194,FACILITY,2232,nVzjZ8THw2b,la All Souls Hospital
+2195,FACILITY,2233,OBJO8prze1k,la Amukoko Primary Health Centre
+2196,FACILITY,2234,NUNfp3WscdG,la Dako Medical Centre Limited
+2197,FACILITY,2235,d2V3qSqS59r,la Faleti Medical Centre
+2198,FACILITY,2236,CzVnudXij1w,la Ibafon Primary Health Centre
+2199,FACILITY,2237,Nb1gQYXdM13,la Layeni Primary Health Centre
+2200,FACILITY,2238,yMcMZuAdvfX,la Natafod Consultants Hospital
+2201,FACILITY,2239,vfOmbgkFeSc,la Oridili Primary Health Centre
+2202,FACILITY,2240,yTAH8yAfNbA,la Saseun Hospital and Maternity
+2203,FACILITY,2241,CiKOX4A0C09,la Shammah Specialist Hospital
+2204,FACILITY,2242,tYVyywI8yPa,la St Theresa Hospital
+2205,FACILITY,2243,rPs6mxcmbXH,la Tolu Medical Centre
+2206,FACILITY,2244,sMSTctsjdNv,la Tolu Primary Health Centre
+2207,FACILITY,2245,dGGgq3kXisO,la Ahamadiyya Muslim Hospital
+2208,FACILITY,2246,hqUYfe4Uvfc,la Apapa General Hospital
+2209,FACILITY,2247,l3wPUjGMG7v,la Apapa Specialist Hospital
+2210,FACILITY,2248,zvT0DeSJWdj,la Iduna Specialist Hospital
+2211,FACILITY,2249,jLSY4kZBWRC,la Ijora Primary Health Centre
+2212,FACILITY,2250,AsyLdaaO5nz,la Jim Sam Hospital and Maternity
+2213,FACILITY,2251,Oqe5FI7HeVH,la Olojowon Primary Health Centre
+2214,FACILITY,2252,OOFmMvj1BYA,la Oluwole Primary Health Centre
+2215,FACILITY,2253,pQhiAv2D6dy,la Sacred Heart Clinic
+2216,FACILITY,2254,gpxeIl8xLLj,la Sari Primary Health Centre
+2217,FACILITY,2255,jagIbtWAxiN,la A Harmony Hospital
+2218,FACILITY,2256,ZroNkA1H7c5,la Access Hospital
+2219,FACILITY,2257,Anyo6lLRaQx,la Ajara Primary Health Centre
+2220,FACILITY,2258,UfcVslhGQ57,la Anthony Cardinal Okogie Maternity Hospital
+2221,FACILITY,2259,xvtycy0Cm5T,la Apa Primary Health Centre
+2222,FACILITY,2260,Wh0EsQ5kH3V,la AppleYard Hospital
+2223,FACILITY,2261,kqndSLbvSDp,la Asheri Muri Clinic
+2224,FACILITY,2262,brQchfqgKLW,la Badagry General Hospital
+2225,FACILITY,2263,HVGqDtw5UJ9,la Farasime Primary Health Centre
+2226,FACILITY,2264,eu0ieaiPYnY,la Great Phys Clinic
+2227,FACILITY,2265,WokygsBq44J,la Igbogbele Primary Health Centre
+2228,FACILITY,2266,fOtD29A935z,la Ilogbo Primary Health Centre
+2229,FACILITY,2267,RGlJCteTczt,la Marina Primary Health Centre
+2230,FACILITY,2268,Uz6OEOZMK9g,la Mogogbo Primary Health Centre
+2231,FACILITY,2269,FhebkmaA8mc,la Mowo Primary Health Centre
+2232,FACILITY,2270,BEXRH5MmYoS,la Pota Primary Health Centre
+2233,FACILITY,2271,gluErAWbxKP,la Sacred Heart Catholic Clinic (Badagry)
+2234,FACILITY,2272,yzD6PVw2XWe,la Sakpo Primary Health Centre
+2235,FACILITY,2273,KnY0lc29J6O,la Salvation Army Clinic
+2236,FACILITY,2274,ciK9W8u1igQ,la Seme Primary Health Centre
+2237,FACILITY,2275,ksWiZ9iJJVZ,la Topo Primary Health Centre
+2238,FACILITY,2276,GvKrTuDEBMC,la Humanity Family Foundation For Peace and Development
+2239,FACILITY,2277,wkhMl1CQ6Vt,la Afrimed Specialist Hospital
+2240,FACILITY,2278,XIGIbJb1goM,la Agboyi-Ketu Primary Health Centre
+2241,FACILITY,2279,PZp5LulWYuU,la Ajegunle Primary Health Centre
+2242,FACILITY,2280,HvE7bUMsR6h,la Alapere Primary Health Centre
+2243,FACILITY,2281,rMOFhfzVY2f,la Ameso Specialist Hospital
+2244,FACILITY,2282,jjbaEovxGHH,la Aniyun Hospital
+2245,FACILITY,2283,GpoYy9EWSKj,la Folabi Medical Centre
+2246,FACILITY,2284,zn6RhmM0RIL,la Gbagada General Hospital
+2247,FACILITY,2285,WUg8rzjmLev,la Horeb Consult Hospital
+2248,FACILITY,2286,yLdI45scNer,la Ikosi Primary Health Centre
+2249,FACILITY,2287,AxPVnd2jtgl,la Isheri Primary Health Centre
+2250,FACILITY,2288,zErQnEZnKvZ,la Jacon Davids Hospital
+2251,FACILITY,2289,IgA3PP5OFpu,la Ketu Primary Health Centre
+2252,FACILITY,2290,Ssr1MHL8Haa,la Maidan Primary Health Centre
+2253,FACILITY,2291,AYsuEXQdcdw,la Med-In-Specialist Hospital
+2254,FACILITY,2292,sKn6l0ztz1s,la Mende Primary Health Centre
+2255,FACILITY,2293,yG4FsHUhuNT,la Ogudu Primary Health Centre
+2256,FACILITY,2294,dexzRJVth4w,la Oworo Primary Health Centre
+2257,FACILITY,2295,YBZZu3Zk0Zm,la The Word Bible Church Maternity Home
+2258,FACILITY,2296,os13ZM3bmvj,la Agarawu Primary Health Centre
+2259,FACILITY,2297,pvcZ9Q9ONN7,la Ajike Samsa Hospital
+2260,FACILITY,2298,VhalHHYWfjQ,la Dumare Chest Clinic
+2261,FACILITY,2300,DfJMFgD9zI6,la Hanoba Primary Health Centre
+2262,FACILITY,2301,JnlAivhINXB,la Iga Idugaran Primary Health Centre
+2263,FACILITY,2302,QggvOhDIfWC,la Lagos General Hospital
+2264,FACILITY,2303,l4fxeRb1Myp,la Lagos Island Maternity Hospital
+2265,FACILITY,2305,QuqRwRoApLU,la Oba Adeyinka Oyekan (Adenihi Adele) Primary Health Centre
+2266,FACILITY,2306,ezkjCAMcpQj,la Olowogbowo Primary Health Centre
+2267,FACILITY,2307,FE3dSUNID3X,la Omni Medical Centre
+2268,FACILITY,2308,PoPWcuKXbX6,la Onikan Health Centre
+2269,FACILITY,2309,iIxQGCC4xzU,la Sura Primary Health Centre
+2270,FACILITY,2310,WnDi6mSrKvR,la Abule-Nla Primary Health Centre
+2271,FACILITY,2311,iOb67C8NcrQ,la Alli-Dawodu Primary Health Centre
+2272,FACILITY,2312,iFoVQPzFp0n,la Almat Medical Centre
+2273,FACILITY,2313,mxl3nvQ3pO3,la Blissful Life for Youth Society of Nigeria
+2274,FACILITY,2314,RJyfYtAsmJZ,la Federal Medical Centre
+2275,FACILITY,2315,AkEeVfLt2Dy,la Harvey Road Comprehensive Health Centre
+2276,FACILITY,2317,Q8m0fvHxum0,la JAKINS Ministry
+2277,FACILITY,2318,iwRpYLsSKoy,la Lagos State Mainland Hospital
+2278,FACILITY,2319,fXZe579wYlp,la Mainland Anglican Hospital
+2279,FACILITY,2320,AvYpQYCeRe6,la Mount Sinai Hospital (Lagoa Mainland)
+2280,FACILITY,2321,YIhzmwOGvFJ,la Oba Salami Primary Health Centre
+2281,FACILITY,2322,XjYc9K3Gf3I,la Otto Primary Health Centre
+2282,FACILITY,2324,XmersglVVso,la Simpson Primary Health Centre
+2283,FACILITY,2326,WVGDEDoodoK,la Afromedia Primary Health Centre
+2284,FACILITY,2327,jXfOcHVYYqS,la Al-Hayat Medial Centre
+2285,FACILITY,2328,U4U5CcufZx6,la Elphy Hospital
+2286,FACILITY,2329,O0mgbqeTM5D,la Elshaddai Hospital and Lab
+2287,FACILITY,2330,YhnzHA6vCNR,la Era Mini Primary Health Centre
+2288,FACILITY,2331,K2vmqbNGIV5,la Iba Primary Health Centre
+2289,FACILITY,2332,paeI4oDZBcu,la Igbede Primary Health Centre
+2290,FACILITY,2333,vva2fW5p6HH,la Ijagemo Primary Health Centre
+2291,FACILITY,2334,WYPs0uF53zh,la Ijanikin Primary Health Centre
+2292,FACILITY,2335,WwX9wSNkcZi,la Ijedodo Primary Health Centre
+2293,FACILITY,2336,Gfzl2NS5tnI,la Imude Primary Health Centre
+2294,FACILITY,2337,qVYB4v6peCy,la Irewe Primary Health Centre
+2295,FACILITY,2338,TIxtjDdL5tf,la Isashi Primary Health Centre
+2296,FACILITY,2339,eAYfDS8BjV1,la Ishagira Primary Health Centre
+2297,FACILITY,2340,XQ3rLRS8piQ,la Kemberi Primary Health Centre
+2298,FACILITY,2341,vuwq3svmm0q,la Ojo Primary Health Centre
+2299,FACILITY,2342,KQRfV681MlW,la Okoko Primary Health Centre
+2300,FACILITY,2344,L82pbyQh50H,la Redeemed Medial Centre
+2301,FACILITY,2345,cQjuUY73GMe,la Shibiri Primary Health Centre
+2302,FACILITY,2346,VYuemXCXCBy,la Bajulaiye Primary Health Centre
+2303,FACILITY,2347,ZUQPpDD7t5J,la CMS Primary Health Centre
+2304,FACILITY,2348,fisydTmh9WX,la Jon Ken Hospital
+2305,FACILITY,2349,nqpuaXMA4Wl,la Ladilak Medical Centre
+2306,FACILITY,2350,nDkEqyeyu3I,la Osuntuyi Medical Centre
+2307,FACILITY,2351,dOnVEewqS3P,la R Jolad Hospital
+2308,FACILITY,2352,TeJIQXuA53F,la We Care Hospital
+2309,FACILITY,2354,aboT4K3AE4W,la Angel Hospital
+2310,FACILITY,2355,Wfr3OETtB5h,la Anjorin Primary Health Centre
+2311,FACILITY,2356,anyYVsNrtKj,la Baruwa Primary Health Centre
+2312,FACILITY,2357,cbBEoeq3jWb,la Coker Aguda Primary Health Centre
+2313,FACILITY,2358,qT8a5rnqvTO,la Duro-Oyedoyin Primary Health Centre
+2314,FACILITY,2359,OqJI2ti6kWW,la Ejire Primary Health Centre
+2315,FACILITY,2360,hWoyJEFP9i6,la First Faith Medical Centre
+2316,FACILITY,2361,A4de9ZHiv8m,la Havana Specialist Hospital
+2317,FACILITY,2362,uSWu3IMXC65,la Orile Primary Health Centre
+2318,FACILITY,2363,nkLE9oUVoCV,la Randle General Hospital
+2319,FACILITY,2364,m3Epn0UBo5N,la Salus Infirmorum Catholic Hospital
+2320,FACILITY,2365,hrofR5DVknH,la Surulere Able God Hosital
+2321,FACILITY,2366,o8rsF5MbOS6,la Surulere Mezonel Hospital
+2322,FACILITY,2367,MYapHLwfKrN,la Surulere The Family Clinic
+2323,FACILITY,2368,F5GRGF7OqIV,la Tree of Life Hospital
+2324,FACILITY,2369,JPSdgSnVeqw,ri Abua General Hospital
+2325,FACILITY,2370,gi42Nm6dwNP,ri Agada Model Primary Health Centre
+2326,FACILITY,2371,F2xFpTTV73I,ri Aminigboko Cottage Hospital
+2327,FACILITY,2372,J0a6kswoJD9,ri Anyu Model Primary Health Centre
+2328,FACILITY,2373,taQYW2krc0U,ri Egbolom Health Centre
+2329,FACILITY,2374,b00A2S3KK0D,ri Ogbema Model Primary Health Centre
+2330,FACILITY,2375,GZ0gKhbSobh,ri Otagpha Health Centre
+2331,FACILITY,2376,JQ0baWZWCFg,ri Ahoada Gbeye Clinic Annex
+2332,FACILITY,2377,xSzWDV9q6vT,ri Ahoada General Hospital
+2333,FACILITY,2378,OGFFIIffiVQ,ri Ahoada Model Primary Health Centre
+2334,FACILITY,2379,IJ8vO9xK9Qq,ri Edeoha Primary Health Centre
+2335,FACILITY,2380,U18vivNeJI4,ri Ihugbogo Model Primary Health Centre
+2336,FACILITY,2382,es4D4IwVEiO,ri Odiabidi Primary Health Centre
+2337,FACILITY,2383,q8OG9xsCB55,ri Odimudie Primary Health Centre
+2338,FACILITY,2384,GVHAXV0qndf,ri Ula Upata Beulah Clinic
+2339,FACILITY,2385,Fkuhd1X7i3c,ri Ula-Ukpata Model Primary Health Centre
+2340,FACILITY,2386,bM5TYcAj4XN,ri Akininma Model Primary Health Centre
+2341,FACILITY,2387,dBEsurW802f,ri Edagberi Cottage Hospital
+2342,FACILITY,2388,esRAsJYSOjw,ri Ikodi Health Centre
+2343,FACILITY,2389,vLb29N2ynR0,ri Ikodi-Engeni Model Primary Health Centre
+2344,FACILITY,2390,uk9tTbaNcYv,ri Lengro Medical Centre
+2345,FACILITY,2391,vmOEYrLScTw,ri Mbiama Primary Health Centre
+2346,FACILITY,2392,PPZoR2tGVw6,ri Odioku Primary Health Centre
+2347,FACILITY,2393,vCUkIS2Dska,ri Okarki Model Primary Health Centre
+2348,FACILITY,2394,kk1gAPE7uR8,ri Okogbe Model Primary Health Centre
+2349,FACILITY,2395,lcNanbzK30q,ri Ubeta Primary Health Centre
+2350,FACILITY,2396,gG5KS3DcoAo,ri Ubio Primary Health Centre
+2351,FACILITY,2397,iEDgEzot3LB,ri Udawu Health Centre
+2352,FACILITY,2398,PuT5sKFB6HO,ri Abisa Comprehensive Health Centre
+2353,FACILITY,2399,jXJffTKxXTu,ri Abonnema Comprehensive Health Centre
+2354,FACILITY,2400,n36axqXK8aW,ri Abonnema General Hospital
+2355,FACILITY,2401,ulyCfZ5PUNZ,ri Eleme Sangama Comprehensive Health Centre
+2356,FACILITY,2402,WFxTjZ4WdqG,ri Idama Comprehensive Health Centre
+2357,FACILITY,2403,qABqJFpygEz,ri Kula Comprehensive Health Centre
+2358,FACILITY,2404,TTrCECvOB4g,ri Obonoma Model Primary Health Centre
+2359,FACILITY,2405,KEfx5e5pKK7,ri Soku Cottage Hospital
+2360,FACILITY,2406,YfiqDLrWYiL,ri Ajakaja Health Centre
+2361,FACILITY,2407,oAvn3Ki01lD,ri Asarama Health Centre
+2362,FACILITY,2408,UI6gO5MDgJP,ri Ataba Model Primary Health Centre
+2363,FACILITY,2409,inCBJmF4JFt,ri Ebukuma Health Centre
+2364,FACILITY,2410,dFsFbpv30Iq,ri Egbormung Health Centre
+2365,FACILITY,2411,VJpteeqMUUl,ri Egwede Health Centre
+2366,FACILITY,2412,iMNlzuKfXEj,ri Ekede Health Centre
+2367,FACILITY,2413,vlE4I6quY2t,ri Engedem Health Centre
+2368,FACILITY,2414,b636QyjNg6O,ri Ikuru town Health Centre
+2369,FACILITY,2415,CO2V9phcziZ,ri Inyong-Orong Primary Health Centre
+2370,FACILITY,2416,XuhcFD0UKuk,ri Isiodun Health Centre
+2371,FACILITY,2417,UB51Butzr7a,ri Iwoama Health Centre
+2372,FACILITY,2418,Xk6KqKm7I1X,ri Ngo General Hospital
+2373,FACILITY,2419,JkF03nhlfFP,ri NGO Health Centre
+2374,FACILITY,2420,BJrKCIOt4ay,ri Okorobile Health Centre
+2375,FACILITY,2421,H23GZWyRJNM,ri Oyorokoto Health Centre
+2376,FACILITY,2422,LSgdezSthEl,ri Unyeada Model Primary Health Centre
+2377,FACILITY,2423,lnGeH8V26X3,ri Unyeagala Health Centre
+2378,FACILITY,2424,ZYAnILVr8hO,ri Abalama Model Primary Health Centre
+2379,FACILITY,2425,hNfDUCUydTq,ri Buguma General Hospital
+2380,FACILITY,2426,gPYZy3Kfpf6,ri Buguma Model Primary Health Centre
+2381,FACILITY,2427,wiebJozrFVz,ri Ido Model Primary Health Centre
+2382,FACILITY,2428,QfTUe2vFyQH,ri Ifoko Health Centre
+2383,FACILITY,2429,r0Xs6Wk1MfK,ri Krakrama Health Centre
+2384,FACILITY,2430,I0Wf605tjZL,ri Sama Model Primary Health Centre
+2385,FACILITY,2431,HhCtZv9yFJ5,ri Sangam Health Centre
+2386,FACILITY,2432,g6NRweDjpp7,ri Tema Model Primary Health Centre
+2387,FACILITY,2433,mYukrlJ69CB,ri Banigo Health Centre
+2388,FACILITY,2434,sFu18vMdlcV,ri Bonny General Hospital
+2389,FACILITY,2435,xbKDSUKUpKZ,ri Bonny Health Centre
+2390,FACILITY,2436,rdSVDEqsVwc,ri Channel Clinic
+2391,FACILITY,2437,Ouafk8cXgN2,ri Dema Abbey Model Primary Health Centre
+2392,FACILITY,2438,LB3XFsjmswv,ri Finima Health Centre
+2393,FACILITY,2439,io7CR9fOiUu,ri St. Charles Surgery
+2394,FACILITY,2441,xoq2aNTMvmA,ri Bakana Primary Health Centre
+2395,FACILITY,2442,vz1DXpj8hLh,ri Bille Primary Health Centre
+2396,FACILITY,2443,qtDvX43LURH,ri Degema General Hospital
+2397,FACILITY,2444,miZ1qqqio52,ri Degema Model Primary Health Centre
+2398,FACILITY,2445,e2t30fu3vAw,ri Obuama Model Primary Health Centre
+2399,FACILITY,2446,NXY6BoXQZxx,ri Oguru-Ama Primary Health Ceentre
+2400,FACILITY,2447,iRAmuxfCqmA,ri Osokun Primary Health Centre
+2401,FACILITY,2448,El6DOeu7ifr,ri Tombia Model Primary Health Centre
+2402,FACILITY,2449,a0em8n4IWIp,ri Agbonchia Model Primary Health Centre
+2403,FACILITY,2450,vlM6eGrC0f4,ri Dorkson Medical Clinic
+2404,FACILITY,2451,SzZV4K7Gztd,ri Ebubu Model Primary Health Centre
+2405,FACILITY,2452,YOewmyzC14D,ri Eteo Model Primary Health Centre
+2406,FACILITY,2453,lzY4RSEi4XY,ri Nchia Health Centre
+2407,FACILITY,2454,RBSccSYEnVd,ri Onne Model Primary Health Centre
+2408,FACILITY,2455,fDMBrV8yYvC,ri Akpabu Model Primary Health Centre
+2409,FACILITY,2456,yPnhje4TM30,ri Egbeda Primary Health Centre
+2410,FACILITY,2457,ffgein47xUM,ri Emuoha General hospital
+2411,FACILITY,2458,zTdDami38JO,ri Ibaa Model Primary Health Centre
+2412,FACILITY,2459,NrldLPjmQNT,ri Ndele Model Primary Health Centre
+2413,FACILITY,2460,VxxG4q6Sj8h,ri Oduoha Model Primary Health Centre
+2414,FACILITY,2461,wftHmLIxJmY,ri Ogbakiri Model Primary Health Centre
+2415,FACILITY,2462,Lk5ycqeSJne,ri Omudioga Health Centre
+2416,FACILITY,2464,dy2gBDcGJc0,ri Rumuewhor Model Primary Health Centre
+2417,FACILITY,2465,BGbwg8b1VqR,ri Rumuji Model Primary Health Centre
+2418,FACILITY,2467,UeumgBMzImC,ri Afara Health Centre
+2419,FACILITY,2468,Q7FwRpctu14,ri Chokocho Health Centre
+2420,FACILITY,2469,iHodQZlsJHf,ri Chokota Health Centre
+2421,FACILITY,2470,xjkkujzNSwz,ri Nihi Health Centre
+2422,FACILITY,2471,A0RBjBifb7I,ri Obite Health Centre (Etche)
+2423,FACILITY,2472,DVQBcv60WOl,ri Ozuzu Health Centre
+2424,FACILITY,2473,ghlmu5TWG7R,ri Ulakwo Health Centre
+2425,FACILITY,2474,eG9xlnuBwPg,ri Umuaturu Primary Health Centre
+2426,FACILITY,2475,bMezJ1lKFai,ri Umuebule Cottage Hospital
+2427,FACILITY,2476,Wm2ixVedWUQ,ri Barako Model Primary Health Centre
+2428,FACILITY,2477,Y9bIu9Mdf4z,ri B-Dere Primary Health Centre
+2429,FACILITY,2478,acLCulrwgxr,ri Biara Model Primary Health Centre
+2430,FACILITY,2479,nCnSDOBi3ID,ri Dumkil Medical Centre
+2431,FACILITY,2480,wJaC3oA17jz,ri K-Dere Primary Health Centre
+2432,FACILITY,2481,AWZYL7psbDn,ri Nweol Model Primary Health Centre
+2433,FACILITY,2482,YqiBKPDuIh9,ri Terrebor General Hospital
+2434,FACILITY,2483,Z9CgrW7sh8j,ri Yeghe Model Primary Health Centre
+2435,FACILITY,2484,E22605q44Z6,ri Adanta Model Primary Health Centre
+2436,FACILITY,2485,FVX4BV9X6rf,ri Aluu Model Primary Health Centre
+2437,FACILITY,2486,mmsFOYIUrEg,ri Elele Model Primary Health Centre
+2438,FACILITY,2487,U55I0k8n0bb,ri Igwurutta Model Primary Health Centre
+2439,FACILITY,2488,uB6eSvnAUy1,ri Ipo Model Primary Health Centre
+2440,FACILITY,2489,aTMeg2Querw,ri Isiokpo General Hospital
+2441,FACILITY,2490,F47ja8rbFy0,ri Mbodo Aluu Primary Health Centre
+2442,FACILITY,2491,Fk8IIawQ63b,ri Omademe Model Primary Health Centre
+2443,FACILITY,2492,HqwDi1gXzB7,ri Omagwa Health Centre
+2444,FACILITY,2493,eIasr2Xxmjr,ri Omerelu Model Primary Health Centre
+2445,FACILITY,2494,irKa3Ooi58M,ri Omunawa Primary Health Centre
+2446,FACILITY,2495,HRyfQXfIr08,ri Ozuaha Model Primary Health Centre
+2447,FACILITY,2496,R3wo354LTh8,ri Ubima General Hospital
+2448,FACILITY,2497,MaD6ML2iP7h,ri Ubima Model Primary Health Centre
+2449,FACILITY,2498,tfZTHx5o1Cz,ri Bane Model Primary Health Centre
+2450,FACILITY,2499,wMnpt0vbgIz,ri Beeri Model Primary Health Centre
+2451,FACILITY,2500,W4QQK1UMCbp,ri Bori Inadum Medical Centre
+2452,FACILITY,2501,V7oXmZ8XUWl,ri Bori Primary Health Centre
+2453,FACILITY,2502,DAwItlcKcic,ri Gwara Model Primary Health Centre
+2454,FACILITY,2504,rsKqkkt8tQB,ri Kwawa Health Centre
+2455,FACILITY,2505,uGxMrjtECn9,ri Luawii Model Primary Health Centre
+2456,FACILITY,2506,ytoSUIVIf4s,ri Miracle Medical Centre
+2457,FACILITY,2507,M04MUJTlQ33,ri Okwale Model Primary Health Centre
+2458,FACILITY,2508,lLXDBum7Cc0,ri Opuoko Model Primary Health Centre
+2459,FACILITY,2509,sUUqTk7h6VI,ri Pope John Paul Clinic
+2460,FACILITY,2510,nm7mYz7ztbN,ri Taaba Model Primary Health Centre
+2461,FACILITY,2511,X1G54RrsgzL,ri Wiyaakara Model Primary Health Centre
+2462,FACILITY,2512,cFRQd7xVM7H,ri Bridgestone Hospital Rukpuku
+2463,FACILITY,2513,ixhlUJXZQl3,ri Ebony Hospital Ltd Rumuola
+2464,FACILITY,2514,i9BH6ZWSYAz,ri EL Joedam Hospital Mgbuoba
+2465,FACILITY,2515,pGhBO8m3T95,ri Jose Vital Clinic Rumuokoro
+2466,FACILITY,2516,DFIqxhjrUnD,ri Pamo Clinic and Hospital Rumuomasi
+2467,FACILITY,2517,ffa4TQEKqoo,ri Prime Medical Rumuogba
+2468,FACILITY,2518,bSUqgQFHTUq,ri Queens Clinic Rumuekukon
+2469,FACILITY,2519,ixFyV8OOSMm,ri Samstel Clinic Rumuokokro
+2470,FACILITY,2520,pBibegfbxDl,ri St. Elizabeth Specialist Clinic Rumuokwuta
+2471,FACILITY,2521,z9qtFUE6ZYt,ri Vita Medical Centre Borokiri
+2472,FACILITY,2523,NyZ328hbUiP,ri Amazing Grace Hospital
+2473,FACILITY,2524,rGvzP3ihZ4b,ri Atinu Critical Care Hospital
+2474,FACILITY,2525,m457iMFGhja,ri Bennod Clinic
+2475,FACILITY,2526,Q56ZFQDRL5O,ri Bossom Hospital and Physiotherapy
+2476,FACILITY,2527,fKjz5jJBSHU,ri Calvary Hospital
+2477,FACILITY,2528,IFDjK44pJpa,ri Castle Clinic
+2478,FACILITY,2529,fEsYh7FXcnO,ri Christmed Clinic
+2479,FACILITY,2530,gEh8hLJVTEU,ri College of Health Technology Clinic
+2480,FACILITY,2531,g8CBAhcpvWz,ri Dapel Hospital Ltd
+2481,FACILITY,2532,VTSAayRs8bx,ri Defem Clinic
+2482,FACILITY,2533,EH34Q7c89sT,ri Elelenwo FSP Health Centre
+2483,FACILITY,2534,aGQSiyof3Km,ri Eli Johnson Specialist Hospital
+2484,FACILITY,2535,fbNfHTRhEM2,ri Eliozu Model Primary Health Centre
+2485,FACILITY,2536,yntx3GOouES,ri Eneka Model Primary Health Centre
+2486,FACILITY,2537,Gwi8VrM1GRl,ri First Rivers Hospital
+2487,FACILITY,2538,po91xPqkxsS,ri Gracious Peters Medical Centre
+2488,FACILITY,2540,jPKMpT0uYMe,ri Holy Child Hospital
+2489,FACILITY,2541,IXPdxnJmPvB,ri Immanuel Hospital
+2490,FACILITY,2542,spyZEGIPDC1,ri Iriebe Primary Health Centre
+2491,FACILITY,2543,Kkp9zcAoPTW,ri Kendox Medical Services
+2492,FACILITY,2544,cNYythvI82X,ri Lifeforte Specialist Hospital
+2493,FACILITY,2545,Qz8bSfEXtJ4,ri Maryland Healthcare
+2494,FACILITY,2546,oaLttlCcdOs,ri Meridian Hospital
+2495,FACILITY,2547,ez44oM18Vnl,ri Moni Medical
+2496,FACILITY,2548,hehUVE4ABGx,ri Obio Cottage Hospital
+2497,FACILITY,2549,cul4e7dKwB4,ri Ozuoba Model Primary Health Centre
+2498,FACILITY,2550,lq0KbHq4udt,ri Palmers Hospital Ltd
+2499,FACILITY,2551,S8sMhtnADsy,ri Rivon Clnic
+2500,FACILITY,2552,sv3LuUJhlva,ri Rumuekini Primary Health Centre
+2501,FACILITY,2553,bw91zZN7l7s,ri Rumueme Model Primary Health Centre
+2502,FACILITY,2554,WCbFCooSpvo,ri Rumuepirikom Model Primary Health Centre
+2503,FACILITY,2555,Go5b51nGKWs,ri Rumuigbo Model Primary Health Centre
+2504,FACILITY,2556,r2lb86fSlzs,ri Rumuodomaya Model Primary Health Centre
+2505,FACILITY,2557,GslmUR0xz0k,ri Rumuokrushi Model Primary Health Centre
+2506,FACILITY,2558,qulgmycyV2K,ri Rumuolumeni Model Primary Health Centre
+2507,FACILITY,2559,lqBALK7kIIa,ri Shawsand Hospital
+2508,FACILITY,2560,DBhCIjImYyH,ri Sonabel Medical Centre & Hospital
+2509,FACILITY,2561,QHnZ4hCA8C1,ri Soverign Life Hospital
+2510,FACILITY,2562,J4C2MGsAvds,ri Spring Hospital
+2511,FACILITY,2563,Z029U56yr6M,ri Sterling Specialist Hospital
+2512,FACILITY,2565,N5eCCvbU7r6,ri Ultimate Specialist Hospital
+2513,FACILITY,2566,AeCSXOM5cuI,ri University of Portharcourt Teaching Hospital
+2514,FACILITY,2567,uekoPutu7OE,ri Victory Clinic
+2515,FACILITY,2568,zaoSC5FqsRI,ri Woji Cottage Hospital
+2516,FACILITY,2569,DISwV0c8dc3,ri Woji Model Primary Health Centre
+2517,FACILITY,2570,YzeWslFp6Gm,ri Womens Hospital Ropheka
+2518,FACILITY,2571,BoxL4OrNu9z,ri Amah Health Centre
+2519,FACILITY,2572,SdK84bHPRM3,ri Ebocha Health Centre
+2520,FACILITY,2573,BmuFVgSEjWb,ri Egi Health Centre
+2521,FACILITY,2574,dz5Skv3U295,ri Elieta Health Centre
+2522,FACILITY,2575,Nll18EAugbT,ri Erema General Hospital
+2523,FACILITY,2576,h3C9I5mdRrq,ri Foundation Clinic
+2524,FACILITY,2577,YX3H5jjHhzo,ri Gbeye Clinic
+2525,FACILITY,2578,a6bAXGMiBo7,ri Mgbede Community Health Centre
+2526,FACILITY,2579,Ta4kH5hcoUM,ri Ndoni Model Primary Health Centre
+2527,FACILITY,2580,CwDyQeCOlJu,ri Obirikom Health Centre
+2528,FACILITY,2581,LP2dmpgh82K,ri Obite Health Centre
+2529,FACILITY,2582,vFzRf88hgzy,ri Obiyebe Model Primary Health Centre
+2530,FACILITY,2583,FfgZ5ufqf7n,ri Ogbogu Health Centre
+2531,FACILITY,2584,qk9qD4HlLKK,ri Okposi Health Centre
+2532,FACILITY,2585,fi9F6b3wXJi,ri Okwuzi Model Primary Health Centre
+2533,FACILITY,2586,MaSFJip1inn,ri Omoku General Hospital
+2534,FACILITY,2587,J1dgQz1R68m,ri Omoku Model Primary Health Centre
+2535,FACILITY,2588,WH320Av0Uyf,ri Omoku Optimed Links Services
+2536,FACILITY,2589,lMUWyMQ19Nh,ri Omoku Prize Medicals Limited
+2537,FACILITY,2590,M8T2Oju8TuT,ri Bolo Primary Health Centre
+2538,FACILITY,2591,OxGTCa7PYrK,ri Ogu General Hospital
+2539,FACILITY,2592,fO085Y7mFI1,ri Ogu Primary Health Centre
+2540,FACILITY,2593,uYl0VNsBBfZ,ri Wakama Model Primary Health Centre
+2541,FACILITY,2594,TzJaCriCXpu,ri Ayungu Biri Model Primary Health Centre
+2542,FACILITY,2595,Rhf4Rsge9gb,ri George Ama Health Centre
+2543,FACILITY,2596,WcFsd084RZO,ri Ibaka Model Primary Health Centre
+2544,FACILITY,2597,HBPXjCNC2zM,ri Island Maternity
+2545,FACILITY,2598,P1P7CIk5Bdj,ri Kalio Primary Health Centre
+2546,FACILITY,2599,h5SnA7FfF3C,ri Ogan Ama Model Primary Health Centre
+2547,FACILITY,2601,AJINwKXcHhS,ri Ogoloma Model Primary Health Centre
+2548,FACILITY,2602,uD3dETAIiJY,ri Okochiri Model Primary Health Centre
+2549,FACILITY,2604,ZawaNKj59zo,ri Okujagu Health Centre
+2550,FACILITY,2605,i3JqZR72D7n,ri Akabuka Health Centre
+2551,FACILITY,2606,IA64rosyhK1,ri Eberi Primary Health Centre
+2552,FACILITY,2607,tg0Uf60a0cN,ri Obioha Model Primary Health Centre
+2553,FACILITY,2608,IxAEzb7KlYh,ri Ofeh Health Centre
+2554,FACILITY,2609,t6jI3OHRZ5D,ri Oyoro Ohim Primary Health Centre
+2555,FACILITY,2610,UvoOaEpY3hc,ri Umuajuloke Comprehensive Health Centre
+2556,FACILITY,2611,czicIiGz7VI,ri Umuokwa Health Centre
+2557,FACILITY,2612,dThCJKgxJcZ,ri Epellema Health Centre
+2558,FACILITY,2613,qCKCK6sYEe4,ri Minimah Maternal and Child Health
+2559,FACILITY,2614,w8K3ytcuA6o,ri Nkoro Model Primary Health Centre
+2560,FACILITY,2615,NZvjX9E7xCK,ri Opobo General Hospital
+2561,FACILITY,2616,a10C1Re1n7u,ri Queens Town Model Primary Health Centre
+2562,FACILITY,2617,MoHHlEWWIvF,ri Bethsaida Clinic
+2563,FACILITY,2618,ZWrhB9WWkch,ri Divine Wisdom Hospital
+2564,FACILITY,2619,PXLg6mIgpWI,ri Ezinne Maternity
+2565,FACILITY,2620,Od2evSHSody,ri Heritage Medicare Hospital
+2566,FACILITY,2621,qBhFkcVhyxF,ri Living Water Hospital
+2567,FACILITY,2622,BSAE3bUA2ZS,ri Obeakpu Model Primary Health Centre
+2568,FACILITY,2623,YWcPeE5GgVt,ri Obete Model Primary Health Centre
+2569,FACILITY,2624,baOzdSzuLC5,ri Oyigbo Christus Royal Hospital
+2570,FACILITY,2625,vqgu16NmRmh,ri Oyigbo Faith Maternity Centre
+2571,FACILITY,2626,BQlLSrWoxXw,ri Oyigbo Holy Child Maternity Clinic
+2572,FACILITY,2627,LP4lNlPYp3R,ri Oyigbo Vinkas Medical Centre
+2573,FACILITY,2628,U6hxHGziQNT,ri Salem Hospital
+2574,FACILITY,2629,miQ5RVnWC0K,ri Umuagbai Primary Health Centre
+2575,FACILITY,2630,V3MCCguBan8,ri Umusia Model Primary Health Centre
+2576,FACILITY,2631,C2F3Ozj54uO,ri Abuloma Model Primary Health Centre
+2577,FACILITY,2632,EmOtiQ0hyeO,ri Aggrey Clinic
+2578,FACILITY,2633,iPCqn47niX1,ri Amadiama Model Primary Health Centre
+2579,FACILITY,2634,rg4MWueBrn1,ri Ashford & Patrice Clinic Ltd
+2580,FACILITY,2635,mSOTmWOpZj2,ri Atlantic Medical Centre
+2581,FACILITY,2636,Mz1rpWaJSKH,ri Azuabie Model Primary Health Centre
+2582,FACILITY,2637,jrkM9deRQRK,ri Braithwaite Memorial Specialist Hospital
+2583,FACILITY,2638,h0DEc3asL4e,ri Bunduama Model Primary Health Centre
+2584,FACILITY,2639,LnhOKDehj8v,ri Chiji-Man Specialist Hospital
+2585,FACILITY,2640,kh0eXUMgcEi,ri Churchill Model Primary Health Centre
+2586,FACILITY,2641,g0WrU07mCE2,ri David Bassey Ikpeme Foundation
+2587,FACILITY,2642,Ag8SuiPWcU7,ri Elekahia Model Primary Health Centre
+2588,FACILITY,2643,bBj2mmVkHX6,ri Harryland Hospital
+2589,FACILITY,2644,Lv0mD5elZfr,ri Kersley Harrison Hospital
+2590,FACILITY,2645,M5GJmiCIWB7,ri Mgbundukwu (Okija) Model Primary Health Centre
+2591,FACILITY,2646,zw75qAkE2rk,ri Mini Health Centre
+2592,FACILITY,2647,ML7Gyka204c,ri Mirinwanyi Model Primary Health Centre
+2593,FACILITY,2649,gd7wZidifbJ,ri New Mile one Hospital
+2594,FACILITY,2650,WnSUH41YPZD,ri Nimley Clinic
+2595,FACILITY,2651,f0moxdHSV5h,ri Okuru-ama Model Primary Health Centre
+2596,FACILITY,2652,znjKJWIo3Yx,ri Olivet Clinic
+2597,FACILITY,2653,i9bDBRtqECg,ri Olunwa Medical Centre
+2598,FACILITY,2654,eJwSRCmxDpP,ri Orogbum Primary Health Centre
+2599,FACILITY,2655,bolmTnmTU46,ri Ozuboko Model Primary Health Centre
+2600,FACILITY,2656,WakWfM5eKGC,ri Paragon Clinic and Imaging
+2601,FACILITY,2657,HKwb2apyi87,ri Pearl Clinic
+2602,FACILITY,2658,P9qUQA6KmAs,ri Phoenix Clinic
+2603,FACILITY,2659,nPej4lN2viD,ri Police Medical Clinic
+2604,FACILITY,2660,IWdbwQA0vqY,ri Potts Johnson Model Primary Health Centre
+2605,FACILITY,2661,aGkVSTlkdWl,ri Princess Medical Centre
+2606,FACILITY,2662,K9arxtjklKt,ri Providence Clinic and Maternity
+2607,FACILITY,2663,joIdF16QXGz,ri Rehoboth Specialist Hospital
+2608,FACILITY,2664,cJXW3QTS9sl,ri Save a Life Medical Centre
+2609,FACILITY,2665,z5Uw1wzfGSX,ri Seiyefa Clinic
+2610,FACILITY,2666,gplXzFk5lSp,ri St Patricks Hospital
+2611,FACILITY,2670,NgSMRHwn3Yk,ri Standard Care Clinics
+2612,FACILITY,2671,D7dXx6lld24,ri Standard Care Maternity
+2613,FACILITY,2672,nzdAcpXPLHb,ri Zion Maternity
+2614,FACILITY,2673,Gwx8oGmoMaR,ri Bangoi Primary Health Centre
+2615,FACILITY,2674,MhXxKE2EUMR,ri Botem Model Primary Health Centre
+2616,FACILITY,2675,zHgYJnUcq4r,ri Bunu Model Primary Health Centre
+2617,FACILITY,2676,WUbqJwgJhwO,ri Koroma Model Primary Health Centre
+2618,FACILITY,2677,sJ1Il4U6flq,ri Kpite Model Primary Health Centre
+2619,FACILITY,2678,fkWoHTov14G,ta Iware Maternal and Child Health
+2620,FACILITY,2679,hel0gL19HV8,ta Kofai Maternal and Child Health
+2621,FACILITY,2680,ygiVotB5gGJ,ta Mayo Ranewo Maternal and Child Health
+2622,FACILITY,2682,GLMYeYnzEc9,ta Sunkani First Referral Hospital
+2623,FACILITY,2683,ROhcChFLRHB,ta Town Clinic
+2624,FACILITY,2684,w85X7lhTSlE,ta Bali General Hospital
+2625,FACILITY,2685,UN0W3lqrnmM,ta Santa Maria Clinic
+2626,FACILITY,2686,m7iiq53V1rN,ta Akate Model Health Centre
+2627,FACILITY,2687,LbpZJufflmj,ta Ananum Maternal and Child Health
+2628,FACILITY,2688,J02MVoKyKHy,ta Donga First Referral Hospital
+2629,FACILITY,2689,udP1n8xUgBk,ta Donga Maternal and Child Health
+2630,FACILITY,2690,OzvmFPKoXQ7,ta Gayama Maternal and Child Health
+2631,FACILITY,2691,Vch5JoEVbi6,ta Kadarko Maternal and Child Health
+2632,FACILITY,2692,KzXvSD2p1tS,ta Kumbo Maternal and Child Health
+2633,FACILITY,2693,tEJ7UPYkX1g,ta Mararaba Primary Health Centre
+2634,FACILITY,2694,TsrxzLsbRsk,ta Nyita Maternal and Child Health
+2635,FACILITY,2695,wZpTS4E2BFq,ta Alfa Maternal and Child Health Centre
+2636,FACILITY,2696,zjm5mcb2Rtf,ta CRCN Comprehensive Health Centre
+2637,FACILITY,2697,JVI4on8a71F,ta Serti First Referral Hospital
+2638,FACILITY,2698,CNKvvGTnYMs,ta Serti Gashaka Charity Foundation
+2639,FACILITY,2699,bSPoGbkVmu8,ta Danacha Maternal and Child Health Centre
+2640,FACILITY,2700,x5engE3zSNC,ta Gidin Waya Primary Health Centre
+2641,FACILITY,2701,Hhzl8oo8M4A,ta Ibi First Referral Hospital
+2642,FACILITY,2702,gs2A1jPE9ci,ta Sarkin Kudu Primary Health Centre
+2643,FACILITY,2703,ywWlwsaGgyK,ta Jalingo Federal Medical Centre
+2644,FACILITY,2704,qGViZdTpuxo,ta Jalingo Government House Clinic
+2645,FACILITY,2705,ZL4z1V2t2DJ,ta Jalingo Maternal and Child Health Clinic
+2646,FACILITY,2706,ilbnbOGcDwN,ta Mile Six Clinic
+2647,FACILITY,2707,ZUsClRxN7IR,ta New Barade Health Clinic
+2648,FACILITY,2708,OKPZ7SmaYwP,ta Nyabun kaka Health Center
+2649,FACILITY,2709,sOVfJDPuBIw,ta Society for Future Health
+2650,FACILITY,2710,yWsnDZHd7pF,ta State Specialist Hospital
+2651,FACILITY,2711,skfCiB1gbrp,ta Todun-Wadda Health Post
+2652,FACILITY,2712,cLF5EECd41U,ta Ummah Clinic
+2653,FACILITY,2713,PVcYsHUNeCv,ta Andamin Maternal and Child Health Centre
+2654,FACILITY,2714,CYNaW5INwAB,ta Bambur General Hospital
+2655,FACILITY,2715,QtklDXS2SU2,ta Karim Comprehensive Health Centre
+2656,FACILITY,2716,AC6kBwVwzEY,ta Worom UMCN RHP Maternity Clinic
+2657,FACILITY,2717,SPSDwLPmiZk,ta Baissa First Referral Hospital
+2658,FACILITY,2718,EgMU153UJCk,ta Dorofi Primary Health Centre
+2659,FACILITY,2719,nlrBLZnCiIz,ta GECHAAN lifeline Center
+2660,FACILITY,2720,QUcYpRa0oJV,ta Gembu General Hospital
+2661,FACILITY,2721,MbKTJ6Rc6p8,ta Mambila Baptist Hospital
+2662,FACILITY,2722,Sibg2dKhVcL,ta Mararaba Bang Primary Health Centre
+2663,FACILITY,2723,ahxmPgVJ25m,ta Warwar General Hospital
+2664,FACILITY,2724,LvWkddYGEhi,ta Haruna Tsokwa Memorial General Hospital
+2665,FACILITY,2725,K84SjtcmsBc,ta High Mammy Millenium Development Goals Clinic
+2666,FACILITY,2726,Burn2fP7Vah,ta Kashimbilla Maternal and Child Centre
+2667,FACILITY,2727,a92k8Xw6yBK,ta Kpashimbe Maternal and Child Health
+2668,FACILITY,2728,IEKVnEePZLN,ta Tati Millenium Development Goals Clinic
+2669,FACILITY,2729,K2qkjr8lkBn,ta Lissam Maternal and Child Health
+2670,FACILITY,2730,DZU5wNqDdUY,ta Bantaje Basic Health Centre
+2671,FACILITY,2731,MpwP93UnKn6,ta Gidin Dorowa Maternal and Child Health Centre
+2672,FACILITY,2732,zSCQIha9ceP,ta Tsokundi Model Primary Health Care Centre
+2673,FACILITY,2733,yo1LpyJHl2C,ta Wukari Christian Reformed Church Of Nigeria Aids Action Committee
+2674,FACILITY,2734,D4TgYWg2wJM,ta Wukari General Hospital
+2675,FACILITY,2735,jE4OvZu9bNC,ta Abubakar Barde First Referral Hospital
+2676,FACILITY,2736,yox6XBHvvUs,ta Bitako Maternal and Child Health
+2677,FACILITY,2737,ZPipB7dW75A,ta Bosung Millenium Development Goals Clinic
+2678,FACILITY,2738,ylksd93xegI,ta Lamma Maternal and Child Health
+2679,FACILITY,2739,XR6IngkQUS3,ta Monkin MDG Clinic
+2680,FACILITY,2740,tJ9ZVEhbtS4,ta United Methodist Church of Nigeria Rural Health Programme CSO
+2681,FACILITY,2741,RvpDAQ0KbEa,ta Yakoko Maternal and Child Health
+2682,FACILITY,2742,iJ5eOz3JYSm,ta Yakoko St. Monica Health Centre
+2683,FACILITY,2743,lOzN4yw4pSh,yo Gashua General Hospital
+2684,FACILITY,2744,Eyc5dHVNaTl,yo Damagum General Hospital
+2685,FACILITY,2745,a1J3Pztsypk,yo Green Environmental Support and Development Initiative
+2686,FACILITY,2746,VjCuxumYtdo,yo Fika General Hospital
+2687,FACILITY,2747,HPMJlQG8a6c,yo Buni Yadi General Hospital
+2688,FACILITY,2748,DHgWPzOOBrL,yo Nguru Federal Medical Centre
+2689,FACILITY,2749,EFlKE5cv3ta,yo Potiskum General Hospital
+2690,FACILITY,2751,DQmozhmllmC,on Owo Federal Medical Centre
+2691,FACILITY,2752,VQcbiMkzGaX,im Owerri Federal Medical Centre
+2692,FACILITY,2753,wmCdIN35Lro,ri Onne Medical Centre
+2693,FACILITY,2754,vBIjeh2H26W,ri Hearth Health Hospital
+2694,FACILITY,2755,PW6EFAjeb3U,ri Heartland Alliance
+2695,FACILITY,2756,VALWCLxwK1l,ri Initiative for Advancement of Humanity (IAH)
+2696,FACILITY,2758,OyWeudTtgp1,cr Heartland Alliance
+2697,FACILITY,2759,fqECS6pUlwN,cr Calabar Women and Children Hospital
+2698,FACILITY,2762,noa2ZNgst19,ri Meryl Hospital
+2699,FACILITY,2763,Jz488jAU1yC,ri Megacare Hospital
+2700,FACILITY,2765,MnTNB2Fjmaw,ri Sonabel hosiptal (HQ)
+2701,FACILITY,2769,OxaCTTjl6xz,ri Karpearl Hospital
+2702,FACILITY,2771,SHE7A2Svo86,ri Omas Medical Centre & Maternity
+2703,FACILITY,2772,CqGdh7OnN7J,ak Priscon Clinic
+2704,FACILITY,2776,eAiXbX9JSMv,ak Sheltered Specialist hospital
+2705,FACILITY,2783,LFaD7xAtJms,la Shomolu General Hospital
+2706,FACILITY,2784,XuW9ecPyya0,la Ifunaya Hospital
+2707,FACILITY,2789,jqM54MuGYri,ri Riv Portal
+2708,FACILITY,2790,JoBLcSRQyFo,ri Vinkas Clinic
+2709,FACILITY,2792,smQAuuzq0KU,ri Datta Clinic
+2710,FACILITY,2793,GZR7XJLtFOC,ri High Heritage Clinic
+2711,FACILITY,2794,ZA0XauOXfZT,ri New Orlins Clinic
+2712,FACILITY,2795,u28B7Cm75V6,ri Health Fountains
+2713,FACILITY,2796,B6NJ1Qdmx2N,ri April Clinic
+2714,FACILITY,2798,mLNfamDidlN,ri Splendour Hospital Ltd
+2715,FACILITY,2799,mYVezU5FDpR,ri Our Saviours Clinic
+2716,FACILITY,2801,heV7zhK5ozB,cr Progress Clinic
+2717,FACILITY,2802,ATkxL2D4Xrk,ri Blekon Maternity
+2718,FACILITY,2803,drKuLMXMNlW,ri Rukpokwu Model Primary Health Centre
+2719,FACILITY,2804,YrnSFoBOCBS,cr Evangel Model Clinic
+2720,FACILITY,2807,x4J9cqMx3M9,la Mayfair Medical Centre
+2721,FACILITY,2808,XHjCK9WeTf8,an Onitsha Pieta Hospital
+2722,FACILITY,2817,TjAavE1j8NT,ak Ikot Abasi General Hospital
+2723,FACILITY,2818,A1rGfVEmekp,ak Ikpe Annang General Hospital
+2724,FACILITY,3055,kUvtiKeUoAq,la Ilado Primary Health Centre
+2725,FACILITY,3056,Ha1Uxfwnmwq,la Ajido Primary Health Centre
+2726,FACILITY,3057,s4WUd8YyUhX,la Akoka Primary Health Centre
+2727,FACILITY,3058,ZwatqX9USK6,la Ashogbon Primary Health Centre
+2728,FACILITY,3059,U84z7mdEXvy,la Iwaya Primary Health Centre
+2729,FACILITY,3061,p4L4XOZUI2S,la Dunia Hospital
+2730,FACILITY,3062,P6MDf9zbeYv,la Soretire Primary Health Centre
+2731,FACILITY,3063,w8K5tkbNBUl,la Hero Medical Centre
+2732,FACILITY,3066,YQJkq1hA9ZZ,la Wright Primary Health Centre
+2733,FACILITY,3069,KfJTV53Nsen,la Patol Medical Centre
+2734,FACILITY,3072,S0cGWN6hhmt,la DEETAB Hospital
+2735,FACILITY,3073,GTK1fkGOukY,la Olaniba Memorial Centre

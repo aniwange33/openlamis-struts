@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="eid_register" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="62726415-856b-411e-8b03-bdcd33843c8b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="131"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="11"/>
+	<field name="hospitalNum" class="java.lang.String"/>
+	<field name="dateReceived" class="java.lang.String"/>
+	<field name="surname" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="labno" class="java.lang.String"/>
+	<field name="dateCollected" class="java.lang.String"/>
+	<field name="otherNames" class="java.lang.String"/>
+	<field name="dateDispatched" class="java.lang.String"/>
+	<field name="result" class="java.lang.String"/>
+	<field name="transitTime" class="java.lang.String"/>
+	<field name="turnaroundTime" class="java.lang.String"/>
+	<field name="threshold1" class="java.lang.String"/>
+	<field name="threshold2" class="java.lang.String"/>
+	<variable name="name" class="java.lang.String">
+		<variableExpression><![CDATA[$F{surname}+" "+( $F{otherNames} )]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3f389f22-78b1-4d11-9978-44301c1baf8b" x="330" y="8" width="211" height="19"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EID LABORATORY REGISTER]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="6e2a1a25-d4bf-4b9a-a5db-7184fa89f31f" x="3" y="6" width="796" height="46" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="445532f3-a94f-47ba-a11f-7df7fe1cba17" style="Heading" x="7" y="22" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[S/No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fec77d21-0048-492f-b307-0389ffde9a20" style="Heading" x="38" y="12" width="57" height="37"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date sample received in lab (X)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1d0e36f7-0331-406c-b2f7-67d9818b098a" style="Heading" x="141" y="24" width="61" height="19"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d6c4d20-3d7b-4031-b11e-77e1d9c44366" style="Heading" x="284" y="25" width="39" height="17"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aff98f87-0034-46fa-8567-6fae7c30b7be" style="Heading" x="320" y="18" width="45" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age (in Months)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb3503c0-6837-4e71-bfee-255879a41e61" style="Heading" x="95" y="25" width="38" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lab No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9c79ac8-6b30-4f77-99c3-9020dbc259f0" style="Heading" x="499" y="18" width="49" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[Transit time threshold]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3edaae8f-c091-4aad-a049-47d6f277881b" style="Heading" stretchType="RelativeToBandHeight" x="552" y="18" width="42" height="28"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[HIV PCR result]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="76d8fecd-15ed-455d-a098-d03650fcd330" style="Heading" x="218" y="24" width="66" height="19"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hospital No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9c79ac8-6b30-4f77-99c3-9020dbc259f0" style="Heading" x="372" y="16" width="58" height="31"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[Date sample collected (Y)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9c79ac8-6b30-4f77-99c3-9020dbc259f0" style="Heading" x="437" y="16" width="57" height="31"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[Transit time in days (X-Y)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3edaae8f-c091-4aad-a049-47d6f277881b" style="Heading" stretchType="RelativeToBandHeight" x="598" y="14" width="54" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[Date result sent out from lab (Z)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3edaae8f-c091-4aad-a049-47d6f277881b" style="Heading" stretchType="RelativeToBandHeight" x="656" y="13" width="62" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[Lab turn around time in days (Z-X)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3edaae8f-c091-4aad-a049-47d6f277881b" style="Heading" stretchType="RelativeToBandHeight" x="718" y="14" width="73" height="34"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[Lab turn around time threshold -10 days]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="3" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<frame>
+				<reportElement uuid="eb3e4432-5d02-4744-a0b1-f88f2eb47f85" style="Row" mode="Opaque" x="4" y="3" width="790" height="25"/>
+				<textField>
+					<reportElement uuid="ca1cc783-e0d1-4123-9923-15669735cb35" style="Detail" x="281" y="2" width="32" height="20"/>
+					<textElement textAlignment="Center">
+						<font fontName="SansSerif" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="291b0ecb-2109-4261-b13a-bc5d0968fbba" style="Detail" x="82" y="2" width="48" height="20"/>
+					<textElement>
+						<font fontName="SansSerif" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{labno}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="1ef451bc-9939-44c8-b097-4eeffccfbe0b" style="Detail" x="321" y="3" width="35" height="18"/>
+					<textElement>
+						<font fontName="SansSerif" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement uuid="f599eaa5-62ab-4d00-89fa-4ba0cf8d5f38" style="Detail" x="132" y="1" width="84" height="20"/>
+					<textElement>
+						<font fontName="SansSerif" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="1196d0f2-7981-439d-a307-af6e2f6fbc14" x="1" y="2" width="30" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="ebb35e56-f010-482b-b8b2-737e20b1d3ec" style="Detail" x="221" y="1" width="53" height="20"/>
+					<textElement>
+						<font fontName="SansSerif" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{hospitalNum}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="12dc2b60-386e-4db5-add9-6dfb0af2b944" x="371" y="1" width="50" height="19"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateCollected}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="b9bdbbfd-e781-4737-b6d6-4339a00f1634" x="442" y="0" width="30" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{transitTime}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="190e4942-1a79-498c-afb4-e9036eea79c8" x="545" y="1" width="42" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{result}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="7040734f-d2ab-4bd6-b68c-fb923b0b2c82" x="602" y="1" width="37" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateDispatched}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="f2fd8f8d-a4b8-49fb-a146-3db170ecd333" x="495" y="2" width="40" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{threshold1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="fead1e04-a30f-49b9-ad89-071304d55eab" x="662" y="0" width="39" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{turnaroundTime}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="c3e10078-54c0-40a6-9aa9-74ff8c5ee760" x="725" y="0" width="36" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{threshold2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="1d4125e2-7777-4735-9f5e-4285fa099891" x="34" y="1" width="43" height="20"/>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateReceived}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="14" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="11" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="15" splitType="Stretch"/>
+	</summary>
+</jasperReport>

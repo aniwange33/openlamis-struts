@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 15, 2014 11:39:25 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Labno" table="LABNO">
+        <id name="labnoId" type="long">
+            <column name="LABNO_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year"/>
+        </property>
+        <property name="lastno" type="java.lang.Integer">
+            <column name="lastno"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 15, 2014 11:39:25 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Exchange" table="EXCHANGE">
+    <id name="exchangeId" type="long">
+      <column name="EXCHANGE_ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="facilityId" type="long">
+      <column name="facility_id" not-null="true"/>
+    </property>
+    <property name="patient" type="timestamp">
+      <column length="19" name="patient"/>
+    </property>
+    <property name="clinic" type="timestamp">
+      <column length="19" name="clinic"/>
+    </property>
+    <property name="pharmacy" type="timestamp">
+      <column length="19" name="pharmacy"/>
+    </property>
+    <property name="laboratory" type="timestamp">
+      <column length="19" name="laboratory"/>
+    </property>
+    <property name="adrhistory" type="timestamp">
+      <column length="19" name="adrhistory"/>
+    </property>
+    <property name="oihistory" type="timestamp">
+      <column length="19" name="oihistory"/>
+    </property>
+    <property name="adherehistory" type="timestamp">
+      <column length="19" name="adherehistory"/>
+    </property>
+    <property name="statushistory" type="timestamp">
+      <column length="19" name="statushistory"/>
+    </property>
+    <property name="regimenhistory" type="timestamp">
+      <column length="19" name="regimenhistory"/>
+    </property>
+    <property name="chroniccare" type="timestamp">
+      <column length="19" name="chroniccare"/>
+    </property>
+    <property name="tbscreenhistory" type="timestamp">
+      <column length="19" name="tbscreenhistory"/>
+    </property>
+    <property name="dmscreenhistory" type="timestamp">
+      <column length="19" name="dmscreenhistory"/>
+    </property>
+    <property name="anc" type="timestamp">
+      <column length="19" name="anc"/>
+    </property>
+    <property name="delivery" type="timestamp">
+      <column length="19" name="delivery"/>
+    </property>
+    <property name="maternalfollowup" type="timestamp">
+      <column length="19" name="maternalfollowup"/>
+    </property>
+    <property name="child" type="timestamp">
+      <column length="19" name="child"/>
+    </property>
+    <property name="childfollowup" type="timestamp">
+      <column length="19" name="childfollowup"/>
+    </property>
+    <property name="partnerinformation" type="timestamp">
+      <column length="19" name="partnerinformation"/>
+    </property>
+    <property name="nigqual" type="timestamp">
+      <column length="19" name="nigqual"/>
+    </property>
+    <property name="specimen" type="timestamp">
+      <column length="19" name="specimen"/>
+    </property>
+    <property name="eid" type="timestamp">
+      <column length="19" name="eid"/>
+    </property>
+    <property name="eac" type="timestamp">
+      <column length="19" name="eac"/>
+    </property>
+    <property name="labno" type="timestamp">
+      <column length="19" name="labno"/>
+    </property>
+    <property name="monitor" type="timestamp">
+      <column length="19" name="monitor"/>
+    </property>
+    <property name="export" type="timestamp">
+      <column length="19" name="export"/>
+    </property>
+      <property name="assessment" type="timestamp">
+      <column length="19" name="assessment"/>
+    </property>
+    
+   <property name="hts" type="timestamp">
+      <column length="19" name="hts"/>
+    </property>
+    
+    <property name="indexcontact" type="timestamp">
+      <column length="19" name="indexcontact"/>
+    </property>
+    
+       <property name="encounter" type="timestamp">
+      <column length="19" name="encounter"/>
+    </property>
+    
+    <property name="drugtherapy" type="timestamp">
+      <column length="19" name="drugtherapy"/>
+    </property>
+    
+    <property name="mhtc" type="timestamp">
+      <column length="19" name="mhtc"/>
+    </property>
+    <property name="appointment" type="timestamp">
+      <column length="19" name="appointment"/>
+    </property>
+  </class>
+</hibernate-mapping>

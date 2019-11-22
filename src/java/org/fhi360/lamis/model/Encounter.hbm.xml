@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Encounter" table="ENCOUNTER">
+        <id name="encounterId" type="long">
+            <column name="ENCOUNTER_ID"/>
+            <generator class="identity"/>
+        </id>
+      
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+       
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="communitypharmId" type="long">
+            <column name="COMMUNITYPHARM_ID" not-null="true"/>
+        </property>
+        <property name="dateVisit" type="date">
+            <column length="8" name="DATE_VISIT" not-null="true"/>
+        </property>
+        <property name="question1" type="string">
+            <column length="5" name="QUESTION1"/>
+        </property>
+        <property name="question2" type="string">
+            <column length="5" name="QUESTION2"/>
+        </property>
+        <property name="question3" type="string">
+            <column length="5" name="QUESTION3"/>
+        </property>
+        <property name="question4" type="string">
+            <column length="5" name="QUESTION4"/>
+        </property>
+        <property name="question5" type="string">
+            <column length="5" name="QUESTION5"/>
+        </property>
+        <property name="question6" type="string">
+            <column length="5" name="QUESTION6"/>
+        </property>
+        <property name="question7" type="string">
+            <column length="5" name="QUESTION7"/>
+        </property>
+        <property name="question8" type="string">
+            <column length="5" name="QUESTION8"/>
+        </property>
+        <property name="question9" type="string">
+            <column length="5" name="QUESTION9"/>
+        </property>
+        <property name="regimen1" type="string">
+            <column length="100" name="REGIMEN1"/>
+        </property>
+        <property name="regimen2" type="string">
+            <column length="100" name="REGIMEN2"/>
+        </property>
+        <property name="regimen3" type="string">
+            <column length="100" name="REGIMEN3"/>
+        </property>
+        <property name="regimen4" type="string">
+            <column length="100" name="REGIMEN4"/>
+        </property>
+        <property name="duration1" type="java.lang.Integer">
+            <column name="DURATION1"/>
+        </property>
+        <property name="duration2" type="java.lang.Integer">
+            <column name="DURATION2"/>
+        </property>
+        <property name="duration3" type="java.lang.Integer">
+            <column name="DURATION3"/>
+        </property>
+        <property name="duration4" type="java.lang.Integer">
+            <column name="DURATION4"/>
+        </property>
+        <property name="prescribed1" type="java.lang.Integer">
+            <column name="PRESCRIBED1"/>
+        </property>
+        <property name="prescribed2" type="java.lang.Integer">
+            <column name="PRESCRIBED2"/>
+        </property>
+        <property name="prescribed3" type="java.lang.Integer">
+            <column name="PRESCRIBED3"/>
+        </property>
+        <property name="prescribed4" type="java.lang.Integer">
+            <column name="PRESCRIBED4"/>
+        </property>
+        <property name="dispensed1" type="java.lang.Integer">
+            <column name="DISPENSED1"/>
+        </property>
+        <property name="dispensed2" type="java.lang.Integer">
+            <column name="DISPENSED2"/>
+        </property>
+        <property name="dispensed3" type="java.lang.Integer">
+            <column name="DISPENSED3"/>
+        </property>
+        <property name="dispensed4" type="java.lang.Integer">
+            <column name="DISPENSED4"/>
+        </property>
+        <property name="notes" type="string">
+            <column length="500" name="NOTES"/>
+        </property>
+        <property name="nextRefill" type="date">
+            <column length="8" name="NEXT_REFILL"/>
+        </property>
+        <property name="regimentype" type="string">
+            <column length="100" name="REGIMENTYPE"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+      <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        <property name="deviceconfigId" type="java.lang.Long">
+            <column name="DEVICECONFIG_ID" />
+        </property>    
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Eac" table="EAC">
+        <id name="eacId" type="long">
+            <column name="EAC_ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="dateEac1" type="date">
+            <column length="8" name="DATE_EAC1"/>
+        </property>
+        <property name="dateEac2" type="date">
+            <column length="8" name="DATE_EAC2"/>
+        </property>
+        <property name="dateEac3" type="date">
+            <column length="8" name="DATE_EAC3"/>
+        </property>
+        <property name="dateSampleCollected" type="date">
+            <column length="8" name="DATE_SAMPLE_COLLECTED"/>
+        </property>
+        <property name="notes" type="string">
+            <column length="500" name="NOTES"/>
+        </property>    
+        <property name="lastViralLoad" type="java.lang.Double">
+            <column name="LAST_VIRAL_LOAD" precision="17" scale="0"/>
+        </property>
+        <property name="dateLastViralLoad" type="date">
+            <column length="8" name="DATE_LAST_VIRAL_LOAD"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+      <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        
+        
+        
+    </class>
+</hibernate-mapping>

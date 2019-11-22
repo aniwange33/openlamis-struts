@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.multipart.maxSize" value="1000000000" />
+    <constant name="struts.action.excludePattern" value="/resources/.*" />   
+    <include file="exception-struts.xml"/> 
+    <include file="patient-struts.xml"/>
+    <include file="clinic-struts.xml"/>
+    <include file="chroniccare-struts.xml"/>
+    <include file="pharmacy-struts.xml"/>
+    <include file="laboratory-struts.xml"/>
+    <include file="hts-struts.xml"/>
+    <include file="notification-struts.xml"/>
+    <include file="statushistory-struts.xml"/>
+    <include file="pmtct-struts.xml"/>
+    <include file="devolve-struts.xml"/>
+    <include file="specimen-struts.xml"/>
+    <include file="administration-struts.xml"/>
+    <include file="exchange-struts.xml"/>
+    <include file="events-struts.xml"/>
+    <include file="visualizer-struts.xml"/>
+    <include file="sms-struts.xml"/>
+</struts>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Motherinformation" table="MOTHERINFORMATION">
+    <id name="motherinformationId" type="long">
+      <column name="MOTHERINFORMATION_ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="org.fhi360.lamis.model.Facility" fetch="select" name="facility">
+      <column name="FACILITY_ID" not-null="true"/>
+    </many-to-one>
+    <property name="patientId" type="java.lang.Long">
+      <column name="PATIENT_ID"/>
+    </property>
+    <property name="hospitalNum" type="string">
+      <column length="25" name="HOSPITAL_NUM"/>
+    </property>
+    <property name="uniqueId" type="string">
+      <column length="36" name="UNIQUE_ID"/>
+    </property>
+    <property name="surname" type="string">
+      <column length="45" name="SURNAME"/>
+    </property>
+    <property name="address" type="string">
+      <column length="225" name="ADDRESS"/>
+    </property>
+    <property name="phone" type="string">
+      <column length="60" name="PHONE"/>
+    </property>
+    <property name="artStatus" type="string">
+      <column length="45" name="ART_STATUS"/>
+    </property>
+    <property name="inFacility" type="string">
+      <column length="45" name="IN_FACILITY"/>
+    </property>
+    <property name="otherNames" type="string">
+      <column length="75" name="OTHER_NAMES"/>
+    </property>
+    <property name="dateConfirmedHiv" type="date">
+      <column length="8" name="DATE_CONFIRMED_HIV"/>
+    </property>
+    <property name="dateEnrolledPmtct" type="date">
+      <column length="8" name="DATE_ENROLLED_PMTCT"/>
+    </property>
+    <property name="timeHivDiagnosis" type="string">
+      <column length="35" name="TIME_HIV_DIAGNOSIS"/>
+    </property>
+    <property name="dateStarted" type="date">
+      <column length="8" name="DATE_STARTED"/>
+    </property>
+    <property name="regimen" type="string">
+      <column length="100" name="REGIMEN"/>
+    </property>
+    <property name="timeStamp" type="timestamp">
+      <column length="23" name="TIME_STAMP"/>
+    </property>
+    <property name="userId" type="java.lang.Long">
+      <column name="USER_ID"/>
+    </property>
+    <property name="uploaded" type="java.lang.Integer">
+      <column name="UPLOADED"/>
+    </property>
+    <property name="timeUploaded" type="timestamp">
+      <column length="23" name="TIME_UPLOADED"/>
+    </property>
+   <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+  </class>
+</hibernate-mapping>

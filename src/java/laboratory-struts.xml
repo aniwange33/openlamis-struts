@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+ <!-- Author: AALOZIE -->
+<struts>
+   <package name="laboratory" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        <interceptors>
+            <interceptor name="laboratoryListInterceptor" class="org.fhi360.lamis.interceptor.LaboratoryListInterceptor"></interceptor>
+            <interceptor name="afterUpdateInterceptor" class="org.fhi360.lamis.interceptor.AfterUpdateInterceptor"></interceptor>
+            <interceptor name="monitorServiceInterceptor" class="org.fhi360.lamis.interceptor.MonitorServiceInterceptor"></interceptor>
+        </interceptors>
+        
+        <action name="Laboratory_page">
+            <result>/WEB-INF/views/laboratory/laboratory_page.jsp</result>
+        </action>
+
+        <action name="Laboratory_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/laboratory/laboratory_search.jsp</result>
+        </action>
+        
+        <action name="Labtest_prescription_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/laboratory/laboratory_prescription_search.jsp</result>
+        </action> 
+
+        <action name="Laboratory_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <interceptor-ref name="laboratoryListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/laboratory/laboratory_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Laboratory_save" class="org.fhi360.lamis.controller.LaboratoryAction" method="saveLaboratory">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="chain">Viralload_due</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Laboratory_prescription_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatientWithLabTest">
+            <interceptor-ref name="laboratoryListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/laboratory/laboratory_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Laboratory_prescription_save" class="org.fhi360.lamis.controller.LaboratoryAction" method="saveLaboratory">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="chain">Viralload_due_prescription</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Laboratory_update" class="org.fhi360.lamis.controller.LaboratoryAction" method="updateLaboratory">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Laboratory_search.action</result>
+            <!-- <result name="success" type="chain">Viralload_due</result> -->  
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+         <action name="Laboratory_prescription_update" class="org.fhi360.lamis.controller.LaboratoryAction" method="updateLaboratory">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Labtest_prescription_search.action</result>
+            <!-- <result name="success" type="chain">Viralload_due</result> -->  
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>																	 
+        </action> 
+
+        <action name="Viralload_due" class="org.fhi360.lamis.controller.LaboratoryAction" method="updateViralLoadDue">
+            <result name="success">/WEB-INF/views/laboratory/laboratory_search.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>        
+        </action> 
+        
+        <action name="Viralload_due_prescription" class="org.fhi360.lamis.controller.LaboratoryAction" method="updateViralLoadDue">
+            <result name="success">/WEB-INF/views/laboratory/laboratory_prescription_search.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>        
+        </action>   
+            
+        <action name="Laboratory_delete" class="org.fhi360.lamis.controller.LaboratoryAction" method="deleteLaboratory">
+          
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Laboratory_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+         <action name="Laboratory_find" class="org.fhi360.lamis.controller.LaboratoryAction" method="findLaboratory">
+            <result name="success">/WEB-INF/views/laboratory/laboratory_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Laboratory_grid" class="org.fhi360.lamis.controller.grid.LaboratoryGridAction" method="laboratoryGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Labresult_grid" class="org.fhi360.lamis.controller.grid.LabresultGridAction" method="labresultGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Labresult_grid_retrieve" class="org.fhi360.lamis.controller.grid.LabresultGridAction" method="labresultGridRetrieve">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Prescription_lab_retrieve_id" class="org.fhi360.lamis.controller.grid.PrescriptionGridAction" method="retrieveLabTestPrescriptionByPatientId">
+            <result name="success" type="json">
+                <param name="root">labtestPrescriptionList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Labresult_update" class="org.fhi360.lamis.controller.grid.LabresultGridAction" method="updateLabresultList">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Laboratory_retrieve" class="org.fhi360.lamis.controller.LaboratoryAction" method="retrieveLaboratoryList">
+            <result name="success" type="json">
+                <param name="root">laboratoryList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+         <action name="Laboratory_find_date" class="org.fhi360.lamis.controller.LaboratoryAction" method="findLaboratory">
+            <result name="success" type="json">
+                <param name="root">laboratoryList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Labtest_retrieve" class="org.fhi360.lamis.controller.LabtestAction" method="retrieveLabtest">
+            <result name="success" type="json"></result>	 
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Labtest_retrieve_map" class="org.fhi360.lamis.controller.LabtestAction" method="retrieveLabtestMap">
+            <result name="success" type="json">
+                <param name="root">labtestMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Labtest_grid" class="org.fhi360.lamis.controller.grid.LabTestOrderGridAction" method="getAllLabTests">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <!-- Lab Report Section -->                       
+        <action name="Lab_query_option" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/laboratory/laboratory_query.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>             
+
+        <action name="Reporting_month_lab" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/laboratory/reporting_month.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>             
+
+        <action name="Lab_summary" class="org.fhi360.lamis.controller.report.LaboratoryReportAction" method="labSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/laboratory/lab_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Laboratory_query" class="org.fhi360.lamis.controller.report.LaboratoryReportAction" method="labResultQuery">
+            <result name="success" type="jasper">
+                <param name="location">/reports/laboratory/lab_result_list.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                
+     </package>   
+</struts>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 16, 2014 12:09:06 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Indexcontact" table="INDEXCONTACT">
+        <id name="indexcontactId" type="long">
+            <column name="INDEXCONTACT_ID"/>
+            <generator class="identity"/>
+        </id>       
+        <many-to-one class="org.fhi360.lamis.model.Hts" fetch="select" name="hts">
+            <column name="HTS_ID" not-null="true"/>
+        </many-to-one>  
+                           
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="clientCode" type="string">
+            <column length="100" name="CLIENT_CODE" not-null="true"/>
+        </property>      
+        <property name="indexContactCode" type="string">
+            <column length="100" name="INDEX_CONTACT_CODE" not-null="true"/>
+        </property>             
+        <property name="contactType" type="string">
+            <column length="100" name="CONTACT_TYPE"/>
+        </property>        
+        <property name="surname" type="string">
+            <column length="100" name="SURNAME"/>
+        </property>
+        <property name="otherNames" type="string">
+            <column length="100" name="OTHER_NAMES"/>
+        </property>
+        <property name="gender" type="string">
+            <column length="20" name="GENDER"/>
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE"/>
+        </property>
+        <property name="phone" type="string">
+            <column length="50" name="PHONE"/>
+        </property>
+        <property name="address" type="string">
+            <column length="200" name="ADDRESS"/>
+        </property>
+        <property name="relationship" type="string">
+            <column length="100" name="RELATIONSHIP"/>
+        </property>
+
+        <property name="gbv" type="string">
+            <column length="8" name="GBV"/>
+        </property>      
+        <property name="durationPartner" type="java.lang.Integer">
+            <column name="DURATION_PARTNER"/>
+        </property>      
+        <property name="phoneTracking" type="string">
+            <column length="5" name="PHONE_TRACKING"/>
+        </property>
+        <property name="homeTracking" type="string">
+            <column length="5" name="HOME_TRACKING"/>
+        </property>        
+        <property name="outcome" type="string">
+            <column length="100" name="OUTCOME"/>
+        </property>    
+        <property name="dateHivTest" type="date">
+            <column length="8" name="DATE_HIV_TEST"/>
+        </property>       
+        
+        <property name="hivStatus" type="string">
+            <column length="100" name="HIV_STATUS"/>
+        </property>
+        <property name="linkCare" type="string">
+            <column length="5" name="LINK_CARE"/>
+        </property>
+        <property name="partnerNotification" type="string">
+            <column length="8" name="PARTNER_NOTIFICATION"/>
+        </property>
+        <property name="modeNotification" type="string">
+            <column length="100" name="MODE_NOTIFICATION"/>
+        </property>       
+        <property name="serviceProvided" type="string">
+            <column length="300" name="SERVICE_PROVIDED"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        <property name="deviceconfigId" type="java.lang.Long">
+            <column name="DEVICECONFIG_ID" />
+        </property>    
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="lab_summary" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="29cefaf3-aac9-48ee-a0a5-0a08ac656bf9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingMonth" class="java.lang.String"/>
+	<parameter name="reportingYear" class="java.lang.String"/>
+	<field name="indicator" class="java.lang.String"/>
+	<field name="nonart" class="java.lang.String"/>
+	<field name="art" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c2831e13-e36a-4840-95ae-85e06be31e7f" x="146" y="9" width="194" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laboratory Monthly Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8b4206c3-19cc-4f8c-b4a1-1571372915b1" style="Heading" x="19" y="63" width="39" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="55c8018b-bd28-470c-bc59-26a5c06b018e" style="Heading" x="137" y="63" width="32" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b3ca0d98-e7f5-4389-971f-7944dfb7d555" style="Heading" x="285" y="63" width="76" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d3cbe3bb-d4c0-43d2-9881-70c0035cc2d3" style="Heading" x="78" y="35" width="132" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporting Period-> Month:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ee165ece-9b71-4f91-96d3-4e570ec8186b" style="Heading" x="292" y="35" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6c50cc84-7a28-48fa-8b6d-20ae0e8ceb08" style="Detail" x="214" y="35" width="71" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2ead3349-f86a-4332-a6be-acb14084037f" style="Detail" x="330" y="35" width="47" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01c8c73d-f593-4246-aa99-c0a2ea57584c" style="Detail" x="62" y="63" width="65" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="71ddfa8e-4648-4b2a-9b86-62005e20401c" style="Detail" x="177" y="63" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cad84e3d-7ead-41e6-bf35-946da60e9f9f" style="Detail" x="369" y="63" width="174" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="3e1253c8-e8d2-43f2-bdec-b1cdfe8346e7" x="2" y="4" width="551" height="36" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="b55493bb-a411-4e1e-a8d0-3423fc202ec7" style="Heading" x="40" y="6" width="75" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Elements]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a413853-f4b6-46f8-a25a-64cff50ff7bf" style="Heading" x="344" y="8" width="52" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Non ART]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="60a8e1f4-8020-4b9a-b96d-cf89364483ff" style="Heading" x="420" y="8" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e5b9667e-59a8-420c-823d-88c4e8f99bb6" style="Heading" x="488" y="8" width="32" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aaceb555-4da9-4cbf-bd8e-53f464e40cc9" style="Heading" x="14" y="20" width="132" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tests done in this laboratory]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="3" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<frame>
+				<reportElement uuid="bd00fe9f-36e7-4b08-8be2-01b036c26835" style="Row" mode="Opaque" x="3" y="3" width="549" height="30"/>
+				<textField>
+					<reportElement uuid="38df91cc-fe89-4705-950b-9e03468894eb" style="Detail" x="3" y="6" width="292" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{indicator}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="62c37489-b494-4631-9356-e618df437488" style="Detail" x="338" y="5" width="52" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{nonart}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="ca060a1c-9ce0-4886-bc5f-2d1f73d2482b" style="Detail" x="409" y="5" width="50" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{art}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="70bbe5be-48f7-40cd-9fea-c9f36c5fd395" style="Detail" x="486" y="4" width="48" height="20"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="9" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="7" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="8" splitType="Stretch"/>
+	</summary>
+</jasperReport>

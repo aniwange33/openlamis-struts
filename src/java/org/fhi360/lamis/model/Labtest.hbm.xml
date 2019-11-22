@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Labtest" table="LABTEST">
+    <id name="labtestId" type="long">
+      <column name="LABTEST_ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="org.fhi360.lamis.model.Labtestcategory" fetch="select" name="labtestcategory">
+      <column name="LABTESTCATEGORY_ID" not-null="true"/>
+    </many-to-one>
+    <property name="description" type="string">
+      <column length="100" name="DESCRIPTION" not-null="true"/>
+    </property>
+    <property name="measureab" type="string">
+      <column length="10" name="MEASUREAB"/>
+    </property>
+    <property name="measurepc" type="string">
+      <column length="10" name="MEASUREPC"/>
+    </property>
+  </class>
+</hibernate-mapping>

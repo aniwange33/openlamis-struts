@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Tbscreen" table="TBSCREEN" catalog="LAMIS">
+        <id name="tbscreenId" type="long">
+            <column name="TBSCREEN_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

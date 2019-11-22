@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" dynamic-update="true" name="org.fhi360.lamis.model.Deviceconfig" table="DEVICECONFIG">
+    <id name="DeviceconfigId" type="long">
+      <column name="DEVICECONFIG_ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="facilityId" type="long">
+      <column name="FACILITY_ID" not-null="true"/>
+    </property>
+    <property name="deviceId" type="string">
+      <column length="36" name="DEVICE_ID" not-null="true"/>
+    </property>
+    <property name="username" type="string">
+      <column length="45" name="USERNAME"/>
+    </property>
+    <property name="password" type="string">
+      <column length="45" name="PASSWORD" />
+    </property>        
+  </class>
+</hibernate-mapping>

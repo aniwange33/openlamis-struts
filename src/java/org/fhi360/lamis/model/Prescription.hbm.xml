@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Prescription" table="PRESCRIPTION">
+    <id name="prescriptionId" type="long">
+      <column name="PRESCRIPTION_ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="facilityId" type="java.lang.Long">
+      <column name="FACILITY_ID"/>
+    </property>
+    <property name="patientId" type="java.lang.Long">
+      <column name="PATIENT_ID"/>
+    </property>
+    <property name="prescriptionType" type="string">
+      <column length="250" name="PRESCRIPTION_TYPE"/>
+    </property>
+    <property name="labtestId" type="java.lang.Long">
+      <column name="LABTEST_ID"/>
+    </property>
+    <property name="status" type="java.lang.Integer">
+      <column length="11" name="STATUS"/>
+    </property>
+    <property name="regimenTypeId" type="java.lang.Long">
+      <column name="REGIMENTYPE_ID"/>
+    </property>
+    <property name="regimenId" type="java.lang.Long">
+      <column name="REGIMEN_ID"/>
+    </property>
+    <property name="dateVisit" type="date">
+      <column length="8" name="DATE_VISIT" not-null="true"/>
+    </property>
+    <property name="duration" type="java.lang.Integer">
+      <column length="11" name="DURATION"/>
+    </property>
+    <property name="uploaded" type="java.lang.Integer">
+      <column length="11" name="UPLOADED"/>
+    </property>
+    <property name="timeStamp" type="timestamp">
+      <column length="23" name="TIME_STAMP"/>
+    </property>
+    <property name="timeUploaded" type="timestamp">
+      <column length="23" name="TIME_UPLOADED"/>
+    </property>
+    <property name="userId" type="java.lang.Long">
+      <column length="11" name="USER_ID"/>
+    </property>
+  </class>
+</hibernate-mapping>

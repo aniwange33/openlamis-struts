@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="radet_report" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="640d6ace-b667-47f5-a7e2-f25ad707b8dc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="11"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="12"/>
+	<parameter name="reportTitle" class="java.lang.String"/>
+	<field name="hospitalNum" class="java.lang.String"/>
+	<field name="uniqueId" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="dateStarted" class="java.lang.String"/>
+	<field name="dateLastRefill" class="java.lang.String"/>
+	<field name="regimenStart" class="java.lang.String"/>
+	<field name="currentStatus" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement uuid="3424480b-4764-42d2-be34-56b3424b7a68" x="112" y="11" width="579" height="29"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportTitle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="ca8fc7a5-ec1a-4a0b-afe2-3dfcf7e6c6c9" x="0" y="6" width="802" height="33" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="724c936f-25c6-4b7a-b7f1-eaa1372f0a21" x="44" y="14" width="86" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hospital Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b093d9d9-b152-4fa0-ab6d-df4cb1d59620" x="164" y="14" width="51" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unique Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="52ad0d29-faca-4690-8878-33b655b1dedd" x="7" y="14" width="30" height="20"/>
+				<textElement/>
+				<text><![CDATA[S/No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b093d9d9-b152-4fa0-ab6d-df4cb1d59620" x="236" y="14" width="51" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1d2ba682-9d2e-4c89-8d69-0f5ab0b19444" x="326" y="14" width="40" height="20"/>
+				<textElement/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cfa6bab4-ce33-4253-812c-fea8f8ac4855" x="370" y="11" width="67" height="28"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Date of ART Started]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dc0118ad-23f9-4744-bcc8-300e8c7a4151" x="445" y="10" width="57" height="26"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Date of Last Refill]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fb51babd-755d-4fff-ab74-d8dd8529b533" x="560" y="14" width="86" height="20"/>
+				<textElement/>
+				<text><![CDATA[Regimen at Start]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bd0d608c-20fa-4c7e-847b-9694aa3a6bb3" x="708" y="15" width="78" height="20"/>
+				<textElement/>
+				<text><![CDATA[Current Status]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<frame>
+				<reportElement uuid="b1f66d78-214d-41ed-97a5-613e3dc6d86d" style="Row" x="7" y="4" width="795" height="33"/>
+				<textField>
+					<reportElement uuid="83b6d7df-a026-4c6b-849c-c8e35539742d" x="41" y="6" width="98" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{hospitalNum}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="f4f4b23f-4b1d-44fd-93c2-a1e83b4e300d" x="149" y="6" width="70" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{uniqueId}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="7f78556f-d410-4480-af06-4af5b29bcc02" x="223" y="6" width="110" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="998649d3-4950-4838-a93c-ecabe2377964" x="341" y="6" width="34" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="907cfc7e-ad94-4393-95c2-6241b3c2c2df" x="384" y="6" width="55" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{dateStarted}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="9642bd7c-e9c3-42dc-8036-c09e97dfcfac" x="449" y="6" width="60" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{dateLastRefill}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="95d0d662-93ce-4095-8b22-81a61b02c5bc" x="513" y="6" width="171" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{regimenStart}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="b4765107-b37b-4625-9736-1ed405483b4e" x="690" y="6" width="100" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$F{currentStatus}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="30c52547-a6c6-40ba-a1b7-05fb7188f6c5" x="1" y="6" width="34" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="3" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,3170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="chroniccare_summary" pageWidth="595" pageHeight="3835" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b9f3340-3d0e-42f8-baa0-288e4d89f068">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="i1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingMonth" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingYear" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2m8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2f8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i2t8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6m8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6f8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i6t8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7m8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7f8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i7t8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i9t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i10t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i11" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i12" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i13" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i14" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i15" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i16" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i17" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i18" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i19m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i19m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i19f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i19f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i19t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i19t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i20" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i21" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i22" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i23" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24m8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24f8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i24t8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i25" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i26" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i27" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i28" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i29" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i30" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i31" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i32" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33m8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33f8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t6" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t7" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i33t8" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i34" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i35t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i36t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i37t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38m3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38m4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38m5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38f3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38f4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38f5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38t2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38t3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38t4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i38t5" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i39" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i40" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i41" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i42" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i43m" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i43f" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i43t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i44" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i45" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i46m" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i46f" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i46t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i47m" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i47f" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i47t" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i48" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i49" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i50" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i51" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i52m1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i52m2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i52f1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i52f2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i52t1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="i52t2" class="java.lang.String" isForPrompting="false"/>
+	<field name="stub" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="122" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="e016e194-66a1-4c96-aa8c-2d4156d20506" mode="Opaque" x="1" y="81" width="552" height="38" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4c32e13e-ae4b-46b2-b1cd-bade788892c9" x="82" y="1" width="397" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACILITY CARE & SUPPORT MONTHLY SUMMARY FORM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aeb19b91-f1ca-4469-847e-92849fd3dc66" style="Heading" x="156" y="26" width="128" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporting Period-> Month:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="60f22a70-db18-45be-b52f-1792678bb5aa" style="Heading" x="383" y="26" width="31" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f1433a7-7ec8-4f54-9c3c-303f902cc001" style="Heading" x="7" y="53" width="31" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64" style="Heading" x="135" y="53" width="31" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f46d6d4-401e-47d7-87df-53b8d0f9e2c3" style="Heading" x="284" y="53" width="47" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c76c33d5-5e53-43ea-9f43-1464db1d3edf" style="Detail" x="42" y="53" width="82" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a" style="Detail" x="171" y="53" width="99" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d1081f4f-4ecf-436e-bba2-90f34ef1afc8" style="Detail" x="336" y="53" width="209" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="769c23c8-a0c9-477e-bb2e-cf149dcc3e9e" style="Detail" x="286" y="26" width="84" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e1abc6b2-1826-4006-98ba-f18af80b1223" style="Detail" x="416" y="26" width="54" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="bb41aa4c-666b-4ceb-b8a8-c8b2e64ff2c4" x="330" y="101" width="29" height="11"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(years)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="443823a6-3b3c-452c-bffb-fab8ee79b72e" x="322" y="89" width="42" height="11"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="63fa9fbb-d4e7-471d-9392-8a7016f11109" x="450" y="85" width="33" height="11"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Values]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="373" y="83" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="496" y="99" width="1" height="19"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="435" y="99" width="1" height="19"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="310" y="83" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="33" y="83" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="cd36dcf8-638c-47cd-bfa0-01cf89d8cd5d" x="374" y="98" width="179" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7758931a-90e0-4ff7-890f-05f7913a641e" style="Heading" x="501" y="104" width="45" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7fc725d8-8d64-418e-b559-9a4f62542e57" style="Heading" x="453" y="104" width="41" height="11"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c12c474d-fa21-446b-ab03-5d2d6b86ff5e" style="Heading" x="396" y="104" width="30" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ed24b55-3a30-4aab-a346-7d26733bdebb" style="Heading" x="85" y="96" width="100" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Element & Indicators]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="354b6d70-6805-44ad-896d-fe29ae21cc35" style="Heading" x="4" y="96" width="34" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Source]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="1" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="5" splitType="Stretch">
+			<textField>
+				<reportElement uuid="638ebec6-872d-4502-8b7a-ca9c1bd19153" x="7" y="2" width="42" height="3"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{stub}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="3579" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="3473" width="551" height="58" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="2735" width="551" height="130" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="2599" width="551" height="130" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="2463" width="551" height="130" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e16a8173-718b-44d7-ba78-2aa03fcb590a" x="2" y="2405" width="551" height="18" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="1722" width="551" height="202" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e16a8173-718b-44d7-ba78-2aa03fcb590a" x="2" y="1699" width="551" height="18" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e016e194-66a1-4c96-aa8c-2d4156d20506" mode="Opaque" x="3" y="1522" width="552" height="38" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5353d82a-2136-47dd-be73-ec5e6170226e" x="3" y="1503" width="551" height="18" forecolor="#333333" backcolor="#666666"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="1441" width="551" height="58" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e16a8173-718b-44d7-ba78-2aa03fcb590a" x="2" y="1137" width="551" height="18" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="1001" width="551" height="130" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="865" width="551" height="130" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="599" width="551" height="202" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="392" width="551" height="202" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5353d82a-2136-47dd-be73-ec5e6170226e" x="2" y="3" width="551" height="18" forecolor="#333333" backcolor="#666666"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c5944ddd-eb22-4810-9f1a-39a49b1f2e93" style="Heading" x="115" y="6" width="334" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV NEWLY ENROLLED INTO CARE & TREATMENT CARE_NEW]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f6e1db72-e7ac-4e58-a746-f978ffda8e95" style="Detail" x="512" y="47" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="287" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="45" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV newly in HIV care & receiving clinical care for the first time ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="2" y="79" width="551" height="202" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="287" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV presumptive TB cases (TB Suspects)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="48" y="85" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV screened for TB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="5" y="86" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[b]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="392" y="89" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="513" y="90" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t1}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="e16a8173-718b-44d7-ba78-2aa03fcb590a" x="2" y="22" width="551" height="18" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="399bc772-3f36-4b06-b0e1-f7c058ee676f" x="224" y="26" width="100" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TB/HIV SERVICES]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="454" y="90" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="328" y="89" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="113" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="114" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="113" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="114" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="137" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="138" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="138" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="137" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 9]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="161" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="162" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="161" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="162" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="186" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="185" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="186" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="185" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="210" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="210" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="209" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="209" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="233" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="233" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[25 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="234" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="234" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="258" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i2f8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="258" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2t8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="257" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="257" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i2m8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="322" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="322" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV TB positive; not on TB drugs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="357" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV started on TB treatment]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="357" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="547" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="499" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="499" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="450" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="426" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="570" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="427" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="403" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="523" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="427" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="426" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="498" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="451" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="570" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="402" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="450" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 9]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="475" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="474" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="402" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="522" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="547" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="399" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[c]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="475" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="498" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="522" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="571" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="474" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="398" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[New PLHIV started on Isoniazid Preventive Therapy (IPT)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="523" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="546" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[25 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="403" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="546" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6m7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="571" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i6f8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="451" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i6t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="609" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="681" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="610" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="658" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="657" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="681" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="753" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[25 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="705" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="610" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="657" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="729" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="706" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="777" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="634" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="633" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="606" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[d]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="682" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="754" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="753" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="754" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="730" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="706" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="609" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="658" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="729" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="634" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="705" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="682" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="777" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7m8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="730" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="778" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i7f8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="633" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="605" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[New PLHIV in Clinical Care (CARE_NEW) ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="778" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i7t8}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="e16a8173-718b-44d7-ba78-2aa03fcb590a" x="2" y="807" width="551" height="18" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="399bc772-3f36-4b06-b0e1-f7c058ee676f" x="220" y="811" width="112" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NUTRITION SERVICES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="832" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV in care and treatment who received nutritional assessment]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="832" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="948" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i9f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="947" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 17]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="872" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[e]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="948" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9t4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="924" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i9f3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="971" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[18+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="923" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9m3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="923" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="899" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9m2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="871" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Clinically undernourished PLHIV]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="972" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="876" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="971" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="947" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9m4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="924" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="876" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i9f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="900" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="972" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i9f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="900" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i9f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="875" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i9m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="899" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="875" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1059" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1108" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i10f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="1012" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10t1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="1011" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1036" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i10f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1083" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10m4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1084" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10t4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1035" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1060" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i10f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1108" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1107" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10m5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1107" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[18+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1083" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 17]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1084" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i10f4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1060" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="1007" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinically undernourished PLHIV who received therapeutic or supplementary food]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1059" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1035" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10m2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="1012" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i10f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1036" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="1011" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i10m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="399bc772-3f36-4b06-b0e1-f7c058ee676f" x="164" y="1141" width="236" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENDER, PHDP AND CHRONIC CARE SERVICES]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1162" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1162" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV counselled on gender norms & GBV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1162" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[f]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1197" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1197" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV who were screened for GBV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1232" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GBV cases referred for post-GBV Care]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1232" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1267" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i14}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1267" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV screened for chronic illnesses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1267" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[g]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1302" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i15}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1302" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV suspected to have HTN]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1337" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i16}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1337" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV suspected to have DM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1372" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV co-morbid with HTN (newly identified)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1372" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i17}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1407" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV co-morbid with DM (newly identified) ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1407" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1475" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i19m2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1475" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="1447" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV who received PHDP service]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1476" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i19f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="1452" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i19f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1476" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i19t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="1451" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i19m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="1452" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i19t1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="1451" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[<15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c5944ddd-eb22-4810-9f1a-39a49b1f2e93" style="Heading" x="88" y="1506" width="386" height="13" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV PREVIOUSLY ENROLLED INTO HIV CARE & TREATMENT (OLD CLIENTS)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb41aa4c-666b-4ceb-b8a8-c8b2e64ff2c4" x="332" y="1542" width="29" height="11"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(years)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="63fa9fbb-d4e7-471d-9392-8a7016f11109" x="452" y="1526" width="33" height="11"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Values]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="312" y="1524" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="498" y="1540" width="1" height="19"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7fc725d8-8d64-418e-b559-9a4f62542e57" style="Heading" x="455" y="1545" width="41" height="11"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="35" y="1524" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="cd36dcf8-638c-47cd-bfa0-01cf89d8cd5d" x="376" y="1539" width="179" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="375" y="1524" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="437" y="1540" width="1" height="19"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7758931a-90e0-4ff7-890f-05f7913a641e" style="Heading" x="503" y="1545" width="45" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ed24b55-3a30-4aab-a346-7d26733bdebb" style="Heading" x="87" y="1537" width="100" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Element & Indicators]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="354b6d70-6805-44ad-896d-fe29ae21cc35" style="Heading" x="6" y="1537" width="34" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Source]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c12c474d-fa21-446b-ab03-5d2d6b86ff5e" style="Heading" x="398" y="1545" width="30" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="443823a6-3b3c-452c-bffb-fab8ee79b72e" x="324" y="1530" width="42" height="11"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age group]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1566" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i20}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1566" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registered PLHIV on New/first visit this FY (OLD_first time this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1566" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[h]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1599" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registered PLHIV on Follow up/subsequent visit this FY (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1599" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[i]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1599" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i21}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1632" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[j]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1632" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i22}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1632" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registered PLHIV on New/first visit this FY Eligible for CD4 Testing]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1666" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i23}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1666" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registered PLHIV on New/first visit this FY Eligible for Viral Load Testing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="399bc772-3f36-4b06-b0e1-f7c058ee676f" x="256" y="1703" width="35" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TB/HIV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1876" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[25 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1804" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1756" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1828" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1828" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1877" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1805" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1780" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1852" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="1732" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1729" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[k only]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1876" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1853" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="1733" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1900" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1853" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="1733" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1901" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1829" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="1728" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV screened for TB]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1781" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="1732" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1805" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="1804" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1781" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1757" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1901" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1852" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1756" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1780" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="1757" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1877" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="1829" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i24f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="1900" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i24m8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1929" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i25}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1929" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV presumptive TB cases (TB suspects)  (OLD_first time this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="1929" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[k]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1963" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV TB Positive; not on TB drugs (OLD_first time this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1963" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i26}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="1996" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i27}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="1996" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV started on TB treatment (OLD_first time this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="2030" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[q]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="2030" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i28}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="2030" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV presumptive TB cases (TB Suspects) (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="2064" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i29}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="2064" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV TB Positive; not on TB drugs (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="2098" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i30}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="2098" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV started on TB treatment  (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="2131" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i31}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="2131" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[l]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="2131" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Old PLHIV (Non-ART) in clinical care]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="2164" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i32}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="2164" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Old PLHIV (ART) in clinical care]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="2198" width="551" height="202" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2353" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2353" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2328" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2377" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2281" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2280" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2233" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2232" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2305" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2257" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2304" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="2209" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2256" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2377" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2280" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2304" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2256" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="2204" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Old PLHIV in Clinical Care (CARE_CURRENT)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2352" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[25 - 49]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2376" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2281" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="2208" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="2209" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2352" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2376" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2232" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2329" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2257" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2328" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2305" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2233" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="2208" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i33m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2329" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i33f6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="399bc772-3f36-4b06-b0e1-f7c058ee676f" x="220" y="2409" width="112" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NUTRITION SERVICES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="2429" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[m only]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="2429" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i34}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="2429" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV in care and treatment who received nutritional assessment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2657" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2498" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i35f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="2474" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2681" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36m4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="2609" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2657" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="2610" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2570" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i35f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="2473" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="2605" width="231" height="48"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinically undernourished PLHIV who received therapeutic or supplementary food  (OLD_first time this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="2473" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2682" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36t4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2521" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2682" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i36f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2569" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[18+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2522" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2658" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i36f3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2681" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 17]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2522" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i35f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2633" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36m2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2521" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2497" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35m2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="2474" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i35f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2570" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2706" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2498" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2706" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i36f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2634" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36t2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2633" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2546" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35t4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2497" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2545" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35m4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2705" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36m5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="2609" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="2610" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i36f1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2705" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[18+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2545" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 17]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2546" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i35f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="2470" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[m]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2634" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i36f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2569" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i35m5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="2469" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinically undernourished PLHIV (OLD_first time this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2658" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i36t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2842" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i37f5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="2746" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i37f1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2769" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37m2}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="3" y="2871" width="551" height="130" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="2741" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinically undernourished PLHIV  (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2929" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38m3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2954" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i38f4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="2881" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38m1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2818" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i37f4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2794" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37t3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2954" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38t4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="2882" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2978" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2906" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i38f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2906" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2953" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2841" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[18+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2978" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i38f5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2977" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[18+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2794" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i37f3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2793" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="2746" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2977" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2841" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37m5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2793" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37m3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2905" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2930" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2769" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[1 - 4]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2817" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2953" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 17]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="2882" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i38f1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="2877" width="231" height="48"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinically undernourished PLHIV who received therapeutic or supplementary food  (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2930" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i38f3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2842" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37t5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2818" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37t4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="2770" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37t2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2817" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15 - 17]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="2770" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i37f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="2745" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i37m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="2745" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="2742" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[r]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="2881" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="2929" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[5 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="2905" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i38m2}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="e16a8173-718b-44d7-ba78-2aa03fcb590a" x="2" y="3007" width="551" height="18" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="399bc772-3f36-4b06-b0e1-f7c058ee676f" x="164" y="3011" width="236" height="13"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENDER, PHDP AND CHRONIC CARE SERVICES]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3031" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i39}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3066" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i40}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3066" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV who were screened for GBV cases]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3031" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[n only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3031" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV counselled on gender norms & GBV]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3100" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i41}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3100" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GBV cases referred for post-GBV care (OLD_first time this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3100" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[n]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3134" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[s]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3134" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i42}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3134" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GBV cases referred for post-GBV care (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3168" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i43t}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3168" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV screened for chronic illnesses]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3168" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[o only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3202" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[o]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3202" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV suspected to have HTN (OLD_first time this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3202" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i44}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3236" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV suspected to have DM (OLD_first time this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3236" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i45}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3270" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV co-morbid with HTN (newly identified) (OLD_first time this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3270" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i46t}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="3168" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i43f}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="3168" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i43m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="3270" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i46m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="3270" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i46f}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3304" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i47t}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="3304" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i47f}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3304" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV co-morbid with DM (newly identified)  (OLD_first time this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="3304" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i47m}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3406" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i50}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3372" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV suspected to have DM (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3440" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i51}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3338" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV suspected to have HTN (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3372" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i49}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3406" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV co-morbid with HTN (newly identified) (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="3440" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV co-morbid with DM (newly identified)  (OLD_on Follow up this FY)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3338" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[t]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="512" y="3338" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i48}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="330" y="3507" width="36" height="20"/>
+				<textElement/>
+				<text><![CDATA[15+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="456" y="3508" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i52f2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="394" y="3507" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i52m2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="329" y="3483" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[<15]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="515" y="3508" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i52t2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="3484" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{i52f1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="3479" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLHIV who received PHDP service]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="3484" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i52t1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="3483" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{i52m1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="6" y="3479" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[o only]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

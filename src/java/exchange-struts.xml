@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+ <!-- Author: AALOZIE -->
+<struts>
+   <package name="exchange" namespace="/" extends="struts-default, json-default, jasperreports-default">               
+        <!-- RADET Section -->                       
+        <action name="Radet_page">
+            <result>/WEB-INF/views/administration/radet_page.jsp</result>
+        </action>
+        
+        <action name="Converter_page_radet">
+            <result>/WEB-INF/views/administration/converter_page_radet.jsp</result>
+        </action>
+
+        <action name="Converter_page_retention">
+            <result>/WEB-INF/views/administration/converter_page_retention.jsp</result>
+        </action>
+
+        <action name="Converter_dispatch_radet" class="org.fhi360.lamis.exchange.radet.RadetAction" method="dispatcher">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+
+        <action name="Converter_dispatch_retention" class="org.fhi360.lamis.exchange.radet.TreatmentRetentionAction" method="dispatcher">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+
+        <action name="Client_grid" class="org.fhi360.lamis.exchange.radet.RadetAction" method="buildClientList">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Radet_grid" class="org.fhi360.lamis.exchange.radet.RadetAction" method="radetGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="ClientData_update" class="org.fhi360.lamis.exchange.radet.ClientDataUpdateAction" method="update">
+            <interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>                
+            </result>
+        </action>        
+
+        <action name="Radet_report" class="org.fhi360.lamis.exchange.radet.RadetAction" method="radetReport">
+            <result name="success" type="jasper">
+                <param name="location">/reports/administration/radet_report.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>          
+
+        <!-- <action name="Radet_page" class="org.fhi360.lamis.controller.FileUploadAction" method="resetUploadStatus">
+            <result>/WEB-INF/views/administration/radet_page.jsp</result>
+        </action>
+
+        <action name="Upload_radetfile" class="org.fhi360.lamis.controller.FileUploadAction" method="uploadFile">            
+            <result name="success">/WEB-INF/views/administration/radet_page.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Radet_service" class="org.fhi360.lamis.exchange.radet.RadetAction" method="parseRadetFile">            
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>   -->  
+
+
+        <!-- NIGQual Section -->                       
+        <action name="Converter_page_nigqual">
+            <result>/WEB-INF/views/administration/converter_page_nigqual.jsp</result>
+        </action>
+
+        <action name="Generate_cohort" class="org.fhi360.lamis.exchange.nigqual.NigQualAction" method="generateCohort">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Nigqual_grid" class="org.fhi360.lamis.exchange.nigqual.NigQualAction" method="nigQualGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Converter_dispatch_nigqual" class="org.fhi360.lamis.exchange.nigqual.NigQualAction" method="dispatcher">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>   
+        
+        <action name="Nigqual_report" class="org.fhi360.lamis.exchange.nigqual.NigQualAction" method="nigqualReport">
+            <result name="success" type="jasper">
+                <param name="location">/reports/administration/nigqual_report.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>          
+
+        <!-- NDR Section -->                       
+        <action name="Converter_page_ndr" class="org.fhi360.lamis.controller.FileUploadAction" method="resetUploadStatus">
+            <result>/WEB-INF/views/administration/converter_page_ndr.jsp</result>
+        </action>
+        
+        <action name="Upload_ndrfile" class="org.fhi360.lamis.controller.FileUploadAction" method="uploadFile">            
+            <result name="success">/WEB-INF/views/administration/converter_page_ndr.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Converter_dispatch_ndr" class="org.fhi360.lamis.exchange.ndr.NdrAction" method="dispatcher">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>         
+
+        <!-- DHIS Section -->                       
+        <action name="Converter_page_dhis">
+            <result>/WEB-INF/views/administration/converter_page_dhis.jsp</result>
+        </action>
+
+        <action name="Converter_dispatch_dhis" class="org.fhi360.lamis.exchange.dhis.DhisConverterDispatchAction" method="dispatcher">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>         
+     </package>   
+</struts>

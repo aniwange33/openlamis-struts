@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Biometric" table="biometric"/>
+    <id name="id" type="string">
+        <column length="36" name="biometric_id"/>
+    </id>
+    <property name="facilityId" type="long">
+        <column name="facility_id"/>
+    </property>
+    <property name="patientId" type="string">
+        <column length="36" name="patient_id"/>
+    </property>
+    <property name="template" type="binary">
+        <column name="template"/>
+    </property>
+    <property name="templateType" type="string">
+        <column name="template_type"/>
+    </property>
+    <property name="biometricType" type="string">
+        <column name="biometric_type"/>
+    </property>
+    <property name="patientName" type="string">
+        <column name="patient_name"/>
+    </property>
+    <property name="patientPhone" type="string">
+        <column name="patient_phone"/>
+    </property>
+    <property name="patientGender" type="string">
+        <column name="patient_gender"/>
+    </property>
+    <property name="patientAddress" type="string">
+        <column name="patient_address"/>
+    </property>
+    <property name="hospitalNum" type="string">
+        <column name="hospital_num"/>
+    </property>
+    <property name="enrollmentDate" type="date">
+        <column name="enrollment_date"/>
+    </property>
+</hibernate-mapping>

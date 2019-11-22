@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Message" table="MESSAGE">
+    <id name="messageId" type="long">
+      <column name="MESSAGE_ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="messageType" type="java.lang.Integer">
+      <column name="MESSAGE_TYPE" not-null="true"/>
+    </property>
+    <property name="daysToAppointment" type="java.lang.Integer">
+      <column name="DAYS_TO_APPOINTMENT"/>
+    </property>
+    <property name="dateToSend" type="date">
+      <column length="8" name="DATE_TO_SEND"/>
+    </property>
+    <property name="recipients" type="string">
+      <column length="100" name="RECIPIENTS"/>
+    </property>
+    <property name="message1" type="string">
+      <column length="100" name="MESSAGE1" not-null="true"/>
+    </property>
+    <property name="message2" type="string">
+      <column length="100" name="MESSAGE2"/>
+    </property>
+    <property name="message3" type="string">
+      <column length="100" name="MESSAGE3"/>
+    </property>
+    <property name="message4" type="string">
+      <column length="100" name="MESSAGE4"/>
+    </property>
+  </class>
+</hibernate-mapping>

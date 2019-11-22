@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 16, 2014 12:09:06 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Hts" table="HTS">
+        <id name="htsId" type="long">
+            <column name="HTS_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="assessmentId" type="long">
+            <column name="ASSESSMENT_ID" />
+        </property>    
+        <property name="stateId" type="long">
+            <column name="STATE_ID" not-null="true"/>
+        </property>                        
+        <property name="lgaId" type="long">
+            <column name="LGA_ID" not-null="true"/>
+        </property>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="facilityName" type="string">
+            <column length="200" name="FACILITY_NAME"/>
+        </property>        
+        <property name="dateVisit" type="date">
+            <column length="8" name="DATE_VISIT"/>
+        </property>       
+        <property name="clientCode" type="string">
+            <column length="15" name="CLIENT_CODE" not-null="true"/>
+        </property>      
+        <property name="referredFrom" type="string">
+            <column length="100" name="REFERRED_FROM"/>
+        </property>        
+        <property name="testingSetting" type="string">
+            <column length="100" name="TESTING_SETTING"/>
+        </property>
+        <property name="surname" type="string">
+            <column length="100" name="SURNAME"/>
+        </property>
+        <property name="otherNames" type="string">
+            <column length="100" name="OTHER_NAMES"/>
+        </property>
+        <property name="dateBirth" type="date">
+            <column length="8" name="DATE_BIRTH"/>
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE"/>
+        </property>
+        <property name="ageUnit" type="string">
+            <column length="15" name="AGE_UNIT"/>
+        </property>
+        <property name="phone" type="string">
+            <column length="50" name="PHONE"/>
+        </property>
+        <property name="address" type="string">
+            <column length="200" name="ADDRESS"/>
+        </property>
+        <property name="gender" type="string">
+            <column length="20" name="GENDER"/>
+        </property>
+        <property name="firstTimeVisit" type="string">
+            <column length="100" name="FIRST_TIME_VISIT"/>
+        </property>
+        <property name="state" type="string">
+            <column length="100" name="STATE"/>
+        </property>
+        <property name="lga" type="string">
+            <column length="200" name="LGA"/>
+        </property>
+        <property name="maritalStatus" type="string">
+            <column length="20" name="MARITAL_STATUS"/>
+        </property>
+        <property name="numChildren" type="java.lang.Integer">
+            <column name="NUM_CHILDREN"/>
+        </property>
+        <property name="numWives" type="java.lang.Integer">
+            <column name="NUM_WIVES"/>
+        </property>
+        <property name="typeCounseling" type="string">
+            <column length="100" name="TYPE_COUNSELING"/>
+        </property>
+        <property name="indexClient" type="string">
+            <column length="50" name="INDEX_CLIENT"/>
+        </property>
+        <property name="typeIndex" type="string">
+            <column length="50" name="TYPE_INDEX"/>
+        </property>
+        <property name="indexClientCode" type="string">
+            <column length="100" name="INDEX_CLIENT_CODE"/>
+        </property>
+        <property name="knowledgeAssessment1" type="java.lang.Integer">
+            <column name="KNOWLEDGE_ASSESSMENT1"/>
+        </property>
+        <property name="knowledgeAssessment2" type="java.lang.Integer">
+            <column name="KNOWLEDGE_ASSESSMENT2"/>
+        </property>
+        <property name="knowledgeAssessment3" type="java.lang.Integer">
+            <column name="KNOWLEDGE_ASSESSMENT3"/>
+        </property>
+        <property name="knowledgeAssessment4" type="java.lang.Integer">
+            <column  name="KNOWLEDGE_ASSESSMENT4"/>
+        </property>
+        <property name="knowledgeAssessment5" type="java.lang.Integer">
+            <column name="KNOWLEDGE_ASSESSMENT5"/>
+        </property>
+        <property name="knowledgeAssessment6" type="java.lang.Integer">
+            <column name="KNOWLEDGE_ASSESSMENT6"/>
+        </property>
+        <property name="knowledgeAssessment7" type="java.lang.Integer">
+            <column  name="KNOWLEDGE_ASSESSMENT7"/>
+        </property>
+        <property name="riskAssessment1" type="java.lang.Integer">
+            <column  name="RISK_ASSESSMENT1"/>
+        </property>
+        <property name="riskAssessment2" type="java.lang.Integer">
+            <column  name="RISK_ASSESSMENT2"/>
+        </property>
+        <property name="riskAssessment3" type="java.lang.Integer">
+            <column  name="RISK_ASSESSMENT3"/>
+        </property>
+        <property name="riskAssessment4" type="java.lang.Integer">
+            <column  name="RISK_ASSESSMENT4"/>
+        </property>
+        <property name="riskAssessment5" type="java.lang.Integer">
+            <column  name="RISK_ASSESSMENT5"/>
+        </property>
+        <property name="riskAssessment6" type="java.lang.Integer">
+            <column  name="RISK_ASSESSMENT6"/>
+        </property>
+        <property name="tbScreening1" type="java.lang.Integer">
+            <column  name="TB_SCREENING1"/>
+        </property>
+        <property name="tbScreening2" type="java.lang.Integer">
+            <column  name="TB_SCREENING2"/>
+        </property>
+        <property name="tbScreening3" type="java.lang.Integer">
+            <column  name="TB_SCREENING3"/>
+        </property>
+        <property name="tbScreening4" type="java.lang.Integer">
+            <column  name="TB_SCREENING4"/>
+        </property>
+        <property name="stiScreening1" type="java.lang.Integer">
+            <column  name="STI_SCREENING1"/>
+        </property>
+        <property name="stiScreening2" type="java.lang.Integer">
+            <column  name="STI_SCREENING2"/>
+        </property>
+        <property name="stiScreening3" type="java.lang.Integer">
+            <column  name="STI_SCREENING3"/>
+        </property>
+        <property name="stiScreening4" type="java.lang.Integer">
+            <column  name="STI_SCREENING4"/>
+        </property>
+        <property name="stiScreening5" type="java.lang.Integer">
+            <column  name="STI_SCREENING5"/>
+        </property>
+        <property name="hivTestResult" type="string">
+            <column length="100" name="HIV_TEST_RESULT"/>
+        </property>
+        <property name="testedHiv" type="string">
+            <column length="100" name="TESTED_HIV"/>
+        </property>
+        <property name="postTest1" type="java.lang.Integer">
+            <column  name="POST_TEST1"/>
+        </property>
+        <property name="postTest2" type="java.lang.Integer">
+            <column  name="POST_TEST2"/>
+        </property>
+        <property name="postTest3" type="java.lang.Integer">
+            <column  name="POST_TEST3"/>
+        </property>
+        <property name="postTest4" type="java.lang.Integer">
+            <column  name="POST_TEST4"/>
+        </property>
+        <property name="postTest5" type="java.lang.Integer">
+            <column  name="POST_TEST5"/>
+        </property>
+        <property name="postTest6" type="java.lang.Integer">
+            <column  name="POST_TEST6"/>
+        </property>
+        <property name="postTest7" type="java.lang.Integer">
+            <column  name="POST_TEST7"/>
+        </property>
+        <property name="postTest8" type="java.lang.Integer">
+            <column  name="POST_TEST8"/>
+        </property>
+        <property name="postTest9" type="java.lang.Integer">
+            <column  name="POST_TEST9"/>
+        </property>
+        <property name="postTest10" type="java.lang.Integer">
+            <column  name="POST_TEST10"/>
+        </property>
+        <property name="postTest11" type="java.lang.Integer">
+            <column  name="POST_TEST11"/>
+        </property>
+        <property name="postTest12" type="java.lang.Integer">
+            <column  name="POST_TEST12"/>
+        </property>
+        <property name="postTest13" type="java.lang.Integer">
+            <column  name="POST_TEST13"/>
+        </property>
+        <property name="postTest14" type="java.lang.Integer">
+            <column  name="POST_TEST14"/>
+        </property>
+        <property name="syphilisTestResult" type="string">
+            <column length="100" name="SYPHILIS_TEST_RESULT"/>
+        </property>
+        <property name="hepatitisbTestResult" type="string">
+            <column length="100" name="HEPATITISB_TEST_RESULT"/>
+        </property>
+        <property name="hepatitiscTestResult" type="string">
+            <column length="100" name="HEPATITISC_TEST_RESULT"/>
+        </property>
+        <property name="note" type="string">
+            <column length="100" name="NOTE"/>
+        </property>
+        <property name="artReferred" type="string">
+            <column length="100" name="ART_REFERRED"/>
+        </property>
+        <property name="partnerNotification" type="string">
+            <column length="8" name="PARTNER_NOTIFICATION"/>
+        </property>
+        <property name="tbReferred" type="string">
+            <column length="100" name="TB_REFERRED"/>
+        </property>
+        <property name="stiReferred" type="string">
+            <column length="100" name="STI_REFERRED"/>
+        </property>           
+        <property name="latitude" type="java.lang.Double">
+            <column name="LATITUDE" precision="17" scale="0"/>
+        </property>
+        <property name="longitude" type="java.lang.Double">
+            <column name="LONGITUDE" precision="17" scale="0"/>
+        </property>
+        <property name="dateRegistration" type="date">
+            <column length="8" name="DATE_REGISTRATION"/>
+        </property>
+        <property name="dateStarted" type="date">
+            <column length="8" name="DATE_STARTED"/>
+        </property>                  
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        
+        <property name="notificationCounseling" type="string">
+            <column length="36" name="NOTIFICATION_COUNSELING"/>
+        </property>
+        
+        <property name="numberPartner" type="java.lang.Integer">
+            <column name="NUMBER_PARTNER"/>
+        </property>
+        
+        <property name="deviceconfigId" type="java.lang.Long">
+            <column name="DEVICECONFIG_ID"/>
+        </property>   
+        
+    </class>
+</hibernate-mapping>

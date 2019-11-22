@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Statushistory" table="STATUSHISTORY">
+        <id name="historyId" type="long">
+            <column name="HISTORY_ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="currentStatus" type="string">
+            <column length="75" name="CURRENT_STATUS"/>
+        </property>
+        <property name="dateCurrentStatus" type="date">
+            <column length="8" name="DATE_CURRENT_STATUS"/>
+        </property>
+        <property name="reasonInterrupt" type="string">
+            <column length="100" name="REASON_INTERRUPT"/>
+        </property>
+        <property name="causeDeath" type="string">
+            <column length="100" name="CAUSE_DEATH"/>
+        </property>
+        <property name="outcome" type="string">
+            <column length="100" name="OUTCOME"/>
+        </property>
+        <property name="agreedDate" type="date">
+            <column length="8" name="AGREED_DATE"/>
+        </property>    
+        <property name="dateTracked" type="date">
+            <column length="8" name="DATE_TRACKED"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+         <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

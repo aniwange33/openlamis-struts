@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Patient" table="PATIENT">
+        <id name="patientId" type="long">
+            <column name="PATIENT_ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="org.fhi360.lamis.model.Facility" fetch="select" name="facility">
+            <column name="FACILITY_ID" not-null="true"/>
+        </many-to-one>
+        <property name="hospitalNum" type="string">
+            <column length="25" name="HOSPITAL_NUM" not-null="true"/>
+        </property>
+        <property name="uniqueId" type="string">
+            <column length="36" name="UNIQUE_ID"/>
+        </property>
+        <property name="surname" type="string">
+            <column length="45" name="SURNAME"/>
+        </property>
+        <property name="otherNames" type="string">
+            <column length="75" name="OTHER_NAMES"/>
+        </property>
+        <property name="gender" type="string">
+            <column length="7" name="GENDER"/>
+        </property>
+        <property name="dateBirth" type="date">
+            <column length="8" name="DATE_BIRTH"/>
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE"/>
+        </property>
+        <property name="ageUnit" type="string">
+            <column length="15" name="AGE_UNIT"/>
+        </property>
+        <property name="maritalStatus" type="string">
+            <column length="15" name="MARITAL_STATUS"/>
+        </property>
+        <property name="education" type="string">
+            <column length="25" name="EDUCATION"/>
+        </property>
+        <property name="occupation" type="string">
+            <column length="25" name="OCCUPATION"/>
+        </property>
+        <property name="address" type="string">
+            <column length="100" name="ADDRESS"/>
+        </property>
+        <property name="phone" type="string">
+            <column length="25" name="PHONE"/>
+        </property>
+        <property name="state" type="string">
+            <column length="45" name="STATE"/>
+        </property>
+        <property name="lga" type="string">
+            <column length="45" name="LGA"/>
+        </property>
+        <property name="nextKin" type="string">
+            <column length="75" name="NEXT_KIN"/>
+        </property>
+        <property name="addressKin" type="string">
+            <column length="100" name="ADDRESS_KIN"/>
+        </property>
+        <property name="phoneKin" type="string">
+            <column length="25" name="PHONE_KIN"/>
+        </property>
+        <property name="relationKin" type="string">
+            <column length="25" name="RELATION_KIN"/>
+        </property>
+        <property name="entryPoint" type="string">
+            <column length="15" name="ENTRY_POINT"/>
+        </property>
+        <property name="targetGroup" type="string">
+            <column length="15" name="TARGET_GROUP"/>
+        </property>
+        <property name="dateConfirmedHiv" type="date">
+            <column length="8" name="DATE_CONFIRMED_HIV"/>
+        </property>
+        <property name="tbStatus" type="string">
+            <column length="75" name="TB_STATUS"/>
+        </property>  
+        <property name="pregnant" type="java.lang.Integer">
+            <column name="PREGNANT"/>
+        </property>
+        <property name="breastfeeding" type="java.lang.Integer">
+            <column name="BREASTFEEDING"/>
+        </property>    
+        <property name="dateRegistration" type="date">
+            <column length="8" name="DATE_REGISTRATION"/>
+        </property>
+        <property name="dateEnrolledPmtct" type="date">
+            <column length="8" name="DATE_ENROLLED_PMTCT"/>
+        </property>
+        <property name="sourceReferral" type="string">
+            <column length="100" name="SOURCE_REFERRAL"/>
+        </property>
+        <property name="statusRegistration" type="string">
+            <column length="75" name="STATUS_REGISTRATION"/>
+        </property>
+        <property name="enrollmentSetting" type="string">
+            <column length="15" name="ENROLLMENT_SETTING"/>
+        </property>
+        <property name="dateStarted" type="date">
+            <column length="8" name="DATE_STARTED"/>
+        </property>
+        <property name="timeHivDiagnosis" type="string">
+            <column length="35" name="TIME_HIV_DIAGNOSIS"/>
+        </property>
+        <property name="currentStatus" type="string">
+            <column length="75" name="CURRENT_STATUS"/>
+        </property>
+        <property name="dateCurrentStatus" type="date">
+            <column length="8" name="DATE_CURRENT_STATUS"/>
+        </property>
+        <property name="regimentype" type="string">
+            <column length="100" name="REGIMENTYPE"/>
+        </property>
+        <property name="regimen" type="string">
+            <column length="100" name="REGIMEN"/>
+        </property>
+        <property name="lastClinicStage" type="string">
+            <column length="15" name="LAST_CLINIC_STAGE"/>
+        </property>
+        <property name="lastViralLoad" type="java.lang.Double">
+            <column name="LAST_VIRAL_LOAD" precision="17" scale="0"/>
+        </property>
+        <property name="lastCd4" type="java.lang.Double">
+            <column name="LAST_CD4" precision="17" scale="0"/>
+        </property>
+        <property name="lastCd4p" type="java.lang.Double">
+            <column name="LAST_CD4P" precision="17" scale="0"/>
+        </property>
+        <property name="dateLastCd4" type="date">
+            <column length="8" name="DATE_LAST_CD4"/>
+        </property>
+        <property name="dateLastViralLoad" type="date">
+            <column length="8" name="DATE_LAST_VIRAL_LOAD"/>
+        </property>
+        <property name="viralLoadDueDate" type="date">
+            <column length="8" name="VIRAL_LOAD_DUE_DATE"/>
+        </property>
+        <property name="ViralLoadType" type="string">
+            <column length="15" name="VIRAL_LOAD_TYPE"/>
+        </property>
+        <property name="dateLastRefill" type="date">
+            <column length="8" name="DATE_LAST_REFILL"/>
+        </property>
+        <property name="dateNextRefill" type="date">
+            <column length="8" name="DATE_NEXT_REFILL"/>
+        </property>
+        <property name="lastRefillDuration" type="java.lang.Integer">
+            <column length="15" name="LAST_REFILL_DURATION"/>
+        </property>
+        <property name="lastRefillSetting" type="string">
+            <column length="15" name="LAST_REFILL_SETTING"/>
+        </property>
+        <property name="dateLastClinic" type="date">
+            <column length="8" name="DATE_LAST_CLINIC"/>
+        </property>
+        <property name="dateNextClinic" type="date">
+            <column length="8" name="DATE_NEXT_CLINIC"/>
+        </property>
+        <property name="causeDeath" type="string">
+            <column length="100" name="CAUSE_DEATH"/>
+        </property>
+        <property name="dateTracked" type="date">
+            <column length="8" name="DATE_TRACKED"/>
+        </property>
+        <property name="outcome" type="string">
+            <column length="100" name="OUTCOME"/>
+        </property>
+        <property name="agreedDate" type="date">
+            <column length="8" name="AGREED_DATE"/>
+        </property>
+        <property name="sendMessage" type="java.lang.Integer">
+            <column name="SEND_MESSAGE"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="casemanagerId" type="java.lang.Long">
+            <column length="15" name="CASEMANAGER_ID"/>
+        </property>
+        <property name="communitypharmId" type="java.lang.Long">
+            <column length="15" name="COMMUNITYPHARM_ID"/>
+        </property>
+         <property name="htsId" type="long">
+            <column name="HTS_ID" />
+        </property>                        
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>  
+        <set inverse="true" name="statushistories">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Statushistory"/>
+        </set>
+        <set inverse="true" name="clinics">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Clinic"/>
+        </set>
+        <set inverse="true" name="adrhistories">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Adrhistory"/>
+        </set>
+        <set inverse="true" name="regimenhistories">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Regimenhistory"/>
+        </set>
+        <set inverse="true" name="pharmacies">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Pharmacy"/>
+        </set>
+        <set inverse="true" name="laboratories">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Laboratory"/>
+        </set>
+        <set inverse="true" name="adherehistories">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Adherehistory"/>
+        </set>
+        <set inverse="true" name="oihistories">
+            <key>
+                <column name="PATIENT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Oihistory"/>
+        </set>
+    </class>
+</hibernate-mapping>

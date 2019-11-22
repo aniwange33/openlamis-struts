@@ -1,0 +1,112 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: aalozie -->
+ 
+<struts>
+   <package name="events" namespace="/" extends="struts-default, json-default, jasperreports-default">
+       
+        <action name="Event_page">
+            <result>/WEB-INF/views/events/event_page.jsp</result>
+        </action>
+        
+        <action name="biometric_report_page">
+            <result>/WEB-INF/views/events/biometric_report_page.jsp</result>
+        </action>
+        
+        <action name="Event_pharmacy_page">
+            <result>/WEB-INF/views/events/event_pharmacy_page.jsp</result>
+        </action>
+        
+        <action name="Analyzer_page">
+            <result>/WEB-INF/views/events/analyzer_page.jsp</result>
+        </action>
+
+        <action name="dhis_report_page">
+            <result>/WEB-INF/views/events/dhis_report_page.jsp</result>
+        </action>
+  
+        <action name="Report_period_retrieve" class="org.fhi360.lamis.controller.report.ReportPeriodAction" method="retrieve">
+            <result name="success" type="json">
+                <param name="root">periodMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+                              
+        <action name="Encounter_grid" class="org.fhi360.lamis.controller.grid.EncounterGridAction" method="encounterGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Validation_page">
+            <result>/WEB-INF/views/events/validation_page.jsp</result>
+        </action>
+        
+        <action name="Treatment_tracker_page">
+            <result>/WEB-INF/views/events/treatment_tracker_page.jsp</result>
+        </action>
+        
+        <action name="Retention_tracker_page">
+            <result>/WEB-INF/views/events/retention_tracker_page.jsp</result>
+        </action>
+
+        <action name="validation_grid" class="org.fhi360.lamis.controller.grid.ValidationGridAction" method="validationGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="entity_grid" class="org.fhi360.lamis.controller.grid.ValidationGridAction" method="entityGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>          
+        </action>
+        
+        <action name="Validate_page" class="org.fhi360.lamis.controller.ValidationAction" method="validation">
+            <result name="success">/WEB-INF/views/events/validation_page.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="save_validation" class="org.fhi360.lamis.controller.ValidationAction" method="saveValidation">
+            <result name="success">/WEB-INF/views/events/validation_page.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Profiler_download" class="org.fhi360.lamis.controller.ValidationAction" method="downloadProfile">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>                                             
+
+        <action name="sync_download" class="org.fhi360.lamis.controller.SyncDownloadAction" method="downloadSync">
+            <result name="success" type="stream">
+                <param name="contentType">application/vnd.ms-excel</param>
+                <param name="inputName">stream</param>
+                <param name="contentDisposition">attachment;filename="Sync.xlsx"</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>  
+        
+        <action name="biometric_reports" class="org.fhi360.lamis.controller.FingerprintReportAction" method="fingerprintReport">
+           <result name="success" type="stream">
+               <param name="contentType">application/pdf</param>
+               <param name="inputName">stream</param>
+               <param name="contentDisposition">attachment;filename="Biometric Report.pdf"</param>
+           </result>
+           <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+           <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+       </action>       
+     </package>   
+</struts>

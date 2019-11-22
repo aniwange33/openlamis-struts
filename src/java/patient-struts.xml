@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: AALOZIE -->
+<struts>
+   <package name="patient" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        <interceptors>
+            <interceptor name="patientListInterceptor" class="org.fhi360.lamis.interceptor.PatientListInterceptor"></interceptor>
+            <interceptor name="appointmentInterceptor" class="org.fhi360.lamis.interceptor.AppointmentInterceptor"></interceptor>
+            <interceptor name="afterUpdateInterceptor" class="org.fhi360.lamis.interceptor.AfterUpdateInterceptor"></interceptor>
+            <interceptor name="monitorServiceInterceptor" class="org.fhi360.lamis.interceptor.MonitorServiceInterceptor"></interceptor>
+            <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+        </interceptors>
+
+        <action name="Home_page">
+            <result>/WEB-INF/views/patient/home_page.jsp</result>
+        </action>
+
+        <action name="Patient_search">
+            <result>/WEB-INF/views/patient/patient_search.jsp</result>
+        </action>
+
+        <action name="Appointment_search">
+            <result>/WEB-INF/views/patient/appointment_search.jsp</result>
+        </action>
+
+        <action name="Appointment_option">
+            <result>/WEB-INF/views/patient/appointment_option.jsp</result>
+        </action> 
+
+        <action name="Update_number" class="org.fhi360.lamis.controller.PatientAction" method="updateHospitalNumber">
+            <result name="success" type="json">
+                <param name="root">messageList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Patient_new">
+            <interceptor-ref name="patientListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/patient/patient_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Patient_save" class="org.fhi360.lamis.controller.PatientAction" method="savePatient">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Patient_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Patient_update" class="org.fhi360.lamis.controller.PatientAction" method="updatePatient">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Patient_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Patient_delete" class="org.fhi360.lamis.controller.PatientAction" method="deletePatient">
+          
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Patient_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+         <action name="Patient_find" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <result name="success">/WEB-INF/views/patient/patient_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Appointment_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <result name="success">/WEB-INF/views/patient/appointment_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Appointment_save" class="org.fhi360.lamis.controller.AppointmentAction" method="appointmentDate">
+            <interceptor-ref name="appointmentInterceptor"/>
+            <interceptor-ref name="defaultStack"/> 
+            <result name="success" type="redirect">/Appointment_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+                
+        <action name="Patient_grid" class="org.fhi360.lamis.controller.grid.PatientGridAction" method="patientGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        <action name="Patient_drug_dispense_grid" class="org.fhi360.lamis.controller.grid.PatientGridAction" method="patientDrugDispenseGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Patient_labtest_dispense_grid" class="org.fhi360.lamis.controller.grid.PatientGridAction" method="patientLabtestDispenseGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Patient_grid_search" class="org.fhi360.lamis.controller.grid.PatientGridAction" method="patientGridSearch">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Patient_grid_number" class="org.fhi360.lamis.controller.grid.PatientGridAction" method="patientGridByNumber">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Defaulter_grid" class="org.fhi360.lamis.controller.grid.DefaulterGridAction" method="defaulterGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+         <action name="Defaulter_update" class="org.fhi360.lamis.controller.grid.DefaulterGridAction" method="updateDefaulterList">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Patient_retrieve" class="org.fhi360.lamis.controller.PatientAction" method="retrievePatientList">
+            <result name="success" type="json">
+                <param name="root">patientList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Patient_find_number" class="org.fhi360.lamis.controller.PatientAction" method="findPatientByNumber">
+            <result name="success" type="json">
+                <param name="root">patientList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Patient_find_names" class="org.fhi360.lamis.controller.PatientAction" method="findPatientByNames">
+            <result name="success" type="json">
+                <param name="root">messageList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Patient_retrieve_detail" class="org.fhi360.lamis.controller.PatientAction" method="retrievePatientDetail">
+            <result name="success" type="json">
+                <param name="root">patientMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <!-- Patient Report Section -->               
+        <action name="Patient_query_criteria">
+            <result name="success">/WEB-INF/views/patient/patient_query_criteria.jsp</result>
+        </action>
+        
+
+        <action name="Reporting_month_patient" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/patient/reporting_month_option.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+<action name="Reporting_month_addendum" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/patient/reporting_month.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>    
+        <action name="Reporting_month_performance" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/patient/reporting_month.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+        <action name="Reporting_date_patient" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/patient/reporting_date.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Reporting_period_patient" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/patient/reporting_period.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>            
+
+        <action name="Patient_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="listOfPatients">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_patients.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>  
+        
+        <action name="Current_care" class="org.fhi360.lamis.controller.report.PatientReportAction" method="currentOnCare">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_patients.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Current_treatment" class="org.fhi360.lamis.controller.report.PatientReportAction" method="currentOnTreatment">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_patients.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Appointment_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="appointment">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_appointment.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Visit_clinic_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="visit">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_clinic_visit.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Visit_refill_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="visit">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_refill_visit.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                                
+        <action name="Defaulter_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="defaulters">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_defaulters.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+		
+        <action name="Txml_query">
+            <result name="success">/WEB-INF/views/patient/txml_query.jsp</result>
+        </action>
+
+        <action name="Txml_list" class="org.fhi360.lamis.controller.report.PatientReportAction" method="listOfTxml">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_txml.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        <action name="Lost_unconfirmed_pepfar" class="org.fhi360.lamis.controller.report.PatientReportAction" method="lostUnconfirmedPepfar">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_unconfirmed.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Lost_unconfirmed_gon" class="org.fhi360.lamis.controller.report.PatientReportAction" method="lostUnconfirmedGon">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_unconfirmed.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Defaulter_refill" class="org.fhi360.lamis.controller.report.PatientReportAction" method="defaulterRefill">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/list_defaulters.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+<action name="Unbundled_Art_summary" class="org.fhi360.lamis.controller.report.PatientReportAction" method="unbundledArtSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/unbundled_art_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+
+        <action name="Art_summary" class="org.fhi360.lamis.controller.report.PatientReportAction" method="artSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/art_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Tx_Ml_summary" class="org.fhi360.lamis.controller.report.PatientReportAction" method="txMlSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/tx_ml_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+          <action name="Art_Addendum_summary" class="org.fhi360.lamis.controller.report.PatientReportAction" method="artAddendumSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/art_summary_addendum.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>      
+        
+        
+        <action name="Service_summary" class="org.fhi360.lamis.controller.report.PatientReportAction" method="serviceSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/service_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Quality_indicator" class="org.fhi360.lamis.controller.report.PatientReportAction" method="qualityIndicator">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/quality_indicator.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Cohort_analysis" class="org.fhi360.lamis.controller.report.PatientReportAction" method="cohortAnalysis">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/cohort_analysis.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Performance_indicator" class="org.fhi360.lamis.controller.report.PatientReportAction" method="performanceIndicator">
+            <result name="success" type="jasper">
+                <param name="location">/reports/patient/performance_indicator.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+     </package>   
+</struts>

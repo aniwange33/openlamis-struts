@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quality_indicator" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="332b67de-3975-47ad-b6b3-87715c93a609">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="11" isItalic="false" isUnderline="false" isStrikeThrough="true"/>
+	<parameter name="reportingPeriodBegin" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingPeriodEnd" class="java.lang.String"/>
+	<parameter name="state" class="java.lang.String"/>
+	<parameter name="lga" class="java.lang.String"/>
+	<parameter name="facilityName" class="java.lang.String"/>
+	<field name="indicator" class="java.lang.String"/>
+	<field name="proportion" class="java.lang.String"/>
+	<field name="percentage" class="java.lang.String"/>
+	<field name="description1" class="java.lang.String"/>
+	<field name="description2" class="java.lang.String"/>
+	<field name="sno" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="116" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a657ca8c-6854-4c5c-b9d7-be427eb9ab1c" style="Heading" x="189" y="12" width="187" height="20"/>
+				<textElement>
+					<font size="12" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[SERVICE QUALITY INDICATOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="75d5812a-bb70-4003-a4af-83adaf137aed" style="Heading" x="56" y="46" width="140" height="20"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Reporting Period -> from:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="75d5812a-bb70-4003-a4af-83adaf137aed" style="Heading" x="11" y="86" width="41" height="20"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="75d5812a-bb70-4003-a4af-83adaf137aed" style="Heading" x="137" y="86" width="45" height="20"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="75d5812a-bb70-4003-a4af-83adaf137aed" style="Heading" x="327" y="86" width="50" height="20"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="70872e56-2a7e-43f2-8b31-abb1ae075531" x="56" y="86" width="75" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e2094fcf-3498-4ff0-bf41-0092828605de" x="188" y="87" width="125" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c115da89-0604-4224-a35c-f02b3e553f2c" x="381" y="86" width="159" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1bdd7afa-6298-425b-8f55-fe86f18add44" x="203" y="46" width="124" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{reportingPeriodBegin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="75d5812a-bb70-4003-a4af-83adaf137aed" style="Heading" x="330" y="46" width="22" height="20"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[to:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d38b78dd-2f36-49d8-9e99-4f1661788a5e" x="357" y="46" width="121" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{reportingPeriodEnd}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="a620b863-3484-4746-be6e-1ce1e7653e78" x="2" y="1" width="553" height="35" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="32b38057-37dc-44ef-a2b7-beb54ca7e8bc" style="Heading" x="122" y="8" width="57" height="20"/>
+				<textElement>
+					<font size="12" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Indicator]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fb465189-86a3-4503-b9f3-db268a57108e" style="Heading" x="419" y="9" width="65" height="20"/>
+				<textElement>
+					<font size="12" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Proportion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="080791fd-6dda-4cfe-a9a2-6192eb0d4407" style="Heading" x="518" y="8" width="19" height="20"/>
+				<textElement>
+					<font size="12" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="32b38057-37dc-44ef-a2b7-beb54ca7e8bc" style="Heading" x="22" y="9" width="33" height="20"/>
+				<textElement>
+					<font size="12" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[S/No]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="10" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<frame>
+				<reportElement uuid="2487d01a-5aff-4ff4-bd7c-7d217c92e73f" style="Row" mode="Opaque" x="3" y="4" width="552" height="34"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement uuid="47106252-6aac-4924-b1e4-ded511d339fa" style="Detail" x="49" y="5" width="350" height="20"/>
+					<textElement>
+						<font size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{indicator}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="1210ce7e-7ab7-44e3-837c-369733f6e894" style="Detail" x="407" y="5" width="84" height="20"/>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{proportion}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="c1715b6a-2487-4378-a054-53bd7264623e" style="Detail" x="504" y="5" width="38" height="20"/>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{percentage}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="2b04a9e8-4a34-476c-9436-1f52e6e225a9" style="Detail" x="3" y="5" width="37" height="20"/>
+					<textElement>
+						<font isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="17" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="14" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

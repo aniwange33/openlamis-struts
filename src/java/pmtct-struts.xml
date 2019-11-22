@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+ <!-- Author: AALOZIE -->
+<struts>
+   <package name="pmtct" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        <interceptors>
+            <interceptor name="ancListInterceptor" class="org.fhi360.lamis.interceptor.AncListInterceptor"></interceptor>
+            <interceptor name="deliveryListInterceptor" class="org.fhi360.lamis.interceptor.DeliveryListInterceptor"></interceptor>
+            <interceptor name="maternalfollowupListInterceptor" class="org.fhi360.lamis.interceptor.MaternalfollowupListInterceptor"></interceptor>
+            <interceptor name="childfollowupListInterceptor" class="org.fhi360.lamis.interceptor.ChildfollowupListInterceptor"></interceptor>
+            <interceptor name="partnerInformationInterceptor" class="org.fhi360.lamis.interceptor.PartnerInformationInterceptor"></interceptor>
+            <interceptor name="afterUpdateInterceptor" class="org.fhi360.lamis.interceptor.AfterUpdateInterceptor"></interceptor>
+            <interceptor name="monitorServiceInterceptor" class="org.fhi360.lamis.interceptor.MonitorServiceInterceptor"></interceptor>
+            <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+        </interceptors>
+        
+	<action name="Pmtct_page">
+            <result>/WEB-INF/views/pmtct/pmtct_page.jsp</result>
+        </action>
+		
+	<action name="Anc_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/pmtct/anc_search.jsp</result>
+        </action>
+		
+	<action name="Delivery_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/pmtct/delivery_search.jsp</result>
+        </action>
+		
+	<action name="Maternalfollowup_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/pmtct/maternalfollowup_search.jsp</result>
+        </action>
+		
+	<action name="Childfollowup_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/pmtct/childfollowup_search.jsp</result>
+        </action>
+		
+	<action name="Anc_find" class="org.fhi360.lamis.controller.AncAction" method="findAnc">
+            <interceptor-ref name="partnerInformationInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref> 
+            <result name="success">/WEB-INF/views/pmtct/anc_data.jsp</result>
+        </action>
+		
+	<action name="Anc_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+	<interceptor-ref name="ancListInterceptor"></interceptor-ref>
+            <interceptor-ref name="partnerInformationInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref> 
+            <result name="success">/WEB-INF/views/pmtct/anc_data.jsp</result>
+        </action>
+		
+	<action name="Anc_save" class="org.fhi360.lamis.controller.AncAction" method="saveAnc">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/anc_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+	<action name="Anc_update" class="org.fhi360.lamis.controller.AncAction" method="updateAnc">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/anc_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action> 
+		
+        <action name="Anc_delete" class="org.fhi360.lamis.controller.AncAction" method="deleteAnc">
+          
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/anc_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+	<action name="Delivery_find" class="org.fhi360.lamis.controller.DeliveryAction" method="findDelivery">
+            <interceptor-ref name="partnerInformationInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref> 
+            <result name="success">/WEB-INF/views/pmtct/delivery_data.jsp</result>
+        </action>
+		
+	<action name="Delivery_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <interceptor-ref name="deliveryListInterceptor"></interceptor-ref>
+            <interceptor-ref name="partnerInformationInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/delivery_data.jsp</result>
+        </action>
+		
+	<action name="Delivery_saveorupdate" class="org.fhi360.lamis.controller.DeliveryAction" method="saveOrUpdateDelivery">
+            <interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <!--<result type="redirectAction">
+                <param name="actionName">Delivery_search</param>           
+            </result>-->
+        </action>
+        
+         <action name="Child_grid_number" class="org.fhi360.lamis.controller.grid.ChildGridAction" method="childGridByNumber">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Child_find_number" class="org.fhi360.lamis.controller.ChildAction" method="findChildByNumber">
+            <result name="success" type="json">
+                <param name="root">childList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+		
+	<action name="Delivery_delete" class="org.fhi360.lamis.controller.DeliveryAction" method="deleteDelivery">
+          
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/delivery_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+	<action name="Maternalfollowup_find" class="org.fhi360.lamis.controller.MaternalfollowupAction" method="findMaternalfollowup">
+            <interceptor-ref name="partnerInformationInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref> 
+            <result name="success">/WEB-INF/views/pmtct/maternalfollowup_data.jsp</result>
+        </action>
+		
+	<action name="Maternalfollowup_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <interceptor-ref name="maternalfollowupListInterceptor"></interceptor-ref>
+            <interceptor-ref name="partnerInformationInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/maternalfollowup_data.jsp</result>
+        </action>
+		
+	<action name="Maternalfollowup_save" class="org.fhi360.lamis.controller.MaternalfollowupAction" method="saveMaternalfollowup">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/maternalfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+	<action name="Maternalfollowup_update" class="org.fhi360.lamis.controller.MaternalfollowupAction" method="updateMaternalfollowup">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/maternalfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action> 
+		
+	<action name="Maternalfollowup_delete" class="org.fhi360.lamis.controller.MaternalfollowupAction" method="deleteMaternalfollowup">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">3</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/maternalfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+	<action name="Patient_find_mother" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <result name="success">/WEB-INF/views/pmtct/childfollowup_data.jsp</result>
+        </action>
+		
+        <action name="Child_save" class="org.fhi360.lamis.controller.ChildAction" method="saveChild">
+            <interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+            <interceptor-ref name="json"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+        
+        <action name="Child_update" class="org.fhi360.lamis.controller.ChildAction" method="updateChild">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/childfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+        
+	<action name="Childfollowup_find" class="org.fhi360.lamis.controller.ChildfollowupAction" method="findChildfollowup">
+            <result type="chain">Patient_find_mother</result>
+        </action>
+		
+	<action name="Childfollowup_new" class="org.fhi360.lamis.controller.ChildAction" method="findChild">
+            <interceptor-ref name="childfollowupListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result type="chain">Patient_find_mother</result>
+        </action>
+		
+	<action name="Childfollowup_save" class="org.fhi360.lamis.controller.ChildfollowupAction" method="saveChildfollowup">
+            <result name="success">/WEB-INF/views/pmtct/childfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+
+	<action name="Childfollowup_update" class="org.fhi360.lamis.controller.ChildfollowupAction" method="updateChildfollowup">
+            <result name="success">/WEB-INF/views/pmtct/childfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+	<action name="Childfollowup_delete" class="org.fhi360.lamis.controller.ChildfollowupAction" method="deleteChildfollowup">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">3</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/pmtct/childfollowup_search.jsp</result>
+            <result name="error">/WEB-INF/views/error_message.jsp</result>
+        </action>
+		
+        <!-- Grid section -->
+        <action name="Anc_grid" class="org.fhi360.lamis.controller.grid.AncGridAction" method="ancGrid">
+            <result type="json">
+            </result>
+        </action>
+        
+        <action name="Mother_grid" class="org.fhi360.lamis.controller.grid.MotherInformationGridAction" method="motherGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Mother_grid_anc" class="org.fhi360.lamis.controller.grid.MotherInformationGridAction" method="motherGridAnc">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Mother_retrieve" class="org.fhi360.lamis.controller.AncAction" method="retrieveMotherList">
+            <result type="json">
+                <param name="root">motherList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+        
+        <action name="Mother_retrieve_child" class="org.fhi360.lamis.controller.AncAction" method="retrieveMotherListForChild">
+            <result type="json">
+                <param name="root">motherList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		
+	<action name="Anc_retrieve" class="org.fhi360.lamis.controller.AncAction" method="retrieveAncList">
+            <result type="json">
+                <param name="root">ancList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+        
+        <action name="Anc_retrieve_first" class="org.fhi360.lamis.controller.AncAction" method="retrieveFirstAncList">
+            <result type="json">
+                <param name="root">ancList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+        
+        <action name="Anc_retrieve_last" class="org.fhi360.lamis.controller.AncAction" method="retrieveLastAncList">
+            <result type="json">
+                <param name="root">ancLast</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		
+	<action name="Delivery_grid" class="org.fhi360.lamis.controller.grid.DeliveryGridAction" method="deliveryGrid">
+            <result type="json">
+            </result>
+        </action>
+		
+	<action name="Delivery_retrieve" class="org.fhi360.lamis.controller.DeliveryAction" method="retrieveDeliveryList">
+            <result type="json">
+                <param name="root">deliveryList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		
+	<action name="Maternalfollowup_grid" class="org.fhi360.lamis.controller.grid.MaternalfollowupGridAction" method="maternalfollowupGrid">
+            <result type="json">
+            </result>
+        </action>
+		
+	<action name="Maternalfollowup_retrieve" class="org.fhi360.lamis.controller.MaternalfollowupAction" method="retrieveMaternalfollowupList">
+            <result type="json">
+                <param name="root">maternalfollowupList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		
+	<action name="Childfollowup_grid" class="org.fhi360.lamis.controller.grid.ChildfollowupGridAction" method="childfollowupGrid">
+            <result type="json">
+            </result>
+        </action>
+		
+	<action name="Childfollowup_retrieve" class="org.fhi360.lamis.controller.ChildfollowupAction" method="retrieveChildfollowupList">
+            <result type="json">
+                <param name="root">childfollowupList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		
+	<action name="Child_grid" class="org.fhi360.lamis.controller.grid.ChildGridAction" method="childGrid">
+            <result type="json">
+            </result>
+        </action>
+		
+	<action name="Child_retrieve" class="org.fhi360.lamis.controller.ChildAction" method="retrieveChildList">
+            <result type="json">
+                <param name="root">childList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+		
+	<action name="Partnerinfo_retrieve" class="org.fhi360.lamis.controller.AncAction" method="retrievePartnerinformationList">
+            <result type="json">
+                <param name="root">partnerinformationList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+        
+        <!-- Pmtct Report Section -->               
+        <action name="Reporting_month_pmtct" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/pmtct/reporting_month.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+
+        <action name="Reporting_period_pmtct" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/pmtct/reporting_period.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Pmtct_summary" class="org.fhi360.lamis.controller.report.PmtctReportAction" method="pmtctSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/pmtct/pmtct_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+        </action>
+
+        <action name="Pmtct_Addendum_summary" class="org.fhi360.lamis.controller.report.PmtctReportAction" method="pmtctAddendumSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/pmtct/pmtct_summary_addendum.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+        </action>
+                                
+        <action name="Nigeriaqual_indicators" class="org.fhi360.lamis.controller.report.PmtctReportAction" method="nigeriaqualIndicators">
+            <result name="success" type="jasper">
+                <param name="location">/reports/pmtct/nigeriaqual_indicator.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+        </action>        
+     </package>   
+</struts>

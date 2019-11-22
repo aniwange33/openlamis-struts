@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="eid_summary" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1a3f40b6-43e7-4124-925e-93aae28612db">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="state" class="java.lang.String"/>
+	<parameter name="lga" class="java.lang.String"/>
+	<parameter name="facilityName" class="java.lang.String"/>
+	<parameter name="reportingMonth" class="java.lang.String"/>
+	<parameter name="reportingYear" class="java.lang.String"/>
+	<field name="samplesReceived" class="java.lang.Integer"/>
+	<field name="testDone" class="java.lang.Integer"/>
+	<field name="resultSentNegative" class="java.lang.Integer"/>
+	<field name="resultSentPositive" class="java.lang.Integer"/>
+	<field name="resultSentIndeterminate" class="java.lang.Integer"/>
+	<field name="resultSentTotal" class="java.lang.Integer"/>
+	<field name="testAboveThreshold" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="520" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="92ab2fb6-1b04-4060-a1bd-9b04d62024cd" x="11" y="57" width="780" height="188"/>
+			</rectangle>
+			<line>
+				<reportElement uuid="107ce47a-5edb-4632-b9f2-b61755b588b8" x="11" y="86" width="780" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="44db5715-f218-4956-8887-45d3d9aa929c" x="11" y="118" width="780" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="09969aa0-b2cc-4010-b2a5-8120a4eda4ed" x="11" y="148" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="34a6957c-3c46-41ea-9db9-639c4ced0007" x="56" y="62" width="76" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Elements]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="318f53ec-f016-4ecb-bf7e-5b2da60496a0" x="306" y="62" width="57" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[By Result]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c04ebb53-bf71-4922-a5fc-86a408c39c7e" x="464" y="59" width="100" height="26"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock Out at any time of this month ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e24841a-6ad9-4c8b-960d-a4e29a6bdefe" x="662" y="64" width="33" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EQA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b712220-eb38-449d-a5cf-1fd10b5f954d" x="14" y="95" width="138" height="20"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tests done in this laboartory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b9d4154b-ea02-446a-ba35-e14b39a6372d" x="15" y="122" width="156" height="20"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[No of DBS samples received]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="e035a95e-c74a-44f6-8942-82fc6a55baa1" x="11" y="178" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="662439db-8290-4d21-99bb-abfd6e05c2ca" x="15" y="152" width="138" height="20"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[No of HIV PCR tests done]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="11" y="210" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="2003d230-5fbb-42aa-a8cb-b760f30e85c3" x="15" y="184" width="171" height="20"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[No of HIV PCR results sent out from lab]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d9459dd3-78ab-48a0-9fe5-badffece0a1d" x="16" y="214" width="170" height="26"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[No of tests carried out above laboratory turn-around time threashold of 10 days]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="be432f9f-0398-45b2-abb2-dea0be0a404b" x="11" y="252" width="780" height="228"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a34c967e-f15a-450f-a553-25cae24c8da6" x="33" y="256" width="138" height="20"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[EID Lab Equipment/Nethods]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ce984fd2-db87-43f5-8cd7-fbe3c013151f" x="206" y="256" width="40" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Biosafety Cabinets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="01d9c9bf-5217-43d8-a6d9-d17219de0d48" x="264" y="256" width="41" height="23"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Daed Air Box]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="37de1a17-3fb5-4be7-be5e-4d8f994dd8cc" x="335" y="256" width="37" height="22"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ELISA Reader]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a9e517b-c5df-4d76-a403-a459b7b15d7c" x="406" y="256" width="37" height="23"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ELISA Washer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7dcf6cbd-fdb1-4c6d-90fa-61f710fbf106" x="461" y="256" width="48" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Incubator]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ebf77eb7-01fb-4090-a1da-b4f2b564f926" x="520" y="256" width="49" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Thermocycler]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="684fcb4b-8965-4964-afbc-68cba6e9e65b" x="584" y="256" width="50" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Themomlzer]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="12" y="281" width="780" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="12" y="307" width="780" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="12" y="336" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="d171f7a9-b975-42bd-959a-6af9da7dde64" x="19" y="284" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[No. of days out of order this month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="38cbc06c-2cd2-4b06-be07-f26bf9dd5b79" x="18" y="312" width="204" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of EID lab external maintenance visits]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="57b4000e-84c5-49c4-a22d-7cd762e0ea3b" x="18" y="341" width="701" height="20"/>
+				<textElement/>
+				<text><![CDATA[No. of EID lab external onsite monitoring visit(s) conducted by government official(s) in cn-charge during reporting period uding standard check list ]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="12" y="365" width="780" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="12" y="394" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="f4240a4c-76a6-4a82-bab8-443fa96d356f" x="19" y="370" width="611" height="20"/>
+				<textElement/>
+				<text><![CDATA[No. of EID lab external onsite monitoring visit(s) conducted by TA/Consultanats during reporting period using standard check list]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="11" y="423" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="60be896b-b7dc-441a-a56d-85e8649f1ded" x="21" y="399" width="342" height="20"/>
+				<textElement/>
+				<text><![CDATA[No. of EID lab personnel of facility newly trained during reporting period]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="365de885-c32d-4c06-ab51-5b368adaf827" x="11" y="451" width="780" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="25f7ec8e-2d8e-4f7c-b8b6-742766f61d7d" x="22" y="428" width="363" height="20"/>
+				<textElement/>
+				<text><![CDATA[No. of EID lab personnel of facility re-trained during reporting period]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82d50017-b978-4f26-9e23-340aeda36ab6" x="23" y="455" width="479" height="20"/>
+				<textElement/>
+				<text><![CDATA[No. of EID lab personnel who provided the above lab services at the facility during reporting period]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e07eba1c-300f-4307-8986-5902ec66e220" x="36" y="488" width="712" height="16"/>
+				<textElement/>
+				<text><![CDATA[Completed by:  Name____________________   Designation:______________________  Sign:_____________  Date:__________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="25638ed6-4773-45b8-91f3-6c7d7b36c9b3" x="186" y="506" width="349" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[This completed data summary for should arrive the zonal office by the 7th day of the new month]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="190" y="60" width="1" height="185"/>
+			</line>
+			<line>
+				<reportElement uuid="db0081ac-352c-4712-90ac-2c777359678c" x="255" y="85" width="1" height="160"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="0f607252-9fc9-4c77-9d9d-8a7815be3758" x="457" y="59" width="1" height="185"/>
+			</line>
+			<line>
+				<reportElement uuid="811a5672-058e-44d6-a433-419928994446" x="572" y="85" width="1" height="160"/>
+			</line>
+			<staticText>
+				<reportElement uuid="75551fd6-70b8-4da7-b151-54bd2e0acdf7" x="208" y="90" width="38" height="25"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HIV PCR negative]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b6cdb79-ded9-404c-babc-a0284c8bb0bd" x="269" y="90" width="35" height="25"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HIV PCR positive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d325c1c4-c7a5-457e-8ab9-d449ec82d4bf" x="325" y="96" width="53" height="19"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indeterninate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e30f6096-b0d5-45e0-9c3e-59b328b9b778" x="406" y="94" width="37" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="190" y="252" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="db0081ac-352c-4712-90ac-2c777359678c" x="319" y="85" width="1" height="160"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="db0081ac-352c-4712-90ac-2c777359678c" x="392" y="86" width="1" height="160"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="db0081ac-352c-4712-90ac-2c777359678c" x="515" y="85" width="1" height="160"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="db0081ac-352c-4712-90ac-2c777359678c" x="719" y="105" width="1" height="140"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="018ef2c5-b222-4fca-a859-eb1206c959cc" x="646" y="104" width="145" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="3303df56-4b40-465a-afb3-cdfcf842f777" x="675" y="91" width="70" height="14"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Proficiency tests]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5b7bee23-b056-493d-99dd-561931ff1b6f" x="661" y="106" width="17" height="12"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="db0081ac-352c-4712-90ac-2c777359678c" x="645" y="84" width="1" height="160"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="5b605667-b2ce-49cb-843f-e2db183ca335" x="466" y="95" width="33" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e377830a-5931-43b5-8b17-36400015cc88" x="525" y="96" width="32" height="20"/>
+				<textElement/>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8ee50baa-7da2-468f-99fc-7428488f2f90" x="575" y="91" width="65" height="27"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No. of re-test in this lab]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8175cd22-77fc-4269-80c2-aa63898e7b6c" x="744" y="103" width="20" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="256" y="253" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="319" y="253" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="392" y="253" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="456" y="251" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="516" y="253" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="574" y="253" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="645" y="253" width="1" height="56"/>
+			</line>
+			<line>
+				<reportElement uuid="aeffbd8f-a4e4-40a0-9c8a-11ab3a21ac07" x="720" y="257" width="1" height="220"/>
+			</line>
+			<textField>
+				<reportElement uuid="dbd962d9-4e55-42f2-bbe3-d77ec638c9f5" x="404" y="123" width="43" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{samplesReceived}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="08e0b9fb-d841-4706-bd5d-cb3e33794813" x="404" y="152" width="43" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testDone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="824fdae2-d71c-406d-b371-06c4aaff0423" x="201" y="182" width="43" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{resultSentNegative}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0a3a8e95-643c-495c-a827-4103e1aad708" x="330" y="182" width="48" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{resultSentIndeterminate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2f4294af-7a94-40ad-99d6-5faa50382b33" x="403" y="183" width="41" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{resultSentTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="97125719-e9eb-4768-ae7e-12165f876133" x="402" y="216" width="43" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testAboveThreshold}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="192" y="121" width="60" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="4f85949b-4d5b-425a-9b2e-929df54273a1" x="257" y="122" width="60" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="323" y="122" width="66" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="323" y="152" width="66" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="4f85949b-4d5b-425a-9b2e-929df54273a1" x="257" y="152" width="60" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="192" y="151" width="60" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="460" y="122" width="53" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="517" y="122" width="53" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="574" y="122" width="71" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="647" y="122" width="72" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9e1cef69-9a2e-464b-b899-5f3980c971f8" x="722" y="123" width="69" height="23" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="192" y="213" width="60" height="27" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="256" y="214" width="60" height="26" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="323" y="214" width="66" height="26" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="460" y="214" width="51" height="26" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="517" y="214" width="51" height="26" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="576" y="214" width="65" height="26" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="648" y="213" width="67" height="27" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="460" y="180" width="51" height="28" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="517" y="180" width="51" height="28" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="575" y="180" width="65" height="28" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="647" y="180" width="68" height="28" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="723" y="180" width="65" height="28" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="67a523e9-2ad9-408b-8188-29ac152f720f" x="724" y="213" width="65" height="27" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="368de61b-54b7-4560-b048-bf144ed36088" x="312" y="4" width="223" height="14"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EID LABORATORY MONTHLY SUMMARY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e04b8465-506f-4730-8787-c58894a5610a" x="149" y="37" width="35" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="107c485c-3111-4c42-98a8-6fc637795489" x="301" y="37" width="29" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cf86f996-f45a-4025-82a4-47cee89391b6" x="504" y="37" width="47" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="180b8f82-db23-4c20-b09d-6b0ad8850370" x="190" y="37" width="77" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="76abbc8b-b32c-4d1a-9327-b39b54259972" x="337" y="38" width="127" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fe458591-4a5b-4f9f-ba5c-39e8e6152e80" x="559" y="35" width="217" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="082303a1-1e3c-4c9e-884c-5b6023750a78" x="221" y="19" width="142" height="20"/>
+				<textElement/>
+				<text><![CDATA[Reporting Period -> Month:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c39961ee-111c-49e1-a133-f94a65fc75bf" x="461" y="19" width="39" height="20"/>
+				<textElement/>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="d05befdd-2a0a-45e4-bc68-770edec36dd7" x="365" y="19" width="77" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="644763cb-43fc-42cb-831b-9757aaa132b1" x="503" y="19" width="51" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fb9cfe2c-5123-468c-ac80-20d6812feb42" x="266" y="184" width="43" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{resultSentPositive}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="9" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="6" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="6" splitType="Stretch"/>
+	</summary>
+</jasperReport>

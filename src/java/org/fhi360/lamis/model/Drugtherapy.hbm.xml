@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Drugtherapy" table="DRUGTHERAPY">
+        <id name="drugtherapyId" type="long">
+            <column name="DRUGTHERAPY_ID"/>
+            <generator class="identity"/>
+        </id>
+   
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+    
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="communitypharmId" type="long">
+            <column name="COMMUNITYPHARM_ID" not-null="true"/>
+        </property>
+        <property name="dateVisit" type="date">
+            <column length="8" name="DATE_VISIT" not-null="true"/>
+        </property>
+        <property name="ois" type="string">
+            <column length="100" name="OIS"/>
+        </property>
+        <property name="therapyProblemScreened" type="string">
+            <column length="5" name="THERAPY_PROBLEM_SCREENED"/>
+        </property>
+        <property name="adherenceIssues" type="string">
+            <column length="5" name="ADHERENCE_ISSUES"/>
+        </property>
+        <property name="medicationError" type="string">
+            <column length="100" name="MEDICATION_ERROR"/>
+        </property>
+        <property name="adrs" type="string">
+            <column length="100" name="ADRS"/>
+        </property>
+        <property name="severity" type="string">
+            <column length="45" name="SEVERITY"/>
+        </property>
+        <property name="icsrForm" type="string">
+            <column length="5" name="ICSR_FORM"/>
+        </property>
+        <property name="adrReferred" type="string">
+            <column length="5" name="ADR_REFERRED"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="deviceconfigId" type="java.lang.Long">
+            <column name="DEVICECONFIG_ID" />
+        </property>    
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-Jul-2014 10:42:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Anc" table="ANC" catalog="LAMIS">
+        <id name="ancId" type="long">
+            <column name="ANC_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="patient" class="org.fhi360.lamis.model.Patient" fetch="select">
+            <column name="PATIENT_ID" not-null="true" />
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="ancNum" type="string">
+            <column name="ANC_NUM" length="25" not-null="true" />
+        </property>
+		<property name="uniqueId" type="string">
+            <column name="UNIQUE_ID" length="35" />
+        </property>
+		<property name="dateVisit" type="date">
+            <column name="DATE_VISIT" length="8" not-null="true"/>
+        </property>
+        <property name="dateEnrolledPmtct" type="date">
+            <column name="DATE_ENROLLED_PMTCT" length="8" />
+        </property>
+        <property name="sourceReferral" type="string">
+            <column name="SOURCE_REFERRAL" length="45" />
+        </property>
+        <property name="lmp" type="date">
+            <column name="LMP" length="8" />
+        </property>
+        <property name="edd" type="date">
+            <column name="EDD" length="8" />
+        </property>
+        <property name="gestationalAge" type="java.lang.Integer">
+            <column name="GESTATIONAL_AGE" />
+        </property>
+        <property name="gravida" type="java.lang.Integer">
+            <column name="GRAVIDA" />
+        </property>
+        <property name="parity" type="java.lang.Integer">
+            <column name="PARITY" />
+        </property>
+        <property name="timeHivDiagnosis" type="string">
+            <column name="TIME_HIV_DIAGNOSIS" length="45" />
+        </property>
+		<property name="arvRegimenPast" type="string">
+            <column name="ARV_REGIMEN_PAST" length="100" />
+        </property>
+		<property name="arvRegimenCurrent" type="string">
+            <column name="ARV_REGIMEN_CURRENT" length="100" />
+        </property>
+		<property name="dateArvRegimenCurrent" type="date">
+            <column name="DATE_ARV_REGIMEN_CURRENT" length="8" />
+        </property>
+        <property name="dateConfirmedHiv" type="date">
+            <column name="DATE_CONFIRMED_HIV" length="8" />
+        </property>
+		<property name="clinicStage" type="string">
+            <column name="CLINIC_STAGE" length="15" />
+        </property>
+        <property name="funcStatus" type="string">
+            <column name="FUNC_STATUS" length="15" />
+        </property>
+        <property name="bodyWeight" type="java.lang.Double">
+            <column name="BODY_WEIGHT" precision="17" scale="0" />
+        </property>
+        <property name="height" type="java.lang.Double">
+            <column name="HEIGHT" precision="17" scale="0" />
+        </property>
+        <property name="cd4Ordered" type="string">
+            <column name="CD4_ORDERED" length="7"/>
+        </property>
+        <property name="cd4" type="java.lang.Double">
+            <column name="CD4" precision="17" scale="0" />
+        </property>
+        <property name="numberAncVisit" type="java.lang.Integer">
+            <column name="NUMBER_ANC_VISIT" />
+        </property>
+        <property name="dateCd4" type="date">
+            <column name="DATE_CD4" length="8"/>
+        </property>
+        <property name="viralLoadTestDone" type="string">
+            <column name="VIRAL_LOAD_TEST_DONE" length="7"/>
+        </property>
+        <property name="dateViralLoad" type="date">
+            <column name="DATE_VIRAL_LOAD" length="8" />
+        </property>
+        <property name="dateNextAppointment" type="date">
+            <column name="DATE_NEXT_APPOINTMENT" length="8" />
+        </property>
+        <property name="viralLoadResult" type="string">
+            <column name="VIRAL_LOAD_RESULT" length="10" />
+        </property>
+        <property name="syphilisTested" type="string">
+            <column name="SYPHILIS_TESTED" length="7" />
+        </property>
+        <property name="syphilisTestResult" type="string">
+            <column name="SYPHILIS_TEST_RESULT" length="45" />
+        </property>
+        <property name="syphilisTreated" type="string">
+            <column name="SYPHILIS_TREATED" length="7" />
+        </property>
+        <property name="hepatitisBTested" type="string">
+            <column name="HEPATITISB_TESTED" length="50" />
+        </property>
+        <property name="hepatitisBTestResult" type="string">
+            <column name="HEPATITISB_TEST_RESULT" length="50" />
+        </property>
+         <property name="hepatitisCTested" type="string">
+            <column name="HEPATITISC_TESTED" length="50" />
+        </property>
+        <property name="hepatitisCTestResult" type="string">
+            <column name="HEPATITISC_TEST_RESULT" length="50" />
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column name="TIME_STAMP" length="23" />
+        </property>        
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+          <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+          <column length="23" name="TIME_UPLOADED"/>
+        </property>        
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 16, 2014 12:09:06 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Eid" table="EID">
+        <id name="eidId" type="long">
+            <column name="EID_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="labno" type="string">
+            <column length="15" name="LABNO" not-null="true"/>
+        </property>
+        <property name="motherName" type="string">
+            <column length="75" name="MOTHER_NAME"/>
+        </property>
+        <property name="motherAddress" type="string">
+            <column length="100" name="MOTHER_ADDRESS"/>
+        </property>
+        <property name="motherPhone" type="string">
+            <column length="15" name="MOTHER_PHONE"/>
+        </property>
+        <property name="senderName" type="string">
+            <column length="75" name="SENDER_NAME"/>
+        </property>
+        <property name="senderDesignation" type="string">
+            <column length="75" name="SENDER_DESIGNATION"/>
+        </property>
+        <property name="senderAddress" type="string">
+            <column length="100" name="SENDER_ADDRESS"/>
+        </property>
+        <property name="senderPhone" type="string">
+            <column length="15" name="SENDER_PHONE"/>
+        </property>
+        <property name="reasonPcr" type="string">
+            <column length="100" name="REASON_PCR"/>
+        </property>
+        <property name="rapidTestDone" type="string">
+            <column length="7" name="RAPID_TEST_DONE"/>
+        </property>
+        <property name="dateRapidTest" type="date">
+            <column length="10" name="DATE_RAPID_TEST"/>
+        </property>
+        <property name="rapidTestResult" type="string">
+            <column length="15" name="RAPID_TEST_RESULT"/>
+        </property>
+        <property name="motherArtReceived" type="string">
+            <column length="45" name="MOTHER_ART_RECEIVED"/>
+        </property>
+        <property name="motherProphylaxReceived" type="string">
+            <column length="45" name="MOTHER_PROPHYLAX_RECEIVED"/>
+        </property>
+        <property name="childProphylaxReceived" type="string">
+            <column length="45" name="CHILD_PROPHYLAX_RECEIVED"/>
+        </property>
+        <property name="breastfedEver" type="string">
+            <column length="7" name="BREASTFED_EVER"/>
+        </property>
+        <property name="feedingMethod" type="string">
+            <column length="45" name="FEEDING_METHOD"/>
+        </property>
+        <property name="breastfedNow" type="string">
+            <column length="7" name="BREASTFED_NOW"/>
+        </property>
+        <property name="feedingCessationAge" type="java.lang.Integer">
+            <column name="FEEDING_CESSATION_AGE"/>
+        </property>
+        <property name="cotrim" type="string">
+            <column length="45" name="COTRIM"/>
+        </property>
+        <property name="nextAppointment" type="date">
+            <column length="8" name="NEXT_APPOINTMENT"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="19" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+     <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

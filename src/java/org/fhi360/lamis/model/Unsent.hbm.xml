@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Unsent" table="UNSENT">
+    <id name="unsentId" type="long">
+      <column name="UNSENT_ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="phone" type="string">
+      <column length="25" name="PHONE" not-null="true"/>
+    </property>
+    <property name="message" type="string">
+      <column length="300" name="MESSAGE" not-null="true"/>
+    </property>
+    <property name="expire" type="date">
+      <column length="8" name="EXPIRE" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

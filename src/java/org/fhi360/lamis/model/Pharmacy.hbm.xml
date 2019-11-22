@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Pharmacy" table="PHARMACY">
+        <id name="pharmacyId" type="long">
+            <column name="PHARMACY_ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="dateVisit" type="date">
+            <column length="8" name="DATE_VISIT" not-null="true"/>
+        </property>
+        <property name="duration" type="java.lang.Integer">
+            <column name="DURATION"/>
+        </property>
+        <property name="morning" type="java.lang.Double">
+            <column name="MORNING" precision="17" scale="0"/>
+        </property>
+        <property name="afternoon" type="java.lang.Double">
+            <column name="AFTERNOON" precision="17" scale="0"/>
+        </property>
+        <property name="evening" type="java.lang.Double">
+            <column name="EVENING" precision="17" scale="0"/>
+        </property>
+        <property name="adrScreened" type="string">
+            <column length="5" name="ADR_SCREENED"/>
+        </property>
+        <property name="dmocType" type="string">
+            <column length="45" name="DMOC_TYPE"/>
+        </property>
+        <property name="adrIds" type="string">
+            <column length="100" name="ADR_IDS"/>
+        </property>
+        <property name="prescripError" type="java.lang.Integer">
+            <column name="PRESCRIP_ERROR"/>
+        </property>
+        <property name="adherence" type="java.lang.Integer">
+            <column name="ADHERENCE"/>
+        </property>
+        <property name="nextAppointment" type="date">
+            <column length="8" name="NEXT_APPOINTMENT"/>
+        </property>
+        <property name="regimentypeId" type="long">
+            <column name="REGIMENTYPE_ID" not-null="true"/>
+        </property>
+        <property name="regimenId" type="long">
+            <column name="REGIMEN_ID" not-null="true"/>
+        </property>
+        <property name="regimendrugId" type="long">
+            <column name="REGIMENDRUG_ID" not-null="true"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

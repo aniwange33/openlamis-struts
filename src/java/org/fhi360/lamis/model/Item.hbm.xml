@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Item" table="ITEM">
+    <id name="itemId" type="long">
+      <column name="ITEM_ID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="description" type="string">
+      <column length="100" name="DESCRIPTION" not-null="true"/>
+    </property>
+    <property name="unitMeasure" type="string">
+      <column length="45" name="UNIT_MEASURE"/>
+    </property>
+    <property name="maxLevel" type="java.lang.Integer">
+      <column name="MAX_LEVEL"/>
+    </property>
+    <property name="minLevel" type="java.lang.Integer">
+      <column name="MIN_LEVEL"/>
+    </property>
+    <property name="dateLastReceived" type="date">
+      <column length="8" name="DATE_LAST_RECEIVED"/>
+    </property>
+    <property name="dateLastIssued" type="date">
+      <column length="8" name="DATE_LAST_ISSUED"/>
+    </property>
+    <property name="dateLastAudited" type="date">
+      <column length="8" name="DATE_LAST_AUDITED"/>
+    </property>
+    <property name="balanceType" type="string">
+      <column length="1" name="BALANCE_TYPE"/>
+    </property>
+    <property name="unitCost" type="java.lang.Double">
+      <column name="UNIT_COST" precision="17" scale="0"/>
+    </property>
+    <property name="balance" type="java.lang.Integer">
+      <column name="BALANCE"/>
+    </property>
+    <property name="timeStamp" type="timestamp">
+      <column length="23" name="TIME_STAMP"/>
+    </property>
+  </class>
+</hibernate-mapping>

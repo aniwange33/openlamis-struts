@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Casemanager" table="CASEMANAGER">
+        <id name="casemanagerId" type="long">
+            <column name="CASEMANAGER_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID"/>
+        </property>
+        <property name="localId" type="long">
+            <column name="LOCAL_ID"/>
+        </property>
+        <property name="fullname" type="string">
+            <column length="250" name="FULLNAME"/>
+        </property>
+        <property name="sex" type="string">
+            <column length="40" name="SEX"/>
+        </property>
+        <property name="age" type="string">
+            <column length="30" name="AGE"/>
+        </property>
+        <property name="phoneNumber" type="string">
+            <column length="50" name="PHONE_NUMBER"/>
+        </property>
+        <property name="address" type="string">
+            <column length="300" name="ADDRESS"/>
+        </property>
+        <property name="religion" type="string">
+            <column length="120" name="RELIGION"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column length="11" name="UPLOADED"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="userId" type="long">
+            <column name="USER_ID"/>
+        </property>
+       <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

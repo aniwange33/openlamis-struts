@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: AALOZIE -->
+<struts>
+    <package name="chroniccare" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        <interceptors>
+            <interceptor name="chroniccareListInterceptor" class="org.fhi360.lamis.interceptor.ChroniccareListInterceptor"></interceptor>
+            <interceptor name="tbscreenListInterceptor" class="org.fhi360.lamis.interceptor.TbscreenListInterceptor"></interceptor>
+            <interceptor name="dmscreenListInterceptor" class="org.fhi360.lamis.interceptor.DmscreenListInterceptor"></interceptor>
+            <interceptor name="tbDmInterceptor" class="org.fhi360.lamis.interceptor.TbDmInterceptor"></interceptor>
+            <interceptor name="monitorServiceInterceptor" class="org.fhi360.lamis.interceptor.MonitorServiceInterceptor"></interceptor>
+        </interceptors>
+        
+        <action name="Chroniccare_search" class="org.fhi360.lamis.controller.PatientAction" method="clearPatientDetail">
+            <result>/WEB-INF/views/clinic/chroniccare_search.jsp</result>
+        </action>
+
+        <action name="Chroniccare_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <interceptor-ref name="chroniccareListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/clinic/chroniccare_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Chroniccare_save" class="org.fhi360.lamis.controller.ChroniccareAction" method="saveChroniccare">
+            <interceptor-ref name="tbDmInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Clinic_center</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Chroniccare_update" class="org.fhi360.lamis.controller.ChroniccareAction" method="updateChroniccare">
+            <interceptor-ref name="tbDmInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+             <result name="success" type="redirect">/Clinic_center</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Chroniccare_delete" class="org.fhi360.lamis.controller.ChroniccareAction" method="deleteChroniccare">
+          
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+              <result name="success" type="redirect">/Clinic_center</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Chroniccare_find" class="org.fhi360.lamis.controller.ChroniccareAction" method="findChroniccare">
+            <result name="success">/WEB-INF/views/clinic/chroniccare_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Chroniccare_find_date" class="org.fhi360.lamis.controller.ChroniccareAction" method="findChroniccare">
+            <result name="success" type="json">
+                <param name="root">chroniccareList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Chroniccare_retrieve" class="org.fhi360.lamis.controller.ChroniccareAction" method="retrieveChroniccareList">
+            <result name="success" type="json">
+                <param name="root">chroniccareList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Chroniccare_grid" class="org.fhi360.lamis.controller.grid.ChroniccareGridAction" method="chroniccareGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Tbscreen_grid" class="org.fhi360.lamis.controller.grid.TbscreenGridAction" method="tbscreenGrid">
+            <interceptor-ref name="tbscreenListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result type="json"></result>
+        </action>
+		
+        <action name="Tbscreen_update" class="org.fhi360.lamis.controller.grid.TbscreenGridAction" method="updateTbscreenList">
+            <result type="json">
+            </result>
+        </action>
+		
+        <action name="Dmscreen_grid" class="org.fhi360.lamis.controller.grid.DmscreenGridAction" method="dmscreenGrid">
+            <interceptor-ref name="dmscreenListInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result type="json"></result>
+        </action>
+		
+        <action name="Dmscreen_update" class="org.fhi360.lamis.controller.grid.DmscreenGridAction" method="updateDmscreenList">
+            <result type="json">
+            </result>
+        </action>
+
+        <!-- Chroniccare Report Section -->   
+        <action name="Reporting_period_care" class="org.fhi360.lamis.controller.SessionObjAttributeAction" method="persistFormId">
+            <result name="success">/WEB-INF/views/clinic/reporting_period_care.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Chroniccare_summary" class="org.fhi360.lamis.controller.report.ChroniccareReportAction" method="chroniccareSummary">
+            <result name="success" type="jasper">
+                <param name="location">/reports/clinic/chroniccare_summary.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+        </action>
+                                   
+    </package>   
+</struts>

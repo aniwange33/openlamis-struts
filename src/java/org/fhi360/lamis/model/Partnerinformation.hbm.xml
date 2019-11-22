@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Aug-2014 20:34:21 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Partnerinformation" table="partnerinformation" catalog="lamis">
+        <id name="partnerinformationId" type="long">
+            <column name="PARTNERINFORMATION_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="patient" class="org.fhi360.lamis.model.Patient" fetch="select">
+            <column name="PATIENT_ID" not-null="true" />
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="ancId" type="long">
+            <column name="ANC_ID" />
+        </property>
+        <property name="dateVisit" type="date">
+            <column length="8" name="DATE_VISIT" not-null="true"/>
+        </property>
+        <property name="partnerNotification" type="string">
+            <column name="PARTNER_NOTIFICATION" length="7" />
+        </property>
+        <property name="partnerHivStatus" type="string">
+            <column name="PARTNER_HIV_STATUS" length="25" />
+        </property>
+        <property name="partnerReferred" type="string">
+            <column name="PARTNER_REFERRED" length="45" />
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column name="TIME_STAMP" length="23" />
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+       <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        <set name="patients" inverse="true">
+            <key>
+                <column name="PARTNERINFORMATION_ID" not-null="true" />
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Patient" />
+        </set>
+    </class>
+</hibernate-mapping>

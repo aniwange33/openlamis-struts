@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="art_summary1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b9f3340-3d0e-42f8-baa0-288e4d89f068">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="tbART1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tbART2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tbART3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tbPreART1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tbPreART2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="tbPreART3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingMonth" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingYear" class="java.lang.String" isForPrompting="false"/>
+	<field name="indicator" class="java.lang.String"/>
+	<field name="male1" class="java.lang.String"/>
+	<field name="male2" class="java.lang.String"/>
+	<field name="male3" class="java.lang.String"/>
+	<field name="fmale1" class="java.lang.String"/>
+	<field name="fmale2" class="java.lang.String"/>
+	<field name="fmale3" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="sno" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4c32e13e-ae4b-46b2-b1cd-bade788892c9" x="161" y="1" width="244" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART MONTHLY SUMMARY FORM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aeb19b91-f1ca-4469-847e-92849fd3dc66" style="Heading" x="156" y="26" width="128" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporting Period-> Month:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="60f22a70-db18-45be-b52f-1792678bb5aa" style="Heading" x="383" y="26" width="31" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f1433a7-7ec8-4f54-9c3c-303f902cc001" style="Heading" x="7" y="53" width="31" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64" style="Heading" x="135" y="53" width="31" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f46d6d4-401e-47d7-87df-53b8d0f9e2c3" style="Heading" x="284" y="53" width="47" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c76c33d5-5e53-43ea-9f43-1464db1d3edf" style="Detail" x="42" y="53" width="82" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a" style="Detail" x="171" y="53" width="99" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d1081f4f-4ecf-436e-bba2-90f34ef1afc8" style="Detail" x="336" y="53" width="209" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="769c23c8-a0c9-477e-bb2e-cf149dcc3e9e" style="Detail" x="286" y="26" width="84" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e1abc6b2-1826-4006-98ba-f18af80b1223" style="Detail" x="416" y="26" width="54" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="e016e194-66a1-4c96-aa8c-2d4156d20506" mode="Opaque" x="2" y="2" width="552" height="38" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="354b6d70-6805-44ad-896d-fe29ae21cc35" style="Heading" x="7" y="17" width="18" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[S/No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ed24b55-3a30-4aab-a346-7d26733bdebb" style="Heading" x="86" y="17" width="100" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Coverage and Usage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c12c474d-fa21-446b-ab03-5d2d6b86ff5e" style="Heading" x="312" y="5" width="30" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Males]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7fc725d8-8d64-418e-b559-9a4f62542e57" style="Heading" x="426" y="6" width="41" height="11"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Females]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7758931a-90e0-4ff7-890f-05f7913a641e" style="Heading" x="505" y="20" width="45" height="13"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="025f4936-8efe-4745-8584-f536b88a7073" style="Heading" x="270" y="22" width="26" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[< 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8b6d740f-8f4a-409d-aa84-1ff45d24d885" style="Heading" x="307" y="22" width="36" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[1 - 14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cff5bcb2-3395-4669-9e0f-2037cb89ddd1" style="Heading" x="353" y="21" width="29" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[>=15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0ef73584-2072-4638-870f-1543266fc895" style="Heading" x="397" y="22" width="16" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[<1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c724db7e-795a-4e5f-9bcf-7201ca5fd657" style="Heading" x="426" y="21" width="28" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[1-14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="315333b8-eae8-4ca3-81a2-e0aa5f0f9758" style="Heading" x="467" y="21" width="29" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[>=15]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="cd36dcf8-638c-47cd-bfa0-01cf89d8cd5d" x="267" y="19" width="233" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="34" y="4" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="266" y="4" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="386" y="4" width="1" height="34"/>
+			</line>
+			<line>
+				<reportElement uuid="730b8ac2-7bb5-46d4-aeab-a071213dfdfc" x="500" y="4" width="1" height="34"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="3" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<frame>
+				<reportElement uuid="4cadd838-b732-4fc4-84ff-ed48b8ef1ebb" style="Row" mode="Opaque" x="5" y="3" width="544" height="25"/>
+				<textField>
+					<reportElement uuid="e6d5a7ab-6e40-4429-8fbd-2aad09396206" style="Detail" x="0" y="2" width="32" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement uuid="be60d83f-b161-4b72-b9e8-19878aed21d6" style="Detail" x="36" y="2" width="225" height="20"/>
+					<textElement>
+						<font fontName="SansSerif" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{indicator}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="51180460-83cb-4d41-8521-75c22216717e" style="Detail" x="267" y="2" width="30" height="20"/>
+					<textElement>
+						<font fontName="SansSerif" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{male1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="d3bd18a3-b6f4-4b13-97d4-1f6e46b8f0e3" style="Detail" x="307" y="2" width="30" height="20"/>
+					<textElement>
+						<font fontName="SansSerif" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{male2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="430ca7ac-78a8-4802-aaea-fcce9522537c" style="Detail" x="347" y="2" width="30" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{male3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="90350797-75cf-4e1a-9b65-e61fba591a94" style="Detail" x="386" y="2" width="30" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fmale1}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="dde47c51-d77b-4127-8ebf-6025b85c1366" style="Detail" x="423" y="2" width="30" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fmale2}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="9660e3cd-e4c4-4ecd-b192-c85fd8057179" style="Detail" x="460" y="3" width="30" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fmale3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="fe926862-c6e2-4f3a-a6a1-ca6d17bd376a" style="Detail" x="506" y="2" width="35" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="2" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="153" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="5353d82a-2136-47dd-be73-ec5e6170226e" x="2" y="3" width="551" height="28" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c5944ddd-eb22-4810-9f1a-39a49b1f2e93" style="Heading" x="18" y="12" width="146" height="13"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TB & Opportunistic Infections]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c5944ddd-eb22-4810-9f1a-39a49b1f2e93" style="Heading" x="315" y="12" width="38" height="13"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PreART]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="03bf2744-cc55-4728-979c-2d63420eb97c" style="Heading" x="445" y="12" width="22" height="13"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f6e1db72-e7ac-4e58-a746-f978ffda8e95" style="Detail" x="445" y="42" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tbART1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="445" y="123" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tbART3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c2857d3e-8c34-49be-9ac5-42533ce78abb" style="Detail" x="323" y="41" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tbPreART1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4c52dd65-8da7-4339-beff-c8625f44bdc3" style="Detail" x="323" y="124" width="30" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tbPreART3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="49" y="40" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Number of persons enrolled for HIV care who were screened for TB]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="73a7fa44-a137-4006-aca7-475572e2045d" mode="Opaque" x="2" y="74" width="551" height="36" backcolor="#E6DAC3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="46" y="121" width="232" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Number of persons enrolled for HIV care who commenced TB Treatment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="48" y="80" width="231" height="29"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Number of persons enrolled for HIV care (PreART and ART) who commenced TB treatment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="5" y="40" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART 21]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="5" y="81" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART 22]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="4" y="118" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ART 23]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="323" y="84" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{tbPreART2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="446" y="85" width="29" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$P{tbART2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

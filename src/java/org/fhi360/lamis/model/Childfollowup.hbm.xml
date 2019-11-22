@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Jul-2014 19:48:39 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Childfollowup" table="CHILDFOLLOWUP" catalog="LAMIS">
+        <id name="childfollowupId" type="long">
+            <column name="CHILDFOLLOWUP_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="child" class="org.fhi360.lamis.model.Child" fetch="select">
+            <column name="CHILD_ID" not-null="true" />
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="dateVisit" type="date">
+            <column name="DATE_VISIT" length="8" not-null="true" />
+        </property>
+        <property name="ageVisit" type="java.lang.Integer">
+            <column name="AGE_VISIT" />
+        </property>
+        <property name="dateNvpInitiated" type="date">
+            <column name="DATE_NVP_INITIATED" length="8" />
+        </property>
+        <property name="ageNvpInitiated" type="java.lang.Integer">
+            <column name="AGE_NVP_INITIATED" />
+        </property>
+        <property name="dateCotrimInitiated" type="date">
+            <column name="DATE_COTRIM_INITIATED" length="8" />
+        </property>
+        <property name="ageCotrimInitiated" type="java.lang.Integer">
+            <column name="AGE_COTRIM_INITIATED" />
+        </property>
+        <property name="bodyWeight" type="java.lang.Double">
+            <column name="BODY_WEIGHT" precision="17" scale="0" />
+        </property>
+        <property name="height" type="java.lang.Double">
+            <column name="HEIGHT" precision="17" scale="0" />
+        </property>
+        <property name="feeding" type="string">
+            <column name="FEEDING" length="75" />
+        </property>
+        <property name="arv" type="string">
+            <column name="ARV" length="7" />
+        </property>
+        <property name="cotrim" type="string">
+            <column name="COTRIM" length="7" />
+        </property>
+        <property name="dateSampleCollected" type="date">
+            <column name="DATE_SAMPLE_COLLECTED" length="8" />
+        </property>
+        <property name="reasonPcr" type="string">
+            <column name="REASON_PCR" length="75" />
+        </property>
+        <property name="dateSampleSent" type="date">
+            <column name="DATE_SAMPLE_SENT" length="8" />
+        </property>
+        <property name="datePcrResult" type="date">
+            <column name="DATE_PCR_RESULT" length="8" />
+        </property>
+        <property name="pcrResult" type="string">
+            <column name="PCR_RESULT" length="45" />
+        </property>
+        <property name="rapidTest" type="string">
+            <column name="RAPID_TEST" length="45"/>
+        </property>
+        <property name="rapidTestResult" type="string">
+            <column name="RAPID_TEST_RESULT" length="45" />
+        </property>
+        <property name="arvType" type="string">
+            <column name="ARV_TYPE" length="45" />
+        </property>
+        <property name="arvTiming" type="string">
+            <column name="ARV_TIMING" length="90" />
+        </property>
+        <property name="dateLinkedToArt" type="date">
+            <column name="DATE_LINKED_TO_ART" length="8" />
+        </property>
+        <property name="dateRapidTest" type="date">
+            <column name="DATE_RAPID_TEST" length="8" />
+        </property>
+        <property name="infantOutcome" type="string">
+            <column name="INFANT_OUTCOME" length="70" />
+        </property>
+        <property name="caregiverGivenResult" type="string">
+            <column name="CAREGIVER_GIVEN_RESULT" length="7" />
+        </property>
+        <property name="childOutcome" type="string">
+            <column name="CHILD_OUTCOME" length="45" />
+        </property>
+        <property name="referred" type="string">
+            <column name="REFERRED" length="45" />
+        </property>
+        <property name="dateNextVisit" type="date">
+            <column name="DATE_NEXT_VISIT" length="8" />
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column name="TIME_STAMP" length="23" />
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+          <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+          <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

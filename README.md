@@ -1,1 +1,2 @@
-# openlamis-struts
+# LAMIS3
+

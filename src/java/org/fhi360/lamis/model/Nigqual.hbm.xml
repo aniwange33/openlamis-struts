@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Nigqual" table="NIGQUAL">
+        <id name="nigqualId" type="long">
+            <column name="NIGQUAL_ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="portalId" type="long">
+            <column name="PORTAL_ID" not-null="true"/>
+        </property>
+        <property name="reviewPeriodId" type="java.lang.Integer" not-null="true">
+            <column name="REVIEW_PERIOD_ID"/>
+        </property>
+        <property name="reportingDateBegin" type="date">
+            <column length="8" name="REPORTING_DATE_BEGIN"/>
+        </property>
+        <property name="reportingDateEnd" type="date">
+            <column length="8" name="REPORTING_DATE_END"/>
+        </property>
+        <property name="thermaticArea" type="string">
+            <column length="2" name="THERMATIC_AREA"/>
+        </property>
+        <property name="population" type="java.lang.Integer">
+            <column name="POPULATION"/>
+        </property>
+        <property name="sampleSize" type="java.lang.Integer">
+            <column name="SAMPLE_SIZE"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+  
+
+</hibernate-mapping>

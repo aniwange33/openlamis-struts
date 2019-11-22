@@ -1,0 +1,3323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pmtct_summary" pageWidth="595" pageHeight="1900" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b9f3340-3d0e-42f8-baa0-288e4d89f068">
+	<property name="ireport.zoom" value="1.3636363636363635"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="480"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingMonth" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingYear" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct1jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2al" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2bl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2cl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2dl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2el" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2fl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2gl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2hl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2il" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2jl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ap" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2bp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2cp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2dp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ep" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2fp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2gp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2hp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2jp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct2jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3al" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3bl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3cl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3dl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3el" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3fl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3gl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3hl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3il" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3jl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ap" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3bp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3cp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3dp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ep" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3fp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3gp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3hp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3jp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct3jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4al" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4bl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4cl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4dl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4el" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4fl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4gl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4hl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4il" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4jl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ap" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4bp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4cp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4dp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ep" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4fp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4gp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4hp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4jp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct4jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5al" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5bl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5cl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5dl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5el" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5fl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5gl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5hl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5il" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5jl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ap" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5bp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5cp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5dp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ep" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5fp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5gp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5hp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5jp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct5jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6al" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6bl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6cl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6dl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6el" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6fl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6gl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6hl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6il" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6jl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ap" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6bp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6cp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6dp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ep" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6fp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6gp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6hp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6jp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct6jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7al" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7bl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7cl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7dl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7el" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7fl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7gl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7hl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7il" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7jl" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ap" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7bp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7cp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7dp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ep" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7fp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7gp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7hp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ip" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7jp" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct7jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct8jt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ba" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ca" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9da" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ea" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9fa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ha" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ia" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ja" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9at" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9bt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ct" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9dt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9et" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ft" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9gt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9ht" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9it" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="pmtct9jt" class="java.lang.String" isForPrompting="false"/>
+	<field name="stub" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="1" width="360" height="18" uuid="4c32e13e-ae4b-46b2-b1cd-bade788892c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PMTCT MONTHLY SUMMARY FORM ADDENDUM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="5" y="53" width="37" height="20" uuid="aeb19b91-f1ca-4469-847e-92849fd3dc66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="179" y="53" width="31" height="20" uuid="60f22a70-db18-45be-b52f-1792678bb5aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Year:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="2" y="26" width="31" height="20" uuid="9f1433a7-7ec8-4f54-9c3c-303f902cc001"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="26" width="31" height="20" uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LGA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="287" y="26" width="47" height="20" uuid="9f46d6d4-401e-47d7-87df-53b8d0f9e2c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="34" y="26" width="82" height="20" uuid="c76c33d5-5e53-43ea-9f43-1464db1d3edf"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="43" y="53" width="99" height="20" uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="335" y="26" width="209" height="20" uuid="d1081f4f-4ecf-436e-bba2-90f34ef1afc8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="178" y="26" width="84" height="20" uuid="769c23c8-a0c9-477e-bb2e-cf149dcc3e9e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="211" y="53" width="54" height="20" uuid="e1abc6b2-1826-4006-98ba-f18af80b1223"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="7" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="1" width="50" height="3" uuid="3e291ec4-5c8f-4358-9b8a-84f70d4a79fd"/>
+				<textFieldExpression><![CDATA[$F{stub}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="1530" splitType="Stretch">
+			<rectangle>
+				<reportElement x="295" y="47" width="153" height="159" backcolor="#C0C0C0" uuid="45a497d1-74f7-4cb2-96ca-912769241729"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="3" width="555" height="28" backcolor="#FFFFFF" uuid="5353d82a-2136-47dd-be73-ec5e6170226e"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="0" y="3" width="146" height="28" uuid="c5944ddd-eb22-4810-9f1a-39a49b1f2e93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Elements]]></text>
+			</staticText>
+			<elementGroup/>
+			<staticText>
+				<reportElement style="Heading" x="146" y="3" width="64" height="28" uuid="0e4455c3-0a6b-4348-83f4-3f9697390e2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age group (years)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="209" y="3" width="86" height="28" uuid="ad66a5a7-b271-43a3-9525-466a10425795"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ANC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="294" y="3" width="77" height="28" uuid="bbaf585a-a2f0-40a9-9ea2-f30c8d1d023f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[L&D]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="370" y="3" width="79" height="28" uuid="fcff239f-9538-473b-8b56-856d06d6b825"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<72hrs PP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="448" y="3" width="107" height="28" uuid="0bb277fd-89f3-409d-b27a-c3aee7471d66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="31" width="555" height="15" backcolor="#C0C0C0" uuid="8e47b00b-c955-402c-bd82-bc0c161a9be6"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="225" y="31" width="110" height="15" uuid="9bed0b06-415e-4fba-aa6b-b6cf29cae7dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ante-natal Care Summary]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="207" width="555" height="15" backcolor="#C0C0C0" uuid="3949761c-455d-4f0a-8123-a1fa9384cc09"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="0" y="46" width="146" height="161" uuid="8598b36e-8212-4c3a-8759-043d87a0f8c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Number of new ANC Clients]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="46" width="64" height="17" uuid="c743e921-1bf4-4855-b60c-3181f4a711a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="62" width="64" height="17" uuid="975397e8-c0bd-4545-bcb8-2c1d65f5f8ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="174" width="64" height="17" uuid="1f73b52e-8c89-447a-800c-1ad628a88c0e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="142" width="64" height="17" uuid="5958883e-653f-460d-9a38-9a63b0469963"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="78" width="64" height="17" uuid="0bfb4438-eef0-4504-877d-c04e040120c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="94" width="64" height="17" uuid="ec65eee4-2e45-46a8-aedf-811e8c9f5f44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="110" width="64" height="17" uuid="772aba2f-58f8-4d93-80d0-50c73539d405"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="158" width="64" height="17" uuid="779a2da7-6951-4d78-b953-74bbf42afebd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="126" width="64" height="17" uuid="277c8ee8-bc42-4e6b-9643-b38838c7b81c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="190" width="64" height="17" uuid="692dd6f5-dec0-47af-abf4-9af5a9457a89"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="46" width="86" height="17" uuid="33f8602f-35e0-4afc-83bb-89556c57d21d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1aa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="62" width="86" height="17" uuid="c3c56375-683a-4643-9437-2e341840ff89"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="94" width="86" height="17" uuid="017794b3-4478-43dc-b9ff-bdd880acdbfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="78" width="86" height="17" uuid="fb29be36-62be-45cd-aebf-b19f96985d53"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="158" width="86" height="17" uuid="74c46c55-2189-46d8-b24f-1bb8f78c1e3d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="126" width="86" height="17" uuid="397902e4-c4eb-457d-be6d-1097942137cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="174" width="86" height="17" uuid="b913cd43-2ba3-4c7b-b50f-cb2f8c75e27f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="142" width="86" height="17" uuid="e341400b-fd47-4f40-a120-4cbcaa420201"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="110" width="86" height="17" uuid="ba7448f3-c7fe-4cc6-9daf-0b6b749542ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="190" width="86" height="17" uuid="3da89329-8149-43a4-8dcb-5dfc09484f45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="47" width="107" height="17" uuid="56e0181c-3893-48fb-af7b-5dd729c04593"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="63" width="107" height="17" uuid="9c1e0e14-f59a-439b-97b2-aa852aa8b677"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1bt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="175" width="107" height="17" uuid="8c92ecb9-b63f-4eaf-8a41-744621e337ba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1it}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="95" width="107" height="17" uuid="53d68df5-0c07-456f-897c-398520f5e4a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="159" width="107" height="17" uuid="30e82859-4d87-46b3-83d0-e194abd4532f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="111" width="107" height="17" uuid="fd8530cf-2d61-49a1-aa62-76b04d410a8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1et}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="127" width="107" height="17" uuid="26905bed-2beb-427f-a531-d214bf9f9330"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="79" width="107" height="17" uuid="1d67305e-9058-4ed3-a153-ecad212958ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1ct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="143" width="107" height="17" uuid="4c17eae1-7815-4c59-9508-409ce81ab4d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1gt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="191" width="107" height="17" uuid="efa02e6e-a906-4087-9f25-ba84e949226a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct1jt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="211" y="207" width="124" height="15" uuid="949d0806-b16a-41b8-984b-cfaa528f06c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HIV Testing Services Summary]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="255" width="107" height="17" uuid="fbd2ba2d-b706-4048-b274-7fa58e4ff354"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="351" width="107" height="17" uuid="b1361676-8a81-47a5-86d0-8e5e13cf6b04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2it}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="239" width="64" height="17" uuid="58a04b00-d3bc-4b19-a1b5-005db850ebb5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="287" width="64" height="17" uuid="f14f83ec-04b3-4f7c-aad6-1f10cf13fc5c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="271" width="107" height="17" uuid="8e0947f1-f88c-405d-a0fa-8ffe7fdbf061"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="303" width="86" height="17" uuid="e5328b8c-8b19-4a45-a564-c2807fe1c00b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="287" width="86" height="17" uuid="adcdef27-de15-4cff-b537-23e1662c0020"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="319" width="64" height="17" uuid="cba2916c-0577-40a5-81e6-58a09c357c6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="303" width="107" height="17" uuid="e37d0cf7-fa76-40b4-af12-e442c826eeee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ft}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="351" width="64" height="17" uuid="170998bf-c678-4460-83ec-fe6c79eb9c5a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="271" width="64" height="17" uuid="aa7bbe78-d168-49fb-9e14-66ead878c183"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="319" width="107" height="17" uuid="d3c0a935-b7a1-47b3-8e4b-ab62f3d3d7dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2gt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="303" width="64" height="17" uuid="c2fbc603-4b3c-489f-9b0e-d896261a54cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="223" width="86" height="17" uuid="f6709395-c0d2-4f1c-87e8-689889906707"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2aa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="335" width="107" height="17" uuid="d52a3602-65c8-48fa-b72b-1cb265dfa7ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="351" width="86" height="17" uuid="c8d4c531-62d3-4ceb-83ed-464a3fc07195"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="271" width="86" height="17" uuid="296305b2-d061-4c8a-9666-8fb44ecc3bac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="367" width="86" height="17" uuid="7fa398c7-4a10-4d85-a4e3-931a5452380f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="319" width="86" height="17" uuid="0a64e42f-35e5-4031-83bc-310113da1ef0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="223" width="64" height="17" uuid="cc935501-ab8a-4536-904a-a6f3646b50bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="254" width="64" height="17" uuid="894da5a9-df94-4602-bead-a180cd42c605"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="223" width="146" height="161" uuid="9604ac3e-fe2b-402d-ad2c-5b4f0a8a9bf9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="10" rightIndent="10"/>
+				</textElement>
+				<text><![CDATA[No. of pregnant women with previously known HIV +ve infection]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="239" width="107" height="17" uuid="5612c45e-4b43-4252-a38e-7baeb485573a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2bt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="223" width="107" height="17" uuid="87a2c282-370c-49a7-8017-2ffbb2135619"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="239" width="86" height="17" uuid="642220dc-72a2-43d3-a394-4598258c7495"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="368" width="107" height="17" uuid="77084c32-721b-4a3a-812f-f534c936f209"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2jt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="334" width="64" height="17" uuid="c8a724d0-830a-40e7-a25c-41b3f57ee2fd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="335" width="86" height="17" uuid="d33a202b-8bf2-4217-ba07-287f912fcfa3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="255" width="86" height="17" uuid="dec35a6e-d536-4f94-9613-46505fad7209"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="287" width="107" height="17" uuid="aa48b394-222b-4a34-a9f8-6f28d8627a8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2et}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="367" width="64" height="17" uuid="179c9b31-d95a-4964-b219-a546570cfabe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="319" width="86" height="17" uuid="d4a705cb-02d4-4e26-9610-53433bdf608e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2gp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="223" width="86" height="17" uuid="8f10d7da-77e1-425f-aa85-ed4244506edf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="255" width="86" height="17" uuid="305ed8e5-0b8f-490c-9d5e-ddf9f8faa05b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2cp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="287" width="86" height="17" uuid="e1d8cbf6-71a9-426d-96fa-c709db5a4c55"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="351" width="86" height="17" uuid="6a3052fd-9b41-4bb6-8553-b3cb52cbc2cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2ip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="335" width="86" height="17" uuid="17070c42-441b-4d9c-93ac-8e97267c6183"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="367" width="86" height="17" uuid="afd26bcb-5a71-40fa-861f-276e0533b1e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2jp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="271" width="86" height="17" uuid="4f7b6d31-8d68-4ef7-bb85-459d31d54582"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2dp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="303" width="86" height="17" uuid="75e72253-043f-4d7c-a009-6ac7dcaabf34"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2fp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="239" width="86" height="17" uuid="dc0bd9a8-2fe2-4681-bc0b-e352f20f35ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2bp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="319" width="69" height="17" uuid="26313668-fc6e-4e57-9e05-8898dddb9688"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2gl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="223" width="69" height="17" uuid="60b9f97c-45c9-4a4d-b9b5-1028057acd4c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2al}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="255" width="69" height="17" uuid="0a65ffd6-ac20-4f46-aff1-f7d2c140733c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2cl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="287" width="69" height="17" uuid="93e4f3fe-2296-41bb-87f3-5e4d23738139"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2el}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="351" width="69" height="17" uuid="acb1a107-2f2f-4854-86d2-310b0c32d196"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2il}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="335" width="69" height="17" uuid="f05a4549-5889-45b4-ab27-e2d297538d73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2hl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="367" width="69" height="17" uuid="f23213d1-da50-4721-90d6-df11bae341f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2jl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="271" width="69" height="17" uuid="ef24d143-0cb1-4a0d-ac8f-b830d0eb5e2c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2dl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="303" width="69" height="17" uuid="4bf00b1c-ee12-4d76-a2c4-1c2abfd960d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2fl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="239" width="69" height="17" uuid="25d025ba-5cd3-4879-8f42-2f25b5cb3cb3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct2bl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="384" width="86" height="17" uuid="70c715f2-b0ed-4cc4-9968-102243acb35a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="432" width="86" height="17" uuid="6e959773-3b43-4233-bbc9-a51762dec6b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3dp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="448" width="64" height="17" uuid="1208bc6b-66d2-443f-879c-89ba0c880d29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="512" width="86" height="17" uuid="678783dc-5d67-4847-af1b-86eafe9239e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="448" width="69" height="17" uuid="e279d850-bc21-422b-b118-e59d862c8592"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3el}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="400" width="64" height="17" uuid="38ac0b36-9ed6-4692-a9cf-7850ff8bc24e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="480" width="86" height="17" uuid="d6ac067a-d4ee-4af8-b59e-363791dfaca4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="384" width="86" height="17" uuid="ad22f867-f981-4225-bff2-70da6cd0be17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3aa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="416" width="69" height="17" uuid="04258606-ee00-41df-aac2-ca0418743636"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3cl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="496" width="69" height="17" uuid="6bf41f6d-8885-4805-b555-b5e2724660a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3hl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="400" width="86" height="17" uuid="d3bac3e4-2a98-42e6-8547-7b4ddfc402f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3bp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="448" width="86" height="17" uuid="c188d169-19e2-4c2f-83a8-6c03d3c7bd99"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="480" width="69" height="17" uuid="5e498888-92e2-4845-beda-117a92aa93c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3gl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="464" width="69" height="17" uuid="3d8472ef-01c2-4948-a95b-3fbaeece928f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3fl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="464" width="107" height="17" uuid="fcf6f695-3fbb-4f08-9d60-7c16eec3abd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="512" width="86" height="17" uuid="fccde677-ea28-47a2-bb1f-5e7cb3377cc1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="496" width="86" height="17" uuid="71c2296a-39d1-46d9-bcd8-f791a73e795c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="528" width="64" height="17" uuid="b14fdff0-4758-4bc1-8086-c8ddd4380cd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="480" width="86" height="17" uuid="1718a3fe-75d0-4fe2-aa10-f5680e994243"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3gp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="496" width="86" height="17" uuid="1e3e18b9-cd1c-47ef-8a2d-2767ca105c8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="464" width="86" height="17" uuid="a2520f58-dfea-41fa-89a5-004fad6f55c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="384" width="69" height="17" uuid="9b4d31d9-c852-4d35-81c7-ff2da2efde0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3al}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="464" width="64" height="17" uuid="323aaf3c-20ad-4821-86e4-d5ac6b3ede98"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="495" width="64" height="17" uuid="280ef75a-ad4b-412f-b84e-8bfd9bf8e61a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="432" width="107" height="17" uuid="a64682d1-d976-4d67-9199-2c4c0acfa7fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="400" width="107" height="17" uuid="709f01dc-37d4-43f4-afaf-2e4d1af019df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3bt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="512" width="69" height="17" uuid="f70be1fe-6e56-48d5-b8ac-079d3a6de107"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3il}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="400" width="69" height="17" uuid="664896d6-acc3-41fc-b4b4-74a0c1d073be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3bl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="528" width="107" height="17" uuid="b4efbbef-3dbd-49b7-a7da-4ec06d0628e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3jt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="448" width="107" height="17" uuid="7854fa15-7f24-417d-bbc2-2e05579ec29f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3et}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="415" width="64" height="17" uuid="5e275b94-64f9-4ab1-b10d-2d869d70a1bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="416" width="86" height="17" uuid="17a59305-9454-44e8-b4bf-4a9555e18620"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3cp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="432" width="64" height="17" uuid="9ed057ca-cb12-40b4-8c3b-1cba93dba11c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="416" width="86" height="17" uuid="0a413b0b-f68b-4bfa-acdf-0705c2e7565b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="384" width="107" height="17" uuid="8b230c20-a01f-4667-a3b0-13e003b9cc35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="512" width="107" height="17" uuid="046a98ab-456d-4611-89b7-34eb7dcdaefe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3it}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="512" width="64" height="17" uuid="a3d7f9a5-14c2-44e1-ba57-c807a3c0f704"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="416" width="107" height="17" uuid="0de0b97e-8b00-4075-b589-1ee516b0453e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ct}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="384" width="146" height="161" uuid="7130817e-820e-4ee4-a90d-ea196b8ef1de"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="10" rightIndent="10"/>
+				</textElement>
+				<text><![CDATA[No. of pregnant woman HIV tested and received results]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="464" width="86" height="17" uuid="87b60f9d-6d86-4417-9656-832799d4e342"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3fp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="528" width="86" height="17" uuid="d90a5096-e7e1-461f-b7d6-36017671f5db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ja}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="384" width="64" height="17" uuid="00c36e7e-e23b-4d51-87ad-da416d5fa8c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="496" width="107" height="17" uuid="8da078bf-a495-4a82-b6f9-d7571557dfab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="448" width="86" height="17" uuid="2f1bef5b-68ad-4ecb-8a30-b1808d43331e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="432" width="86" height="17" uuid="8441b726-48ad-4979-b6ff-be60afabb7bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="480" width="107" height="17" uuid="504b57c3-6010-4fbc-a6f1-1d34beb19778"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3gt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="432" width="69" height="17" uuid="9c408d06-0d5b-4958-96c3-206c01ec572e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3dl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="480" width="64" height="17" uuid="318a9d1c-e49d-41f1-b900-a456599d0259"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="400" width="86" height="17" uuid="b583d943-4aa8-4a39-beb4-ae8a5d8e0611"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="528" width="69" height="17" uuid="c4aa9adc-2956-45d4-8c65-c348a3528c4c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3jl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="528" width="86" height="17" uuid="9132a989-cb3e-48dc-bc84-a6e179fff811"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct3jp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="576" width="64" height="17" uuid="43299c5b-1537-4f1a-a3e3-3ae10107b37d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="593" width="86" height="17" uuid="850be30a-ab11-44e6-a446-8fccd27f4b4c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="673" width="107" height="17" uuid="adf191fe-fef6-4ad7-b288-e08b2df6017b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4it}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="673" width="86" height="17" uuid="dc444b9b-8b08-41d8-9603-f689ec6624b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ip}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="545" width="146" height="161" uuid="940fc832-12f5-490a-848a-ddf502890abb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+					<paragraph leftIndent="10" rightIndent="10"/>
+				</textElement>
+				<text><![CDATA[No. tested HIV positive]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="689" width="86" height="17" uuid="4e5c862d-8b3f-4708-97bc-31d411d2d485"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4jp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="657" width="107" height="17" uuid="9f1d2399-af3e-417e-a7e0-4b3e167c1e3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="609" width="69" height="17" uuid="5870891e-b139-443c-9063-8e95e91b0a00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4el}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="657" width="86" height="17" uuid="e73af7f2-0443-4fe6-8f79-1d51832067e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="673" width="64" height="17" uuid="4ccc5052-51bb-4b33-9f55-b288dd8d0fa6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="609" width="64" height="17" uuid="602fb9b2-f884-4ddd-9bdd-1ad22f0d8743"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="656" width="64" height="17" uuid="b5f1c6be-3286-4fc5-bfc2-2c5adc6c5cce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="545" width="107" height="17" uuid="b43676bc-363d-4441-904a-123ef95c04fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="673" width="86" height="17" uuid="7406acaf-d893-4e5d-8abe-6ee6221b48c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="561" width="107" height="17" uuid="8d818406-352e-473b-a727-49b8ef80583d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4bt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="689" width="107" height="17" uuid="13315f8a-8da5-4279-be03-e9fd3a7463c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4jt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="625" width="69" height="17" uuid="0a98d6f5-60e0-47c5-b745-a6c547329287"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4fl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="689" width="64" height="17" uuid="70022ac2-3d5a-48bc-848e-fd5f58c3bff2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="294" y="577" width="69" height="17" uuid="02d994c2-1aa3-4e7c-9d73-ba5e884c8352"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4cl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="593" width="107" height="17" uuid="c412d98a-4b4b-4ebe-afe8-aaf6c84a41fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="593" width="86" height="17" uuid="1a9c6e42-14c0-4097-97d1-364b371de73f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4dp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="577" width="86" height="17" uuid="7849e567-15d6-46bc-a4c8-88135c80bfb7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="593" width="64" height="17" uuid="f45d58d9-2ce8-4dd5-80c8-682d26fa96aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="641" width="64" height="17" uuid="67bc5e7d-b043-4de6-a8f0-ebe1de5a8e43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="609" width="86" height="17" uuid="e9acbbba-6b54-4611-9ace-7d75cfe0a0b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="545" width="64" height="17" uuid="7bf9d525-2f9f-4fb9-87b3-98e2638927fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="294" y="673" width="69" height="17" uuid="a183e9d1-3579-4eff-850d-55897d4cea49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4il}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="561" width="64" height="17" uuid="ba56c138-8f22-4ba1-9d04-302c70953ccc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="625" width="86" height="17" uuid="be726066-874a-4222-86fd-c360fe7ba8fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4fp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="641" width="86" height="17" uuid="d97848ed-d2b7-4ed5-a9f6-0b8751c64bed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4gp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="641" width="86" height="17" uuid="bc135579-c2cb-4d00-aa2a-470285d3d0d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="561" width="69" height="17" uuid="c7e1878a-dd35-45c3-9dd8-7430defe47d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4bl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="609" width="107" height="17" uuid="6e0e3adb-deb8-48ee-a258-189f30bb4a1b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4et}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="593" width="69" height="17" uuid="5870a731-7259-4529-a1de-0efa8f39618a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4dl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="561" width="86" height="17" uuid="44d0d1f2-4afc-4598-b3ef-2fcb344261e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="641" width="69" height="17" uuid="f5eb2b7a-1fd5-4e0a-af38-a18e6454797f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4gl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="577" width="107" height="17" uuid="e95ac9da-ac40-4c54-ba69-7c38fb5ee8bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="625" width="107" height="17" uuid="f8156fd2-ebe1-47e4-80db-91f981cc9186"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="609" width="86" height="17" uuid="3e56f92b-4d32-4a07-ab6f-3a40aebbef25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="657" width="86" height="17" uuid="1dd6c061-e710-4165-a531-b20b9b290cf4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="689" width="69" height="17" uuid="f88d9f38-d038-46f9-b377-28b3bda65cac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4jl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="689" width="86" height="17" uuid="b8da6063-ce19-44c4-875d-788cadcee097"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="657" width="69" height="17" uuid="4c4ec9cd-6c15-428c-9c98-8c8eac872040"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4hl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="561" width="86" height="17" uuid="96a20d25-53da-4f72-a635-9ac084ee185f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4bp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="625" width="86" height="17" uuid="fd355f88-955f-4a29-be9e-948f056cd3a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="545" width="86" height="17" uuid="59dbb44c-097c-4dda-bc15-a7e6a45d4780"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4aa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="625" width="64" height="17" uuid="d3de9819-5de6-466f-b2db-688fe4bb871f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="577" width="86" height="17" uuid="16aa361c-689b-40a5-a280-a8749980b0c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4cp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="545" width="86" height="17" uuid="37d2071c-174c-449d-837e-2956878ee0a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4ap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="545" width="69" height="17" uuid="8b1016ce-8298-4460-9b5c-ecbc5243342d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4al}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="641" width="107" height="17" uuid="1059e94c-1a1d-4d2d-a160-454c746efd74"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct4gt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="817" width="64" height="17" uuid="bee1a2da-511f-4550-8d8a-5adc2a06b70a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="706" width="107" height="17" uuid="ab6dec9a-46dc-4da5-8776-0c13cfe20c04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5at}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="722" width="64" height="17" uuid="81f1b05e-310d-4dfb-b505-f634788a406c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="294" y="738" width="69" height="17" uuid="7ba5aabb-327d-408e-a8bb-716dd98ce94c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5cl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="770" width="64" height="17" uuid="3642c7c4-00c1-4094-907e-5c5df88f2638"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="818" width="86" height="17" uuid="48b259a5-6aa2-4e80-994f-eed22416a9ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5hp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="802" width="64" height="17" uuid="a0e02163-56d0-40f1-8aa4-f58817937540"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="786" width="107" height="17" uuid="2720e966-6ff7-4215-8bda-fc3c526de95d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="706" width="69" height="17" uuid="d449fe17-9fc8-49f5-9f50-df59c450eeee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5al}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="722" width="86" height="17" uuid="c1760289-034f-4514-8b99-1d43cc67d83b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ba}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="737" width="64" height="17" uuid="0ed7c8a3-d04e-40ca-8afe-e5ef2c91954f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="850" width="107" height="17" uuid="1ffe8d47-d203-4795-be5c-28404471d7bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5jt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="722" width="86" height="17" uuid="82925a01-5721-4b39-b18f-fd61bd2e4928"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5bp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="770" width="107" height="17" uuid="9633f707-0021-4f81-aaa0-073f171079f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5et}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="754" width="86" height="17" uuid="c0947df5-ea46-406f-bdcd-1ed26e42c668"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="834" width="86" height="17" uuid="d3243e7f-c8ce-4f2b-8c85-1bd3bde327e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="834" width="86" height="17" uuid="0f6cd631-0d21-49c7-9b0e-2a0df99a9593"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="754" width="69" height="17" uuid="0913b9e7-a0a3-4cc9-9bc6-cd005f1f0369"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5dl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="850" width="86" height="17" uuid="40216780-8260-4298-8886-369ff84b5bff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="850" width="69" height="17" uuid="84cedfe5-f865-438f-8474-64b2d52be627"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5jl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="802" width="107" height="17" uuid="bc3453f5-841f-47a3-9037-40d86d1a8734"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5gt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="802" width="86" height="17" uuid="13357a0d-74ee-4527-b5f3-e04278ca20c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="706" width="146" height="161" uuid="3681a046-77ef-43fb-9549-bbe074eb8431"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post_ANC 1 - No. of preg woman retested after initial HIV negative test]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="818" width="86" height="17" uuid="1eede7cb-cb16-4a03-b765-d36648a7c1fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="738" width="86" height="17" uuid="d2f8d944-f26b-4d18-a8be-7b8afbb010f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="786" width="64" height="17" uuid="d1a1e396-8b16-4a5a-9167-a0985483bfca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="770" width="86" height="17" uuid="f9bce3dc-7e03-4024-91b3-1927e1f4e106"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="802" width="86" height="17" uuid="57f8df95-a753-4572-b64f-c92d08d9e618"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5gp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="738" width="86" height="17" uuid="61eff591-b184-4c76-80c6-f507d423ad17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5cp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="706" width="86" height="17" uuid="313f37fd-5fb0-4113-8333-e074fc75cf1f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5aa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="850" width="64" height="17" uuid="ff1c843a-5ef2-4a22-a426-075fc1276fcc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="834" width="64" height="17" uuid="e3661bf0-c32b-455a-85aa-6e854e96ad14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="850" width="86" height="17" uuid="496c5321-74e5-4932-bbd1-779dab023fea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5jp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="786" width="86" height="17" uuid="41f24c92-50d3-4a68-bf69-30d50394c5fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="722" width="69" height="17" uuid="b3b32f10-7a83-471c-b692-ef74a69539ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5bl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="754" width="64" height="17" uuid="35187bee-3e7d-4e66-ac4b-9b91c4fded49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="706" width="64" height="17" uuid="daa0fe45-029b-414d-8f38-61b6f7de087e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="754" width="107" height="17" uuid="4f7698c1-903f-4764-b7d3-6272d5df10bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="706" width="86" height="17" uuid="69e4b13e-745a-41fe-8e4e-9b4131915cd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="770" width="86" height="17" uuid="c529585b-de8c-4894-81e1-c0f87e89c3a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="818" width="107" height="17" uuid="50749ae0-7390-4af1-b41e-834eaeed54e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="818" width="69" height="17" uuid="5c731542-739e-4049-9781-e12829068e6f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5hl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="786" width="86" height="17" uuid="fc4fbfc4-3f08-40ff-ae43-c6513f0cb8f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5fp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="738" width="107" height="17" uuid="557599bf-63a1-4341-bf04-6ba3f934f356"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5ct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="834" width="107" height="17" uuid="c0b88099-a041-45ef-93cd-66d4ab346200"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5it}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="770" width="69" height="17" uuid="24a9a767-39b6-4678-8007-1eda042645c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5el}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="754" width="86" height="17" uuid="53406a47-cf12-4a66-b3e6-c9b8bbef7cdf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5dp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="834" width="69" height="17" uuid="e288ac97-a1ad-4caa-bc10-cd354c3a0e38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5il}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="786" width="69" height="17" uuid="1de6e435-7bc0-4830-a214-fbeee9b53575"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5fl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="802" width="69" height="17" uuid="58533487-241a-41b2-a29f-a93adfbcefe4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5gl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="722" width="107" height="17" uuid="aab4c909-4c6a-49fc-8149-43930eddbfa4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct5bt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="963" width="64" height="17" uuid="2101ffc0-8d6e-42d3-90a8-d22d14cf058b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="294" y="867" width="69" height="17" uuid="a3ca4ecc-702e-42df-af1c-3591a4fdb0b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6al}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="867" width="86" height="17" uuid="562e92c4-bb87-4556-acaa-60ff0208a85c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6aa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="978" width="64" height="17" uuid="244642d9-eae6-4ffd-8df6-2e1c86c83b54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="294" y="931" width="69" height="17" uuid="eb37b01a-8978-429d-82d8-f875fe49ddcd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6el}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="915" width="86" height="17" uuid="e8169def-5cda-42a8-ad6e-4ae2018652ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6dp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="963" width="86" height="17" uuid="1e2dda9f-2894-4e8f-bfbb-6a908421509c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6gp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="915" width="69" height="17" uuid="5d3f7e39-1d67-4683-b357-85314935ff9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6dl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="883" width="86" height="17" uuid="f67e3919-250f-4ffb-9f72-fcf13813c9b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6bp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="883" width="64" height="17" uuid="4507858a-8e56-45ed-8171-50a5cbcae6ba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="883" width="107" height="17" uuid="1b307635-cffb-478a-a6d0-a485819dc14c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6bt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="995" width="107" height="17" uuid="4d8b0fa8-3f83-4c3d-b07f-ad61478359c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6it}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="979" width="69" height="17" uuid="6bc7b833-1236-4ca2-a795-5281f0c4f311"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6hl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1011" width="107" height="17" uuid="d3f10bc1-e61c-44c1-9bc2-1c9ac875191c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6jt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="963" width="86" height="17" uuid="381e0ce3-cc0f-49d5-85d3-89a4f6e9f6af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="947" width="64" height="17" uuid="12e9c15d-3f3f-4e9c-a2da-a0f4a31c45f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="979" width="86" height="17" uuid="7f61bcc7-1e94-4432-8759-cb0bb62f6edc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="867" width="86" height="17" uuid="b1829b1f-0414-43ff-bb83-abd38652dabc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ap}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="915" width="64" height="17" uuid="2fe4595d-459e-4d2e-af2a-36fdd6c0f970"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="979" width="86" height="17" uuid="7fc37e3b-0436-441e-ba55-6e98d0366d11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6hp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="898" width="64" height="17" uuid="7046d9f9-38b8-4c65-883a-93e2837bdd77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="947" width="107" height="17" uuid="84ce0655-d248-475b-8d64-58eaa29de254"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="931" width="86" height="17" uuid="f49f8677-2c26-4911-81d4-58854d3899b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="931" width="86" height="17" uuid="4fba117f-63e8-49c6-841b-867347747a15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1011" width="86" height="17" uuid="7b8cd9e1-9072-40bb-95cb-9b2615f2b0fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6jp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1011" width="64" height="17" uuid="d380e09e-f7ea-437b-8f2b-d9df166dfcd1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="294" y="883" width="69" height="17" uuid="c9faacd7-8c7b-4f13-8a5f-cc2d8a5ec5bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6bl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="867" width="146" height="161" uuid="a9bf15f1-15aa-41b6-add4-f1b96cf18a3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Post_ANC 1 POS - No. of preg women retested who seroconverted to HIV positive after initial HIV test]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="899" width="107" height="17" uuid="bf7dde63-3c36-4a6d-bc4c-7450c618aa1d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1011" width="69" height="17" uuid="21f75a7b-4fac-4292-b479-bd86eed22a1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6jl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="995" width="86" height="17" uuid="5a09729d-ee06-4a88-bc83-fe1b01b4d2c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="867" width="64" height="17" uuid="657a42c7-54dd-4d52-a929-397548827ef1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="931" width="107" height="17" uuid="ae0ecdf7-6bad-42de-87e9-b1e54a3b2f65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6et}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="979" width="107" height="17" uuid="73e4bc4f-770a-42b8-98b3-fcb4eda90c1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="963" width="69" height="17" uuid="3ab85c12-e5e2-4873-801d-915b20e84d84"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6gl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="947" width="69" height="17" uuid="4b1a12d1-11b2-4787-99d8-0cad687a473b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6fl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="899" width="86" height="17" uuid="5f6770ea-8452-405d-845d-f825bc13a39b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="995" width="86" height="17" uuid="666267e5-29f0-48d3-9eb6-fe75ace1aa5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="995" width="69" height="17" uuid="4189ce36-0e70-4071-a1c8-566639c32c8c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6il}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="899" width="86" height="17" uuid="2da7827f-ca7c-4aea-9fdc-e4ba9a8f3181"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6cp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="931" width="64" height="17" uuid="22b654df-b69f-4e3c-81b8-c3b04e4ee38c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="867" width="107" height="17" uuid="4663da5e-9212-446c-b283-989e754825fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="899" width="69" height="17" uuid="007946eb-a2c5-476e-a851-20faf2e82e30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6cl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="995" width="64" height="17" uuid="7d5efdb8-29f2-4209-a320-250aad1c732a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="963" width="107" height="17" uuid="9a7ae69a-6ef0-4428-9426-c11352b2e4fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6gt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="915" width="107" height="17" uuid="8c41c009-aab3-4a4a-8d83-3c553a953e75"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="883" width="86" height="17" uuid="4961e518-c35c-489e-896a-1b3718dd827a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1011" width="86" height="17" uuid="2bc7aef3-2349-4b59-a595-4a9b5e846c29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="915" width="86" height="17" uuid="c31d1d6e-427f-4399-86d4-d1b2e0f03b3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="947" width="86" height="17" uuid="c91c7fe1-9298-411d-a17d-9ffb2b2bf6d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="947" width="86" height="17" uuid="10bb151c-77c1-431d-9a36-ab10bf1fdae9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct6fp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1173" width="69" height="17" uuid="37ad36a6-3a26-4d36-a65f-9858010d0992"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7il}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1061" width="107" height="17" uuid="3782810f-f693-4e1f-8452-03be0a9ed463"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7bt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1125" width="64" height="17" uuid="a16296fd-a9cc-4acf-88d4-f9ac813e6f12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1189" width="86" height="17" uuid="9f9d84f7-913a-4c52-bfa7-f0b4df6b6cb8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ja}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1109" width="64" height="17" uuid="b7ea018d-aa30-4832-98fa-8f08045fabf8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1157" width="107" height="17" uuid="cd857d5c-2400-4481-9e3e-b6c9a2168775"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ht}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="1045" width="146" height="161" uuid="49604ba1-6973-458c-906c-a53e110e2a40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women already on ART prior to this pregnancy]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1141" width="107" height="17" uuid="db124043-f18c-41e9-9f41-8f218b4907b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7gt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1173" width="107" height="17" uuid="7c09c0ee-d793-411f-89a9-f9bcdf90b102"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7it}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1189" width="107" height="17" uuid="8c42ba02-0942-41f0-ac26-d3bfb9f11257"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7jt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1189" width="69" height="17" uuid="45410754-af7c-40e7-984c-8ba10cbf13d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7jl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1045" width="69" height="17" uuid="315b4fc6-5269-4f75-8d8e-dd9e4d8bf277"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7al}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1109" width="107" height="17" uuid="851e56d0-1353-4ac8-8405-9efbe11720a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7et}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1141" width="86" height="17" uuid="b361fc91-5c0e-4615-8108-5cd912258d22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7gp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1093" width="64" height="17" uuid="4a2a0b7f-9041-4e2b-b29f-a9956fe640c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="1045" width="86" height="17" uuid="f2ea4111-2be1-4143-9d46-5c473e6c7be5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1093" width="69" height="17" uuid="0fe4d022-93a1-42a0-950c-882a22c6dbb8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7dl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1141" width="69" height="17" uuid="6e5a3578-65da-4ac3-8d07-07929d3cc5d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7gl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1109" width="69" height="17" uuid="5d42b168-c44e-44bc-a943-40fe1a970655"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7el}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1157" width="86" height="17" uuid="e18c8696-1eb6-4c15-8848-96ed40732a5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1077" width="86" height="17" uuid="782466a0-ef5a-488f-bbb9-90514624581a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1141" width="86" height="17" uuid="32a738a2-f94d-46c3-bcc5-953195b13d4c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1125" width="69" height="17" uuid="b3a00484-6f07-41fb-9042-6a10b5bc3ddc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7fl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1173" width="86" height="17" uuid="37196e2f-d8f2-438e-a016-8fc892011640"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1045" width="107" height="17" uuid="148c5899-3ec4-4ea9-bae2-b0fa5562d99d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1077" width="107" height="17" uuid="eb066244-54db-4970-ad01-441022f5e5a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ct}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1077" width="64" height="17" uuid="68573d65-2dcc-44c4-9025-fe6fd58b4d43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1125" width="107" height="17" uuid="4f0b842c-4164-4e99-af21-d5869d29cc5c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ft}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1189" width="64" height="17" uuid="802180fd-d3a3-40b8-810a-0849701bad51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1157" width="86" height="17" uuid="be4e8782-c14d-4567-89fd-4a619daac3cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1173" width="64" height="17" uuid="2b197992-db06-44d9-9e65-946ea88474c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="363" y="1125" width="86" height="17" uuid="819a48d7-7ec5-4f6c-8140-041151b13037"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7fp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1093" width="86" height="17" uuid="0517b0c9-c42a-415d-913c-3e823daef7eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1077" width="86" height="17" uuid="245e46cd-14a4-4522-b8f2-ae8bacc53ba5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7cp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1156" width="64" height="17" uuid="9f9d413c-2068-4c75-8c15-b12a06089982"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1125" width="86" height="17" uuid="bef05ea3-937b-4f13-a178-ed87f0f31858"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1157" width="69" height="17" uuid="99769ed6-4a25-4c19-9adc-b3518942ed4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7hl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1109" width="86" height="17" uuid="d68e8e2b-9327-4fc7-9dc1-2d1eba79d8c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ep}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1141" width="64" height="17" uuid="8475c26c-f327-49b5-abb2-9b14521ece15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1109" width="86" height="17" uuid="15989feb-1a44-463e-877d-5755b660e38e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1189" width="86" height="17" uuid="2b8c7259-4076-4134-a4f6-bdb9c62a287b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7jp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1061" width="86" height="17" uuid="c0efe092-c2f2-412b-b31e-523ddabe43c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7bp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="363" y="1093" width="86" height="17" uuid="8dc9f28a-629d-441f-b69e-bf5bfe6ee586"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7dp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1093" width="107" height="17" uuid="0741871f-38b7-4f26-9b60-ce6eedee8245"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1061" width="69" height="17" uuid="86411c72-8dc2-4ab2-bc42-b756e7bb3c44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7bl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1045" width="86" height="17" uuid="2b328bdc-b2cf-443a-af2f-5a08fc3c5a36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7aa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1061" width="86" height="17" uuid="f2db2120-b0d5-4981-afdf-48c8c9bc348e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1173" width="86" height="17" uuid="a9d67722-e310-474c-96a3-3dc559fd2ade"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="294" y="1077" width="69" height="17" uuid="a20f7b12-76cf-4c4d-bc23-a20279590c8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct7cl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1061" width="64" height="17" uuid="7127479d-c63e-4f6f-8249-64708db7483e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1045" width="64" height="17" uuid="3c8fd2c8-fdf3-47b2-a718-77228a8dde42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="1029" width="555" height="15" backcolor="#C0C0C0" uuid="5fdc6022-2cdf-4726-8a4f-2152438de17b"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Heading" x="177" y="1029" width="247" height="15" uuid="e180f2ac-463b-4c6a-bc1c-b45ae44d47aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PMTCT Maternal Cohort Summary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1302" width="64" height="17" uuid="26944656-db50-4d36-9714-1331116e6a4c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1286" width="107" height="17" uuid="cb05cb0c-5c0b-4609-a9a9-553b055b31eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1222" width="86" height="17" uuid="fb496692-61bb-4b5b-9921-b1001c01e0b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1302" width="107" height="17" uuid="644fa3b5-79b7-4f40-a4be-23c4cf46d750"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8gt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1286" width="86" height="17" uuid="1d0d5def-e3bf-4fc1-bccb-9d9f588f028b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8fa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1350" width="86" height="17" uuid="e2ced309-cbf9-4b08-a9d3-af563f8c7be2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1222" width="107" height="17" uuid="89b6736a-cef7-403d-aaa8-2dd78a472881"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8bt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1334" width="107" height="17" uuid="9f19ccc5-8893-408d-9bc5-8c20aad766e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8it}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1270" width="86" height="17" uuid="df579a6c-a892-4baf-b6ac-9ec9cacf7507"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1317" width="64" height="17" uuid="e66f8078-aa89-48c4-8767-00655c1f48cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1318" width="107" height="17" uuid="6aacc5a4-9b85-4aa8-84e4-bc60b4927308"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1254" width="86" height="17" uuid="2686f6e7-9f08-4bd3-98c5-a25ca6be6fe2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1350" width="107" height="17" uuid="08a53c1a-fbb6-44f3-9a21-4d72bc3c04ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8jt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1270" width="107" height="17" uuid="459958a3-b4d2-4160-a1b1-18e022b91eaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8et}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1254" width="64" height="17" uuid="00efa5eb-60fb-428f-9b1b-538823b6ef94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1237" width="64" height="17" uuid="e52c3a98-da71-44a5-bcdd-11876249e7c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1254" width="107" height="17" uuid="6d97b419-02d5-4381-934a-4c11b38a0781"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1238" width="107" height="17" uuid="f925c99c-d072-4817-ac64-8af863f39dce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ct}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="0" y="1206" width="146" height="161" uuid="ffead77d-5468-4312-97e1-ba3e060ce379"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women newly started on ART during ANC <36wks of pregnancy]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1206" width="86" height="17" uuid="521cd79c-eeb5-4043-b910-957087e77cee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8aa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1270" width="64" height="17" uuid="e1b4e51f-a042-42e1-8698-abb76c72a748"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1238" width="86" height="17" uuid="3b9a70d6-1c9d-4927-83fc-0399967d0a5e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1350" width="64" height="17" uuid="60549dd1-1824-4964-97e2-e9d5b1bd7a51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1206" width="64" height="17" uuid="3a0b4522-8277-4784-b208-9e3b2624a2cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1222" width="64" height="17" uuid="62f64414-3eac-4465-a352-a92172a286bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1286" width="64" height="17" uuid="8f8b04f9-3052-4301-b3fd-aad5d06b80e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1318" width="86" height="17" uuid="1eb3a710-69a6-49d8-b309-d0a9f29a0d96"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1334" width="86" height="17" uuid="748e9c97-1e65-4459-b514-fd0d6b94f7c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1334" width="64" height="17" uuid="60cbbd89-28b1-41ea-9a2a-8a628880a534"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1206" width="107" height="17" uuid="4eeaecc5-ff00-47b7-814b-974319b9d180"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1302" width="86" height="17" uuid="5c132cfb-0737-41fb-9768-c90acba9307f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct8ga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1446" width="64" height="17" uuid="f3ad2dbf-45ae-4eb9-8889-54252a22417c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30 - 34]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1382" width="107" height="17" uuid="f042e106-f239-42b0-bec6-4e55d5e69f8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9bt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1397" width="64" height="17" uuid="c150a862-c66c-4e6c-9705-52e778753072"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[15 - 19]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1430" width="86" height="17" uuid="d5a821da-5f24-4859-adbe-e147ea3422d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1398" width="107" height="17" uuid="968fdde4-bc4a-48b2-be4c-231065193a13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1446" width="107" height="17" uuid="1905818a-f426-47b7-b865-285284c1b1ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ft}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1382" width="86" height="17" uuid="2b380fde-dac1-47f3-ac3b-c375462ae9c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ba}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1462" width="107" height="17" uuid="6346bd32-c593-4b13-82ed-61d4af248632"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9gt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1494" width="64" height="17" uuid="4a94c422-14fd-4e89-8b26-4ff7694a400d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[45 - 49]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1462" width="86" height="17" uuid="539e0295-0d22-44bf-aa64-34c89c51e7f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1446" width="86" height="17" uuid="0506c8c5-fec5-4425-bf70-c95f5cd521fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9fa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1462" width="64" height="17" uuid="3e72aa1f-76c6-4bd2-bcfa-2bfd2d8c90bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[35 - 39]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1478" width="86" height="17" uuid="9727d3ce-698e-4c95-82cf-5d651a5aebdf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1366" width="107" height="17" uuid="0c939820-1645-431b-9fec-3c75eadd5ff1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9at}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1414" width="86" height="17" uuid="ab93325c-d385-48eb-9544-1165d47363e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9da}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1494" width="86" height="17" uuid="200b0cbf-a225-46fb-92ce-a5997ccbd71a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1478" width="107" height="17" uuid="692f0718-9c1e-49b5-ba0a-0c7ed106b957"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ht}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1414" width="64" height="17" uuid="79cec17f-6d4c-4869-977e-4424096f4f81"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[20 - 24]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="209" y="1366" width="86" height="17" uuid="7ba1b29a-a9aa-4928-993a-e49d878e9397"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9aa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1398" width="86" height="17" uuid="c4b3d8e1-ea43-4200-9df9-692ef94f22e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="209" y="1510" width="86" height="17" uuid="54788eae-33e9-4bf3-a044-2d94fb8a1d78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9ja}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1382" width="64" height="17" uuid="0aa289f6-79fc-44ee-8a08-643bd07ed9b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10 - 14]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1414" width="107" height="17" uuid="1719357c-5260-4397-8803-4e1a2c3f045b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9dt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="448" y="1430" width="107" height="17" uuid="827ad8f6-5c00-4b26-bbe4-c40cb9c58bc1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9et}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1510" width="64" height="17" uuid="e7a1cf75-66ad-4cc2-b73a-8a20b6e2793a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50+]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1510" width="107" height="17" uuid="2e8d3221-db7c-4ce5-a679-77c02e5596dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9jt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1430" width="64" height="17" uuid="57f4f8bd-2fda-4f91-a2d0-3c4ba714d33c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[25 - 29]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="0" y="1366" width="146" height="161" uuid="a1830351-311d-4cf4-aa58-609ae83f00c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. of HIV+ pregnant women newly started on ART during ANC >36wks of pregnancy]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Detail" x="448" y="1494" width="107" height="17" uuid="e8f86875-a524-4dd5-9dcc-dd49ab3d74ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pmtct9it}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1366" width="64" height="17" uuid="12fa7379-9a9c-45f4-a922-0ab40ffb0abb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[< 10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Heading" x="146" y="1477" width="64" height="17" uuid="c160da2c-1c91-4285-bc3e-b1e33aa4da67"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[40 - 44]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="295" y="1206" width="153" height="159" backcolor="#C0C0C0" uuid="980c7916-0ee2-4ddf-98df-81ca584fa859"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="295" y="1365" width="153" height="162" backcolor="#C0C0C0" uuid="f12cef8c-91d8-4099-9ef8-b621f2db4eef"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</summary>
+</jasperReport>

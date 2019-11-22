@@ -1,0 +1,204 @@
+/**
+ *
+ * @author AALOZIE
+ */
+package org.fhi360.lamis.utility;
+
+import java.io.File;
+import java.util.Map;
+import java.io.IOException;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCUtil {
+    private Connection connection;
+    private static PreparedStatement preparedStatement;
+    private static CallableStatement callableStatement;
+    private static ResultSet resultSet;
+        
+    //keep track of database connection status
+    private static boolean connectedToDatabase = false;
+
+    //constructor initializes and connect to database
+    public JDBCUtil() throws SQLException, IOException {
+//        String url = ServletActionContext.getServletContext().getInitParameter("db.url");
+//        String user = ServletActionContext.getServletContext().getInitParameter("db.user");
+//        String password = ServletActionContext.getServletContext().getInitParameter("db.password");
+//        String driver = ServletActionContext.getServletContext().getInitParameter("db.driver");
+        try {
+            File file = new File("jdbc_setting.properties");
+            if (file.exists()) {
+                Map<String, Object> map = new PropertyAccessor().getJdbcProperties();
+
+                String url = (String) map.get("dbUrl");
+                String user = (String) map.get("dbUser");
+                String password = (String) map.get("dbPassword");
+                String driver = (String) map.get("dbDriver");
+//
+//                ComboPooledDataSource dataSource  = new ComboPooledDataSource();
+//                dataSource.setDriverClass(driver);
+//                dataSource.setJdbcUrl(url);
+//                dataSource.setUser(user);
+//                dataSource.setPassword(password);
+//                dataSource.setInitialPoolSize(5);
+//                dataSource.setMinPoolSize(5);
+//                dataSource.setAcquireIncrement(5);
+//                dataSource.setMaxPoolSize(20);
+//                dataSource.setMaxStatements(100);
+//                connection = dataSource.getConnection();
+
+                Class.forName(driver).newInstance();
+                connection = DriverManager.getConnection(url, user, password);
+                connectedToDatabase = true;                    
+            } 
+            else {
+                System.out.println("JDBC properties file not found .....");              
+            }
+        }
+        catch (Exception exception) {
+           exception.printStackTrace();
+        }
+    } //end of constructor
+        
+//constructor initializes and connect to database
+    public JDBCUtil(String url, String user, String password, String driver) throws SQLException, IOException {
+        try {
+            Class.forName(driver).newInstance();
+            connection = DriverManager.getConnection(url, user, password);
+            //update database connection
+            connectedToDatabase = true;                    
+        }
+        catch (Exception exception) {
+           exception.printStackTrace();
+        }
+    } //end of constructor
+
+    //set new database query string
+    public PreparedStatement getStatement(String query) throws IllegalStateException {
+        //ensure database connection is available
+        if(!connectedToDatabase) throw new IllegalStateException("Not Connected to Database");        
+        try {
+            //specify query and execute it
+            preparedStatement = connection.prepareStatement(query);
+        }
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+            return preparedStatement;
+    } //end of method setQuery
+    public PreparedStatement getPreparedStatement(String query) throws IllegalStateException {
+        //ensure database connection is available
+        if(!connectedToDatabase) throw new IllegalStateException("Not Connected to Database");        
+        try {
+            //specify query and execute it
+            preparedStatement = connection.prepareStatement(query);
+        }
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+            return preparedStatement;
+    } //end of method setQuery
+    
+    public Statement getStatement(){
+        Statement statement = null;
+        //ensure database connection is available
+        if(!connectedToDatabase)
+        { 
+            throw new IllegalStateException("Not Connected to Database"); 
+        }       
+        try {
+            //specify query and execute it
+            statement = connection.createStatement();
+        }
+        catch (Exception sqlException) {
+            sqlException.printStackTrace();
+        }
+        return statement;
+    } //end of method setQuery
+
+    //set new database query string
+    public PreparedStatement getStatement(String query, int autoGeneratedKeys) throws IllegalStateException {
+        //ensure database connection is available
+        if(!connectedToDatabase) throw new IllegalStateException("Not Connected to Database");        
+        try {
+            //specify query and execute it
+            preparedStatement = connection.prepareStatement(query, autoGeneratedKeys);
+        }
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+            return preparedStatement;
+   } //end of method setQuery
+    
+    //set new store procedure call query string
+    public CallableStatement getCallable(String query) throws IllegalStateException {
+        //ensure database connection is available
+        if(!connectedToDatabase) throw new IllegalStateException("Not Connected to Database");        
+        try {
+            //specify query and execute it
+            callableStatement = connection.prepareCall(query);
+        }
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+        return callableStatement ;
+    } 
+    
+    public int getRowCount(ResultSet resultSet) throws IllegalStateException {        
+        int numberOfRows = 0;
+        if(!connectedToDatabase) throw new IllegalStateException("Not Connected to Database");        
+        try {
+            resultSet.last();
+            numberOfRows = resultSet.getRow();
+        }
+        catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+        return numberOfRows;
+    }
+    
+    //close Statement and Connection
+    public void disconnectFromDatabase() {
+        if(connectedToDatabase) {
+            try {
+                if(resultSet != null) {
+                    resultSet.close();                    
+                }
+                if(preparedStatement != null) {
+                    preparedStatement.close();                    
+                }
+                if(connection != null) {
+                    connection.close();
+                }
+            }
+            catch (SQLException sqlException) {
+                sqlException.printStackTrace();
+            } 
+            finally {
+                connectedToDatabase = false;
+            } 
+        } 
+    } 
+
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public void setConnection(Connection connection) {
+        this.connection = connection;
+    }
+    
+    
+} 
+
+
+//        String url = ServletActionContext.getServletContext().getInitParameter("db.url");
+//        String user = ServletActionContext.getServletContext().getInitParameter("db.user");
+//        String password = ServletActionContext.getServletContext().getInitParameter("db.password");
+//        String driver = ServletActionContext.getServletContext().getInitParameter("db.driver");
+        

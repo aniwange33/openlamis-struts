@@ -1,0 +1,4084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tx_ml_summary" pageWidth="595" pageHeight="5000" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b9f3340-3d0e-42f8-baa0-288e4d89f068">
+	<property name="ireport.zoom" value="1.3636363636363635"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="4326"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingMonth" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportingYear" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="level" class="java.lang.String"/>
+	<parameter name="facilityType" class="java.lang.String"/>
+	<parameter name="txml1m1" class="java.lang.String"/>
+	<parameter name="txml1m2" class="java.lang.String"/>
+	<parameter name="txml1m3" class="java.lang.String"/>
+	<parameter name="txml1m4" class="java.lang.String"/>
+	<parameter name="txml1m5" class="java.lang.String"/>
+	<parameter name="txml1m6" class="java.lang.String"/>
+	<parameter name="txml1m7" class="java.lang.String"/>
+	<parameter name="txml1m8" class="java.lang.String"/>
+	<parameter name="txml1m9" class="java.lang.String"/>
+	<parameter name="txml1m10" class="java.lang.String"/>
+	<parameter name="txml1m11" class="java.lang.String"/>
+	<parameter name="txml1m12" class="java.lang.String"/>
+	<parameter name="txml1f1" class="java.lang.String"/>
+	<parameter name="txml1f2" class="java.lang.String"/>
+	<parameter name="txml1f3" class="java.lang.String"/>
+	<parameter name="txml1f4" class="java.lang.String"/>
+	<parameter name="txml1f5" class="java.lang.String"/>
+	<parameter name="txml1f6" class="java.lang.String"/>
+	<parameter name="txml1f7" class="java.lang.String"/>
+	<parameter name="txml1f8" class="java.lang.String"/>
+	<parameter name="txml1f9" class="java.lang.String"/>
+	<parameter name="txml1f10" class="java.lang.String"/>
+	<parameter name="txml1f11" class="java.lang.String"/>
+	<parameter name="txml1f12" class="java.lang.String"/>
+	<parameter name="txml1t1" class="java.lang.String"/>
+	<parameter name="txml1t2" class="java.lang.String"/>
+	<parameter name="txml1t3" class="java.lang.String"/>
+	<parameter name="txml1t4" class="java.lang.String"/>
+	<parameter name="txml1t5" class="java.lang.String"/>
+	<parameter name="txml1t6" class="java.lang.String"/>
+	<parameter name="txml1t7" class="java.lang.String"/>
+	<parameter name="txml1t8" class="java.lang.String"/>
+	<parameter name="txml1t9" class="java.lang.String"/>
+	<parameter name="txml1t10" class="java.lang.String"/>
+	<parameter name="txml1t11" class="java.lang.String"/>
+	<parameter name="txml1t12" class="java.lang.String"/>
+	<parameter name="txml1am1" class="java.lang.String"/>
+	<parameter name="txml1am2" class="java.lang.String"/>
+	<parameter name="txml1am3" class="java.lang.String"/>
+	<parameter name="txml1am4" class="java.lang.String"/>
+	<parameter name="txml1am5" class="java.lang.String"/>
+	<parameter name="txml1am6" class="java.lang.String"/>
+	<parameter name="txml1am7" class="java.lang.String"/>
+	<parameter name="txml1am8" class="java.lang.String"/>
+	<parameter name="txml1am9" class="java.lang.String"/>
+	<parameter name="txml1am10" class="java.lang.String"/>
+	<parameter name="txml1am11" class="java.lang.String"/>
+	<parameter name="txml1am12" class="java.lang.String"/>
+	<parameter name="txml1af1" class="java.lang.String"/>
+	<parameter name="txml1af2" class="java.lang.String"/>
+	<parameter name="txml1af3" class="java.lang.String"/>
+	<parameter name="txml1af4" class="java.lang.String"/>
+	<parameter name="txml1af5" class="java.lang.String"/>
+	<parameter name="txml1af6" class="java.lang.String"/>
+	<parameter name="txml1af7" class="java.lang.String"/>
+	<parameter name="txml1af8" class="java.lang.String"/>
+	<parameter name="txml1af9" class="java.lang.String"/>
+	<parameter name="txml1af11" class="java.lang.String"/>
+	<parameter name="txml1af10" class="java.lang.String"/>
+	<parameter name="txml1af12" class="java.lang.String"/>
+	<parameter name="txml1at1" class="java.lang.String"/>
+	<parameter name="txml1at2" class="java.lang.String"/>
+	<parameter name="txml1at3" class="java.lang.String"/>
+	<parameter name="txml1at4" class="java.lang.String"/>
+	<parameter name="txml1at5" class="java.lang.String"/>
+	<parameter name="txml1at6" class="java.lang.String"/>
+	<parameter name="txml1at7" class="java.lang.String"/>
+	<parameter name="txml1at8" class="java.lang.String"/>
+	<parameter name="txml1at9" class="java.lang.String"/>
+	<parameter name="txml1at10" class="java.lang.String"/>
+	<parameter name="txml1at11" class="java.lang.String"/>
+	<parameter name="txml1at12" class="java.lang.String"/>
+	<parameter name="txml1bm1" class="java.lang.String"/>
+	<parameter name="txml1bm2" class="java.lang.String"/>
+	<parameter name="txml1bm3" class="java.lang.String"/>
+	<parameter name="txml1bm4" class="java.lang.String"/>
+	<parameter name="txml1bm5" class="java.lang.String"/>
+	<parameter name="txml1bm6" class="java.lang.String"/>
+	<parameter name="txml1bm7" class="java.lang.String"/>
+	<parameter name="txml1bm8" class="java.lang.String"/>
+	<parameter name="txml1bm9" class="java.lang.String"/>
+	<parameter name="txml1bm10" class="java.lang.String"/>
+	<parameter name="txml1bm11" class="java.lang.String"/>
+	<parameter name="txml1bm12" class="java.lang.String"/>
+	<parameter name="txml1bf1" class="java.lang.String"/>
+	<parameter name="txml1bf2" class="java.lang.String"/>
+	<parameter name="txml1bf3" class="java.lang.String"/>
+	<parameter name="txml1bf4" class="java.lang.String"/>
+	<parameter name="txml1bf5" class="java.lang.String"/>
+	<parameter name="txml1bf6" class="java.lang.String"/>
+	<parameter name="txml1bf7" class="java.lang.String"/>
+	<parameter name="txml1bf9" class="java.lang.String"/>
+	<parameter name="txml1bf8" class="java.lang.String"/>
+	<parameter name="txml1bf10" class="java.lang.String"/>
+	<parameter name="txml1bf11" class="java.lang.String"/>
+	<parameter name="txml1bf12" class="java.lang.String"/>
+	<parameter name="txml1bt1" class="java.lang.String"/>
+	<parameter name="txml1bt2" class="java.lang.String"/>
+	<parameter name="txml1bt3" class="java.lang.String"/>
+	<parameter name="txml1bt4" class="java.lang.String"/>
+	<parameter name="txml1bt5" class="java.lang.String"/>
+	<parameter name="txml1bt6" class="java.lang.String"/>
+	<parameter name="txml1bt7" class="java.lang.String"/>
+	<parameter name="txml1bt8" class="java.lang.String"/>
+	<parameter name="txml1bt9" class="java.lang.String"/>
+	<parameter name="txml1bt10" class="java.lang.String"/>
+	<parameter name="txml1bt11" class="java.lang.String"/>
+	<parameter name="txml1bt12" class="java.lang.String"/>
+	<parameter name="txml1cm1" class="java.lang.String"/>
+	<parameter name="txml1cm2" class="java.lang.String"/>
+	<parameter name="txml1cm3" class="java.lang.String"/>
+	<parameter name="txml1cm4" class="java.lang.String"/>
+	<parameter name="txml1cm5" class="java.lang.String"/>
+	<parameter name="txml1cm6" class="java.lang.String"/>
+	<parameter name="txml1cm7" class="java.lang.String"/>
+	<parameter name="txml1cm8" class="java.lang.String"/>
+	<parameter name="txml1cm9" class="java.lang.String"/>
+	<parameter name="txml1cm10" class="java.lang.String"/>
+	<parameter name="txml1cm11" class="java.lang.String"/>
+	<parameter name="txml1cm12" class="java.lang.String"/>
+	<parameter name="txml1cf1" class="java.lang.String"/>
+	<parameter name="txml1cf2" class="java.lang.String"/>
+	<parameter name="txml1cf3" class="java.lang.String"/>
+	<parameter name="txml1cf4" class="java.lang.String"/>
+	<parameter name="txml1cf5" class="java.lang.String"/>
+	<parameter name="txml1cf6" class="java.lang.String"/>
+	<parameter name="txml1cf7" class="java.lang.String"/>
+	<parameter name="txml1cf8" class="java.lang.String"/>
+	<parameter name="txml1cf9" class="java.lang.String"/>
+	<parameter name="txml1cf10" class="java.lang.String"/>
+	<parameter name="txml1cf11" class="java.lang.String"/>
+	<parameter name="txml1cf12" class="java.lang.String"/>
+	<parameter name="txml1ct1" class="java.lang.String"/>
+	<parameter name="txml1ct2" class="java.lang.String"/>
+	<parameter name="txml1ct3" class="java.lang.String"/>
+	<parameter name="txml1ct4" class="java.lang.String"/>
+	<parameter name="txml1ct5" class="java.lang.String"/>
+	<parameter name="txml1ct6" class="java.lang.String"/>
+	<parameter name="txml1ct7" class="java.lang.String"/>
+	<parameter name="txml1ct8" class="java.lang.String"/>
+	<parameter name="txml1ct9" class="java.lang.String"/>
+	<parameter name="txml1ct10" class="java.lang.String"/>
+	<parameter name="txml1ct11" class="java.lang.String"/>
+	<parameter name="txml1ct12" class="java.lang.String"/>
+	<parameter name="txml1dm1" class="java.lang.String"/>
+	<parameter name="txml1dm2" class="java.lang.String"/>
+	<parameter name="txml1dm3" class="java.lang.String"/>
+	<parameter name="txml1dm4" class="java.lang.String"/>
+	<parameter name="txml1dm5" class="java.lang.String"/>
+	<parameter name="txml1dm6" class="java.lang.String"/>
+	<parameter name="txml1dm7" class="java.lang.String"/>
+	<parameter name="txml1dm8" class="java.lang.String"/>
+	<parameter name="txml1dm9" class="java.lang.String"/>
+	<parameter name="txml1dm10" class="java.lang.String"/>
+	<parameter name="txml1dm11" class="java.lang.String"/>
+	<parameter name="txml1dm12" class="java.lang.String"/>
+	<parameter name="txml1df1" class="java.lang.String"/>
+	<parameter name="txml1df2" class="java.lang.String"/>
+	<parameter name="txml1df3" class="java.lang.String"/>
+	<parameter name="txml1df4" class="java.lang.String"/>
+	<parameter name="txml1df5" class="java.lang.String"/>
+	<parameter name="txml1df6" class="java.lang.String"/>
+	<parameter name="txml1df7" class="java.lang.String"/>
+	<parameter name="txml1df8" class="java.lang.String"/>
+	<parameter name="txml1df9" class="java.lang.String"/>
+	<parameter name="txml1df10" class="java.lang.String"/>
+	<parameter name="txml1df11" class="java.lang.String"/>
+	<parameter name="txml1df12" class="java.lang.String"/>
+	<parameter name="txml1dt1" class="java.lang.String"/>
+	<parameter name="txml1dt2" class="java.lang.String"/>
+	<parameter name="txml1dt3" class="java.lang.String"/>
+	<parameter name="txml1dt4" class="java.lang.String"/>
+	<parameter name="txml1dt5" class="java.lang.String"/>
+	<parameter name="txml1dt6" class="java.lang.String"/>
+	<parameter name="txml1dt7" class="java.lang.String"/>
+	<parameter name="txml1dt8" class="java.lang.String"/>
+	<parameter name="txml1dt9" class="java.lang.String"/>
+	<parameter name="txml1dt10" class="java.lang.String"/>
+	<parameter name="txml1dt11" class="java.lang.String"/>
+	<parameter name="txml1dt12" class="java.lang.String"/>
+	<parameter name="txml1em1" class="java.lang.String"/>
+	<parameter name="txml1em2" class="java.lang.String"/>
+	<parameter name="txml1em3" class="java.lang.String"/>
+	<parameter name="txml1em4" class="java.lang.String"/>
+	<parameter name="txml1em5" class="java.lang.String"/>
+	<parameter name="txml1em6" class="java.lang.String"/>
+	<parameter name="txml1em7" class="java.lang.String"/>
+	<parameter name="txml1em8" class="java.lang.String"/>
+	<parameter name="txml1em9" class="java.lang.String"/>
+	<parameter name="txml1em10" class="java.lang.String"/>
+	<parameter name="txml1em11" class="java.lang.String"/>
+	<parameter name="txml1em12" class="java.lang.String"/>
+	<parameter name="txml1ef1" class="java.lang.String"/>
+	<parameter name="txml1ef2" class="java.lang.String"/>
+	<parameter name="txml1ef3" class="java.lang.String"/>
+	<parameter name="txml1ef4" class="java.lang.String"/>
+	<parameter name="txml1ef5" class="java.lang.String"/>
+	<parameter name="txml1ef6" class="java.lang.String"/>
+	<parameter name="txml1ef7" class="java.lang.String"/>
+	<parameter name="txml1ef8" class="java.lang.String"/>
+	<parameter name="txml1ef9" class="java.lang.String"/>
+	<parameter name="txml1ef10" class="java.lang.String"/>
+	<parameter name="txml1ef11" class="java.lang.String"/>
+	<parameter name="txml1ef12" class="java.lang.String"/>
+	<parameter name="txml1et1" class="java.lang.String"/>
+	<parameter name="txml1et2" class="java.lang.String"/>
+	<parameter name="txml1et3" class="java.lang.String"/>
+	<parameter name="txml1et4" class="java.lang.String"/>
+	<parameter name="txml1et5" class="java.lang.String"/>
+	<parameter name="txml1et6" class="java.lang.String"/>
+	<parameter name="txml1et7" class="java.lang.String"/>
+	<parameter name="txml1et8" class="java.lang.String"/>
+	<parameter name="txml1et9" class="java.lang.String"/>
+	<parameter name="txml1et10" class="java.lang.String"/>
+	<parameter name="txml1et11" class="java.lang.String"/>
+	<parameter name="txml1et12" class="java.lang.String"/>
+	<parameter name="txml1fm1" class="java.lang.String"/>
+	<parameter name="txml1fm2" class="java.lang.String"/>
+	<parameter name="txml1fm3" class="java.lang.String"/>
+	<parameter name="txml1fm4" class="java.lang.String"/>
+	<parameter name="txml1fm5" class="java.lang.String"/>
+	<parameter name="txml1fm6" class="java.lang.String"/>
+	<parameter name="txml1fm7" class="java.lang.String"/>
+	<parameter name="txml1fm8" class="java.lang.String"/>
+	<parameter name="txml1fm9" class="java.lang.String"/>
+	<parameter name="txml1fm10" class="java.lang.String"/>
+	<parameter name="txml1fm11" class="java.lang.String"/>
+	<parameter name="txml1fm12" class="java.lang.String"/>
+	<parameter name="txml1ff1" class="java.lang.String"/>
+	<parameter name="txml1ff2" class="java.lang.String"/>
+	<parameter name="txml1ff3" class="java.lang.String"/>
+	<parameter name="txml1ff4" class="java.lang.String"/>
+	<parameter name="txml1ff5" class="java.lang.String"/>
+	<parameter name="txml1ff6" class="java.lang.String"/>
+	<parameter name="txml1ff7" class="java.lang.String"/>
+	<parameter name="txml1ff8" class="java.lang.String"/>
+	<parameter name="txml1ff9" class="java.lang.String"/>
+	<parameter name="txml1ff10" class="java.lang.String"/>
+	<parameter name="txml1ff11" class="java.lang.String"/>
+	<parameter name="txml1ff12" class="java.lang.String"/>
+	<parameter name="txml1ft1" class="java.lang.String"/>
+	<parameter name="txml1ft2" class="java.lang.String"/>
+	<parameter name="txml1ft3" class="java.lang.String"/>
+	<parameter name="txml1ft4" class="java.lang.String"/>
+	<parameter name="txml1ft5" class="java.lang.String"/>
+	<parameter name="txml1ft6" class="java.lang.String"/>
+	<parameter name="txml1ft7" class="java.lang.String"/>
+	<parameter name="txml1ft8" class="java.lang.String"/>
+	<parameter name="txml1ft9" class="java.lang.String"/>
+	<parameter name="txml1ft10" class="java.lang.String"/>
+	<parameter name="txml1ft11" class="java.lang.String"/>
+	<parameter name="txml1ft12" class="java.lang.String"/>
+	<parameter name="txml2m1" class="java.lang.String"/>
+	<parameter name="txml2m2" class="java.lang.String"/>
+	<parameter name="txml2m3" class="java.lang.String"/>
+	<parameter name="txml2m4" class="java.lang.String"/>
+	<parameter name="txml2m5" class="java.lang.String"/>
+	<parameter name="txml2m6" class="java.lang.String"/>
+	<parameter name="txml2m7" class="java.lang.String"/>
+	<parameter name="txml2m8" class="java.lang.String"/>
+	<parameter name="txml2m9" class="java.lang.String"/>
+	<parameter name="txml2m10" class="java.lang.String"/>
+	<parameter name="txml2m11" class="java.lang.String"/>
+	<parameter name="txml2m12" class="java.lang.String"/>
+	<parameter name="txml2f1" class="java.lang.String"/>
+	<parameter name="txml2f2" class="java.lang.String"/>
+	<parameter name="txml2f3" class="java.lang.String"/>
+	<parameter name="txml2f4" class="java.lang.String"/>
+	<parameter name="txml2f5" class="java.lang.String"/>
+	<parameter name="txml2f6" class="java.lang.String"/>
+	<parameter name="txml2f7" class="java.lang.String"/>
+	<parameter name="txml2f8" class="java.lang.String"/>
+	<parameter name="txml2f9" class="java.lang.String"/>
+	<parameter name="txml2f10" class="java.lang.String"/>
+	<parameter name="txml2f11" class="java.lang.String"/>
+	<parameter name="txml2f12" class="java.lang.String"/>
+	<parameter name="txml2t1" class="java.lang.String"/>
+	<parameter name="txml2t2" class="java.lang.String"/>
+	<parameter name="txml2t3" class="java.lang.String"/>
+	<parameter name="txml2t4" class="java.lang.String"/>
+	<parameter name="txml2t5" class="java.lang.String"/>
+	<parameter name="txml2t6" class="java.lang.String"/>
+	<parameter name="txml2t7" class="java.lang.String"/>
+	<parameter name="txml2t8" class="java.lang.String"/>
+	<parameter name="txml2t9" class="java.lang.String"/>
+	<parameter name="txml2t10" class="java.lang.String"/>
+	<parameter name="txml2t11" class="java.lang.String"/>
+	<parameter name="txml2t12" class="java.lang.String"/>
+	<parameter name="txml3m1" class="java.lang.String"/>
+	<parameter name="txml3m2" class="java.lang.String"/>
+	<parameter name="txml3m3" class="java.lang.String"/>
+	<parameter name="txml3m4" class="java.lang.String"/>
+	<parameter name="txml3m5" class="java.lang.String"/>
+	<parameter name="txml3m6" class="java.lang.String"/>
+	<parameter name="txml3m7" class="java.lang.String"/>
+	<parameter name="txml3m8" class="java.lang.String"/>
+	<parameter name="txml3m9" class="java.lang.String"/>
+	<parameter name="txml3m10" class="java.lang.String"/>
+	<parameter name="txml3m11" class="java.lang.String"/>
+	<parameter name="txml3m12" class="java.lang.String"/>
+	<parameter name="txml3f1" class="java.lang.String"/>
+	<parameter name="txml3f2" class="java.lang.String"/>
+	<parameter name="txml3f3" class="java.lang.String"/>
+	<parameter name="txml3f4" class="java.lang.String"/>
+	<parameter name="txml3f5" class="java.lang.String"/>
+	<parameter name="txml3f6" class="java.lang.String"/>
+	<parameter name="txml3f7" class="java.lang.String"/>
+	<parameter name="txml3f8" class="java.lang.String"/>
+	<parameter name="txml3f9" class="java.lang.String"/>
+	<parameter name="txml3f10" class="java.lang.String"/>
+	<parameter name="txml3f11" class="java.lang.String"/>
+	<parameter name="txml3f12" class="java.lang.String"/>
+	<parameter name="txml3t1" class="java.lang.String"/>
+	<parameter name="txml3t2" class="java.lang.String"/>
+	<parameter name="txml3t3" class="java.lang.String"/>
+	<parameter name="txml3t4" class="java.lang.String"/>
+	<parameter name="txml3t5" class="java.lang.String"/>
+	<parameter name="txml3t6" class="java.lang.String"/>
+	<parameter name="txml3t7" class="java.lang.String"/>
+	<parameter name="txml3t8" class="java.lang.String"/>
+	<parameter name="txml3t9" class="java.lang.String"/>
+	<parameter name="txml3t10" class="java.lang.String"/>
+	<parameter name="txml3t11" class="java.lang.String"/>
+	<parameter name="txml3t12" class="java.lang.String"/>
+	<parameter name="txml4m1" class="java.lang.String"/>
+	<parameter name="txml4m2" class="java.lang.String"/>
+	<parameter name="txml4m3" class="java.lang.String"/>
+	<parameter name="txml4m4" class="java.lang.String"/>
+	<parameter name="txml4m5" class="java.lang.String"/>
+	<parameter name="txml4m6" class="java.lang.String"/>
+	<parameter name="txml4m7" class="java.lang.String"/>
+	<parameter name="txml4m8" class="java.lang.String"/>
+	<parameter name="txml4m9" class="java.lang.String"/>
+	<parameter name="txml4m10" class="java.lang.String"/>
+	<parameter name="txml4m11" class="java.lang.String"/>
+	<parameter name="txml4m12" class="java.lang.String"/>
+	<parameter name="txml4f1" class="java.lang.String"/>
+	<parameter name="txml4f2" class="java.lang.String"/>
+	<parameter name="txml4f3" class="java.lang.String"/>
+	<parameter name="txml4f4" class="java.lang.String"/>
+	<parameter name="txml4f5" class="java.lang.String"/>
+	<parameter name="txml4f6" class="java.lang.String"/>
+	<parameter name="txml4f7" class="java.lang.String"/>
+	<parameter name="txml4f8" class="java.lang.String"/>
+	<parameter name="txml4f9" class="java.lang.String"/>
+	<parameter name="txml4f10" class="java.lang.String"/>
+	<parameter name="txml4f11" class="java.lang.String"/>
+	<parameter name="txml4f12" class="java.lang.String"/>
+	<parameter name="txml4t1" class="java.lang.String"/>
+	<parameter name="txml4t2" class="java.lang.String"/>
+	<parameter name="txml4t3" class="java.lang.String"/>
+	<parameter name="txml4t4" class="java.lang.String"/>
+	<parameter name="txml4t5" class="java.lang.String"/>
+	<parameter name="txml4t6" class="java.lang.String"/>
+	<parameter name="txml4t7" class="java.lang.String"/>
+	<parameter name="txml4t8" class="java.lang.String"/>
+	<parameter name="txml4t9" class="java.lang.String"/>
+	<parameter name="txml4t10" class="java.lang.String"/>
+	<parameter name="txml4t11" class="java.lang.String"/>
+	<parameter name="txml4t12" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<field name="stub" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4c32e13e-ae4b-46b2-b1cd-bade788892c9" x="82" y="1" width="397" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACILITY TX_ML SUMMARY FORM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aeb19b91-f1ca-4469-847e-92849fd3dc66" style="Heading" x="375" y="54" width="99" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[4. Month of Report:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="60f22a70-db18-45be-b52f-1792678bb5aa" style="Heading" x="376" y="79" width="98" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[5. Year of Report:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f1433a7-7ec8-4f54-9c3c-303f902cc001" style="Heading" x="7" y="53" width="96" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[2. State:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64" style="Heading" x="8" y="78" width="95" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[3. L.G.A:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f46d6d4-401e-47d7-87df-53b8d0f9e2c3" style="Heading" x="7" y="26" width="96" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[1. Name of Facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c76c33d5-5e53-43ea-9f43-1464db1d3edf" style="Detail" x="115" y="53" width="176" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a" style="Detail" x="115" y="79" width="251" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d1081f4f-4ecf-436e-bba2-90f34ef1afc8" style="Detail" x="115" y="26" width="251" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="769c23c8-a0c9-477e-bb2e-cf149dcc3e9e" style="Detail" x="483" y="53" width="69" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingMonth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e1abc6b2-1826-4006-98ba-f18af80b1223" style="Detail" x="483" y="79" width="69" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportingYear}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="372" y="23" width="1" height="127"/>
+			</line>
+			<line>
+				<reportElement uuid="cd36dcf8-638c-47cd-bfa0-01cf89d8cd5d" x="375" y="112" width="179" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7758931a-90e0-4ff7-890f-05f7913a641e" style="Heading" x="501" y="124" width="45" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7fc725d8-8d64-418e-b559-9a4f62542e57" style="Heading" x="441" y="124" width="50" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c12c474d-fa21-446b-ab03-5d2d6b86ff5e" style="Heading" x="385" y="124" width="41" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="437" y="112" width="1" height="37"/>
+			</line>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="496" y="112" width="1" height="37"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64" style="Heading" x="8" y="104" width="95" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[6. Level]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a" style="Detail" x="115" y="104" width="118" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{level}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7a789e6c-471f-4b5a-89eb-ce4f76c3df64" style="Heading" x="9" y="130" width="95" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[7. Type of facility:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="7ced9ae7-d7e6-45fe-8364-6bd0d7bf942a" style="Detail" x="116" y="130" width="162" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityType}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="3350" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="5353d82a-2136-47dd-be73-ec5e6170226e" x="2" y="2" width="551" height="18" forecolor="#333333" backcolor="#666666"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c5944ddd-eb22-4810-9f1a-39a49b1f2e93" style="Heading" x="150" y="2" width="115" height="17" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tracking Outcome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3efabd4-f4b0-484c-8fb7-49d87b51e5ac" style="Detail" x="59" y="361" width="306" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Died - HIV disease resulting in TB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="44" y="24" width="320" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Total number of ART patients with no clinical contact since their last expected contact, who were confirmed to have died]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="5" y="25" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TX-ML 1]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="392" y="58" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="513" y="59" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="454" y="59" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="58" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="82" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="83" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="82" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="83" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="106" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="107" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="107" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="106" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="130" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="131" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="130" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="131" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="155" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="154" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="155" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="154" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="179" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="179" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="178" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="178" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="202" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="202" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="203" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="328" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="328" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="327" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="327" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m12}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="372" y="21" width="1" height="3329"/>
+			</line>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="42" y="21" width="1" height="3329"/>
+			</line>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="497" y="21" width="1" height="3329"/>
+			</line>
+			<line>
+				<reportElement uuid="8091ac05-9728-4491-8aec-2c37d53ee50b" x="437" y="21" width="1" height="3329"/>
+			</line>
+			<staticText>
+				<reportElement uuid="8d0f2006-6903-4707-92bd-45b781b383c8" style="Detail" x="4" y="361" width="34" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[i]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="203" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="276" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="252" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="228" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="275" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="251" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="251" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="227" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e97a9bb-9ba1-4920-b5f4-e5ea94de65fd" style="Detail" x="393" y="227" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07013384-6bc8-4ebf-babd-6e7c68ec07e2" x="303" y="275" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fddeeee0-a3df-4c27-85a2-3bf70cfaf6dc" style="Detail" x="455" y="228" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="276" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d536b23-3721-426c-98c6-e57d531d0085" style="Detail" x="514" y="252" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bf3266f2-9bb7-46b7-b410-156308a2005c" style="Detail" x="393" y="301" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1m11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d31a61c6-8544-4531-a56a-eb5eb58af2f6" style="Detail" x="455" y="302" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1f11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2e5f6b5d-7953-454c-835a-c5ac060fc0a4" x="303" y="301" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c56d7325-c667-4086-bb02-bbe3d37ea53f" style="Detail" x="514" y="302" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1t11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b1c1d8de-cbfd-4eae-a6de-bbf3b0762f8e" style="Detail" x="514" y="446" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="383e9569-b249-42d2-8ce3-5ad1583c4a49" x="303" y="469" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cea79712-9bd3-4bcc-98c1-d9d8559af03e" style="Detail" x="393" y="469" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d7f6f89e-0a1e-4ada-820b-77481126bcb3" style="Detail" x="454" y="398" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="09f97c8b-2979-42ff-882d-40dd7c1d4455" style="Detail" x="455" y="667" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="080de46a-c15f-409f-aff3-f93f38a881d1" style="Detail" x="393" y="493" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="523444ac-0308-4881-ab68-b6682d4ef40c" style="Detail" x="455" y="518" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1732957d-d437-4913-9b80-395605be150e" style="Detail" x="514" y="567" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="601fcf9c-4ea2-4a28-a822-9450bd708630" style="Detail" x="393" y="421" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d738a1d6-b185-48fd-bee0-299b5e3d1b5d" style="Detail" x="514" y="494" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e68e3713-1398-4708-8564-ba72c4e083cd" style="Detail" x="455" y="422" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2a707a95-a280-444a-b442-116f285678e1" x="303" y="445" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f7822d7a-b206-4a6d-bd2c-294786b41a4d" x="303" y="590" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0a3da6b6-66a2-47c6-872e-b032ff410874" style="Detail" x="393" y="445" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="898f3cdf-29ca-4eb4-96aa-ca7ac7180eed" style="Detail" x="514" y="518" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ade2d2a2-db7a-4dd7-9adb-aaddbabac89e" style="Detail" x="513" y="398" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f55098c4-ff11-4ffc-9495-7674dfc1c972" style="Detail" x="393" y="541" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b5c82ff4-9610-4b37-aeb0-329696e5642e" x="303" y="421" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a15be073-b037-4eac-add0-42827046064f" style="Detail" x="514" y="470" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c6202ff1-4977-4d8b-b9d1-d0893b667f65" style="Detail" x="393" y="640" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a02ed3b0-9607-44ec-80e6-b5ff305ccf1f" style="Detail" x="455" y="494" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="98ca45d3-ccdf-4230-89c7-7974cb3322d1" style="Detail" x="455" y="591" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a464fccf-e28d-413d-8517-c00f5f41b096" style="Detail" x="455" y="446" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6abc74d6-4831-43df-aaf8-36702f5cce14" style="Detail" x="393" y="614" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0cba70b2-789e-481e-8b8d-d68ea30d6bd1" style="Detail" x="393" y="666" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="decdae0f-e805-4eef-84fe-e98426057fe6" style="Detail" x="393" y="590" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a128b1f8-29dd-4bbf-9cc7-4897a44c131e" style="Detail" x="392" y="397" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ae215184-0e15-4f34-840d-6f2b5ace5358" style="Detail" x="514" y="641" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bd21b47b-e5ef-4b52-a2d8-854c20bfe227" style="Detail" x="514" y="422" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="60642f5f-c572-4b59-95b9-5c963ac274ac" x="303" y="493" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fb05e8e1-8ec1-4a81-9fd1-9b79cd54c023" style="Detail" x="455" y="542" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6c0e7b14-2d46-42ef-aa4c-558c89a90b47" style="Detail" x="455" y="641" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="32cad2b0-9ad9-40e4-aa79-a82bd80696b5" x="303" y="640" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5e731091-dc49-4692-9ddb-a5d0ee0fd3e2" style="Detail" x="393" y="566" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="85dc7fa0-5dd4-4eb1-85fa-6e1aa7d98f2e" x="303" y="666" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a249213e-0e84-40f4-b2e4-6af60826c614" style="Detail" x="455" y="567" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="73ad64b5-cd4e-4cb4-b9ae-1ef2811e478e" x="303" y="517" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="035fb2c3-9d34-4baa-921c-2f198a9433e5" style="Detail" x="514" y="667" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0ee12a33-bbe3-4141-b262-3db38ae6bc26" style="Detail" x="514" y="542" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0f4a9de8-58fd-4eff-99a8-a9b4972e5ee1" x="303" y="541" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8a5ec991-ca58-4033-ac6c-6a7a93f0caa3" x="303" y="566" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6e777898-bbbb-4d14-8fd3-41e91a8f6b10" style="Detail" x="455" y="615" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d24e59ea-df76-47fd-9aa7-159f4b8fde1b" x="303" y="614" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ad252888-44bd-455a-b6ae-1b21de347b21" style="Detail" x="514" y="591" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bf99a02b-48a6-498e-a04a-a87b14f0e8d0" style="Detail" x="514" y="615" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1at10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="455712a7-5f7b-4d97-9357-fb15496f9d4b" x="303" y="397" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="655b6c34-ff6c-4aa9-9d61-ca414d84aa2a" style="Detail" x="455" y="470" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1af4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a6b1e76c-b053-4341-bb7d-a32924150a23" style="Detail" x="393" y="517" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1am6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cf1a766f-08d1-4b90-9450-37125c29bc20" style="Detail" x="393" y="751" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7975be33-9eec-44a6-aecf-286056823a07" style="Detail" x="393" y="896" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ee5f2402-f38e-4455-a4b6-48835068da8b" style="Detail" x="393" y="920" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b8d2ca17-4667-4b19-8ba4-216602aa519a" style="Detail" x="392" y="727" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b0942418-20a0-4921-ad51-135bddd87083" x="303" y="823" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="560451ed-3ccf-4247-a251-b099fc1b93af" style="Detail" x="514" y="824" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="efccd1b2-ff92-4529-b059-8821ab0912ac" style="Detail" x="455" y="945" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="62ad8c36-1e4b-4f2d-a0ef-a2236e8ae0fd" x="303" y="751" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9fb6025b-9063-4cf0-921e-b67ae65105dc" x="303" y="996" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="76e59341-a97e-49b7-9a66-e2e42ec60b6e" style="Detail" x="514" y="872" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c2304287-b9c1-473e-a8be-693f00d1a85b" style="Detail" x="455" y="921" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7f9a372a-af2f-41e5-b8db-6ea35fc2e4be" style="Detail" x="393" y="996" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="548cda60-0459-4777-a79e-59c5f43441ca" style="Detail" x="393" y="823" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7ad0cdea-55e4-4bc0-8d02-089505225686" style="Detail" x="514" y="921" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c2ee5c01-f48a-452f-8adf-1b452833ff88" style="Detail" x="393" y="775" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="872f4497-e478-4aca-b6c4-8bc6cba29aca" style="Detail" x="455" y="872" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1cd71f7c-8b10-4891-9a36-e195bd846713" style="Detail" x="514" y="945" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9168ee3b-e547-45b0-85e4-c5b8ea6ec999" style="Detail" x="393" y="944" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0de1781a-ebe3-4f0a-a47c-81f3e90fcfb8" style="Detail" x="455" y="752" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c8e11cc2-141d-406c-a2b6-d1bf4bac0242" x="303" y="847" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="aa8a806e-9f9f-4b10-84c9-e77e4baa994a" style="Detail" x="514" y="997" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="dadb3f6c-726a-4862-b954-fb4d806bc917" x="303" y="799" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="83b37ef1-a2a2-42a1-8069-d19429038d4b" style="Detail" x="393" y="799" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0558efcc-f66a-4835-aad5-6d27f759b3a9" style="Detail" x="455" y="997" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7b05246f-9b29-4610-9b61-c7ddcb1f091e" style="Detail" x="455" y="800" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="352d6aa2-0129-49ea-860d-fe8dad731dc8" style="Detail" x="514" y="848" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bc52d6dd-0882-4faf-98b1-77a8f0038c1e" style="Detail" x="514" y="971" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2579b0c0-8a83-4579-9021-1acdb82198b1" x="303" y="896" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="109cf745-6ed7-4608-8a1d-df58543ad52a" style="Detail" x="393" y="970" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ee9ec606-b2ec-4eb9-8b1f-287f23e4f8e7" x="303" y="727" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c0d201fc-cea4-41a0-8290-660725cba68a" style="Detail" x="514" y="897" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="da417740-2418-4841-9b84-34656fe3c3bf" style="Detail" x="455" y="776" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="74495baa-0839-448a-a813-df9abf6e0c73" x="303" y="775" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="45c0cfe1-ff67-4c2f-8f77-e3a519a3a43f" style="Detail" x="455" y="848" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="db176a5d-3189-49de-9d60-c326757fe7a9" x="303" y="944" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5b6a4957-15c2-4f50-b4f0-c83cb139fdb2" style="Detail" x="513" y="727" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="785ecc97-964d-4eb5-97c9-783361f0a0c7" style="Detail" x="514" y="752" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6b87f7c-1bcf-4bfa-991c-61a58f755639" x="303" y="871" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="893bb4dc-2fdc-405c-a46b-a9d06bb975af" style="Detail" x="393" y="871" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c2a69db1-9b07-4624-9eb5-8496a42e587f" style="Detail" x="4" y="691" width="34" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ii]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="29c14f9e-9e3c-443a-a496-84c8fa48fa0d" style="Detail" x="455" y="971" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="db9161a9-e410-4b87-b49a-242528be79a8" style="Detail" x="455" y="824" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="965f265a-16b5-47a2-bf79-f097974e4882" x="303" y="970" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="40443d6a-5a96-4e83-9c09-cce9e948ad59" x="303" y="920" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e889141a-5c03-4e72-81a3-ba2ff137ec4c" style="Detail" x="514" y="776" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3c6dd22a-acdb-4634-9329-8a615885701b" style="Detail" x="454" y="728" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4a6512a4-ad85-4adc-8284-1d79e5f68df6" style="Detail" x="455" y="897" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bf8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a262577a-36d8-4f19-a17d-ffbae9df09a9" style="Detail" x="393" y="847" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bm6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1dbaf545-c946-4586-b8af-9e8ffadfd34b" style="Detail" x="59" y="691" width="306" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Died - HIV disease resulting in Cancer]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ad3ac577-620d-4ec0-90d5-55a7a2de88d6" style="Detail" x="514" y="800" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1bt4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b0e45d7f-ff64-418f-b83d-5a7b9d55d98d" x="303" y="1228" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="53aa0925-fe12-4906-98c3-1d2f95460eb2" style="Detail" x="59" y="1023" width="306" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Died - HIV disease resulting in other infections and parasitic disease]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="11d1c711-b658-42d5-bfdf-7eef689cb040" style="Detail" x="454" y="1060" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="26f87242-87db-48f9-a0fc-5543c766f885" style="Detail" x="455" y="1132" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d0139ec2-c478-44ec-ad5d-2be1d7a2c164" style="Detail" x="514" y="1229" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e557f71d-6cfa-4d35-a60e-3564ae567aa4" x="303" y="1302" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="caac9b41-6bbc-4e9b-93c2-8ad802b5d676" style="Detail" x="393" y="1203" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="67316b66-c29b-43ff-a047-60f6845d9a3e" style="Detail" x="393" y="1155" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1ecb0ab9-83fa-402c-9074-92a0add20324" style="Detail" x="514" y="1303" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b6741e15-e85f-43ce-99f2-8c402f50cf6b" style="Detail" x="513" y="1060" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5f24fc9f-0b29-470b-9fe1-342a089fb042" x="303" y="1107" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c3d95e00-d603-4441-81fb-12ec3c8ba3a3" style="Detail" x="392" y="1059" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="62659082-aff9-42a6-9d42-46867526539f" style="Detail" x="4" y="1023" width="34" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[iii]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="98ce4300-fb27-422a-88d8-10221c770e18" style="Detail" x="393" y="1083" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="487a7199-79d4-426b-8bc0-3b727c25d20f" style="Detail" x="455" y="1229" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="73cc59e5-be12-4d49-90b2-b8b3a47cb60e" style="Detail" x="393" y="1228" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1c3ec0b8-a613-4ca5-a2bc-673c1b5c1cf3" x="303" y="1059" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8c7d1dd7-7e1f-46a4-87c3-085eb589af0b" style="Detail" x="455" y="1108" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="54bf8f78-efcc-428a-8d61-f5415c15d856" style="Detail" x="455" y="1277" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6cb575a2-5b3e-431f-b2e5-09b14a1a2c18" style="Detail" x="455" y="1180" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a6c5a841-6c81-484e-9c09-ccc9e97c5e47" style="Detail" x="514" y="1277" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cc24765d-52f5-4fd6-a917-541728d7430a" x="303" y="1131" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0455b267-c676-4837-94eb-39a4715cf5cd" style="Detail" x="455" y="1084" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c4d23afe-4c5a-40e3-afa8-563f19ec65b0" style="Detail" x="393" y="1252" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6995facb-9d41-4bdb-b45c-2312b91dc0cf" style="Detail" x="393" y="1107" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fbb54252-89fb-40a4-b249-50e9494bc97f" style="Detail" x="393" y="1302" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="655834d6-faf1-45d4-8655-e95876ee0793" style="Detail" x="393" y="1131" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="86ddb39a-01c2-44e5-8fbf-13db40ae65a5" style="Detail" x="514" y="1253" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0cf06f5e-758f-4aca-b1b5-098ef6fa3ce5" style="Detail" x="393" y="1328" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fba58636-3a03-4c2f-bd8e-df4ea66217c0" x="303" y="1155" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="21cfe638-4b46-4ed9-91f4-f2f1b6c27166" style="Detail" x="514" y="1204" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5781114d-d061-45b7-b573-d4fd6de2a59e" x="303" y="1083" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6874e9e5-0e9e-4427-b015-8ed9a02cd9fb" style="Detail" x="393" y="1179" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7d8083aa-71c9-4628-ac51-2987b657d225" x="303" y="1252" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="086b0f7e-3e92-407e-989d-8a61ab0becc7" x="303" y="1276" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1ab620b5-dba4-40c0-9a77-2d615ca8745f" style="Detail" x="514" y="1108" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8b879320-ed48-4745-a750-3b7697d71cf1" style="Detail" x="455" y="1204" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dcbe8030-af51-4fbe-bc68-f91c32360469" style="Detail" x="514" y="1132" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="29bcb61b-0e4e-4ec7-bc6c-b070e2e3d33b" x="303" y="1328" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="33529360-f2b1-4c47-b363-08d3e725863c" style="Detail" x="514" y="1329" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3c2be7c3-a26b-4e0e-8bf0-a19cbccfbd45" style="Detail" x="514" y="1156" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="95ee0433-6347-4057-906a-ce9c47b0f146" style="Detail" x="514" y="1180" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="03a41acf-171e-48d4-9bdf-c36f1bab6218" style="Detail" x="455" y="1253" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="55d120b3-af14-4218-81bf-e35b0b31625e" style="Detail" x="455" y="1156" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="21347806-9037-4efc-ac75-8563a0ba6c71" style="Detail" x="455" y="1329" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="135b6f0e-ae0a-42d6-8fdd-5e66270b74b0" x="303" y="1203" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d8e20933-5b59-4f7d-96e0-8b770aae269c" x="303" y="1179" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d2ce5343-6af8-4436-b6c1-56c922a0afda" style="Detail" x="393" y="1276" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cm10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6ee3b899-fe9a-4445-8bd4-f1f39cd8bd7a" style="Detail" x="455" y="1303" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1cf11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5ae0570d-30d4-4081-85ec-ce7d6bd2f41a" style="Detail" x="514" y="1084" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ct2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6d24b692-28a4-4134-b0be-84ba6e509761" x="303" y="1585" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d91821c5-0227-40c0-affa-3e7468229a08" style="Detail" x="393" y="1585" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a046e4a8-8f8d-4579-8e58-2da49fbe3367" style="Detail" x="455" y="1441" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8ac27a05-b7d3-4bd3-a8a2-a3aa152a2789" style="Detail" x="393" y="1661" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="616848d6-41b1-41b9-a823-ea85726e81b0" style="Detail" x="393" y="1512" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="66c00e6b-d30d-4cf3-935b-38195f18508b" style="Detail" x="393" y="1464" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9c886e94-fc82-4585-aecc-0c56277462b4" style="Detail" x="392" y="1392" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="69947a6c-3569-48c7-8dce-0619437acd47" style="Detail" x="514" y="1465" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="57fe77c9-fbbe-44db-87a3-648e318a6790" style="Detail" x="393" y="1440" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61b56b3a-b617-4376-8fe0-fe16a244fb2e" x="303" y="1512" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f524cff3-ec0e-412b-a60c-6a0b297f3813" style="Detail" x="514" y="1610" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b6b8a000-43e0-4cd0-a8bf-692f4be4d3f7" x="303" y="1609" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="59a03584-bc32-4240-ba86-d13c2e527ab3" style="Detail" x="455" y="1465" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a3299224-97a2-4d17-b9b5-58473626eaec" style="Detail" x="455" y="1537" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0c0984b2-c844-496e-b172-44da7d61a901" style="Detail" x="455" y="1417" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="30c0d32d-bea2-42cd-9903-a3d12f26d7ef" style="Detail" x="514" y="1417" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d771d1c8-2f96-4b6e-9115-c401019d2dd2" x="303" y="1661" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0debb70e-fe4f-43b0-b1c0-17d11e7d7721" style="Detail" x="455" y="1662" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c0355132-6ab7-4216-8a90-c23cabd9bcb4" style="Detail" x="393" y="1488" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3bc82c79-0a10-43fd-a291-f2197b616509" x="303" y="1392" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d8362623-2a70-451d-9199-472e23ba33f9" style="Detail" x="393" y="1536" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="584a898d-dcea-4441-bf57-c391a60c0b0b" style="Detail" x="514" y="1489" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="106d61ea-78ad-4d00-b9a1-9593266d2411" style="Detail" x="514" y="1441" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="336ee237-4efc-46b0-83f9-2a3f4381bb5a" x="303" y="1635" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="97ce16bd-7f8f-4ebe-bddb-f3bfc00526ad" style="Detail" x="393" y="1416" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6c96f02e-3b19-4c1f-816f-26c2b49345a8" style="Detail" x="513" y="1393" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2351c619-536d-4021-ad09-e2aa4ea7daa0" style="Detail" x="454" y="1393" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ae300756-9151-4f31-b434-9ab2fcb80856" style="Detail" x="514" y="1586" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="deb3fee4-7eeb-4b04-9771-a201f9194438" x="303" y="1440" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="368efdf8-4747-4894-9d0b-7b4419b25b1c" style="Detail" x="393" y="1635" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e1734813-9a2f-4c49-9892-74ff5d2b05b6" style="Detail" x="393" y="1609" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fde1eb9e-7402-435a-8cbd-9106cc3dba77" style="Detail" x="514" y="1537" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a73f1a75-1529-4c2d-881f-b7433f319203" x="303" y="1536" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="825386e6-7f5f-49fd-aedf-914bad57be0b" style="Detail" x="59" y="1356" width="306" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Died - Other HIV diseases resulting in other disease or conditions leading to death]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8d5001eb-4231-4326-b79a-da9d2d0ef735" style="Detail" x="514" y="1513" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1822044a-c5b6-4cfb-b0ad-600021e33361" style="Detail" x="393" y="1561" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dm8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5dc7d800-f4d6-4a7b-b7c4-96532ccbd0cb" x="303" y="1488" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f4c63a4e-7847-4a01-a65c-31b9514c54f1" style="Detail" x="455" y="1489" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="88f4ba0f-6976-49e0-ba78-cbc58c8117da" style="Detail" x="514" y="1636" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="243061ed-bed0-484e-b073-84413271c5d2" x="303" y="1561" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0d06108e-3f58-4c22-877f-dc79718b4544" style="Detail" x="455" y="1586" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="33401601-1499-4aaf-9cbd-fc4fa7488d33" x="303" y="1464" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ad6161f1-2aa3-4cd4-8ce2-2f2bf295c844" style="Detail" x="514" y="1662" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6b674135-699b-4f2d-b088-7bbff0c1ae45" style="Detail" x="455" y="1610" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="54226172-b484-453c-a78b-21a2d54e0fca" x="303" y="1416" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="654f1811-978a-4825-91f6-e81057c38033" style="Detail" x="455" y="1562" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c29ebda7-a382-48c0-b3a8-bc36da103bfd" style="Detail" x="514" y="1562" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1dt8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="05705c8a-37b5-4b2a-8054-c5cc1575cb1f" style="Detail" x="455" y="1636" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="726612f6-187b-49fd-8569-0561af9719f3" style="Detail" x="4" y="1356" width="34" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[iv]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ae940665-bbd5-488a-956d-7a09f3aa668b" style="Detail" x="455" y="1513" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1df6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8e3f3baa-045b-46d0-ad76-eaac5d1b8d8e" style="Detail" x="393" y="1994" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="15197605-df9e-4a0d-bb8d-1fede4e0c6a0" style="Detail" x="514" y="1774" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="72b66a7c-8dcc-42a4-b025-e55c90aa1ae2" style="Detail" x="455" y="1870" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ad38e3a9-6e4e-44a3-b520-8367fac23453" style="Detail" x="393" y="1797" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9c08eff9-ffbd-4101-b317-c61444e362b7" style="Detail" x="514" y="1943" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c081e1b8-3d93-480c-a2a4-e5a024fdaa5e" style="Detail" x="393" y="1773" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="eb6e0b92-ef3d-421f-a290-21b088369749" style="Detail" x="514" y="1895" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="269fbaf4-ce7e-49b0-85a9-2d118accd78d" x="303" y="1821" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="584d921f-397f-4e2c-bf98-3fd5f8c87783" x="303" y="1773" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="64168d94-518c-4478-8bff-830b6b807a31" x="303" y="1845" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba39f33e-9589-4e91-9175-2394beb3c124" x="303" y="1918" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e57e86e1-8750-4d28-8d1b-f6e0b3d6f7ab" x="303" y="1968" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9bac9ec6-589d-4d19-81fa-06fa577de021" style="Detail" x="393" y="1894" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c2e42268-61b8-4cea-8a7a-841ad2bff5fe" style="Detail" x="393" y="1845" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c9917076-317c-4bca-9ec1-c4e9a1fee169" style="Detail" x="455" y="1969" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9aa46789-6989-4b84-8dba-e44605bd08a8" style="Detail" x="514" y="1798" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f364c82f-c881-4aa3-bf12-902ae03626e6" x="303" y="1994" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="91941a52-3c50-40f6-8b10-82c74ca35bde" style="Detail" x="393" y="1869" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1a7416de-57be-48d4-b7af-9c0f17f2390e" style="Detail" x="455" y="1995" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="37dad2c8-20a6-4831-b90f-50d906678a52" x="303" y="1725" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="94fd364a-3da9-4ddd-8f32-a44fded8d747" style="Detail" x="455" y="1846" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="888799bf-f066-4bc0-b96c-33d32b771b99" style="Detail" x="514" y="1846" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="86a8d571-f534-4a78-8f1c-bc0c854660f6" style="Detail" x="455" y="1774" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="950c6334-4bf0-4443-9e34-512d82128414" x="303" y="1942" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1aa02f6a-409e-43c7-aa71-466ee9700ea8" style="Detail" x="514" y="1995" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6760ab2b-193c-441b-92e9-4cfacd013a8d" x="303" y="1749" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8f3a52dd-3608-444d-8c0f-068cbde0108b" style="Detail" x="455" y="1798" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="93ec31b8-166c-4434-94bd-b2e00c932d75" style="Detail" x="455" y="1943" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="be6285a4-93ab-4674-a7f6-54c37abd5e88" style="Detail" x="513" y="1725" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="62bba096-10c5-4725-a55f-2d9f27050f19" style="Detail" x="393" y="1942" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b3cf313-a5f2-4a71-a170-1514402f3e4e" style="Detail" x="514" y="1822" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9a429e2d-5ae9-4b1c-9dfa-1045b4c76b40" x="303" y="1894" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7ec35e32-3205-49c0-bcb2-b97a18e4f65a" style="Detail" x="455" y="1750" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="21f05d3b-8575-43e2-abed-7f746981a005" style="Detail" x="393" y="1968" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4fc1eed5-038c-4a13-b958-7f913bdc75b8" style="Detail" x="455" y="1895" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="04cc006b-3886-48ae-91f5-da3d0e9e770c" style="Detail" x="455" y="1919" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="afd4c7b1-d20d-495b-9d40-de348691cc1f" style="Detail" x="393" y="1821" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6ad8a27-8bfa-4b5a-8f9f-f938672c8cd7" style="Detail" x="4" y="1689" width="34" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[v]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="90ef1e64-209c-49b3-9903-b7e92f4b3ce1" style="Detail" x="514" y="1870" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8b1aca75-ddba-434a-8a45-44129f615332" style="Detail" x="514" y="1919" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="636388d6-632b-4ae2-9d6d-a11267477ce5" style="Detail" x="455" y="1822" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b5805f4e-515c-409a-b25d-408e240535cf" x="303" y="1869" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="34fad154-01a5-4157-aafc-d643347b5c9d" style="Detail" x="59" y="1689" width="306" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Died - Other natural cause]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b9ba017d-401d-47ad-9d3c-781a0ae4ebac" x="303" y="1797" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0a0e8e61-4592-4ea2-83d1-d2f8966a552f" style="Detail" x="454" y="1725" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ef1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1f95123f-52f8-4ede-ad24-46b463a99646" style="Detail" x="393" y="1918" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="51415be2-63c3-4b62-a52c-a6c8dd4dc50b" style="Detail" x="514" y="1750" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4a0e836d-0934-4a04-9fc8-67433e7d075c" style="Detail" x="392" y="1725" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8e874767-2be5-4757-ac55-feb42acb4fe4" style="Detail" x="514" y="1969" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1et11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1e1df2c1-2795-4860-99e7-df338c4a2848" style="Detail" x="393" y="1749" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1em2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="de49375d-4c46-46e7-9aed-d8de3856d559" style="Detail" x="455" y="2177" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="75ad5b75-b210-41c4-ac3f-34cc9dfe3ee8" style="Detail" x="455" y="2226" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="63046b7e-6338-45b9-82a7-addcfca6e45b" style="Detail" x="455" y="2250" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5b928104-895c-4122-a854-404947e7c242" style="Detail" x="514" y="2326" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="912224bd-d7ab-44af-b0dc-4102c69e18e4" style="Detail" x="455" y="2081" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="43e1b6e6-823d-463b-9c2d-3e06190b81e5" x="303" y="2128" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3dd2e485-ed09-465f-8d10-0b25f27298d5" style="Detail" x="514" y="2081" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2e8e16e5-dbcf-458a-8458-45786f9ebb9e" style="Detail" x="393" y="2080" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a8c54eca-3ce8-454a-b2c1-f0085c2ba8e4" x="303" y="2225" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6e9743ef-1bcf-4892-a549-6f1917226bb8" style="Detail" x="393" y="2325" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="df3f2f3f-73e8-4709-854b-ee3e6135e3ce" style="Detail" x="455" y="2105" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="87f28f44-ba42-47ac-90af-4fedfa09a0da" x="303" y="2273" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="caea1eb2-d69b-4bb4-a560-2c886ec5b2c4" style="Detail" x="514" y="2226" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8f678ad1-10c5-44ab-b8bd-603dd0587083" style="Detail" x="514" y="2105" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c0d051bf-e19b-4e86-b4af-c3b262a654f0" style="Detail" x="393" y="2200" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c658c6c0-ebc5-4632-81d7-4a7d2bf74ac4" style="Detail" x="4" y="2020" width="34" height="29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" isBold="true"/>
+				</textElement>
+				<text><![CDATA[vi]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bd26cb25-9b69-4029-9479-1d668345ae76" style="Detail" x="392" y="2056" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5e6ed58c-1fff-4af6-8140-d1ff9a462e6d" x="303" y="2152" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="37207909-b4d8-46d9-991d-8299fbfdc5c6" style="Detail" x="455" y="2153" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="da86fc76-e896-44b1-8f17-dfe18f81592f" x="303" y="2200" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="77beea58-4fb5-4ee4-9050-6330b331c84a" style="Detail" x="514" y="2250" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="87a3ad26-6ab4-416b-9a42-82af0216e51e" style="Detail" x="514" y="2300" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ae78a241-3a72-4d34-b205-486eac27ba48" style="Detail" x="513" y="2057" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1f816268-7234-44ac-964d-e314ffdfacc1" style="Detail" x="514" y="2177" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="de4a2b95-19ce-4fee-82ae-fca4e9445dd5" x="303" y="2249" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3715322c-e053-43ba-a4ce-79aa7444119b" style="Detail" x="514" y="2129" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="28549901-4754-4d21-be43-1f6a7d497337" style="Detail" x="514" y="2153" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="174ffd06-b3ef-4d59-b360-620656cfde3c" style="Detail" x="393" y="2225" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="32050ffe-04f5-456f-84b3-10f92ae52584" style="Detail" x="393" y="2104" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="182c880c-2add-4b4d-be03-7395ec915889" style="Detail" x="455" y="2201" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="20c0eb40-c30c-4623-b9b8-ae241968f0e7" x="303" y="2325" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2d1c67c4-7004-47a5-aeb7-0843310060c4" style="Detail" x="514" y="2274" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6e7202b0-95de-4d3f-8b3d-c9ec2cd23ad1" x="303" y="2056" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="133d2d49-fbd6-4943-adcd-34079645d631" style="Detail" x="393" y="2152" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ba2b6cce-da46-4a6b-a2a9-fd8c65559c77" style="Detail" x="59" y="2020" width="306" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Died - Non-natural causes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dddbb2e9-181c-4b0f-a991-c2a230ebb0f9" x="303" y="2176" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d9e52bcd-5950-4fdb-afda-760c7600327a" style="Detail" x="393" y="2176" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="56c979f0-6c8d-491f-b92e-302d9fc10b13" style="Detail" x="393" y="2299" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fc71802d-cb82-428d-bad0-fbdaf2a1dec0" style="Detail" x="393" y="2273" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f5ad039c-ae51-4b86-9184-76d82fbfd4f4" style="Detail" x="455" y="2300" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="80bf3ef7-f476-4e07-bd86-9cd227665889" style="Detail" x="393" y="2249" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="96363de2-39e5-4b8a-9a3d-90e1dd4ce8cc" style="Detail" x="393" y="2128" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1fm4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="842a25e4-7a5d-4f02-b00b-187bcb427c94" x="303" y="2080" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a6364d02-9cac-4ad2-a51b-22d91f203f62" x="303" y="2104" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0fc18f21-6651-4690-b70d-47822c5bf075" x="303" y="2299" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ee5ed3c7-047e-430d-8f63-509df2409479" style="Detail" x="455" y="2326" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="407e6f95-2513-4183-9bc6-0defee94b8ca" style="Detail" x="455" y="2129" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6a7b33de-0973-4430-99e3-77104865df73" style="Detail" x="455" y="2274" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3c747e56-b09c-4134-975b-1376f3a2b321" style="Detail" x="454" y="2056" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ff1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="da5560eb-6ddd-409c-af7b-335dedd572d4" style="Detail" x="514" y="2201" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml1ft7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="337a22f2-acb7-47b6-b637-5b1850897f81" style="Detail" x="5" y="2353" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TX-ML 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2aa59469-37a9-43b0-a5f9-f611ce853be9" style="Detail" x="44" y="2353" width="320" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Total number of ART patients with no clinical contact since their last expected contact, who were confirmed as previously undocumented transfer]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="aee28362-9341-4592-bcd9-f4d0a98b25d6" style="Detail" x="513" y="2632" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="92953160-05bd-41de-8193-2c413c06e91d" x="302" y="2484" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e45af078-8191-46a7-bcde-9345da772e48" x="302" y="2508" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a562be71-65ea-47e0-8141-503de5cfcd02" style="Detail" x="454" y="2437" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="862848f4-2030-4d77-b90a-96b3fd1b0632" style="Detail" x="391" y="2388" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5ee52e34-c060-43d0-ba59-c1feef376faa" style="Detail" x="513" y="2485" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="39725337-d4ce-4812-bc14-e5513063cf79" style="Detail" x="392" y="2484" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cf7b2d9c-9872-4bb3-a912-8fd1f4bd0aac" style="Detail" x="513" y="2558" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="119daa5a-1024-443b-af8a-c4562bc0777b" x="302" y="2631" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b8102339-3fb1-4b21-a94e-db169f18adba" style="Detail" x="512" y="2389" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0a4c49bc-4876-46ae-98d2-4a8c6ec0abdd" x="302" y="2605" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba4dfc0b-5467-4ab4-a995-8b61c8e4b3ed" x="302" y="2532" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a8bc02b9-aa26-4233-a83c-72ed795775ca" style="Detail" x="454" y="2413" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="995628c0-b03a-4a25-9d39-d3976642d241" x="302" y="2412" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a0b41ff8-5da3-43ed-b6cf-5236e2ead65b" style="Detail" x="392" y="2631" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cf649207-2744-4114-a110-6eadadd1bd5e" style="Detail" x="454" y="2606" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7fd739af-8c0e-442a-9bea-fc00381efb9d" style="Detail" x="454" y="2632" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a4f64732-b587-4331-a45e-ccce1d28a4fc" style="Detail" x="454" y="2582" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9a1a5352-6cc1-4ead-941c-8280f4694d67" x="302" y="2460" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="34755cee-590f-45ff-9315-a0ee9c556cac" style="Detail" x="513" y="2461" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0e8526a9-8e06-4f60-bc14-c05aed2c805f" style="Detail" x="513" y="2582" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="04fe4b90-8b55-423e-8e0e-14514b496a23" style="Detail" x="454" y="2658" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d62ba728-6e92-4e7c-a7f2-e1ebdc285491" style="Detail" x="392" y="2436" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4943a113-83c0-405a-8800-b90185d77c2a" x="302" y="2436" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba224c57-4ad0-4486-9971-9684a8bf5733" x="302" y="2581" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b3b706b-eb74-4be6-9cfd-4417df69d07a" style="Detail" x="454" y="2558" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d438f838-6313-405a-bf6a-c8440713a6d0" x="302" y="2388" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e3746777-d4c7-4908-a265-1806f8c99975" style="Detail" x="513" y="2509" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f31fc9c0-07f3-402d-8d7c-5e62f2e68c6b" style="Detail" x="513" y="2437" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5b5ef9d7-f710-47e5-a8cd-5fc5bb25290d" style="Detail" x="392" y="2412" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8c88fd4e-67cc-4ab8-84dc-624dc6880d72" style="Detail" x="392" y="2605" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d4c53c84-4e4d-4118-bbe2-a7e7537daab4" style="Detail" x="453" y="2388" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f1238a98-936d-466f-bfe2-84e596330696" style="Detail" x="454" y="2485" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="86a0694d-fe61-4642-972d-07909eb26958" x="302" y="2657" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8d5ffb60-baca-442f-b7d3-98c5d2203fcd" style="Detail" x="454" y="2509" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e1109376-3de6-4d2f-9962-566b7ce2bf7a" style="Detail" x="392" y="2460" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3a938d91-c26a-431b-81ce-ec65b35a8160" x="302" y="2557" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="90cc44a5-8ee6-48d6-8de1-91a504fe9da2" style="Detail" x="454" y="2533" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f94b23ce-858b-4cf4-9367-919324322be0" style="Detail" x="513" y="2533" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f4f2ee68-c849-4e85-bea2-7020fbea2261" style="Detail" x="513" y="2606" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a18bf1ef-8a6a-4af5-b835-be17b35a57ba" style="Detail" x="392" y="2557" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2c8f78fc-fa1d-4efd-b629-5f21933ef64c" style="Detail" x="392" y="2581" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e976a4c3-4309-4e86-a7e4-fa755a0c997f" style="Detail" x="454" y="2461" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2f4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bdbb211e-6e67-42af-8644-35e115774bbe" style="Detail" x="392" y="2657" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="61086076-d7c2-406c-bf2e-765cee58f2eb" style="Detail" x="392" y="2508" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b07f9774-09f5-4f0f-bc05-6996e8c50297" style="Detail" x="513" y="2658" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4e715d86-0cd8-4bad-84e7-f8541160dad4" style="Detail" x="513" y="2413" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2t2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e6d65c92-5ef0-48de-b2fa-165673053432" style="Detail" x="392" y="2532" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml2m7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6e3176d2-08cf-4c71-8e8f-e05d1b3aa2c2" style="Detail" x="512" y="2864" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d05c1c5d-4388-4861-978f-8973b77860ad" style="Detail" x="511" y="2720" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d3b025c7-8183-45c0-a45c-840a42d8490b" style="Detail" x="391" y="2863" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6a2272ae-c078-4f00-bccd-a68f85c6e938" style="Detail" x="390" y="2719" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f2b45481-1051-4bb1-9e44-9eec22d9e748" style="Detail" x="391" y="2839" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3608401d-8359-49db-ae8b-89faf2a8d5ec" style="Detail" x="512" y="2768" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b2c39309-8ebe-4dc0-bfe9-af3c4662f2f3" x="301" y="2767" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3011c7d0-ad80-4d9e-8e14-4ad753dd9548" style="Detail" x="453" y="2792" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8fa3b1c7-6e98-4e91-8b8b-46fac69bffd5" style="Detail" x="391" y="2767" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5f3b6da7-a3dc-4f36-b89c-15afd4e5fba5" style="Detail" x="512" y="2963" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7abdbac5-bd63-4568-82c8-6fd9ace9cbaa" style="Detail" x="43" y="2684" width="320" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Total number of ART patients with no clinical contact since their last expected contact who were traced and unable to locate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82695500-fab1-4304-be42-bd49fe3f07cc" x="301" y="2839" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cfb5c7a9-87a3-4507-b18d-b834abafa683" style="Detail" x="391" y="2962" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3f4e09b0-f93f-4a55-90e2-389216bbf555" x="301" y="2815" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bbd99e67-7834-469b-8e09-be3ecbf661f5" style="Detail" x="512" y="2840" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="132d0b3a-575a-452d-8019-626dee210187" style="Detail" x="453" y="2989" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e151f959-9fd5-466e-8f71-8df584d89ed1" style="Detail" x="453" y="2864" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cbbd3c6e-d0f1-4ee4-a45e-898cf231fcda" x="301" y="2912" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="41d0540c-c20e-4e7f-85e7-5f54abadc7db" style="Detail" x="391" y="2936" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f6e12447-9fac-4455-bc36-86f16dae6ca9" x="301" y="2962" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="76697f25-ec9c-47e3-af29-7c1864c44406" style="Detail" x="391" y="2791" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fef471b7-922b-4edb-9f2e-b467e99840fb" x="301" y="2936" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="de2310a8-c599-45c6-8854-4245b8ac153c" style="Detail" x="4" y="2684" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TX-ML 3]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ddf7c3d6-ceb9-493a-a414-43bc01fbd920" style="Detail" x="453" y="2913" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="555338f7-1003-4ba2-9d4a-3f82e24b7558" x="301" y="2719" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="34bb2efc-332c-48a6-a0ac-a0eedb713e2a" style="Detail" x="453" y="2937" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f08e733d-e393-49c6-80d6-cb6ceb9128d5" x="301" y="2791" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="36a3e95a-544a-42e9-a918-4d5359ed562f" style="Detail" x="453" y="2963" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="29da6d30-eb88-48da-a356-5a8680ac084b" style="Detail" x="453" y="2889" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2d6721e8-24db-46a9-ab7d-6c35d4dc317c" style="Detail" x="512" y="2816" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2947477-6101-488e-b864-0a066c2cee9d" style="Detail" x="453" y="2744" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8c874829-6c25-4de5-88c7-7e476a1e187d" x="301" y="2863" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c2676de0-8f7c-4622-b4a6-00bd9bd416b9" x="301" y="2988" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1689413e-7c2c-4b71-bfa0-34b5a55163e7" x="301" y="2743" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0d187dff-298b-4847-9c85-035948267ee0" style="Detail" x="391" y="2912" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8e94f8f5-6ded-4fe5-88a0-35ffc62e6135" style="Detail" x="391" y="2743" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f1cba19a-2589-4845-9998-e0f9cf2b5ec7" style="Detail" x="391" y="2815" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f3578386-3280-4f9e-8ac4-4c9e1475e3ac" style="Detail" x="512" y="2937" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1bbea14c-920f-4ac2-9d17-2910fb25b95a" style="Detail" x="512" y="2989" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="768aa5b5-f59f-484f-8e79-54ff5547ad2b" style="Detail" x="452" y="2719" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7a64771b-dbb3-481e-8ddb-353f14a969d5" style="Detail" x="512" y="2913" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0d22f5aa-7988-42ac-bbcd-f3bd63385211" style="Detail" x="391" y="2888" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6a5802e1-0e00-478e-9c37-63a434b48171" style="Detail" x="512" y="2744" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0f411b53-2b96-43cd-b394-5df37d3e7650" style="Detail" x="453" y="2840" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4436da7c-47c8-4d61-9b97-f43295b852cb" style="Detail" x="512" y="2792" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0f134dc1-77c3-42f6-a3a1-76bf3fd0f88b" x="301" y="2888" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="058968c7-79ab-4280-9007-2cfb73cbac9d" style="Detail" x="453" y="2816" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c65c1786-8fab-4aac-8c61-b02182380696" style="Detail" x="453" y="2768" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3f3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c0dfdd5a-2815-4552-87fc-80408e567396" style="Detail" x="512" y="2889" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3t8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8c04acab-aefd-41f5-a7e1-c8d710c19662" style="Detail" x="391" y="2988" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml3m12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8ea9ff45-6f50-40b4-a881-705c34c9b907" style="Detail" x="512" y="3267" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c011f9c8-ee5e-4b12-95f5-22e5e73b621e" x="301" y="3169" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[20 - 24 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a5f8c527-d9fc-4e8c-89c5-736900a4ce78" style="Detail" x="453" y="3122" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b8a33608-4499-49b4-9b15-8871f5d9a3cc" style="Detail" x="453" y="3293" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3de66030-c78d-44f8-a9fc-41f2a644eed1" style="Detail" x="391" y="3121" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7e4243c5-7966-40cc-8688-2c2a0f676c72" x="301" y="3193" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[25 - 29 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2951d3a-ea87-47ce-bda9-fc5771dd27a8" x="301" y="3121" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[10 - 14 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e68f1a5c-2ae3-43a2-9de3-0872c7c8ab81" style="Detail" x="391" y="3097" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9eaabff8-ab39-4623-bc5c-8fb2a78f35f0" style="Detail" x="453" y="3243" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="175dae7a-e3fe-46f6-b294-704a0cb74a12" style="Detail" x="391" y="3292" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4fac4659-b4f7-4dd2-8206-57602d1012aa" style="Detail" x="511" y="3050" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3dd0a6ab-9221-49b4-90ee-aad8341925e0" style="Detail" x="391" y="3266" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="02920f06-94aa-450c-8d3e-513eb0c33abe" style="Detail" x="391" y="3145" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="58ffb50d-f83d-4d3f-8f10-1e69b6461ec6" style="Detail" x="512" y="3146" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4dbf20b6-aaa0-40b0-94e2-51f6c769c60d" style="Detail" x="512" y="3319" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c6ac6895-154a-4fb7-8e4b-aa29868e4690" style="Detail" x="391" y="3073" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4dcbb8fc-df81-4353-adad-1cfef862848e" style="Detail" x="512" y="3194" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="144049ac-f2df-4219-aae1-2cea3bbbbbb9" x="301" y="3318" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[50+ yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="36d12fb2-aa93-46d7-8049-950b6b813d95" style="Detail" x="453" y="3146" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f93758fb-6c6e-4ca5-be69-e0bea2dc268f" x="301" y="3097" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[5 - 9 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="33d9bcb4-b59a-422f-9c3c-16cc95866c94" style="Detail" x="512" y="3074" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="82924495-2e0f-43bd-9371-6bcc73e5bbf7" x="301" y="3292" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[45 - 49 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="845f8898-cb84-42bf-8b2e-071dceeee50b" style="Detail" x="453" y="3319" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a7a01043-6e32-4073-a4cc-d866bd6cb95c" style="Detail" x="512" y="3219" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d2fe2b32-f52a-4be8-835c-4a9f75736edc" style="Detail" x="512" y="3122" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6d3b7c87-fcba-46c5-b1b9-de555afa8ed5" style="Detail" x="512" y="3170" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2e766124-7367-4459-82b6-f0a16547daa2" style="Detail" x="453" y="3074" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ea08d8d2-56b1-4fc6-913f-2a35ad308363" style="Detail" x="452" y="3049" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d5977036-5305-48e1-bfd8-66d78157c4ff" style="Detail" x="453" y="3170" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6ca78748-e12d-4344-b8d8-17310e9b2ff4" x="301" y="3266" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[40 - 44 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d2b19db2-b70b-46b0-bbed-4c55404ffcb7" style="Detail" x="512" y="3293" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="32a5b3db-e9fe-4b8a-8f0b-78e29caf3a0a" style="Detail" x="390" y="3049" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6094f116-61f6-4836-880d-859e6aba20ee" style="Detail" x="391" y="3318" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="77424a41-31a0-4e78-a1da-9d02382a102f" style="Detail" x="512" y="3243" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c2b5c7f9-8eb9-4952-9461-80d440d74b75" style="Detail" x="453" y="3098" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dabe0174-79c4-4425-ae7e-affd2bf6520d" style="Detail" x="391" y="3169" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dceeaa6c-e262-435d-b563-59456ef90e50" style="Detail" x="453" y="3194" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="489130e3-f8d4-42aa-8478-65ad1bdf2682" style="Detail" x="4" y="3014" width="34" height="29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TX-ML 4]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e536b2f9-7ec9-44f9-9782-083c3aaa504d" style="Detail" x="453" y="3219" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1781de68-ab8b-4ade-b194-f383d2c7898a" style="Detail" x="43" y="3014" width="320" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Total number of ART patients with no clinical contact since their last expected contact, who were not tracked]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0de4cc2b-78ba-40fa-8240-644dcee68602" style="Detail" x="391" y="3218" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e6828f7c-9598-473a-9c7b-5d2cf88f109e" x="301" y="3049" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[< 1 yr]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a44695bd-c12d-4ded-bd7b-ecce7cf7e629" style="Detail" x="453" y="3267" width="30" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4f10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b87dbdf0-1118-49e8-a9fd-6c3df3c83616" x="301" y="3073" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[1 - 4 yrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="10e3df66-84b4-4f4b-bb50-a93937d5492b" x="301" y="3242" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[35 - 39 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="63a47c16-f509-4eb4-8155-051dd657ee4d" style="Detail" x="391" y="3242" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="71f6ecae-d716-47db-a178-684baf7c308a" style="Detail" x="391" y="3193" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4m7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a0793ec2-dd4d-4c09-8b1a-51836ac68895" x="301" y="3145" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[15 - 19 yrs]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c1a090dc-9e5e-4a70-8634-6dcbbdb49281" style="Detail" x="512" y="3098" width="29" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{txml4t3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fc683da6-12e4-4954-a8e4-d6506673dbbd" x="301" y="3218" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<text><![CDATA[30 - 34 yrs]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Jul-2014 16:59:03 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Child" table="child" catalog="lamis">
+        <id name="childId" type="long">
+            <column name="CHILD_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="patientId" type="long">
+            <column name="PATIENT_ID" />
+        </property>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="motherId" type="long">
+            <column name="MOTHER_ID"/>
+        </property>
+        <property name="referenceNum" type="string">
+            <column name="REFERENCE_NUM" length="36" />
+        </property>
+        <property name="hospitalNumber" type="string">
+            <column name="HOSPITAL_NUMBER" length="25" />
+        </property>
+        <property name="ancId" type="long">
+            <column name="ANC_ID" />
+        </property>
+	<property name="surname" type="string">
+            <column name="SURNAME" length="45" />
+        </property>
+        <property name="arv" type="string">
+            <column name="ARV" length="45" />
+        </property>
+        <property name="arvTiming" type="string">
+            <column name="ARV_TIMING" length="70" />
+        </property>
+        <property name="registrationStatus" type="string">
+            <column name="REGISTRATION_STATUS" length="70" />
+        </property>
+        <property name="hepb" type="string">
+            <column name="HEPB" length="45" />
+        </property>
+        <property name="hbv" type="string">
+            <column name="HBV" length="45" />
+        </property>
+        <property name="otherNames" type="string">
+            <column name="OTHER_NAMES" length="75" />
+        </property>
+		<property name="dateBirth" type="date">
+            <column name="DATE_BIRTH" length="8" />
+        </property>
+        <property name="gender" type="string">
+            <column name="GENDER" length="7" />
+        </property>
+        <property name="bodyWeight" type="java.lang.Double">
+            <column name="BODY_WEIGHT" precision="17" scale="0" />
+        </property>
+		<property name="apgarScore" type="java.lang.Integer">
+            <column name="APGAR_SCORE" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="45" />
+        </property>
+	<property name="deliveryId" type="long">
+            <column name="DELIVERY_ID" />
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column name="TIME_STAMP" length="23" />
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+          <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+          <column length="23" name="TIME_UPLOADED"/>
+        </property>        
+        <set name="childfollowups" inverse="true">
+            <key>
+                <column name="CHILD_ID" not-null="true" />
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Childfollowup" />
+        </set>
+       <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

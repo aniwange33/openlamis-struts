@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Jul-2014 19:48:39 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Maternalfollowup" table="MATERNALFOLLOWUP" catalog="LAMIS">
+        <id name="maternalfollowupId" type="long">
+            <column name="MATERNALFOLLOWUP_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="patient" class="org.fhi360.lamis.model.Patient" fetch="select">
+            <column name="PATIENT_ID" not-null="true" />
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="dateVisit" type="date">
+            <column name="DATE_VISIT" length="8" not-null="true" />
+        </property>
+	<property name="ancId" type="long">
+            <column name="ANC_ID" />
+        </property>
+        <property name="bodyWeight" type="java.lang.Double">
+            <column name="BODY_WEIGHT" precision="17" scale="0" />
+        </property>
+        <property name="bp" type="string">
+            <column name="BP" length="7" />
+        </property>
+        <property name="fundalHeight" type="java.lang.Double">
+            <column name="FUNDAL_HEIGHT" precision="17" scale="0" />
+        </property>
+        <property name="fetalPresentation" type="string">
+            <column name="FETAL_PRESENTATION" length="25" />
+        </property>
+        <property name="typeOfVisit" type="string">
+            <column name="TYPE_OF_VISIT" length="10" />
+        </property>
+        <property name="tbStatus" type="string">
+            <column name="TB_STATUS" length="120" />
+        </property>
+        <property name="visitStatus" type="string">
+            <column name="VISIT_STATUS" length="120" />
+        </property>
+        <property name="gestationalAge" type="string">
+            <column name="GESTATIONAL_AGE" length="20" />
+        </property>
+        <property name="dateConfirmedHiv" type="date">
+            <column name="DATE_CONFIRMED_HIV" length="8" />
+        </property>
+        <property name="viralLoadCollected" type="string">
+            <column name="VIRAL_LOAD_COLLECTED" length="10" />
+        </property>
+        <property name="dateSampleCollected" type="date">
+            <column name="DATE_SAMPLE_COLLECTED" length="8" />
+        </property>
+        <property name="timeHivDiagnosis" type="string">
+            <column name="TIME_HIV_DIAGNOSIS" length="45" />
+        </property>
+        <property name="arvRegimenPast" type="string">
+            <column name="ARV_REGIMEN_PAST" length="100" />
+        </property>
+		<property name="arvRegimenCurrent" type="string">
+            <column name="ARV_REGIMEN_CURRENT" length="100" />
+        </property>
+		<property name="dateArvRegimenCurrent" type="date">
+            <column name="DATE_ARV_REGIMEN_CURRENT" length="8" />
+        </property>
+		<property name="screenPostPartum" type="java.lang.Integer">
+            <column name="SCREEN_POST_PARTUM" />
+        </property>
+        <property name="cd4Ordered" type="string">
+            <column name="CD4_ORDERED" length="7"/>
+        </property>
+		<property name="cd4" type="java.lang.Double">
+            <column name="CD4" precision="17" scale="0" />
+        </property>
+        <property name="counselNutrition" type="java.lang.Integer">
+            <column name="COUNSEL_NUTRITION" />
+        </property>
+        <property name="counselFeeding" type="java.lang.Integer">
+            <column name="COUNSEL_FEEDING" />
+        </property>
+        <property name="counselFamilyPlanning" type="java.lang.Integer">
+            <column name="COUNSEL_FAMILY_PLANNING" />
+        </property>
+        <property name="familyPlanningMethod" type="string">
+            <column name="FAMILY_PLANNING_METHOD" length="45" />
+        </property>
+        <property name="referred" type="string">
+            <column name="REFERRED" length="45" />
+        </property>
+        <property name="dateNextVisit" type="date">
+            <column name="DATE_NEXT_VISIT" length="8" />
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column name="TIME_STAMP" length="23" />
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+          <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+          <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

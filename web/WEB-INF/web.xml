@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- Jersey servlet adaptor to manage all REST webservice request URL  -->
+    <servlet>
+        <servlet-name>ServletAdaptor</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <description>Multiple packages, separated by semicolon(;), can be specified in param-value</description>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>org.fhi360.lamis.resource</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAdaptor</servlet-name>
+        <url-pattern>/resources/*</url-pattern>
+    </servlet-mapping> 
+    <!-- Context listener to load spring applicationContext  -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- Context listener to clear the smslogger  -->
+    <listener>
+        <listener-class>org.fhi360.lamis.service.sms.SmsListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>org.h2.server.web.DbStarter</listener-class>
+    </listener>
+    <!-- Context listener to update database tables  -->
+    <listener>
+        <listener-class>org.fhi360.lamis.utility.DatabaseUpdateListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>db.url</param-name>
+        <param-value>jdbc:h2:file:/lamis3/database/lamis;AUTO_SERVER=TRUE;CACHE_SIZE=32769;LOCK_TIMEOUT=10000;MODE=MySQL</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.user</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.password</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.driver</param-name>
+        <param-value>org.h2.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contextPath</param-name>
+        <param-value>/LAMIS3/web/</param-value>
+    </context-param>
+    <!-- Context path for a stand alone app 
+    <context-param>
+        <param-name>stcontextPath</param-name>
+        <param-value>/LAMIS3/webapps/lamis2/</param-value>
+    </context-param>   -->
+    <context-param>
+        <param-name>serverUrl</param-name>
+        <param-value>http://lamis3.sidhas.org:8080/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>appInstance</param-name>
+        <param-value>local</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>-1</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>/login.jsp</welcome-file>
+    </welcome-file-list>
+	<error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/views/administration/error.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/WEB-INF/views/administration/error.jsp</location>
+    </error-page>
+	
+</web-app>

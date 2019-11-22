@@ -1,0 +1,215 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: aalozie -->
+ 
+<struts>
+   <package name="visualizer" namespace="/" extends="struts-default, json-default">
+       
+        <action name="Visualizer_page">
+            <result>/WEB-INF/views/visualizer/visualizer_page.jsp</result>
+        </action>
+ 
+         <!-- Treatment Chart Section -->                   
+        <action name="Treatment_dashboard">
+            <result>/WEB-INF/views/visualizer/treatment_dashboard.jsp</result>
+        </action>
+        
+        <action name="TreatmentSummary_chart" class="org.fhi360.lamis.controller.chart.treatment.TreatmentSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                
+        <action name="EligibleViralload_chart" class="org.fhi360.lamis.controller.chart.treatment.EligibleVsVlTestDoneChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="ViralSuppressed_chart" class="org.fhi360.lamis.controller.chart.treatment.ViralLoadTestVsSuppressedChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="UnsuppressedEac_chart" class="org.fhi360.lamis.controller.chart.treatment.UnsuppressedVsEacChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="TbStatus_chart" class="org.fhi360.lamis.controller.chart.treatment.ClinicVisitVsTbStatusChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="NewlyEnrolled_chart" class="org.fhi360.lamis.controller.chart.treatment.NewlyEnrolledByGenderChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="CurrentOnArt_chart" class="org.fhi360.lamis.controller.chart.treatment.CurrentOnArtByGenderChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        
+        <action name="MissedAppointment_chart" class="org.fhi360.lamis.controller.chart.treatment.AppointmentVsMissedChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="DefaulterReturned_chart" class="org.fhi360.lamis.controller.chart.treatment.DefaulterVsReturnedChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="CurrentOnArtTldRegimen_chart" class="org.fhi360.lamis.controller.chart.treatment.CurrentOnArtVsTldRegimenChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="CurrentOnArtTldRegimenCategory_chart" class="org.fhi360.lamis.controller.chart.treatment.CurrentOnArtTldRegimenByCategoryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="CurrentOnArtDmoc_chart" class="org.fhi360.lamis.controller.chart.treatment.CurrentOnArtVsDmocChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        <action name="CurrentOnArtDmocType_chart" class="org.fhi360.lamis.controller.chart.treatment.DmocTypeSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="VlCoverageRate_chart" class="org.fhi360.lamis.controller.chart.treatment.ViralLoadCoverageSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        <action name="VlSuppressionRate_chart" class="org.fhi360.lamis.controller.chart.treatment.ViralLoadSuppressionSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+
+        <!-- HTS Chart Section -->     
+         <action name="Hts_dashboard">
+            <result>/WEB-INF/views/visualizer/hts_dashboard.jsp</result>
+        </action>
+ 
+         <action name="HtsSummary_chart" class="org.fhi360.lamis.controller.chart.hts.HtsSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                      
+         <action name="HtsTested_chart" class="org.fhi360.lamis.controller.chart.hts.HtsTestVsPositiveChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="HtsArtInitiated_chart" class="org.fhi360.lamis.controller.chart.hts.HtsPositiveVsInitiatedChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="HtsTestByGender_chart" class="org.fhi360.lamis.controller.chart.hts.HtsTestByGenderChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="HtsPositiveByGender_chart" class="org.fhi360.lamis.controller.chart.hts.HtsPositiveByGenderChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="HtsReferral_chart" class="org.fhi360.lamis.controller.chart.hts.HtsReferralSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+          <action name="HtsSetting_chart" class="org.fhi360.lamis.controller.chart.hts.HtsSettingSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+         <action name="HtsIndex_chart" class="org.fhi360.lamis.controller.chart.hts.HtsIndexSummaryChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+         <!-- Sync Chart Section -->                                                                            				
+
+        <action name="Sync_dashboard">
+            <result>/WEB-INF/views/visualizer/sync_dashboard.jsp</result>
+        </action>
+
+        <action name="FacilitySync_chart" class="org.fhi360.lamis.controller.chart.FacilitySyncChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>				
+
+       <!-- Miscellenous Chart Section -->                                                                            				
+
+        <action name="Chart_period1">
+            <result>/WEB-INF/views/visualizer/retention_chart.jsp</result>
+        </action>  
+        
+        <action name="Chart_period2">
+            <result>/WEB-INF/views/visualizer/performance_chart.jsp</result>
+        </action> 
+
+        <action name="Retention_chart" class="org.fhi360.lamis.controller.chart.RetentionChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="SyncPatient_chart" class="org.fhi360.lamis.controller.chart.SyncPatientChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="SyncClinic_chart" class="org.fhi360.lamis.controller.chart.SyncClinicChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="SyncPharm_chart" class="org.fhi360.lamis.controller.chart.SyncPharmChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="SyncLab_chart" class="org.fhi360.lamis.controller.chart.SyncLabChartAction" method="chartData">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>  
+              
+         </package>   
+</struts>

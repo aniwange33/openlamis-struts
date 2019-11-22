@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 16, 2014 12:09:06 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Assessment" table="assessment">
+        <id name="assessmentId" type="long">
+            <column name="ASSESSMENT_ID"/>
+            <generator class="identity"/>
+        </id>
+        
+         
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        
+             
+        <property name="dateVisit" type="date">
+            <column length="8" name="DATE_VISIT" not-null="true"/>
+        </property>       
+        <property name="clientCode" type="string">
+            <column length="15" name="CLIENT_CODE" />
+        </property>  
+            
+       
+        <property name="question1" type="string">
+            <column length="100" name="QUESTION1"/>
+        </property>
+        <property name="question2" type="string">
+            <column length="100"  name="QUESTION2"/>
+        </property>
+        <property name="question3" type="java.lang.Integer">
+            <column name="QUESTION3"/>
+        </property>
+        <property name="question4" type="java.lang.Integer">
+            <column  name="QUESTION4"/>
+        </property>
+        <property name="question5" type="java.lang.Integer">
+            <column name="QUESTION5"/>
+        </property>
+        <property name="question6" type="java.lang.Integer">
+            <column name="QUESTION6"/>
+        </property>
+        <property name="question7" type="java.lang.Integer">
+            <column  name="QUESTION7"/>
+        </property>
+        <property name="question8" type="java.lang.Integer">
+            <column  name="QUESTION8"/>
+        </property>
+        <property name="question9" type="java.lang.Integer">
+            <column  name="QUESTION9"/>
+        </property>
+        <property name="question10" type="java.lang.Integer">
+            <column  name="QUESTION10"/>
+        </property>
+        <property name="question11" type="java.lang.Integer">
+            <column  name="QUESTION11"/>
+        </property>
+        <property name="question12" type="java.lang.Integer">
+            <column  name="QUESTION12"/>
+        </property>
+     
+        <property name="sti1" type="java.lang.Integer">
+            <column  name="STI1"/>
+        </property>
+        <property name="sti2" type="java.lang.Integer">
+            <column  name="STI2"/>
+        </property>
+        <property name="sti3" type="java.lang.Integer">
+            <column   name="STI3"/>
+        </property>
+        <property name="sti4" type="java.lang.Integer">
+            <column   name="STI4"/>
+        </property>
+        
+        <property name="sti5" type="java.lang.Integer">
+            <column   name="STI5"/>
+        </property>
+        <property name="sti6" type="java.lang.Integer">
+            <column   name="STI6"/>
+        </property>
+        <property name="sti7" type="java.lang.Integer">
+            <column   name="STI7"/>
+        </property>
+        <property name="sti8" type="java.lang.Integer">
+            <column  name="STI8"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+       <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        <property name="deviceconfigId" type="java.lang.Long">
+            <column name="DEVICECONFIG_ID"/>
+        </property>   
+        
+     
+    </class>
+</hibernate-mapping>

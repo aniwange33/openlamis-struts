@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.Laboratory" table="LABORATORY">
+        <id name="laboratoryId" type="long">
+            <column name="LABORATORY_ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+            <column name="PATIENT_ID" not-null="true"/>
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true"/>
+        </property>
+        <property name="dateReported" type="date">
+            <column length="8" name="DATE_REPORTED" not-null="true"/>
+        </property>
+        <property name="dateCollected" type="date">
+            <column length="8" name="DATE_COLLECTED"/>
+        </property>
+        <property name="labno" type="string">
+            <column length="15" name="LABNO"/>
+        </property>
+        <property name="resultab" type="string">
+            <column length="10" name="RESULTAB"/>
+        </property>
+        <property name="resultpc" type="string">
+            <column length="10" name="RESULTPC"/>
+        </property>
+        <property name="comment" type="string">
+            <column length="100" name="COMMENT"/>
+        </property>
+        <property name="labtestId" type="long">
+            <column name="LABTEST_ID" not-null="true"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+       <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

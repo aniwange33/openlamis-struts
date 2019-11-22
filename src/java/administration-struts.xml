@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+ <!-- Author: AALOZIE -->
+<struts>
+   <package name="administration" namespace="/" extends="struts-default, json-default, jasperreports-default">               
+        <interceptors>
+            <interceptor name="communitypharmInterceptor" class="org.fhi360.lamis.interceptor.CommunitypharmInterceptor"></interceptor>
+            <interceptor name="triggerInitInterceptor" class="org.fhi360.lamis.interceptor.TriggerInitInterceptor"></interceptor>
+            <interceptor name="asyncTaskInterceptor" class="org.fhi360.lamis.interceptor.AsyncTaskInterceptor"></interceptor>
+            <interceptor name="monitorInterceptor" class="org.fhi360.lamis.interceptor.MonitorInterceptor"></interceptor>
+            <interceptor name="dqaInterceptor" class="org.fhi360.lamis.interceptor.DqaInterceptor"></interceptor>
+            <interceptor name="afterUpdateInterceptor" class="org.fhi360.lamis.interceptor.AfterUpdateInterceptor"></interceptor>
+        </interceptors>
+        
+        <action name="lamis">
+            <result>/login.jsp</result>
+        </action>
+        
+        <action name="Maintenance_page">
+            <result>/WEB-INF/views/administration/maintenance_page.jsp</result>
+        </action>
+                
+        <action name="Setup_page">
+            <result>/WEB-INF/views/administration/setup_page.jsp</result>
+        </action>
+
+        <action name="Conversion_page">
+            <result>/WEB-INF/views/administration/conversion_page.jsp</result>
+        </action>
+                
+        <action name="User_new">
+            <result>/WEB-INF/views/administration/user_data.jsp</result>
+        </action>
+        
+        <action name="Error_message">
+            <result>/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Facility_switch">
+            <result>/WEB-INF/views/administration/facility_switch.jsp</result>
+        </action>
+        
+        <action name="Facility_new">
+            <result>/WEB-INF/views/administration/facility_data.jsp</result>
+        </action>
+        
+        <action name="Communitypharm_new">
+            <result>/WEB-INF/views/administration/communitypharm_data.jsp</result>
+        </action>
+        
+        <action name="Casemanager_new">
+            <result>/WEB-INF/views/administration/casemanager_data.jsp</result>
+        </action>
+        
+        <action name="Drug_new">
+            <result>/WEB-INF/views/administration/drug_data.jsp</result>
+        </action>
+        <action name="Export_page">
+            <result>/WEB-INF/views/administration/export_page.jsp</result>
+        </action>
+
+        <action name="Sync_page">
+            <result>/WEB-INF/views/administration/sync_page.jsp</result>
+        </action>
+
+        <action name="Updates_page">
+            <result>/WEB-INF/views/administration/updates_page.jsp</result>
+        </action>
+        
+        <action name="Upload_page">
+            <result>/WEB-INF/views/administration/upload_page.jsp</result>
+        </action>
+
+        <action name="Converter_page">
+            <result>/WEB-INF/views/administration/converter_page.jsp</result>
+        </action>
+        
+        <action name="Dqa_page">
+            <result>/WEB-INF/views/administration/dqa_page.jsp</result>
+        </action>        
+
+        <action name="Cleanup_page">
+            <result>/WEB-INF/views/administration/cleanup_page.jsp</result>
+        </action>        
+
+        <action name="Deduplicator_page">
+            <result>/WEB-INF/views/administration/deduplicator_page.jsp</result>
+        </action>        
+
+        <action name="Barcode_page">
+            <result>/WEB-INF/views/administration/barcode_page.jsp</result>
+        </action>        
+
+        <action name="Generate_barcode" class="org.fhi360.lamis.controller.DataExchangeAction" method="generateBarcode">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="User_login" class="org.fhi360.lamis.controller.UserAction" method="login">
+            <interceptor-ref name="triggerInitInterceptor"></interceptor-ref>
+            <interceptor-ref name="asyncTaskInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/patient/home_page.jsp</result>
+            <result name="input">/login.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>  
+        
+        <action name="User_logout" class="org.fhi360.lamis.controller.UserAction" method="logout">
+            <result name="success" type="redirect">/User_login.action</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>  
+        
+        <action name="User_save" class="org.fhi360.lamis.controller.UserAction" method="saveUser">
+            <result name="success" type="redirect">/User_new.action</result>
+            <result name="input">/WEB-INF/views/administration/user_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="User_update" class="org.fhi360.lamis.controller.UserAction" method="updateUser">
+            <result name="success" type="redirect">/User_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="User_delete" class="org.fhi360.lamis.controller.UserAction" method="deleteUser">
+            <result name="success" type="redirect">/User_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="User_find" class="org.fhi360.lamis.controller.UserAction" method="findUser">
+            <result name="success">/WEB-INF/views/administration/user_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="User_grid" class="org.fhi360.lamis.controller.grid.UserGridAction" method="userGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+    <!--Beginning of Case Managers -->
+        <action name="Casemanager_save" class="org.fhi360.lamis.controller.CaseManagementAction" method="saveCaseManager">
+            <result name="success">/WEB-INF/views/administration/casemanager_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Casemanager_update" class="org.fhi360.lamis.controller.CaseManagementAction" method="updateCaseManager">
+            <result name="success">/WEB-INF/views/administration/casemanager_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Casemanager_delete" class="org.fhi360.lamis.controller.CaseManagementAction" method="deleteCaseManager">
+            <result name="success">/WEB-INF/views/administration/casemanager_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Casemanager_find" class="org.fhi360.lamis.controller.CaseManagementAction" method="findCaseManager">
+            <result name="success">/WEB-INF/views/administration/casemanager_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanagerdetails_retrieve" class="org.fhi360.lamis.controller.CaseManagementAction" method="getCaseManagerDetails">
+            <result name="success" type="json">
+                <param name="root">caseManagerDetailsMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanagerclientscount_retrieve" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="getAssignedClientsTreatmentStatus">
+            <result name="success" type="json">
+                <param name="root">clientsStatusCountMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Categoriescount_retrieve" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="countCategories">
+            <result name="success" type="json">
+                <param name="root">clientsCategoryCountMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanager_assign" class="org.fhi360.lamis.controller.CaseManagementAction" method="assignCaseManager">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="json">
+                <param name="root">assignmentMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <!--<result name="success">/WEB-INF/views/administration/case_management_page.jsp</result>-->
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanager_deassign" class="org.fhi360.lamis.controller.CaseManagementAction" method="deAssignCaseManager">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="json">
+                <param name="root">assignmentMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <!--<result name="success">/WEB-INF/views/administration/case_management_page.jsp</result>-->
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanager_reassign" class="org.fhi360.lamis.controller.CaseManagementAction" method="reAssignCaseManager">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="json">
+                <param name="root">assignmentMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <!--<result name="success">/WEB-INF/views/administration/case_management_page.jsp</result>-->
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanager_grid" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="caseManagerGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Casemanagerclients_grid" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="caseManagerClientsGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Init_client" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="initClientSearch">
+             <result name="success" type="json">
+                <param name="root">clientsMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Clientsearch_grid" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="clientSearchGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+<!--        Retrieve the case managers for both assignment and re-assignment...-->
+        <action name="Casemanager_retrieve" class="org.fhi360.lamis.controller.CaseManagementAction" method="retrieveCaseManagers">
+            <result name="success" type="json">
+                <param name="root">caseManagerMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Casemanagerassign_retrieve" class="org.fhi360.lamis.controller.CaseManagementAction" method="retrieveCaseManagersExceptSelected">
+            <result name="success" type="json">
+                <param name="root">caseManagerExceptMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Client_grid" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="clientGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Client_grid_number" class="org.fhi360.lamis.controller.grid.CaseManagerGridAction" method="clientGridByNumber">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+    <!-- End of Case Managers -->
+       
+        <action name="Verify_group" class="org.fhi360.lamis.controller.UserAction" method="verifyGroup">
+            <result name="success">/WEB-INF/views/administration/maintenance_page.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Facility_save" class="org.fhi360.lamis.controller.FacilityAction" method="saveFacility">
+            <result name="success" type="redirect">/Facility_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Facility_update" class="org.fhi360.lamis.controller.FacilityAction" method="updateFacility">
+            <result name="success" type="redirect">/Facility_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Facility_delete" class="org.fhi360.lamis.controller.FacilityAction" method="deleteFacility">
+            <result name="success" type="redirect">/Facility_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Facility_find" class="org.fhi360.lamis.controller.FacilityAction" method="findFacility">
+            <result name="success">/WEB-INF/views/administration/facility_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Facility_grid" class="org.fhi360.lamis.controller.grid.FacilityGridAction" method="facilityGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Facilitysel_grid" class="org.fhi360.lamis.controller.grid.FacilityGridAction" method="facilitySelGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Facility_dqastatus" class="org.fhi360.lamis.controller.FacilityAction" method="getFacilityDqaStatus">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Padding_status" class="org.fhi360.lamis.controller.FacilityAction" method="getPaddingStatus">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="State_retrieve" class="org.fhi360.lamis.controller.StateAction" method="retrieveState">
+            <result name="success" type="json">
+                <param name="root">stateMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="State_user_retrieve" class="org.fhi360.lamis.controller.StateAction" method="retrieveStateForUsers">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Lga_retrieve" class="org.fhi360.lamis.controller.StateAction" method="retrieveLga">
+            <result name="success" type="json">
+                <param name="root">lgaMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+                
+        <action name="StateId_retrieve" class="org.fhi360.lamis.controller.StateAction" method="retrieveStateById">
+            <result name="success" type="json">
+                <param name="root">stateMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="StateId_retrieve_custom" class="org.fhi360.lamis.controller.StateAction" method="retrieveStateByIdCustom">
+            <result name="success" type="json">
+                <param name="root">stateMapCustom</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="LgaId_retrieve" class="org.fhi360.lamis.controller.StateAction" method="retrieveLgaById">
+            <result name="success" type="json">
+                <param name="root">lgaMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Facility_retrieve" class="org.fhi360.lamis.controller.StateAction" method="retrieveFacility">
+            <result name="success" type="json">
+                <param name="root">facilityMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <!-- Community Pharmacy Section -->               
+        <action name="Communitypharm_save" class="org.fhi360.lamis.controller.CommunitypharmAction" method="saveCommunitypharm">
+            <interceptor-ref name="communitypharmInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Communitypharm_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Communitypharm_update" class="org.fhi360.lamis.controller.CommunitypharmAction" method="updateCommunitypharm">
+            <result name="success" type="redirect">/Communitypharm_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Communitypharm_delete" class="org.fhi360.lamis.controller.CommunitypharmAction" method="deleteCommunitypharm">
+            <result name="success" type="redirect">/Communitypharm_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+         
+        <action name="CommunitypharmId_retrieve" class="org.fhi360.lamis.controller.CommunitypharmAction" method="retrieveCommunitypharmById">
+            <result name="success" type="json">
+                <param name="root">pharmList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Communitypharm_retrieve" class="org.fhi360.lamis.controller.CommunitypharmAction" method="retrieveCommunitypharm">
+            <result name="success" type="json">
+                <param name="root">pharmMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Communitypharm_grid" class="org.fhi360.lamis.controller.grid.CommunitypharmGridAction" method="communitypharmGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                          
+        <!-- Database maintenance Section -->               
+        <action name="Export_data" class="org.fhi360.lamis.controller.DataExchangeAction" method="exportData">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Import_data" class="org.fhi360.lamis.controller.DataExchangeAction" method="importData">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Import_nimr_data" class="org.fhi360.lamis.controller.DataExchangeAction" method="importNimrData">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                        
+        <action name="Upload_data" class="org.fhi360.lamis.controller.DataExchangeAction" method="uploadData">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Sync_data" class="org.fhi360.lamis.controller.DataExchangeAction" method="syncData">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Check_updates" class="org.fhi360.lamis.controller.DataExchangeAction" method="checkUpdates">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Internet_connection" class="org.fhi360.lamis.controller.DataExchangeAction" method="internetConnection">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Disable_recordsAll" class="org.fhi360.lamis.controller.DataExchangeAction" method="getDisableRecordsAll">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Processing_status" class="org.fhi360.lamis.controller.AjaxProcessInterrogatorAction" method="processingStatus">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+                                      
+        <action name="Converter_dispatch" class="org.fhi360.lamis.controller.ConverterDispatchAction" method="dispatcher">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>        
+
+        <action name="Cleanup_data" class="org.fhi360.lamis.controller.DataQualityAction" method="cleanupData">
+            <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <!-- Deduplicator -->
+        <action name="Duplicate_grid" class="org.fhi360.lamis.controller.DeduplicatorAction" method="duplicateGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Remove_duplicates" class="org.fhi360.lamis.controller.DeduplicatorAction" method="removeDuplicates">
+            <result name="success">/WEB-INF/views/administration/deduplicator_page.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Export_duplicates" class="org.fhi360.lamis.controller.DeduplicatorAction" method="exportDuplicates">
+            <result name="success" type="json">
+                <param name="root">fileName</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="uploadDuplicates" class="org.fhi360.lamis.controller.DeduplicatorAction" method="execute">  
+            <interceptor-ref name="fileUpload">  
+                <param name="maximumSize">2097152</param>  
+                <param name="allowedTypes">xlsx/xls</param>  
+            </interceptor-ref>  
+            <interceptor-ref name="defaultStack"></interceptor-ref>  
+             <result name="success" type="json">
+                <param name="root">status</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">duplicator_page.jsp</result> 
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result> 
+        </action>  
+        
+        <!-- ./Deduplicator -->
+        
+        <action name="Dqa_grid" class="org.fhi360.lamis.controller.DataQualityAction" method="dqaGrid">
+            <interceptor-ref name="dqaInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Dqa_report" class="org.fhi360.lamis.controller.DataQualityAction" method="dqaReport">
+            <result name="success" type="jasper">
+                <param name="location">/reports/administration/dqa_report.jasper</param>
+                <param name="dataSource">reportList</param>
+                <param name="reportParameters">parameterMap</param>
+                <param name="format">PDF</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>         
+
+        <action name="Sync_analyzer" class="org.fhi360.lamis.controller.SyncAnalyzerAction" method="syncAnalyzer">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Sync_audit" class="org.fhi360.lamis.controller.SyncAnalyzerAction" method="syncAudit">
+            <result name="success" type="json">
+                <param name="root">auditList</param>    
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Sync_summary" class="org.fhi360.lamis.controller.SyncAnalyzerAction" method="syncSummary">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <!-- File Upload Section -->                       
+        <action name="Import_page" class="org.fhi360.lamis.controller.FileUploadAction" method="resetUploadStatus">
+            <result name="success">/WEB-INF/views/administration/import_page.jsp</result>
+        </action>
+        
+        <action name="Upload_file" class="org.fhi360.lamis.controller.FileUploadAction" method="uploadFile">            
+            <result name="success">/WEB-INF/views/administration/import_page.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Process_result" class="org.fhi360.lamis.controller.FileUploadAction" method="resetUploadStatus">
+            <result>/WEB-INF/views/laboratory/process_result.jsp</result>
+        </action>
+        
+        <action name="Upload_labfile" class="org.fhi360.lamis.controller.FileUploadAction" method="uploadFile">            
+            <result name="success">/WEB-INF/views/laboratory/process_result.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        
+        <!-- Data Misc Section -->                       
+        <action name="Misc_service" class="org.fhi360.lamis.controller.MiscServiceAction" method="miscService">            
+            <result name="success">/WEB-INF/views/administration/success_message.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+     </package>   
+</struts>

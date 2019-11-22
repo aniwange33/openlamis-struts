@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nigqual_report" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9a6bb3b9-9b2b-401c-8a84-1b0f00371c6b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Detail" fontName="SansSerif" fontSize="10"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<style name="Heading" fontName="SansSerif" fontSize="10"/>
+	<parameter name="facilityName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="state" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="lga" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="reportTitle" class="java.lang.String"/>
+	<field name="hospitalNum" class="java.lang.String"/>
+	<field name="uniqueId" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="currentStatus" class="java.lang.String"/>
+	<field name="dateRegistration" class="java.lang.String"/>
+	<field name="dateLastClinic" class="java.lang.String"/>
+	<field name="dateLastRefill" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="52868d16-3835-406e-b9a5-8ef7fc17ac38" style="Heading" x="435" y="55" width="75" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Facility Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7382bcee-5f89-46c3-8521-7d03a1800c38" style="Heading" x="12" y="55" width="34" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="77357661-db70-4973-9aa8-13755e8e1910" style="Heading" x="213" y="56" width="34" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LGA]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="71dcd747-0d00-4112-a98e-07d98679f0c3" style="Detail" x="516" y="55" width="279" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facilityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="70037a42-d876-4d75-aac8-0b4d145d878e" style="Detail" x="52" y="55" width="118" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{state}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5096da5b-a10f-4782-8183-494944941e69" style="Detail" x="252" y="55" width="159" height="20"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="aa646e07-6c8d-4517-90c1-1077734cc8e6" x="206" y="12" width="430" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reportTitle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="bb250456-a604-477e-b685-ec06d0044833" x="3" y="4" width="796" height="31" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="dba36576-6c59-4cd6-bde7-17c2d97fac92" style="Heading" x="47" y="10" width="63" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hospital No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7cc896f0-35cf-422b-a5c6-ce1433464d51" style="Heading" x="230" y="11" width="38" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8e3e351e-7623-40e1-b487-37bf88706cfb" style="Heading" x="360" y="11" width="27" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6d04f494-1784-43df-a031-2a535878c593" style="Heading" x="416" y="11" width="40" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ac64865e-a4c7-4e49-8c17-ff4870bdb91e" style="Heading" x="125" y="11" width="52" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unique ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f8205af6-c5f3-4339-b938-d711bd5df732" style="Heading" x="487" y="11" width="71" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Current Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dba36576-6c59-4cd6-bde7-17c2d97fac92" style="Heading" x="9" y="10" width="27" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SNo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f8205af6-c5f3-4339-b938-d711bd5df732" style="Heading" x="667" y="12" width="56" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f8205af6-c5f3-4339-b938-d711bd5df732" style="Heading" x="735" y="12" width="52" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Refill]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f8205af6-c5f3-4339-b938-d711bd5df732" style="Heading" x="589" y="7" width="68" height="28"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Registration]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="6" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<frame>
+				<reportElement uuid="201f0e1f-5e4e-4385-880f-27d8cecff6e8" style="Row" mode="Opaque" x="3" y="3" width="795" height="26"/>
+				<textField>
+					<reportElement uuid="dca7fea3-83b8-4783-95d7-2b08a2db1183" style="Detail" x="36" y="3" width="72" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{hospitalNum}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement uuid="6d776b50-15af-4819-81cf-6ce83f00ba0a" style="Detail" x="184" y="3" width="153" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="b76aaf6f-0b05-459f-b5ae-efd34bd367d5" style="Detail" x="343" y="3" width="53" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="d40fc493-055b-4b42-8a21-9563d37f0cb3" style="Detail" x="412" y="3" width="36" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement uuid="ebe9ec36-8dbf-4bd0-80c2-fa5709b1b9c2" style="Detail" x="112" y="3" width="67" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{uniqueId}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="8c8faf90-4552-478d-9b2f-9ee2c17915e2" style="Detail" x="465" y="2" width="109" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{currentStatus}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="c5455677-4ecd-4dfb-be83-4a0c7e60fdf4" x="2" y="3" width="29" height="20"/>
+					<textElement/>
+					<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="8c8faf90-4552-478d-9b2f-9ee2c17915e2" style="Detail" x="665" y="2" width="60" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateLastClinic}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="8c8faf90-4552-478d-9b2f-9ee2c17915e2" style="Detail" x="731" y="1" width="60" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateLastRefill}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement uuid="8c8faf90-4552-478d-9b2f-9ee2c17915e2" style="Detail" x="592" y="2" width="60" height="20"/>
+					<textElement>
+						<font fontName="SansSerif"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateRegistration}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="15" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="11" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+ <!-- Author: AALOZIE -->
+<struts>
+   <package name="sms" namespace="/" extends="struts-default, json-default, jasperreports-default">               
+        <interceptors>
+            <interceptor name="modemConfigInterceptor" class="org.fhi360.lamis.interceptor.ModemConfigInterceptor"></interceptor>
+        </interceptors>
+                
+        <action name="Message_setup">
+            <result>/WEB-INF/views/administration/message_setup.jsp</result>
+        </action>
+
+        <action name="Conversation_page">
+            <result>/WEB-INF/views/administration/conversation_page.jsp</result>
+        </action>
+                
+        <action name="Message_save" class="org.fhi360.lamis.controller.MessageAction" method="saveMessage">
+            <result name="success" type="redirect">/Message_setup.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Message_update" class="org.fhi360.lamis.controller.MessageAction" method="updateMessage">
+            <result name="success" type="redirect">/Message_setup.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Message_delete" class="org.fhi360.lamis.controller.MessageAction" method="deleteMessage">
+            <result name="success" type="redirect">/Message_setup.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+         <action name="Message_find" class="org.fhi360.lamis.controller.MessageAction" method="findMessage">
+            <result name="success">/WEB-INF/views/administration/message_setup.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Message_grid" class="org.fhi360.lamis.controller.grid.MessageGridAction" method="messageGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Modem_save" class="org.fhi360.lamis.controller.ModemConfigAction" method="saveModem">
+            <interceptor-ref name="modemConfigInterceptor"></interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Modem_retrieve" class="org.fhi360.lamis.controller.ModemConfigAction" method="retrieveModem">
+            <result name="success" type="json">
+                <param name="root">modemList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>                                
+        
+        <action name="smsService" class="org.fhi360.lamis.controller.SmsAction" method="readSms">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>   
+
+        <action name="Sms_send" class="org.fhi360.lamis.controller.SmsAction" method="sendSms">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+
+        <action name="TestMessage_send" class="org.fhi360.lamis.controller.SmsAction" method="sendTestMessage">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+
+        <action name="Update_unreadFlag" class="org.fhi360.lamis.controller.SmsAction" method="unreadFlagUpdate">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+        </action>
+
+        <action name="Participant_grid" class="org.fhi360.lamis.controller.grid.ParticipantGridAction" method="participantGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+         
+        <action name="Conversation_grid" class="org.fhi360.lamis.controller.grid.ConversationGridAction" method="conversationGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+    </package>   
+</struts>

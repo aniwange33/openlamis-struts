@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class catalog="LAMIS" name="org.fhi360.lamis.model.User" table="USER">
+        <id name="userId" type="long">
+            <column name="USER_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="username" type="string">
+            <column length="45" name="USERNAME" not-null="true"/>
+        </property>
+        <property name="password" type="string">
+            <column length="45" name="PASSWORD" not-null="true"/>
+        </property>
+        <property name="fullname" type="string">
+            <column length="100" name="FULLNAME"/>
+        </property>
+        <property name="facilityId" type="java.lang.Long">
+            <column name="FACILITY_ID"/>
+        </property>
+        <property name="localId" type="java.lang.Long">
+            <column name="LOCAL_ID"/>
+        </property>
+        <property name="timeLogin" type="timestamp">
+            <column length="23" name="TIME_LOGIN"/>
+        </property>
+        <property name="viewIdentifier" type="java.lang.Integer">
+            <column name="VIEW_IDENTIFIER"/>
+        </property>
+        <property name="stateIds" type="string">
+            <column length="90" name="STATE_IDS"/>
+        </property>	   
+        <property name="userGroup" type="string">
+            <column length="45" name="USER_GROUP" not-null="true"/>
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column length="23" name="TIME_STAMP"/>
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+        <set inverse="true" name="userprivileges">
+            <key>
+                <column name="USER_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.fhi360.lamis.model.Userprivilege"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: AALOZIE -->
+<struts>
+   <package name="statushistory" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        <interceptors>
+            <interceptor name="afterUpdateInterceptor" class="org.fhi360.lamis.interceptor.AfterUpdateInterceptor"></interceptor>
+            <interceptor name="monitorServiceInterceptor" class="org.fhi360.lamis.interceptor.MonitorServiceInterceptor"></interceptor>
+        </interceptors>
+        
+        <action name="Client_tracker">
+            <result>/WEB-INF/views/patient/client_tracker.jsp</result>
+        </action>
+
+        <action name="Status_search">
+            <result>/WEB-INF/views/patient/status_search.jsp</result>
+        </action>
+
+        <action name="Status_new" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <result name="success">/WEB-INF/views/patient/status_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Status_find" class="org.fhi360.lamis.controller.PatientAction" method="findPatient">
+            <result name="success">/WEB-INF/views/patient/status_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Status_retrieve" class="org.fhi360.lamis.controller.StatusHistoryAction" method="findStatusHistory">
+            <result name="success" type="json">
+                <param name="root">statusList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Status_find_date" class="org.fhi360.lamis.controller.StatusHistoryAction" method="findStatus">
+            <result name="success" type="json">
+                <param name="root">statusList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Status_save" class="org.fhi360.lamis.controller.StatusHistoryAction" method="saveStatus">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Status_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Status_update" class="org.fhi360.lamis.controller.StatusHistoryAction" method="updateStatus">
+            <interceptor-ref name="afterUpdateInterceptor"></interceptor-ref>
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Status_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Status_update_defaulter" class="org.fhi360.lamis.controller.StatusHistoryAction" method="updateStatusDefaulter">
+            <result name="success">/WEB-INF/views/patient/client_tracker.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Status_delete" class="org.fhi360.lamis.controller.StatusHistoryAction" method="deleteStatus">
+           
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Status_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Status_grid" class="org.fhi360.lamis.controller.grid.StatusHistoryGridAction" method="statusGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+     </package>   
+</struts>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Patientcasemanager" table="patientcasemanager">
+    <id name="patientcasemanagerId" type="long">
+      <column name="PATIENTCASEMANAGER_ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="org.fhi360.lamis.model.Patient" fetch="select" name="patient">
+      <column name="PATIENT_ID" not-null="true"/>
+    </many-to-one>
+    <property name="facilityId" type="long">
+      <column name="FACILITY_ID"/>
+    </property>
+    <property name="casemanagerId" type="long">
+      <column name="CASEMANAGER_ID"/>
+    </property>
+    <property name="dateAssigned" type="date">
+      <column name="DATE_ASSIGNED"/>
+    </property>
+    <property name="action" type="string">
+      <column name="ACTION"/>
+    </property>
+    <property name="uploaded" type="java.lang.Integer">
+      <column length="11" name="UPLOADED"/>
+    </property>
+    <property name="timeStamp" type="timestamp">
+      <column length="23" name="TIME_STAMP"/>
+    </property>
+    <property name="timeUploaded" type="timestamp">
+      <column length="23" name="TIME_UPLOADED"/>
+    </property>
+    <property name="userId" type="long">
+      <column length="11" name="USER_ID"/>
+    </property>
+     <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+  </class>
+</hibernate-mapping>

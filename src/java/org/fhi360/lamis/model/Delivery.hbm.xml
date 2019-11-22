@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Delivery" table="DELIVERY" catalog="LAMIS">
+        <id name="deliveryId" type="long">
+            <column name="DELIVERY_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="patient" class="org.fhi360.lamis.model.Patient" fetch="select">
+            <column name="PATIENT_ID" not-null="true" />
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="dateDelivery" type="date">
+            <column name="DATE_DELIVERY" length="8" not-null="true"/>
+        </property>
+	<property name="ancId" type="long">
+            <column name="ANC_ID" />
+        </property>
+	<property name="bookingStatus" type="java.lang.Integer">
+            <column name="BOOKING_STATUS" />
+        </property>
+	<property name="romDeliveryInterval" type="string">
+            <column name="ROM_DELIVERY_INTERVAL" length="25" />
+        </property>
+		<property name="modeDelivery" type="string">
+            <column name="MODE_DELIVERY" length="45" />
+        </property>
+		<property name="episiotomy" type="string">
+            <column name="EPISIOTOMY" length="7" />
+        </property>
+		<property name="vaginalTear" type="string">
+            <column name="VAGINAL_TEAR" length="7" />
+        </property>
+		<property name="maternalOutcome" type="string">
+            <column name="MATERNAL_OUTCOME" length="25" />
+        </property>
+        <property name="timeHivDiagnosis" type="string">
+            <column name="TIME_HIV_DIAGNOSIS" length="45" />
+        </property>
+        <property name="sourceReferral" type="string">
+            <column name="SOURCE_REFERRAL" length="120" />
+        </property>
+        <property name="hepatitisBStatus" type="string">
+            <column name="HEPATITISB_STATUS" length="70" />
+        </property>
+        <property name="hepatitisCStatus" type="string">
+            <column name="HEPATITISC_STATUS" length="70" />
+        </property>
+        <property name="gestationalAge" type="java.lang.Integer">
+            <column name="GESTATIONAL_AGE"/>
+        </property>
+        <property name="screenPostPartum" type="java.lang.Integer">
+            <column name="SCREEN_POST_PARTUM" />
+        </property>
+		<property name="arvRegimenPast" type="string">
+            <column name="ARV_REGIMEN_PAST" length="100" />
+        </property>
+		<property name="arvRegimenCurrent" type="string">
+            <column name="ARV_REGIMEN_CURRENT" length="100" />
+        </property>
+		<property name="dateArvRegimenCurrent" type="date">
+            <column name="DATE_ARV_REGIMEN_CURRENT" length="8" />
+        </property>
+		<property name="dateConfirmedHiv" type="date">
+            <column name="DATE_CONFIRMED_HIV" length="8" />
+        </property>
+		<property name="clinicStage" type="string">
+            <column name="CLINIC_STAGE" length="15" />
+        </property>
+		<property name="cd4Ordered" type="string">
+            <column name="CD4_ORDERED" length="7"/>
+        </property>
+		<property name="cd4" type="java.lang.Double">
+            <column name="CD4" precision="17" scale="0" />
+        </property>
+	<property name="timeStamp" type="timestamp">
+            <column name="TIME_STAMP" length="23" />
+        </property>
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+          <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+          <column length="23" name="TIME_UPLOADED"/>
+        </property>
+        <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

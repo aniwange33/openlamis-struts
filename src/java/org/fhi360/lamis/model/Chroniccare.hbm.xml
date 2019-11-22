@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-Sep-2014 01:29:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="org.fhi360.lamis.model.Chroniccare" table="CHRONICCARE" catalog="LAMIS">
+        <id name="chroniccareId" type="long">
+            <column name="CHRONICCARE_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="patient" class="org.fhi360.lamis.model.Patient" fetch="select">
+            <column name="PATIENT_ID" not-null="true" />
+        </many-to-one>
+        <property name="facilityId" type="long">
+            <column name="FACILITY_ID" not-null="true" />
+        </property>
+        <property name="dateVisit" type="date">
+            <column name="DATE_VISIT" length="8" not-null="true" />
+        </property>
+        <property name="clientType" type="string">
+            <column name="CLIENT_TYPE" length="75" />
+        </property>
+        <property name="currentStatus" type="string">
+            <column name="CURRENT_STATUS" length="75" />
+        </property>
+        <property name="pregnancyStatus" type="string">
+            <column name="PREGNANCY_STATUS" length="75" />
+        </property>
+        <property name="clinicStage" type="string">
+            <column name="CLINIC_STAGE" length="15" />
+        </property>
+        <property name="lastCd4" type="java.lang.Double">
+            <column name="LAST_CD4" precision="17" scale="0" />
+        </property>
+        <property name="dateLastCd4" type="date">
+            <column name="DATE_LAST_CD4" length="8" />
+        </property>
+        <property name="lastViralLoad" type="java.lang.Double">
+            <column name="LAST_VIRAL_LOAD" precision="17" scale="0" />
+        </property>
+        <property name="dateLastViralLoad" type="date">
+            <column name="DATE_LAST_VIRAL_LOAD" length="8" />
+        </property>
+        <property name="eligibleCd4" type="string">
+            <column name="ELIGIBLE_CD4" length="7" />
+        </property>
+        <property name="eligibleViralLoad" type="string">
+            <column name="ELIGIBLE_VIRAL_LOAD" length="7" />
+        </property>
+        <property name="cotrimEligibility1" type="java.lang.Integer">
+            <column name="COTRIM_ELIGIBILITY1" />
+        </property>
+        <property name="cotrimEligibility2" type="java.lang.Integer">
+            <column name="COTRIM_ELIGIBILITY2" />
+        </property>
+        <property name="cotrimEligibility3" type="java.lang.Integer">
+            <column name="COTRIM_ELIGIBILITY3" />
+        </property>
+        <property name="cotrimEligibility4" type="java.lang.Integer">
+            <column name="COTRIM_ELIGIBILITY4" />
+        </property>
+        <property name="cotrimEligibility5" type="java.lang.Integer">
+            <column name="COTRIM_ELIGIBILITY5" />
+        </property>
+        <property name="ipt" type="string">
+            <column name="IPT" length="7" />
+        </property>
+        <property name="inh" type="string">
+            <column name="INH" length="7" />
+        </property>
+        <property name="tbTreatment" type="string">
+            <column name="TB_TREATMENT" length="7" />
+        </property>
+        <property name="dateStartedTbTreatment" type="date">
+            <column name="DATE_STARTED_TB_TREATMENT" length="8" />
+        </property>
+        <property name="tbReferred" type="string">
+            <column name="TB_REFERRED" length="7" />
+        </property>
+        <property name="eligibleIpt" type="string">
+            <column name="ELIGIBLE_IPT" length="7" />
+        </property>
+        <property name="tbValues" type="string">
+            <column name="TB_VALUES" length="50" />
+        </property>
+        <property name="bodyWeight" type="java.lang.Double">
+            <column name="BODY_WEIGHT" precision="17" scale="0"/>
+        </property>
+        <property name="height" type="java.lang.Double">
+            <column name="HEIGHT" precision="17" scale="0"/>
+        </property>
+        <property name="bmi" type="string">
+            <column name="BMI" length="45" />
+        </property>
+        <property name="muac" type="java.lang.Double">
+            <column name="MUAC" precision="17" scale="0" />
+        </property>
+        <property name="muacPediatrics" type="string">
+            <column name="MUAC_PEDIATRICS" length="45" />
+        </property>
+        <property name="muacPregnant" type="string">
+            <column name="MUAC_PREGNANT" length="45" />
+        </property>
+        <property name="supplementaryFood" type="string">
+            <column name="SUPPLEMENTARY_FOOD" length="7" />
+        </property>
+        <property name="nutritionalStatusReferred" type="string">
+            <column name="NUTRITIONAL_STATUS_REFERRED" length="7" />
+        </property>
+        <property name="gbv1" type="string">
+            <column name="GBV1" length="7" />
+        </property>
+        <property name="gbv1Referred" type="string">
+            <column name="GBV1_REFERRED" length="7" />
+        </property>
+        <property name="gbv2" type="string">
+            <column name="GBV2" length="7" />
+        </property>
+        <property name="gbv2Referred" type="string">
+            <column name="GBV2_REFERRED" length="7" />
+        </property>
+        <property name="hypertensive" type="string">
+            <column name="HYPERTENSIVE" length="7" />
+        </property>
+        <property name="firstHypertensive" type="string">
+            <column name="FIRST_HYPERTENSIVE" length="7" />
+        </property>
+        <property name="bpAbove" type="string">
+            <column name="BP_ABOVE" length="7" />
+        </property>
+        <property name="bpReferred" type="string">
+            <column name="BP_REFERRED" length="7" />
+        </property>
+        <property name="diabetic" type="string">
+            <column name="DIABETIC" length="7" />
+        </property>
+        <property name="firstDiabetic" type="string">
+            <column name="FIRST_DIABETIC" length="7" />
+        </property>
+        <property name="dmReferred" type="string">
+            <column name="DM_REFERRED" length="7" />
+        </property>
+        <property name="dmValues" type="string">
+            <column name="DM_VALUES" length="50" />
+        </property>
+        <property name="phdp1" type="string">
+            <column name="PHDP1" length="7" />
+        </property>
+        <property name="phdp1ServicesProvided" type="string">
+            <column name="PHDP1_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp2" type="string">
+            <column name="PHDP2" length="7" />
+        </property>
+        <property name="phdp2ServicesProvided" type="string">
+            <column name="PHDP2_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp3" type="string">
+            <column name="PHDP3" length="7" />
+        </property>
+        <property name="phdp3ServicesProvided" type="string">
+            <column name="PHDP3_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp4" type="string">
+            <column name="PHDP4" length="7" />
+        </property>
+        <property name="phdp4ServicesProvided" type="string">
+            <column name="PHDP4_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp5" type="string">
+            <column name="PHDP5" length="7" />
+        </property>
+        <property name="phdp5ServicesProvided" type="string">
+            <column name="PHDP5_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp6" type="java.lang.Integer">
+            <column name="PHDP6" />
+        </property>
+        <property name="phdp6ServicesProvided" type="string">
+            <column name="PHDP6_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp7" type="java.lang.Integer">
+            <column name="PHDP7" />
+        </property>
+        <property name="phdp7ServicesProvided" type="string">
+            <column name="PHDP7_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp8" type="string">
+            <column name="PHDP8" length="7" />
+        </property>
+        <property name="phdp8ServicesProvided" type="string">
+            <column name="PHDP8_SERVICES_PROVIDED" length="7" />
+        </property>
+        <property name="phdp9ServicesProvided" type="string">
+            <column name="PHDP9_SERVICES_PROVIDED" length="255" />
+        </property>
+        <property name="reproductiveIntentions1" type="string">
+            <column name="REPRODUCTIVE_INTENTIONS1" length="7" />
+        </property>
+        <property name="reproductiveIntentions1Referred" type="string">
+            <column name="REPRODUCTIVE_INTENTIONS1_REFERRED" length="7" />
+        </property>
+        <property name="reproductiveIntentions2" type="string">
+            <column name="REPRODUCTIVE_INTENTIONS2" length="7" />
+        </property>
+        <property name="reproductiveIntentions2Referred" type="string">
+            <column name="REPRODUCTIVE_INTENTIONS2_REFERRED" length="7" />
+        </property>
+        <property name="reproductiveIntentions3" type="string">
+            <column name="REPRODUCTIVE_INTENTIONS3" length="7" />
+        </property>
+        <property name="reproductiveIntentions3Referred" type="string">
+            <column name="REPRODUCTIVE_INTENTIONS3_REFERRED" length="7" />
+        </property>
+        <property name="malariaPrevention1" type="string">
+            <column name="MALARIA_PREVENTION1" length="7" />
+        </property>
+        <property name="malariaPrevention1Referred" type="string">
+            <column name="MALARIA_PREVENTION1_REFERRED" length="7" />
+        </property>
+        <property name="malariaPrevention2" type="string">
+            <column name="MALARIA_PREVENTION2" length="7" />
+        </property>
+        <property name="malariaPrevention2Referred" type="string">
+            <column name="MALARIA_PREVENTION2_REFERRED" length="7" />
+        </property>
+        <property name="communitypharmId" type="long">
+            <column name="COMMUNITYPHARM_ID" />
+        </property>        
+        <property name="userId" type="java.lang.Long">
+            <column name="USER_ID" />
+        </property>
+        <property name="timeStamp" type="timestamp">
+            <column name="time_stamp" length="23" />
+        </property>
+        <property name="uploaded" type="java.lang.Integer">
+            <column name="UPLOADED"/>
+        </property>    
+        <property name="timeUploaded" type="timestamp">
+            <column length="23" name="TIME_UPLOADED"/>
+        </property>   
+       <property name="uuid" type="string">
+            <column length="36" name="UUID"/>
+        </property>
+    </class>
+</hibernate-mapping>

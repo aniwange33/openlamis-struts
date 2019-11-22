@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: AALOZIE -->
+<struts>
+   <package name="hts" namespace="/" extends="struts-default, json-default, jasperreports-default">
+        <interceptors>
+            <interceptor name="monitorServiceInterceptor" class="org.fhi360.lamis.interceptor.MonitorServiceInterceptor"></interceptor>
+            <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+        </interceptors>
+
+        <action name="Hts_page">
+            <result>/WEB-INF/views/hts/hts_page.jsp</result>
+        </action>
+
+        <action name="Hts_search">
+            <result>/WEB-INF/views/hts/hts_search.jsp</result>
+        </action>
+                                               
+        <action name="Hts_find" class="org.fhi360.lamis.controller.HtsAction" method="findHts">
+            <result name="success">/WEB-INF/views/hts/hts_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Hts_new">
+            <result name="success">/WEB-INF/views/hts/hts_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Hts_save" class="org.fhi360.lamis.controller.HtsAction" method="saveHts">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Hts_update" class="org.fhi360.lamis.controller.HtsAction" method="updateHts">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Hts_delete" class="org.fhi360.lamis.controller.HtsAction" method="deleteHts">
+           
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Hts_retrieve" class="org.fhi360.lamis.controller.HtsAction" method="retrieveHtsList">
+            <result name="success" type="json">
+                <param name="root">htsList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+
+        <action name="Hts_retrieve_detail" class="org.fhi360.lamis.controller.HtsAction" method="retrieveHtsDetail">
+            <result name="success" type="json">
+                <param name="root">htsMap</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+         
+
+        <action name="Hts_find_number" class="org.fhi360.lamis.controller.HtsAction" method="findHtsByNumber">
+            <result name="success" type="json">
+                <param name="root">htsList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Hts_find_names" class="org.fhi360.lamis.controller.HtsAction" method="findHtsByNames">
+            <result name="success" type="json">
+                <param name="root">messageList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Hts_grid" class="org.fhi360.lamis.controller.grid.HtsGridAction" method="htsGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+          <action name="Indexcontact_grid" class="org.fhi360.lamis.controller.grid.IndexContactGridAction" method="indexcontactGrid">
+            <result name="success" type="json"></result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <!-- HIV Risk Assessment Section -->               
+         <action name="Assessment_new">
+            <result name="success">/WEB-INF/views/hts/assessment_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Assessment_save" class="org.fhi360.lamis.controller.AssessmentAction" method="saveAssessment">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+          <action name="Hts_Assessment_save" class="org.fhi360.lamis.controller.AssessmentAction" method="saveAssessment">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+        
+        <action name="Assessment_update" class="org.fhi360.lamis.controller.AssessmentAction" method="updateAssessment">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_new.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Assessment_delete" class="org.fhi360.lamis.controller.AssessmentAction" method="deleteAssessment">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">3</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Hts_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+
+        <action name="Assessment_find" class="org.fhi360.lamis.controller.AssessmentAction" method="findAssessment">
+            <result name="success">/WEB-INF/views/hts/indexcontact_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Assessment_retrieve" class="org.fhi360.lamis.controller.AssessmentAction" method="retrieveAssessmentList">
+            <result name="success" type="json">
+                <param name="root">assessmentList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+         
+        <action name="Enroll_client" class="org.fhi360.lamis.controller.HtsAction" method="enrollClient">
+            <result name="success">/WEB-INF/views/patient/patient_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+        
+        <action name="Hts_info" class="org.fhi360.lamis.controller.HtsAction" method="htsInfo">
+             <result name="success" type="json">
+                <param name="root">htsList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <!-- Index & Contact Tracking Section -->               
+         <action name="Indexcontact_search">
+            <result>/WEB-INF/views/hts/indexcontact_search.jsp</result>
+        </action>
+
+        <action name="Indexcontact_new" class="org.fhi360.lamis.controller.HtsAction" method="findHts">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/WEB-INF/views/hts/indexcontact_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Indexcontact_save" class="org.fhi360.lamis.controller.IndexcontactAction" method="saveIndexcontact">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">1</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Indexcontact_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Indexcontact_update" class="org.fhi360.lamis.controller.IndexcontactAction" method="updateIndexcontact">
+            <interceptor-ref name="monitorServiceInterceptor">
+                <param name="operationId">2</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Indexcontact_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+        <action name="Indexcontact_delete" class="org.fhi360.lamis.controller.IndexcontactAction" method="deleteIndexcontact">
+           
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success" type="redirect">/Indexcontact_search.action</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action> 
+
+         <action name="Indexcontact_find" class="org.fhi360.lamis.controller.IndexcontactAction" method="findIndexcontact">
+            <result name="success">/WEB-INF/views/hts/indexcontact_data.jsp</result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+
+        <action name="Indexcontact_retrieve" class="org.fhi360.lamis.controller.IndexcontactAction" method="retrieveIndexcontactList">
+            <result name="success" type="json">
+                <param name="root">indexcontactList</param>
+                <param name="noCache">true</param>
+                <param name="ignoreHierarchy">false</param>
+            </result>
+            <result name="input">/WEB-INF/views/administration/error_message.jsp</result>
+            <result name="error">/WEB-INF/views/administration/error_message.jsp</result>
+        </action>
+   </package>   
+</struts>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 16, 2013 8:46:58 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="LAMIS" name="org.fhi360.lamis.model.Schedule" table="SCHEDULE">
+    <id name="scheduleId" type="long">
+      <column name="SCHEDULE_ID"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="org.fhi360.lamis.model.Facility" fetch="select" name="facility">
+      <column name="FACILITY_ID" not-null="true"/>
+    </many-to-one>
+    <property name="monday" type="java.lang.Integer">
+      <column name="MONDAY"/>
+    </property>
+    <property name="tuesday" type="java.lang.Integer">
+      <column name="TUESDAY"/>
+    </property>
+    <property name="wednesday" type="java.lang.Integer">
+      <column name="WEDNESDAY"/>
+    </property>
+    <property name="thursday" type="java.lang.Integer">
+      <column name="THURSDAY"/>
+    </property>
+    <property name="friday" type="java.lang.Integer">
+      <column name="FRIDAY"/>
+    </property>
+    <property name="saturday" type="java.lang.Integer">
+      <column name="SATURDAY"/>
+    </property>
+    <property name="sunday" type="java.lang.Integer">
+      <column name="SUNDAY"/>
+    </property>
+    <property name="service" type="string">
+      <column length="100" name="SERVICE"/>
+    </property>
+  </class>
+</hibernate-mapping>
